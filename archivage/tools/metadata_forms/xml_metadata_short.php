@@ -191,12 +191,12 @@ fputs($fic,$string);
 
 
 
-$string="<dc:identifier xsi:type=\"dcterms:URI\">[$audio_file] http://crdo.risc.cnrs.fr/data/****A_REMPLIR(nom_chercheur/nom fichier)****.wav </dc:identifier>\n";
+$string="<dc:identifier xsi:type=\"dcterms:URI\">[$audio_file] http://cocoon.tge-adonis.fr/data/****A_REMPLIR(nom_chercheur/nom fichier)****.wav </dc:identifier>\n";
 fputs($fic,$string);
 
-$string="<dcterms:isRequiredBy xsi:type=\"dcterms:URI\"
+/*$string="<dcterms:isRequiredBy xsi:type=\"dcterms:URI\"
             >oai:crdo.vjf.cnrs.fr:***A_REMPLIR(identifiant)****</dcterms:isRequiredBy>\n";
-fputs($fic,$string);
+fputs($fic,$string);*/
 
 
 if ($access=="access_ok"){
@@ -419,10 +419,10 @@ $string="<dc:type xsi:type=\"dcterms:DCMIType\">Text</dc:type>\n";
 
 
 
-$string="<dc:identifier xsi:type=\"dcterms:URI\">[$annot_file]http://crdo.risc.cnrs.fr/exist/crdo/****A_REMPLIR(nom_chercheur/code_langue/nom fichier)****.xml</dc:identifier>\n";
+$string="<dc:identifier xsi:type=\"dcterms:URI\">[$annot_file] 	http://cocoon.tge-adonis.fr/exist/crdo/****A_REMPLIR(nom_chercheur/code_langue/nom fichier)****.xml</dc:identifier>\n";
 fputs($fic,$string);
 
-$string="<dcterms:isFormatOf xsi:type=\"dcterms:URI\">http://crdo.risc.cnrs.fr/exist/crdo/****A_REMPLIR(nom_chercheur/code_langue/nom fichier)****.xhtml</dcterms:isFormatOf>\n";
+$string="<dcterms:isFormatOf xsi:type=\"dcterms:URI\"> 	http://cocoon.tge-adonis.fr/exist/crdo/****A_REMPLIR(nom_chercheur/code_langue/nom fichier)****.xhtml</dcterms:isFormatOf>\n";
 fputs($fic,$string);	
 
 $string="<dcterms:requires xsi:type=\"dcterms:URI\"

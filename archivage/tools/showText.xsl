@@ -43,9 +43,9 @@ doctype-system="about:legacy-compat" indent="yes"/>-->
            <!-- <div>
       <a	href="create_pdf.php?id={$id}">Creation fichier PDF</a>
          </div>-->
-            
-            
-            
+           <!-- <div>
+            <a	href="ipad.php?id={$id}">Accès iPad</a>
+            </div>-->
             <!--   <div>
       <a	href="create_rtf.php?id={$id}">Creation fichier RTF</a>
          </div>-->
@@ -86,7 +86,7 @@ doctype-system="about:legacy-compat" indent="yes"/>-->
                         	Locuteur(s) :
                         </xsl:when>
                         <xsl:otherwise> 
-                    		Locutor(s) :
+                    		Speaker(s) :
                         </xsl:otherwise>
                     </xsl:choose> 
                     
@@ -116,6 +116,7 @@ doctype-system="about:legacy-compat" indent="yes"/>-->
        <div>
         
          <xsl:choose>
+         	
          
           		<xsl:when test="contains($navigator, 'Firefox')">
           			<xsl:choose>
@@ -124,6 +125,11 @@ doctype-system="about:legacy-compat" indent="yes"/>-->
                              	<xsl:call-template name="player-audio_html5">
 									<xsl:with-param name="mediaUrl" select="$url_sound_wav"/>
 						 		</xsl:call-template>
+                              
+                             	<!--<xsl:call-template name="player-audio_wav">
+									<xsl:with-param name="mediaUrl_wav" select="$url_sound_wav"/>
+						 		</xsl:call-template>-->
+     						
      						</div>
     					</xsl:when> 
                     </xsl:choose>
@@ -137,7 +143,12 @@ doctype-system="about:legacy-compat" indent="yes"/>-->
                              	<xsl:call-template name="player-audio_html5">
 									<xsl:with-param name="mediaUrl" select="$url_sound_wav"/>
 						 		</xsl:call-template>
+                                
+                             	<!--<xsl:call-template name="player-audio_wav">
+									<xsl:with-param name="mediaUrl_wav" select="$url_sound_wav"/>
+						 		</xsl:call-template>-->
      						</div>
+     						
     					</xsl:when> 
                     </xsl:choose>
                  </xsl:when>
@@ -147,8 +158,11 @@ doctype-system="about:legacy-compat" indent="yes"/>-->
           			<xsl:choose>
     					<xsl:when test="contains($url_sound_wav, 'wav')">
       						 <div>
-                             	<xsl:call-template name="player-audio_wav">
+                             	<!--<xsl:call-template name="player-audio_wav">
 									<xsl:with-param name="mediaUrl_wav" select="$url_sound_wav"/>
+						 		</xsl:call-template>-->
+                                <xsl:call-template name="player-audio_html5">
+									<xsl:with-param name="mediaUrl" select="$url_sound_wav"/>
 						 		</xsl:call-template>
      						</div>
     					</xsl:when> 
@@ -156,7 +170,7 @@ doctype-system="about:legacy-compat" indent="yes"/>-->
                  </xsl:when>
                  
                 <xsl:when test="contains($navigator, 'Explorer')">
-          			<xsl:choose>
+          			<!--<xsl:choose>
     					<xsl:when test="contains($url_sound_mp3, 'mp3')">
       						 <div>
                              	<xsl:call-template name="player-audio_html5">
@@ -164,22 +178,28 @@ doctype-system="about:legacy-compat" indent="yes"/>-->
 					 			</xsl:call-template>
      						</div>
     					</xsl:when> 
-                        <xsl:otherwise>
+                        <xsl:otherwise>-->
    							<div>
+                            <!--<xsl:call-template name="player-audio_html5">
+									<xsl:with-param name="mediaUrl" select="$url_sound_wav"/>
+						 		</xsl:call-template>-->
 								<xsl:call-template name="player-audio_wav">
 									<xsl:with-param name="mediaUrl_wav" select="$url_sound_wav"/>
 								</xsl:call-template>
 							</div>
-   					</xsl:otherwise>
-                    </xsl:choose>
+   					<!--</xsl:otherwise>
+                    </xsl:choose>-->
                 </xsl:when>
                  
                  
     			<xsl:otherwise>
    							<div>
-								<xsl:call-template name="player-audio_wav">
+                            <xsl:call-template name="player-audio_html5">
+									<xsl:with-param name="mediaUrl" select="$url_sound_wav"/>
+						 		</xsl:call-template>
+								<!--<xsl:call-template name="player-audio_wav">
 									<xsl:with-param name="mediaUrl_wav" select="$url_sound_wav"/>
-								</xsl:call-template>
+								</xsl:call-template>-->
 							</div>
                             <!--<div>
                              	<xsl:call-template name="player-audio_html5_bis">
@@ -196,6 +216,7 @@ doctype-system="about:legacy-compat" indent="yes"/>-->
         </xsl:choose>
         
        </div>
+       
                      
                      
          <!--<xsl:choose>
@@ -210,6 +231,20 @@ doctype-system="about:legacy-compat" indent="yes"/>-->
 							</div>
     					</xsl:when>  
     				<xsl:otherwise>-->
+                    <!--http://crdo.risc.cnrs.fr/data/boutet/BOD041.mp4-->
+                    <div>
+                   <!-- <video width="400" height="222" controls="controls">
+  <source src="http://crdo.risc.cnrs.fr/data/boutet/BOD041.mp4" type="video/mp4" />
+  Ici l'alternative à la vidéo : un lien de téléchargement, un message, etc.
+</video>-->
+<!--<object id="player" width="800" height="100" classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
+			<param name="src" value="http://crdo.risc.cnrs.fr/data/boutet/BOD041.mp4"/>
+			<param name="AUTOPLAY" value="false"/>
+			<param name="CONTROLLER" value="true"/>
+			<embed width="800pt" height="100px" pluginspace="http://www.apple.com/quicktime/download/" controller="true" src="http://crdo.risc.cnrs.fr/data/boutet/BOD041.mp4" name="player" autostart="false" enablejavascript="true">
+       			</embed>
+		</object>-->
+</div>
    						 <div>
 							<!--<xsl:call-template name="player-audio_wav">
 							<xsl:with-param name="mediaUrl_wav" select="$url_sound_wav"/>
@@ -356,14 +391,14 @@ doctype-system="about:legacy-compat" indent="yes"/>-->
 								</xsl:if>
 								
 								<xsl:if test="annot:TEXT/annot:S/annot:TRANSL[@xml:lang!='fr' and @xml:lang!='en']">
-									
+									<xsl:variable name="langue_autre" select="annot:TEXT/annot:S/annot:TRANSL[@xml:lang!='fr' and @xml:lang!='en']/@xml:lang"/>
 									<input checked="checked" name="translation_other" onclick="javascript:showhide(this, 8, 'block')" type="checkbox"/>
 									<xsl:choose>
 										<xsl:when test="$aff_lang='fr'">
-											AUTRE 
+											<xsl:value-of select="translate($langue_autre,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>    
 										</xsl:when>
 										<xsl:otherwise> 
-											OTHER
+											<xsl:value-of select="translate($langue_autre,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>    
 										</xsl:otherwise>
 									</xsl:choose>  
 									
@@ -427,14 +462,14 @@ doctype-system="about:legacy-compat" indent="yes"/>-->
          					</xsl:if>
          				
          					<xsl:if test="annot:TEXT/annot:TRANSL[@xml:lang!='fr' and @xml:lang!='en'] | annot:TEXT/annot:S/annot:TRANSL[@xml:lang!='fr' and @xml:lang!='en']">
-         					
+         					<xsl:variable name="langue_autre" select="annot:TEXT/annot:S/annot:TRANSL[@xml:lang!='fr' and @xml:lang!='en']/@xml:lang"/>
          						<input name="trad_text_other" onclick="javascript:showhide(this, 22, 'block')"  type="checkbox"/>
          						<xsl:choose>
          							<xsl:when test="$aff_lang='fr'">
-         								AUTRE  
+         								<xsl:value-of select="translate($langue_autre,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>    
          							</xsl:when>
          							<xsl:otherwise> 
-         								OTHER  
+         								  <xsl:value-of select="translate($langue_autre,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>    
          							</xsl:otherwise>
          						</xsl:choose>  
          					
@@ -622,14 +657,14 @@ doctype-system="about:legacy-compat" indent="yes"/>-->
          							</xsl:if>
          							
          							<xsl:if test="annot:WORDLIST/annot:W/annot:TRANSL[@xml:lang!='fr' and @xml:lang!='en']">
-         								
+         								<xsl:variable name="langue_autre" select="annot:WORDLIST/annot:W/annot:TRANSL[@xml:lang!='fr' and @xml:lang!='en']/@xml:lang"/>
          								<input checked="checked" name="translation_other" onclick="javascript:showhide(this, 8, 'block')" type="checkbox"/>
          								<xsl:choose>
          									<xsl:when test="$aff_lang='fr'">
-         										AUTRE 
+         										<xsl:value-of select="translate($langue_autre,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>     
          									</xsl:when>
          									<xsl:otherwise> 
-         										OTHER
+         										<xsl:value-of select="translate($langue_autre,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>    
          									</xsl:otherwise>
          								</xsl:choose>  
          								
@@ -947,7 +982,7 @@ doctype-system="about:legacy-compat" indent="yes"/>-->
                                       
                                  
 										<!-- Recupere les mots avec leur glose -->
-                                        <xsl:if test="(annot:W/annot:FORM and annot:W/annot:TRANSL) or (annot:W/annot:M/annot:FORM and annot:W/annot:M/annot:TRANSL) ">
+                                        <xsl:if test="(annot:W/annot:FORM and annot:W/annot:TRANSL) or (annot:W/annot:M/annot:FORM and annot:W/annot:M/annot:TRANSL) or (annot:W/annot:FORM) ">
                                         	
                                        	<xsl:for-each select="annot:W">
                                        
@@ -1109,10 +1144,25 @@ doctype-system="about:legacy-compat" indent="yes"/>-->
                                                       
 																
 													</td>
+                                                    </tr>
+                                                    <tr>
+                                                    <td class="word_transl">
+														
+															
+																<xsl:if test="(annot:TRANSL) and not(annot:FORM)">
+																	
+																		<xsl:value-of select="annot:TRANSL"/>
+																	
+																</xsl:if>
+															
+                                                                
+                                                      
+																
+													</td>
                                                     
                                                     
-													</tr>
-												</tbody>
+													</tr></tbody>
+
 											</table>
                                             
 													</xsl:for-each>
@@ -1181,7 +1231,7 @@ doctype-system="about:legacy-compat" indent="yes"/>-->
 														<img src="stop.gif" alt="stop"/>
 														</a>
                                                         <xsl:text> </xsl:text>
-														<a href="javascript:playFrom('{@id}')">
+														<a href="javascript:playFrom_W('{@id}')">
 														<img src="play.gif" alt="écouter"/>
 														</a>
                                                        <!-- </xsl:otherwise>
@@ -1212,7 +1262,7 @@ doctype-system="about:legacy-compat" indent="yes"/>-->
 									</xsl:for-each>-->
                                     <xsl:if test="annot:FORM">
                                         	<div class="word_sentence">
-                                            <td class="word_form">
+                                            <td class="word_form_list">
                                         <!-- Recuperation de la phrase -->
                                         <xsl:for-each select="annot:FORM">
                                         
@@ -1309,7 +1359,7 @@ doctype-system="about:legacy-compat" indent="yes"/>-->
                                         	
                                         <!-- Recuperation de la phrase -->
                                         <xsl:for-each select="annot:TRANSL">
-                                        <td class="word_transl">
+                                        <td class="word_transl_list">
                                         	<xsl:choose>
                                             <xsl:when test="(@xml:lang='fr') or (@xml:lang='en')">
                                         	<xsl:if test="@xml:lang='en'">

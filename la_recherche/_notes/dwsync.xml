@@ -11,5 +11,8 @@
 <file name="actualite_en.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129810436200000000" remote="129810436200000000" />
 <file name="medailles2.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129724046430000000" remote="129724046430000000" />
 <file name="actualite.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129696397300000000" remote="129696397300000000" />
-<file name="index.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129721349900000000" remote="129721349900000000" />
+<file name="index.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="130039487281700104" remote="130039487280000000" />
+<file name="index_test.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="130064539825614459" remote="130064539820000000" />
+<file name="index_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129890686367913330" remote="129890686360000000" />
+<file name="index_test.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130040344397454341" remote="130040344670000000" />
 </dwsync>

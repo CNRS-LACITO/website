@@ -1,3 +1,5 @@
+var before     = 0;
+
 function getplayer(id) {
 	var player = document.getElementById(id);
 	return player;
@@ -19,8 +21,33 @@ function playFrom(id) {
 		player.addEventListener("seeked", function() { player.play(); }, true);
 		setposition(id,time);
 		player.addEventListener("timeupdate", timeUpdate, true);  
+	
+	stoptime=ENDS[i]-STARTS[i];
+	//setTimeout(function() { player.pause() }, stoptime*1000);
+		if (player.currentTime>=ENDS[i]){
+			getplayer('player').pause();
+		
+			}
+	
 	}
 }
+
+
+/*function playFrom(start) {
+	
+	var time = start;
+
+	var player = getplayer('player');
+	if (player) {	
+		//player.addEventListener("seeked", placement(player,time), true);
+		player.addEventListener("seeked", function() { player.play(); }, true);
+		setposition(id,time);
+		player.addEventListener("timeupdate", timeUpdate, true);  
+	
+	
+	}
+}*/
+
 
 function playFrom_W(id) {
 	var i=0;
@@ -34,37 +61,44 @@ function playFrom_W(id) {
 		//player.addEventListener("seeked", placement(player,time), true);
 		player.addEventListener("seeked", function() { player.play(); }, true);
 		setposition(id,time);
-		//player.addEventListener("timeupdate", timeUpdate, true);  
+		player.addEventListener("timeupdate", timeUpdate, true);  
+	
+	stoptime=ENDS[i]-STARTS[i]+0.1;
+	setTimeout(function() { player.pause() }, stoptime*1000);
+		if (player.currentTime>=ENDS[i]){
+			getplayer('player').pause();
 		
-		
+			}
+	
 	}
+		
+	
 }
 
-/*function placement(player,time){
-	
-	player.play();
-	
+function placement(player,time){
+
 	var player = getplayer('player');
 	player.currentTime = time;
-
-	dohighlight(time);
 	
-	var player = getplayer('player');
+	player.play();
+	//dohighlight(time);
+	
     dohighlight(player.currentTime);
 	
-}*/
+}
 
 function timeUpdate() {  
 	var player = getplayer('player');
        dohighlight(player.currentTime);
+	  
 }  
 
 function setposition(id,time) {
 	var player = getplayer('player');
 	 
 	 player.currentTime = time;
-	 //player.play();
 	dohighlight(time);
+	 
 }
 
 function dohighlight(time) {
@@ -77,20 +111,29 @@ function dohighlight(time) {
 			
 				node.style.backgroundColor="#D9D9F3";
 				var elt = node.getElementsByTagName('a');
+					
+					
+     
+     			
 								
 				if (elt) {
 					//elt[elt.length -1].focus();
 				
 				}
-			} else {
+			} 
+			else {
 				node.style.backgroundColor="";
-				//endplay(IDS[i]);
+				
 				//player.pause();
 				
 			}
 		} else {
 			node.style.backgroundColor="";
-			endplay(IDS[i]);
+			
+				//player.pause();
+				
 		}
+		
 	}
+
 }

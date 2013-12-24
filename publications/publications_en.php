@@ -150,6 +150,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                   <li><a href="publications_liste_en.php?NomAuteur=bellahsene&NomPrenomAuteur=Linda BELLAHSENE">Linda BELLAHSENE</a></li>
                   <li><a href="publications_liste_en.php?NomAuteur=bouquiaux&NomPrenomAuteur=Luc BOUQUIAUX">Luc BOUQUIAUX</a></li>
                   <li><a href="publications_liste_en.php?NomAuteur=bril&NomPrenomAuteur=Isabelle BRIL">Isabelle BRIL</a></li>
+                  <li><a href="publications_liste_en.php?NomAuteur=capo&NomPrenomAuteur=Manon CAPO">Manon CAPO</a></li>
                   <li><a href="publications_liste_en.php?NomAuteur=charpentier jean-michel&NomPrenomAuteur=Jean-Michel CHARPENTIER">Jean-Michel CHARPENTIER</a> </li>
                   <li><a href="publications_liste_en.php?NomAuteur=injoo&NomPrenomAuteur=Injoo CHOI-JONIN">Injoo CHOI-JONIN</a></li>
                   <li><a href="publications_liste_en.php?NomAuteur=colombel&NomPrenomAuteur=Veronique de COLOMBEL">V&eacute;ronique de COLOMBEL</a></li>
@@ -176,9 +177,9 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                   <li><a href="publications_liste_en.php?NomAuteur=lebarbier&NomPrenomAuteur=Micheline LEBARBIER">Micheline LEBARBIER</a></li>
                   <li><a href="publications_liste_en.php?NomAuteur=leblic&NomPrenomAuteur=Isabelle LEBLIC">Isabelle LEBLIC</a></li>
                   <li><a href="publications_liste_en.php?NomAuteur=le guennec&NomPrenomAuteur=Francoise LE GUENNEC-COPPENS">Fran&ccedil;oise LE GUENNEC-COPPENS</a></li>
-                  <li><a href="publications_liste_en.php?NomAuteur=lemarechal&NomPrenomAuteur=Alain LEMARECHAL">Alain LEMARECHAL</a></li>
                 </ul>                </td>
                 <td valign="top"><ul class="liste-liens">
+                  <li><a href="publications_liste_en.php?NomAuteur=lemarechal&NomPrenomAuteur=Alain LEMARECHAL">Alain LEMARECHAL</a></li>
                   <li><a href="publications_liste_en.php?NomAuteur=leroy jacqueline&NomPrenomAuteur=Jacqueline LEROY">Jacqueline LEROY</a></li>
                   <li><a href="publications_liste_en.php?NomAuteur=lux&NomPrenomAuteur=Cécile LUX">Cécile LUX</a></li>
                   <li><a href="publications_liste_en.php?NomAuteur=mahieu&NomPrenomAuteur=Marc-Antoine MAHIEU">Marc-Antoine MAHIEU</a></li>
@@ -196,7 +197,6 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                   <li><a href="publications_liste_en.php?NomAuteur=oisel&NomPrenomAuteur=Guillaume OISEL">Guillaume OISEL</a></li>
                   <li><a href="publications_liste_en.php?NomAuteur=ergin&NomPrenomAuteur=Ergin ÖPENGIN">Ergin ÖPENGIN</a></li>
                   <li><a href="publications_liste_en.php?NomAuteur=pain&NomPrenomAuteur=Frédéric PAIN">Frédéric PAIN</a></li>
-                  <li><a href="publications_liste_en.php?NomAuteur=paulian&NomPrenomAuteur=Christiane PAULIAN">Christiane PAULIAN</a> </li>
                   <li><a href="publications_liste_en.php?NomAuteur=petrovic&NomPrenomAuteur=Marijana PETROVIC">Marijana PETROVIC</a></li>
                   <li><a href="publications_liste_en.php?NomAuteur=pilot&NomPrenomAuteur=Christiane PILOT-RAICHOOR">Christiane PILOT-RAICHOOR</a></li>
                   <li><a href="publications_liste_en.php?NomAuteur=popova&NomPrenomAuteur=Assia POPOVA">Assia POPOVA</a></li>
@@ -204,8 +204,8 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                   <li><a href="publications_liste_en.php?NomAuteur=randa&NomPrenomAuteur=Vladimir RANDA">Vladimir RANDA</a> </li>
                   <li><a href="publications_liste_en.php?NomAuteur=rebuschi&NomPrenomAuteur=Georges REBUSCHI">Georges REBUSCHI</a></li>
                   <li><a href="publications_liste_en.php?NomAuteur=rivierre jean-claude&NomPrenomAuteur=Jean-Claude RIVIERRE">Jean-Claude RIVIERRE</a></li>
-                  <li><a href="publications_liste_en.php?NomAuteur=sauvageot&NomPrenomAuteur=Serge SAUVAGEOT">Serge SAUVAGEOT</a></li>
                   <li><a href="publications_liste_en.php?NomAuteur=sethupathy&NomPrenomAuteur=Elisabeth SETHUPATHY">Elisabeth SETHUPATHY</a></li>
+                  <li><a href="publications_liste_en.php?NomAuteur=souag&NomPrenomAuteur=Lameen SOUAG">Lameen SOUAG</a></li>
                   <li><a href="publications_liste_en.php?NomAuteur=taine-cheikh&NomPrenomAuteur=Catherine TAINE-CHEIKH">Catherine TAINE-CHEIKH</a></li>
                   <li><a href="publications_liste_en.php?NomAuteur=thomas&NomPrenomAuteur=Jacqueline M.C. THOMAS">Jacqueline M.C. THOMAS</a></li>
                   <li><a href="publications_liste_en.php?NomAuteur=tournadre&NomPrenomAuteur=Nicolas TOURNADRE">Nicolas TOURNADRE</a></li>
@@ -215,7 +215,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
               </tr>
           </table>
           <p class="intertitre">N.B. The publications with a shelf mark  (i.e.. <strong>P355 LAC</strong>) can be consulted in the AGH Documentation Center.<br>
-            Verifications and supplements (A. Behaghel-Dindorf, last upd. 30.01.2012).</p>
+            Verifications and supplements (A. Behaghel-Dindorf).</p>
 <p>&nbsp;</p>
           <p><strong><a name="articles"></a>Latest articles and book's chapters</strong> (from this year and from last year)</p></td>
         </tr>
@@ -231,19 +231,19 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                  
                 
                 <?php do { 
-				$row_liste_pub['Identifiant']= utf8_encode($row_liste_pub['Identifiant']);
-					$row_liste_pub['Titre']= utf8_encode($row_liste_pub['Titre']);
-					 $row_liste_pub['s']= utf8_encode($row_liste_pub['s']); 
-					 $row_liste_pub['u']= utf8_encode($row_liste_pub['u']);
-					 $row_liste_pub['t']= utf8_encode($row_liste_pub['t']); 
-					 $row_liste_pub['o']= utf8_encode($row_liste_pub['o']);
-					 $row_liste_pub['Auteurs']= utf8_encode($row_liste_pub['Auteurs']); 
-					 $row_liste_pub['Collation']= utf8_encode($row_liste_pub['Collation']); 
-					 $row_liste_pub['Annee']= utf8_encode($row_liste_pub['Annee']); 
-					 $row_liste_pub['URL']= utf8_encode($row_liste_pub['URL']); 
+				$row_liste_pub['Identifiant']= $row_liste_pub['Identifiant'];
+					$row_liste_pub['Titre']= $row_liste_pub['Titre'];
+					 $row_liste_pub['s']= $row_liste_pub['s']; 
+					 $row_liste_pub['u']= $row_liste_pub['u'];
+					 $row_liste_pub['t']= $row_liste_pub['t']; 
+					 $row_liste_pub['o']= $row_liste_pub['o'];
+					 $row_liste_pub['Auteurs']= $row_liste_pub['Auteurs']; 
+					 $row_liste_pub['Collation']= $row_liste_pub['Collation']; 
+					 $row_liste_pub['Annee']= $row_liste_pub['Annee']; 
+					 $row_liste_pub['URL']= $row_liste_pub['URL']; 
 					 // 07/06/11 P.Grison zone_libre
-					 $row_liste_pub['zone_libre']= utf8_encode($row_liste_pub['zone_libre']); 
-					 $row_liste_pub['cote']= utf8_encode($row_liste_pub['cote']); 
+					 $row_liste_pub['zone_libre']= $row_liste_pub['zone_libre']; 
+					 $row_liste_pub['cote']= $row_liste_pub['cote']; 
 				
 				?>
                 </tr>

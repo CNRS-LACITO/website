@@ -8,8 +8,9 @@ function boutonStop() {
 	
 	//document.write(player.currentTime);
 }
-function playFrom(id) {
+function playFrome(id) {
 	var i=0;
+	
 	while ((i<IDS.length) && (IDS[i] != id)) {
 		i++;
 	}
@@ -21,6 +22,10 @@ function playFrom(id) {
 		//player.addEventListener("seeked", function() { player.play(); }, true);
 		//setposition(id,time);
 		//player.addEventListener("timeupdate", timeUpdate, true);  
+		if (player.currentTime>=ENDS[i]){
+	getplayer('player').pause();
+	}
+	
 	}
 }
 

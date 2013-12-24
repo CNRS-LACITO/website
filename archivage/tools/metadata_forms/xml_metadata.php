@@ -18,6 +18,9 @@ $title_alt=stripslashes($_POST['title_alt']);
 $lang_title_alt=stripslashes($_POST['lang_title_alt']);
 $lang_alt_other=stripslashes($_POST['lang_alt_other']);
 
+$title_alt=stripslashes($_POST['title_alt_autre']);
+$lang_title_alt=stripslashes($_POST['lang_title_alt_autre']);
+$lang_alt_other=stripslashes($_POST['lang_alt_autre_other']);
 
 $language=stripslashes($_POST['language']);
 $code_language=stripslashes($_POST['code_language']);
@@ -130,6 +133,16 @@ fputs($fic,$string);
 }
 else if ($title_alt!="" and $lang_title_alt=="other" and $lang_alt_other!=""){
 	$string="<dcterms:alternative xml:lang=\"$lang_alt_other\">$title_alt</dcterms:alternative>\n"; 
+fputs($fic,$string);
+}
+
+/* autre titre alternatif */
+if ($title_alt_autre!="" and $lang_title_alt_autre!="" and $lang_title_alt_autre!="other"){
+	$string="<dcterms:alternative xml:lang=\"$lang_title_alt_autre\">$title_alt_autre</dcterms:alternative>\n"; 
+fputs($fic,$string);
+}
+else if ($title_alt_autre!="" and $lang_title_alt=="other" and $lang_alt_autre_other!=""){
+	$string="<dcterms:alternative xml:lang=\"$lang_alt_autre_other\">$title_alt_autre</dcterms:alternative>\n"; 
 fputs($fic,$string);
 }
 
@@ -280,7 +293,8 @@ if ($second==""){$second_t="";}else{$second_t=$second."S";}
 $string="<dcterms:extent>PT".$hour_t.$minute_t.$second_t."</dcterms:extent>\n";
 fputs($fic,$string);
 
-// description du contenu (de quoi ça parle)
+
+// description du contenu de la ressource (de quoi ca parle)
 if ($resume!="" and $lang_resume!="" and $lang_resume!="other"){
 	$string="<dc:description xml:lang=\"$lang_resume\">$resume</dc:description>";
 	fputs($fic,$string);
@@ -290,15 +304,20 @@ else if ($resume!="" and $lang_resume=="other" and $lang_resume_other!=""){
 	fputs($fic,$string);
 }
 
+else if ($resume!="" and $lang_resume=="other" and $lang_resume_other!=""){
+	$string="<dc:description xml:lang=\"$lang_resume_other\">$resume</dc:description>";
+	fputs($fic,$string);
+}
+
 	
 // identifiant de la ressource (uri)
-$string="<dc:identifier xsi:type=\"dcterms:URI\">[$audio_file] http://crdo.risc.cnrs.fr/data/****A_REMPLIR(nom_chercheur/nom fichier)****.wav </dc:identifier>\n";
+$string="<dc:identifier xsi:type=\"dcterms:URI\">[$audio_file] http://cocoon.tge-adonis.fr/data/****A_REMPLIR(nom_chercheur/nom fichier)****.wav </dc:identifier>\n";
 fputs($fic,$string);
 
-// lien éventuel avec d'autres ressources 
+/*// lien éventuel avec d'autres ressources 
 $string="<dcterms:isRequiredBy xsi:type=\"dcterms:URI\"
             >oai:crdo.vjf.cnrs.fr:***A_REMPLIR(identifiant)****</dcterms:isRequiredBy>\n";
-fputs($fic,$string);
+fputs($fic,$string);*/
 
 // acces public ou restreint
 if ($access=="access_ok"){
@@ -386,9 +405,15 @@ $annot_file=stripslashes($_POST['annot_file2']);
 $title=stripslashes($_POST['title2']);
 $lang_title=stripslashes($_POST['lang_title2']);
 $lang_title_other=stripslashes($_POST['lang_title_other2']);
+
 $title_alt=stripslashes($_POST['title_alt2']);
 $lang_alt=stripslashes($_POST['lang_alt2']);
 $lang_alt_other=stripslashes($_POST['lang_alt_other2']);
+
+$title_alt_autre=stripslashes($_POST['title_alt_autre2']);
+$lang_alt_autre=stripslashes($_POST['lang_alt_autre2']);
+$lang_alt_autre_other=stripslashes($_POST['lang_alt_autre_other2']);
+
 
 $language=stripslashes($_POST['language2']);
 $code_language=stripslashes($_POST['code_language2']);
@@ -496,6 +521,16 @@ fputs($fic,$string);
 }
 else if ($title_alt!="" and $lang_alt=="other" and $lang_alt_other!=""){
 	$string="<dcterms:alternative xml:lang=\"$lang_alt_other\">$title_alt</dcterms:alternative>\n"; 
+fputs($fic,$string);
+}
+
+// autre titre alternatif
+if ($title_alt_autre!="" and $lang_alt_autre!="" and $lang_alt_autre!="other"){
+	$string="<dcterms:alternative xml:lang=\"$lang_title_alt_autre\">$title_alt_autre</dcterms:alternative>\n"; 
+fputs($fic,$string);
+}
+else if ($title_alt_autre!="" and $lang_alt_autre=="other" and $lang_alt_other!=""){
+	$string="<dcterms:alternative xml:lang=\"$lang_alt_autre_other\">$title_alt_autre</dcterms:alternative>\n"; 
 fputs($fic,$string);
 }
 
@@ -666,10 +701,10 @@ else if ($resume!="" and $lang_resume=="other" and $lang_resume_other!=""){
 
 
 // identifiant de la ressource (uri)
-$string="<dc:identifier xsi:type=\"dcterms:URI\">[$annot_file]http://crdo.risc.cnrs.fr/exist/crdo/****A_REMPLIR(nom_chercheur/code_langue/nom fichier)****.xml</dc:identifier>\n";
+$string="<dc:identifier xsi:type=\"dcterms:URI\">[$annot_file] 	http://cocoon.tge-adonis.fr/exist/crdo/****A_REMPLIR(nom_chercheur/code_langue/nom fichier)****.xml</dc:identifier>\n";
 fputs($fic,$string);
 
-$string="<dcterms:isFormatOf xsi:type=\"dcterms:URI\">http://crdo.risc.cnrs.fr/exist/crdo/****A_REMPLIR(nom_chercheur/code_langue/nom fichier)****.xhtml</dcterms:isFormatOf>\n";
+$string="<dcterms:isFormatOf xsi:type=\"dcterms:URI\"> 	http://cocoon.tge-adonis.fr/exist/crdo/****A_REMPLIR(nom_chercheur/code_langue/nom fichier)****.xhtml</dcterms:isFormatOf>\n";
 fputs($fic,$string);	
 
 // lien éventuel avec une autre ressource

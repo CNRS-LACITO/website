@@ -120,7 +120,7 @@ Menu3=new Array("Studied Languages","","",3,24,"","","","","","","",-1,-1,-1,"",
 	
 //Archives orales = The Oral Archives
 Menu4=new Array("The Oral Archives","","",5,24,"","","","","","","",-1,-1,-1,"","");
-    Menu4_1=new Array("Presentation",BaseMenuHref+"archivage/presentation_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+    Menu4_1=new Array("The Pangloss collection",BaseMenuHref+"archivage/presentation_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
 	 Menu4_2=new Array("Submit resources",BaseMenuHref+"archivage/depot_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
 	 Menu4_3=new Array("Tools",BaseMenuHref+"archivage/outils_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
 	Menu4_4=new Array("Archive Access",BaseMenuHref+"archivage/index_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
@@ -128,11 +128,15 @@ Menu4=new Array("The Oral Archives","","",5,24,"","","","","","","",-1,-1,-1,"",
 	
 	
 //Projets associés = Projects (ou Collaborative Research?)
-Menu5=new Array("Collaborative Research","","",4,24,"","","","","","","",-1,-1,-1,"","");
+Menu5=new Array("Collaborative Research","","",6,24,"","","","","","","",-1,-1,-1,"","");
 	Menu5_1=new Array("Presentation",BaseMenuHref+"partenariat/index_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu5_2=new Array("EuroSlav 2010",BaseMenuHref+"partenariat/euroslav/index_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu5_3=new Array("Brahmaputra Studies","javascript:NewWin=window.open(\"http://brahmaputra.ceh.vjf.cnrs.fr\",\"NWin\");window[\"NewWin\"].focus()","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu5_4=new Array("Nepal's Epics","javascript:NewWin=window.open(\"http://www.vjf.cnrs.fr/epopee/\",\"NWin\");window[\"NewWin\"].focus()","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu5_2=new Array("Dad types in Saudi Arabia",BaseMenuHref+"partenariat/index.htm#dad-types","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu5_3=new Array("A documentation of Laz",BaseMenuHref+"partenariat/index.htm#laz","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu5_4=new Array("The Kurumba Languages",BaseMenuHref+"partenariat/index.htm#kurumba","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu5_5=new Array("EuroSlav",BaseMenuHref+"partenariat/euroslav/index_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu5_6=new Array("HimalCo","javascript:NewWin=window.open(\"http://himalco.hypotheses.org\",\"NWin\");window[\"NewWin\"].focus()","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	<!--Menu5_3=new Array("Brahmaputra Studies","javascript:NewWin=window.open(\"http://brahmaputra.ceh.vjf.cnrs.fr\",\"NWin\");window[\"NewWin\"].focus()","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");-->
+	
 
 //Publications = Publications
 Menu6=new Array("Publications",BaseMenuHref+ "publications/publications_en.php","",0,24,"","","","","","","",-1,-1,-1,"","");

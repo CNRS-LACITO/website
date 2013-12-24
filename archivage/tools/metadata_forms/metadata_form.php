@@ -66,7 +66,7 @@
 					<label>autre (code langue du titre)</label>
 				
                 	<input name="lang_title_other" type="text" title="lg_other" size="3" >
-
+<br/>
 					<span class="radioRequiredMsg">Effectuez une sélection.</span></span>
                     <br/>
                     
@@ -87,6 +87,26 @@
                    
                   <input name="lang_alt_other" type="text" title="lg_other" size="3" />
 				<br/>
+                <br/>
+                    
+                    <strong>Autre titre alternatif (dans une autre langue)</strong><br />
+			    
+					<input name="title_alt_autre" type="text" title="title_alt_autre"  />
+				<span class="textfieldRequiredMsg">Obligatoire</span></span>
+                   
+				  <input name="lang_title_alt_autre" type="radio" value="en" id="lg_title_alt_autre_0" title="en" />
+ 					<label>en</label>
+					
+				  <input type="radio" name="lang_title_alt_autre"  value="fr" title="fr" id="lg_title_alt_autre_1" />
+					<label>fr</label>
+				
+                  <input type="radio" name="lang_title_alt_autre"  value="other" title="other" id="lg_title_alt_autre_2" />
+					<label>autre (code langue du titre alternatif)</label>
+                    
+                   
+                  <input name="lang_alt_autre_other" type="text" title="lg_other" size="3" />
+				<br/>
+                
 				(CODE LANGUE : voir Ethnologue <a target="_blank" href="http://www.ethnologue.org/language_code_index.asp">http://www.ethnologue.org/language_code_index.asp</a>)<br />
                 	
 
@@ -576,7 +596,7 @@
 
 					<span class="radioRequiredMsg">Effectuez une sélection.</span></span>
                     <br/>
-                    
+                    <br/>
                     <strong>Titre alternatif (dans une autre langue)</strong><br />
 					
 					<input name="title_alt2" type="text" title="title_alt"  />
@@ -595,6 +615,25 @@
 
 					
               <br/>
+              <br/>
+                    
+                    <strong>Autre titre alternatif (dans une autre langue)</strong><br />
+			    
+					<input name="title_alt_autre2" type="text" title="title_alt_autre2"  />
+				<span class="textfieldRequiredMsg">Obligatoire</span></span>
+                   
+				  <input name="lang_title_alt_autre2" type="radio" value="en" id="lg_title_alt_autre2_0" title="en" />
+ 					<label>en</label>
+					
+				  <input type="radio" name="lang_title_alt_autre2"  value="fr" title="fr" id="lg_title_alt_autre2_1" />
+					<label>fr</label>
+				
+                  <input type="radio" name="lang_title_alt_autre2"  value="other" title="other" id="lg_title_alt_autre2_2" />
+					<label>autre (code langue du titre alternatif)</label>
+                    
+                   
+                  <input name="lang_alt_autre2_other" type="text" title="lg_other" size="3" />
+				<br/>
                     (CODE LANGUE : voir Ethnologue <a target="_blank" href="http://www.ethnologue.org/language_code_index.asp">http://www.ethnologue.org/language_code_index.asp</a>)<br />
  
                 </td>
@@ -783,7 +822,7 @@
 	    <tr>
 	        <td><strong>Description</strong> (résumé du contenu de la ressource)<br />
 	          	
-	            <textarea name="resume2" title="resume" id="resume2" cols="45" rows="5"></textarea>
+	            <textarea name="resume2" title="resume2" id="resume2" cols="45" rows="5"></textarea>
 	            <br/>
                  <input name="lang_resume2" type="radio" value="en" id="lg_resume_0" title="en" />
  					<label>en</label>

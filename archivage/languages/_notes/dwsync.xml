@@ -78,8 +78,8 @@
 <file name="Paici_en.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129881985731670291" remote="129881985950000000" />
 <file name="Pije.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129881985732490338" remote="129881985960000000" />
 <file name="Pije_en.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129881985733320385" remote="129881985960000000" />
-<file name="Romani.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129881985736050541" remote="129881985960000000" />
-<file name="Romani_en.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129881985737090601" remote="129881985960000000" />
+<file name="Romani.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130011815282560035" remote="130011817570000000" />
+<file name="Romani_en.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130011817737620456" remote="130011817570000000" />
 <file name="Shapsug.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129881985737870645" remote="129881985960000000" />
 <file name="Shapsug_en.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129881985738670691" remote="129881985960000000" />
 <file name="Tamang.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129881985739760753" remote="129881985960000000" />
@@ -209,9 +209,9 @@
 <file name="Mankon.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129881985683937561" remote="129881985950000000" />
 <file name="Mankon_en.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129881985684997621" remote="129881985950000000" />
 <file name="Mankon_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129550292820000000" remote="129550292820000000" />
-<file name="Nepali.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129713552350104891" remote="129713552350000000" />
-<file name="Yuanga.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129550292830000000" remote="129550292830000000" />
-<file name="Yuanga_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129550292830000000" remote="129550292830000000" />
+<file name="Nepali.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129881985717019453" remote="129881985710000000" />
+<file name="Yuanga.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129881985763652120" remote="129881985760000000" />
+<file name="Yuanga_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129881985764802186" remote="129881985760000000" />
 <file name="Laze.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129713552618470241" remote="129713552610000000" />
 <file name="Laze_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129844972724742197" remote="129844972720000000" />
 <file name="Limbu.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129713552526084956" remote="129713552520000000" />
@@ -222,27 +222,27 @@
 <file name="Koyi_Rai.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129713552734736891" remote="129713552730000000" />
 <file name="Koyi_Rai_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129713550757753814" remote="129713550750000000" />
 <file name="Limbu_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129713550493578704" remote="129713550490000000" />
-<file name="Nepali_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129713550259815333" remote="129713550250000000" />
+<file name="Nepali_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129881985717969507" remote="129881985710000000" />
 <file name="Tamang.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129713552271440392" remote="129713552270000000" />
 <file name="Tamang_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129713550147228894" remote="129713550140000000" />
 <file name="Thulung_Rai.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129713552054527985" remote="129713552050000000" />
 <file name="Thulung_Rai_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129713550010000000" remote="129713550010000000" />
-<file name="Naxi_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129844972781595449" remote="129844972780000000" />
+<file name="Naxi_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="130064442293218294" remote="130064442290000000" />
 <file name="Naxi.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129713774195503722" remote="129713774190000000" />
 <file name="Laze.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129881985669286723" remote="129881985950000000" />
 <file name="Laze_en.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129881985670386786" remote="129881985950000000" />
 <file name="Naxi.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129881985708088942" remote="129881985950000000" />
-<file name="Naxi_en.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129881985709249008" remote="129881985950000000" />
+<file name="Naxi_en.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130064476263164964" remote="130064476180000000" />
 <file name="Laz.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129696415860000000" remote="129696415860000000" />
 <file name="Na.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129881985697328326" remote="129881985950000000" />
-<file name="Na_en.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129905500014171088" remote="129905500100000000" />
-<file name="Na.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129881985697328326" remote="129881985690000000" />
-<file name="Na_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129905491796841084" remote="129905491790000000" />
+<file name="Na_en.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130064473499306880" remote="130064472970000000" />
+<file name="Na.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129929659287897206" remote="129929659280000000" />
+<file name="Na_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="130064442387442460" remote="130064442380000000" />
 <file name="Naish_en_old.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129550385720000000" remote="129550385720000000" />
 <file name="Naish_old.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129550385720000000" remote="129550385720000000" />
 <file name="Naish.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129881985704638745" remote="129881985950000000" />
 <file name="Naish_en.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129881985705438790" remote="129881985950000000" />
-<file name="Abzakh.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129701706837674726" remote="129701706830000000" />
+<file name="Abzakh.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129881985621673999" remote="129881985620000000" />
 <file name="Abzakh_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129705945659300810" remote="129705945650000000" />
 <file name="Ajie.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129701706064010475" remote="129701706060000000" />
 <file name="Ajie_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129701705206121407" remote="129701705200000000" />
@@ -279,8 +279,8 @@
 <file name="Paici_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129550292830000000" remote="129550292830000000" />
 <file name="Pije.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129706853694191627" remote="129706853690000000" />
 <file name="Pije_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129706853724233345" remote="129706853720000000" />
-<file name="Romani.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129550292830000000" remote="129550292830000000" />
-<file name="Romani_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129550292830000000" remote="129550292830000000" />
+<file name="Romani.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129881985736050541" remote="129881985730000000" />
+<file name="Romani_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129881985737090601" remote="129881985730000000" />
 <file name="Wayana.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129550292830000000" remote="129550292830000000" />
 <file name="Xaracuu.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129550292830000000" remote="129550292830000000" />
 <file name="Xaracuu_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129550292830000000" remote="129550292830000000" />
@@ -298,11 +298,17 @@
 <file name="Prinmi_en.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129881985735240495" remote="129881985960000000" />
 <file name="Prinmi_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129713766752317996" remote="129713766750000000" />
 <file name="Prinmi.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129713767088137204" remote="129713767080000000" />
-<file name="Na_en_old.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129839759592030178" remote="129839759590000000" />
+<file name="Na_en_old.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129905500014171088" remote="129905500010000000" />
 <file name="Laze_en_old.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129881985671546852" remote="129881985950000000" />
 <file name="Naxi_en_old.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129881985710309069" remote="129881985950000000" />
 <file name="Na_en_old.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129881985701688576" remote="129881985950000000" />
-<file name="Na_en_att.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129895974790093482" remote="129899313390000000" />
 <file name="Tab_Na_en_Disyllabic_Indications.html" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129899325997788130" remote="129899341100000000" />
 <file name="Tab_Na_en_Monosyllabic_Indications.html" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129899333420382302" remote="129899341100000000" />
+<file name="Na_old.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129881985697328326" remote="129881985690000000" />
+<file name="Na_en_att.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129941740862223197" remote="129941740860000000" />
+<file name="Na_en_att.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129941740862223197" remote="129979658390000000" />
+<file name="Nashta_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="130022908640000000" remote="130022908640000000" />
+<file name="Nashta.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130032379572515499" remote="130032382050000000" />
+<file name="Nashta_en.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130032379684529293" remote="130032382050000000" />
+<file name="Nashta.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="130022897390000000" remote="130022897390000000" />
 </dwsync>

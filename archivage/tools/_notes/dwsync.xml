@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="play.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129333549400000000" remote="129333549400000000" />
+<file name="play.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129333585400000000" remote="129333585400000000" />
 <file name="aide.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129333549380000000" remote="129333549380000000" />
-<file name="showhide.js" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129333549400000000" remote="129333549400000000" />
+<file name="showhide.js" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129333585400000000" remote="129333585400000000" />
 <file name="fonctions_Xquery.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129333549380000000" remote="129881986990000000" />
-<file name="show_text.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129896656624118440" remote="129896657510000000" />
+<file name="show_text.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129896693510000000" remote="129896693510000000" />
 <file name="search_post.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129333549400000000" remote="129881986990000000" />
-<file name="list_rsc.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129890688290563300" remote="129890871090000000" />
-<file name="evtPlayerManager.js" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129333549380000000" remote="129333549380000000" />
+<file name="list_rsc.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129890907090000000" remote="129890907090000000" />
+<file name="evtPlayerManager.js" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129333585380000000" remote="129333585380000000" />
 <file name="eXist.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129333549380000000" remote="129333549380000000" />
-<file name="qtPlayerManager.js" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129658394050000000" remote="129658394050000000" />
+<file name="qtPlayerManager.js" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129658430050000000" remote="129658430050000000" />
 <file name="show_metadatas.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129883768186657718" remote="129883894010000000" />
 <file name="MdR.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129333549400000000" remote="129333549400000000" />
 <file name="wav.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129333549410000000" remote="129333549410000000" />
 <file name="meta.xsl" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129893468781581350" remote="129893469040000000" />
-<file name="stop.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129333549410000000" remote="129333549410000000" />
+<file name="stop.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129333585410000000" remote="129333585410000000" />
 <file name="show.xsl" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129883863635076895" remote="129883863610000000" />
-<file name="metaRsc.xsl" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129882980738497942" remote="129883055180000000" />
-<file name="fonctions_Xslt.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129890828955728887" remote="129893469790000000" />
-<file name="textRsc.xsl" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129893467465856095" remote="129893469040000000" />
-<file name="listRsc.xsl" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129893468191847619" remote="129893469040000000" />
+<file name="metaRsc.xsl" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129957218517655368" remote="129957218390000000" />
+<file name="fonctions_Xslt.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130034286741293472" remote="130034286560000000" />
+<file name="textRsc.xsl" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129893505040000000" remote="129893505040000000" />
+<file name="listRsc.xsl" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129893505040000000" remote="129893505040000000" />
 <file name="show_metadatas_text.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129883768227057775" remote="129883894010000000" />
 <file name="metaRsc_text.xsl" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129573746500000000" remote="129573746500000000" />
-<file name="fonctions_Xslt.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129899450247374439" remote="129899450240000000" />
-<file name="show_text.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129890695790452269" remote="129890695790000000" />
-<file name="showhide.js" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129333549400000000" remote="129333549400000000" />
-<file name="stop.gif" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129333549410000000" remote="129333549410000000" />
-<file name="play.gif" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129333549400000000" remote="129333549400000000" />
-<file name="evtPlayerManager.js" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129333549380000000" remote="129333549380000000" />
-<file name="qtPlayerManager.js" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129881979210987329" remote="129881979210000000" />
-<file name="showText.xsl" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129902037418441994" remote="129902037410000000" />
-<file name="textRsc.xsl" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129882201086174657" remote="129882201080000000" />
+<file name="fonctions_Xslt.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="130034286741293472" remote="130034286740000000" />
+<file name="show_text.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129896693510000000" remote="129896693510000000" />
+<file name="showhide.js" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129333585400000000" remote="129333585400000000" />
+<file name="stop.gif" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129333585410000000" remote="129333585410000000" />
+<file name="play.gif" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129333585400000000" remote="129333585400000000" />
+<file name="evtPlayerManager.js" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129333585380000000" remote="129333585380000000" />
+<file name="qtPlayerManager.js" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129658430050000000" remote="129658430050000000" />
+<file name="showText.xsl" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="130058490500887937" remote="130058490500000000" />
+<file name="textRsc.xsl" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="130026357265482399" remote="130026357260000000" />
 <file name="flPlayerManager.js" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129333549380000000" remote="129333549380000000" />
 <file name="dewplayer.swf" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129241116880259268" remote="129241116880000000" />
-<file name="listRsc.xsl" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129876107587537662" remote="129876107580000000" />
+<file name="listRsc.xsl" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129893468191847619" remote="129893468190000000" />
 <file name="metadonnees.xml" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129288418535074118" remote="129288418530000000" />
 <file name="dewplayer.swf" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129333549380000000" remote="129333549380000000" />
 <file name="fonctions_Xquery.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129171135690000000" remote="129171135690000000" />
-<file name="list_rsc.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129890688290563300" remote="129890688290000000" />
-<file name="metaRsc.xsl" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129882980738497942" remote="129882980730000000" />
-<file name="list_rsc_en.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129890685433789902" remote="129890685430000000" />
-<file name="list_rsc_en.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129890688300423864" remote="129890871090000000" />
+<file name="list_rsc.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129890907090000000" remote="129890907090000000" />
+<file name="metaRsc.xsl" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129917457296355226" remote="129917457290000000" />
+<file name="list_rsc_en.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129890688300423864" remote="129890688300000000" />
+<file name="list_rsc_en.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130034285867815676" remote="130034285640000000" />
 <file name="show.xsl" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129883863635076895" remote="129883863630000000" />
 <file name="show_metadatas_text.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129882980858104783" remote="129882980850000000" />
-<file name="show_metadatas.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129882980795791219" remote="129882980790000000" />
+<file name="show_metadatas.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129883768186657718" remote="129883768180000000" />
 <file name="metaRsc_text.xsl" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129883052748661683" remote="129883052740000000" />
 <file name="flPlayerManager.js" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129333549380000000" remote="129333549380000000" />
 <file name="metadonnees.xml" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129333549400000000" remote="129333549400000000" />
 <file name="show_text_en.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129896657179570210" remote="129896657510000000" />
-<file name="show_text_en.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129890688281282769" remote="129890688280000000" />
+<file name="show_text_en.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129957377822477083" remote="129957377820000000" />
 <file name="show_other.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129890683453496635" remote="129890683450000000" />
 <file name="ShowOtherText.xsl" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129449396720725301" remote="129449396720000000" />
 <file name="urlRsc.xsl" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129460631700000000" remote="129460631700000000" />
@@ -62,34 +62,48 @@
 <file name="TransformationRtf.xsl" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129585857848683056" remote="129585857840000000" />
 <file name="create_rtf.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129896656623838424" remote="129896656620000000" />
 <file name="create_rtf.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129586506210000000" remote="129586506210000000" />
-<file name="showText.xsl" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129896080017802163" remote="129896079900000000" />
-<file name="LacitoStyle.css" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129882989869610212" remote="129882989860000000" />
-<file name="LacitoStyle.css" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129882993553760933" remote="129882993550000000" />
-<file name="html5PlayerManager.js" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129883061950000000" remote="129883061950000000" />
+<file name="showText.xsl" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130063699515714447" remote="130063699080000000" />
+<file name="LacitoStyle.css" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130058462441583037" remote="130058463880000000" />
+<file name="LacitoStyle.css" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="130058462441583037" remote="130058462440000000" />
+<file name="html5PlayerManager.js" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="130058493925553817" remote="130058493920000000" />
 <file name="metadata_lacito.xml" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129865726888925766" remote="129865726880000000" />
 <file name="show_other_en.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129883870091466179" remote="129883872540000000" />
-<file name="metadata_lacito.xml" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129902904740225073" remote="129902904750000000" />
+<file name="metadata_lacito.xml" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130065234100762537" remote="130065233740000000" />
 <file name="show.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129896656623908428" remote="129896657510000000" />
 <file name="show.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129896060226160146" remote="129896060220000000" />
-<file name="show_en.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129890783702400545" remote="129890783700000000" />
+<file name="show_en.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129896657179450203" remote="129896657170000000" />
 <file name="show_en.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129896657179450203" remote="129896657510000000" />
 <file name="LacitoStyle0.css" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129586694130000000" remote="129586694130000000" />
-<file name="search_en.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129890786443697338" remote="129890786440000000" />
-<file name="search.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129890786380923747" remote="129890786380000000" />
+<file name="search_en.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129890786789667126" remote="129890786780000000" />
+<file name="search.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129890786879272251" remote="129890786870000000" />
 <file name="search.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129890786879272251" remote="129896064270000000" />
 <file name="search_en.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129890786789667126" remote="129896064270000000" />
 <file name="search_en_temp.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129796449090000000" remote="129881986990000000" />
 <file name="search_temp.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129796449100000000" remote="129881986990000000" />
 <file name=".fonctions_Xslt.php.swp" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="128569147200000000" remote="128569147200000000" />
 <file name="search_en_old.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129790594437377240" remote="129790594430000000" />
-<file name="html5PlayerManager.js" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129883061950000000" remote="129883859070000000" />
+<file name="html5PlayerManager.js" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130058493925553817" remote="130058493430000000" />
 <file name="show_text_old.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129881985807244613" remote="129881986990000000" />
 <file name="showText_old.xsl" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129875269471375160" remote="129878727600000000" />
 <file name="search_en_old.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129790594437377240" remote="129881986990000000" />
 <file name="search_old.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129790594200853712" remote="129881986990000000" />
-<file name="html5PlayerManager_bis.js" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129882008186674644" remote="129882020970000000" />
-<file name="html5PlayerManager_bis.js" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129882187879549282" remote="129882187870000000" />
+<file name="html5PlayerManager_bis.js" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130057489820000000" remote="130057489820000000" />
+<file name="html5PlayerManager_bis.js" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="130057679454166381" remote="130057679450000000" />
 <file name="test.xsl" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129709228660000000" remote="129709228660000000" />
-<file name="create_pdf.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129901248937589114" remote="129901248930000000" />
+<file name="create_pdf.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129905578568624146" remote="129905578560000000" />
 <file name="TransformationPdf.xsl" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129901254490836741" remote="129901254490000000" />
+<file name="ipad.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129917625264162435" remote="129917625260000000" />
+<file name="showVideo.xsl" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129957357897837459" remote="129957357890000000" />
+<file name="jwplayer.js" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129851043560000000" remote="129851043560000000" />
+<file name="show_ex.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129975373836725791" remote="129975373830000000" />
+<file name="showEx.xsl" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129979900048044265" remote="129979900040000000" />
+<file name="showText_old.xsl" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129875269471375160" remote="129875269470000000" />
+<file name="showText_old_old.xsl" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129586527215396014" remote="129586527210000000" />
+<file name="aide.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129333549380000000" remote="129333549380000000" />
+<file name="show_text_old.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129890686111018637" remote="129890686110000000" />
+<file name="showEx_bad.xsl" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129974708510496535" remote="129974708510000000" />
+<file name="show_ex.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129975373836725791" remote="129975413130000000" />
+<file name="showEx.xsl" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129975410468411004" remote="129975413130000000" />
+<file name="showText_save.xsl" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129858848259124366" remote="129858848250000000" />
+<file name="LacitoStyle_temp.css" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="130058458742861482" remote="130058458740000000" />
 </dwsync>

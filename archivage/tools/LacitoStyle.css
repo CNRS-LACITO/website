@@ -95,7 +95,47 @@ table.it {
 	font-size:12px; 
 	display:inline;
 }
-.word                     { 
+
+
+
+.word                    { 
+  border-collapse: separate ;
+  /*display:inline;*/
+  vertical-align:middle;
+  text-align:left;
+  display:inline-block;
+ 
+  }
+.word_tab                     { 
+  vertical-align:middle;
+  text-align:left;
+  display:inline-block;
+  /*display:inline;*/
+  
+  }
+  .word_form {
+  /*background-color:#FEF1D4;*/
+  font-family:'charis SIL','caslon','Arial Unicode MS','Lucida sans unicode','Code2000',sans-serif;
+  font-weight: bold; 
+  text-align:left;
+  font-size:15px;
+  display:inline-block;
+  
+  
+  
+  
+  }
+  .word_transl {
+  font-family:'caslon','Arial Unicode MS','Lucida sans unicode','Code2000',sans-serif;
+  /*background-color:#FEF1D4;*/
+  color:#5F5F5F; 
+  text-align:left;
+  display:inline-block;
+ 
+  }
+  
+
+.word_list                   { 
 	border-collapse: separate ;
 	display:inline;
 	vertical-align:middle;
@@ -104,13 +144,13 @@ table.it {
 	
 }
 
-.word_tab                     { 
+.word_tab_list                     { 
 	vertical-align:middle;
 	text-align:left;
 	display:inline;
 	
 }
-.word_form {
+.word_form_list {
 	/*background-color:#FEF1D4;*/
 	font-family:'charis SIL','caslon','Arial Unicode MS','Lucida sans unicode','Code2000',sans-serif;
 	font-weight: bold; 
@@ -121,7 +161,7 @@ table.it {
 	
 	
 }
-.word_transl {
+.word_transl_list {
 	font-family:'caslon','Arial Unicode MS','Lucida sans unicode','Code2000',sans-serif;
 	/*background-color:#FEF1D4;*/
 	color:#5F5F5F;	

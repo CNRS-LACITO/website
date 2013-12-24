@@ -1,4 +1,5 @@
-    <crdo:item crdo:datestamp="2011-12-02" crdo:id="crdo-NRU_H1_CHUNKS_002_EGG">
+    
+<crdo:item crdo:datestamp="2011-12-02" crdo:id="crdo-NRU_H1_CHUNKS_002_EGG">
         <dc:title xml:lang="en">Tone : H1. Chunks 1 to 100 (2011-10-03)</dc:title>
         <dc:subject xsi:type="olac:language" olac:code="nru">Na</dc:subject>
         <dc:language xsi:type="olac:language" olac:code="nru"/>
@@ -783,7 +784,36 @@
                         <dc:rights>Copyright (c) Michaud, Alexis</dc:rights>
                         <dcterms:isPartOf xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-COLLECTION_LACITO</dcterms:isPartOf>
                         <crdo:collection>Lacito</crdo:collection>
-            </crdo:item>
+			 </crdo:item>
+                        <crdo:item crdo:datestamp="2011-09-07" crdo:id="crdo-NXQ_FILLE_UNIQUE2_EGG">
+                            <dc:title xml:lang="en">Only daughter (version 2)</dc:title>
+                            <dcterms:alternative xml:lang="fr">Fille unique (version 2)</dcterms:alternative>
+                            <dcterms:alternative xml:lang="cn">独生女埋葬一个贵的尸体</dcterms:alternative>
+                            <dc:subject xsi:type="olac:language" olac:code="nxq">Naxi</dc:subject>
+                            <dc:subject xsi:type="olac:language" olac:code="nxq">纳西语</dc:subject>
+                            <dc:language xsi:type="olac:language" olac:code="nxq"/>
+                            <dc:language xsi:type="olac:language" olac:code="en"/>
+                            <dcterms:spatial>中国云南省丽江市金山县贵峰大来行政下村 (大来二村)</dcterms:spatial>
+                            <dcterms:spatial xml:lang="en">China, Yunnan, Lijiang, Gucheng District, Guifeng Section</dcterms:spatial>
+                            <dcterms:spatial xsi:type="dcterms:Point">east=100.299; north=26.807;</dcterms:spatial>
+                            <dc:contributor xsi:type="olac:role" olac:code="depositor">Michaud, Alexis</dc:contributor>
+                            <dc:contributor xsi:type="olac:role" olac:code="researcher">Michaud, Alexis</dc:contributor>
+                            <dc:contributor xsi:type="olac:role" olac:code="speaker">He Wenjian 和文建</dc:contributor>
+                            <dc:contributor xsi:type="olac:role" olac:code="interviewer">Michaud, Alexis</dc:contributor>
+                            <dc:publisher>CNRS/LACITO</dc:publisher>
+                            <dc:format xsi:type="dcterms:IMT">audio/x-wav</dc:format>
+                            <dc:source>cassette DAT</dc:source>
+                            <dcterms:created xsi:type="dcterms:W3CDTF">2004</dcterms:created> 
+                            <dcterms:extent>PT3M58S</dcterms:extent>
+                            <dc:identifier xsi:type="dcterms:URI">http://lacito.vjf.cnrs.fr/archivage/tools/audio/crdo-NXQ_M10_ONLY_DAUGHTER2_EGG.wav</dc:identifier>
+                            <dcterms:extent>PT0H04M12S</dcterms:extent>
+                            <dcterms:Requires xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-NXQ_FILLE_UNIQUE2_SOUND</dcterms:Requires>
+                            <dcterms:license xsi:type="dcterms:URI">http://creativecommons.org/licenses/by-nc-nd/2.5/</dcterms:license>
+                            <dcterms:accessRights>Freely available for non-commercial use</dcterms:accessRights>
+                            <dc:rights>Copyright (c) Michaud, Alexis</dc:rights>
+                            <dcterms:isPartOf xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-COLLECTION_LACITO</dcterms:isPartOf>
+                            <crdo:collection>Lacito</crdo:collection>
+                        </crdo:item>
 			
 			<crdo:item crdo:datestamp="2012-06-04" crdo:id="crdo-NRU_F4_HOUSEBUILDING_EGG">
                          <dc:title xml:lang="fr">La construction d'une maison</dc:title>
@@ -833,7 +863,7 @@
                 <dcterms:created xsi:type="dcterms:W3CDTF">2012-02-25</dcterms:created>
                 <dcterms:extent>PT0H17M58S</dcterms:extent>
                 <dc:identifier xsi:type="dcterms:URI"> http://lacito.vjf.cnrs.fr/archivage/tools/audio/crdo-NRU_F4_BURIEDALIVE2_EGG.wav</dc:identifier>
-                <dcterms:isRequiredBy xsi:type="dcterms:URI" >oai:crdo.vjf.cnrs.fr:crdo-NRU_F4_BURIEDALIVE2_SOUND</dcterms:isRequiredBy>
+                <dcterms:requires xsi:type="dcterms:URI" >oai:crdo.vjf.cnrs.fr:crdo-NRU_F4_BURIEDALIVE2_SOUND</dcterms:requires>
                 <dcterms:license xsi:type="dcterms:URI">http://creativecommons.org/licenses/by-nc-nd/2.5/</dcterms:license>
                 <dcterms:accessRights>Freely available for non-commercial  use</dcterms:accessRights>
                 <dc:rights>Copyright (c) Michaud, Alexis</dc:rights>
@@ -860,7 +890,7 @@
                 <dcterms:created xsi:type="dcterms:W3CDTF">2012-05-11</dcterms:created>
                 <dcterms:extent>PT0H17M58S</dcterms:extent>
                 <dc:identifier xsi:type="dcterms:URI"> http://lacito.vjf.cnrs.fr/archivage/tools/audio/crdo-NRU_F4_BURIEDALIVE3_EGG.wav</dc:identifier>
-                <dcterms:isRequiredBy xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-NRU_F4_BURIEDALIVE3_SOUND</dcterms:isRequiredBy>
+                <dcterms:requires xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-NRU_F4_BURIEDALIVE3_SOUND</dcterms:requires>
                 <dcterms:license xsi:type="dcterms:URI" >http://creativecommons.org/licenses/by-nc-nd/2.5/</dcterms:license>
                 <dcterms:accessRights>Freely available for non-commercial use</dcterms:accessRights>
                 <dc:rights>Copyright (c) Michaud, Alexis</dc:rights>
@@ -887,7 +917,7 @@
                 <dcterms:created xsi:type="dcterms:W3CDTF">2011-11-27</dcterms:created>
                 <dcterms:extent>PT0H7M48S</dcterms:extent>
                 <dc:identifier xsi:type="dcterms:URI">http://lacito.vjf.cnrs.fr/archivage/tools/audio/crdo-NRU_F4_SEEDS2_EGG.wav</dc:identifier>
-                <dcterms:isRequiredBy xsi:type="dcterms:URI" >oai:crdo.vjf.cnrs.fr:crdo-NRU_F4_SEEDS2_SOUND</dcterms:isRequiredBy>
+                <dcterms:requires xsi:type="dcterms:URI" >oai:crdo.vjf.cnrs.fr:crdo-NRU_F4_SEEDS2_SOUND</dcterms:requires>
                 <dcterms:license xsi:type="dcterms:URI" >http://creativecommons.org/licenses/by-nc-nd/2.5/</dcterms:license>
                 <dcterms:accessRights>Freely available for non-commercial use</dcterms:accessRights>
                 <dc:rights>Copyright (c) Michaud, Alexis</dc:rights>
@@ -914,11 +944,159 @@
                 <dcterms:created xsi:type="dcterms:W3CDTF">2012-02-25</dcterms:created>
                 <dcterms:extent>PT38M00S</dcterms:extent>
                 <dc:identifier xsi:type="dcterms:URI">http://lacito.vjf.cnrs.fr/archivage/tools/audio/crdo-NRU_F4_AGRICULTURE2_EGG.wav</dc:identifier>
-                <dcterms:isRequiredBy xsi:type="dcterms:URI" >oai:crdo.vjf.cnrs.fr:crdo-NRU_F4_AGRICULTURE2_SOUND</dcterms:isRequiredBy>
+                <dcterms:requires xsi:type="dcterms:URI" >oai:crdo.vjf.cnrs.fr:crdo-NRU_F4_AGRICULTURE2_SOUND</dcterms:requires>
                 <dcterms:accessRights>Freely available for non-commercial use</dcterms:accessRights>
                 <dcterms:license xsi:type="dcterms:URI">http://creativecommons.org/licenses/by-nc/2.5/</dcterms:license>
                 <dc:rights>Copyright (c) Michaud, Alexis</dc:rights>
                 <dcterms:isPartOf xsi:type="dcterms:URI"  >oai:crdo.vjf.cnrs.fr:crdo-COLLECTION_LACITO</dcterms:isPartOf>
                 <crdo:collection>Lacito</crdo:collection>
             </crdo:item>
+			<crdo:item crdo:datestamp="2012-06-26" crdo:id="crdo-NRU_DOG_EGG">
+				 <dc:title xml:lang="en">Dog: How dog and man exchanged their lifespan</dc:title>
+				 <dcterms:alternative xml:lang="fr">Le chien échange sa longévité avec
+				 l'homme</dcterms:alternative>
+				 <dc:subject xsi:type="olac:language" olac:code="nru">Na</dc:subject>
+				 <dc:language xsi:type="olac:language" olac:code="nru"/>
+				 <dcterms:spatial xml:lang="fr">Chine, province du Yunnan, comté de Yongning, village de
+				 ɑ˧lɑ˧-ʁwɤ˧</dcterms:spatial>
+				 <dcterms:spatial xml:lang="cn">中国云南省丽江市宁蒗县永宁乡平静村</dcterms:spatial>
+				 <dcterms:spatial xsi:type="dcterms:Point">east=100.699997;
+				 north=27.798995;</dcterms:spatial>
+				 <dc:contributor xsi:type="olac:role" olac:code="depositor">Michaud, Alexis</dc:contributor>
+				 <dc:contributor xsi:type="olac:role" olac:code="researcher">Michaud, Alexis</dc:contributor>
+				 <dc:contributor xsi:type="olac:role" olac:code="speaker">Latami, Dashi-Lame
+				 (lɑ˧tʰɑ˧mi˥-ʈæ˧ʂɯ˧-lɑ˩mv˩)</dc:contributor>
+				 <dc:contributor xsi:type="olac:role" olac:code="interviewer">Michaud,
+				 Alexis</dc:contributor>
+				 <dc:contributor xsi:type="olac:role" olac:code="interviewer">Latami, Dashi
+				 拉他咪•达石</dc:contributor>
+				 <dc:publisher>CNRS/LACITO</dc:publisher>
+				 <dc:type xsi:type="olac:discourse-type" olac:code="narrative"/>
+				 <dc:type xsi:type="olac:linguistic-type" olac:code="primary_text"/>
+				 <dc:format xsi:type="dcterms:IMT">audio/x-wav</dc:format>
+				 <dc:source>original numérique</dc:source>
+				 <dcterms:created xsi:type="dcterms:W3CDTF">2011-09-06</dcterms:created>
+				 <dcterms:extent>PT5M51S</dcterms:extent>
+				 <dc:identifier xsi:type="dcterms:URI">http://lacito.vjf.cnrs.fr/archivage/tools/audio/F4_35_Dog_withEGG_EGG.wav</dc:identifier>
+				 <dcterms:requires xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-NRU_DOG_SOUND</dcterms:requires>
+				 <dcterms:license xsi:type="dcterms:URI">http://creativecommons.org/licenses/by-nc-nd/2.5/</dcterms:license>
+				 <dcterms:accessRights>Freely available for non-commercial use</dcterms:accessRights>
+				 <dc:rights>Copyright (c) Michaud, Alexis</dc:rights>
+				 <dcterms:isPartOf xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-COLLECTION_LACITO</dcterms:isPartOf>
+				 <crdo:collection>Lacito</crdo:collection>
+			</crdo:item>
+
+
+
+
+
+
+
+                                <crdo:item crdo:datestamp="2012-09-21" crdo:id="crdo-NRU_F4_TRADER_AND_HIS_SON_EGG">
+                                         <dc:title xml:lang="en">Trader and his son: how a trader taught his son how to handle the ups and downs of commerce</dc:title>
+                                         <dc:subject xsi:type="olac:language" olac:code="nru">Na</dc:subject>
+                                         <dc:language xsi:type="olac:language" olac:code="nru"/>
+                                         <dc:description xml:lang="en">A narrative about how a trader taught his son to manage trade wisely. To his son’s surprise, the father asked him to collect stories along the way, as gifts to the father, instead of buying presents. The father’s message was that traders must avoid being left without sufficient stocks of food when they come back, and therefore should not spend their money hastily on pretty objects on sale at distant places.</dc:description>
+                                         <dcterms:spatial xml:lang="fr">Chine, province du Yunnan, comté de Yongning, village de ə˧lɑ˧-ʁwɤ˧</dcterms:spatial>
+                                         <dcterms:spatial xml:lang="cn">中国云南省丽江市宁蒗县永宁乡平静村</dcterms:spatial>
+                                         <dcterms:spatial xsi:type="dcterms:Point">east=100.699997; north=27.798995;</dcterms:spatial>
+                                         <dc:contributor xsi:type="olac:role" olac:code="depositor">Michaud, Alexis</dc:contributor>
+                                         <dc:contributor xsi:type="olac:role" olac:code="researcher">Michaud, Alexis</dc:contributor>
+                                         <dc:contributor xsi:type="olac:role" olac:code="speaker">Latami, Dashi-Lame (lɑ˧tʰɑ˧mi˥-ʈæ˧ʂɯ˧-lɑ˩mv̩˩)</dc:contributor>
+                                         <dc:contributor xsi:type="olac:role" olac:code="interviewer">Michaud, Alexis</dc:contributor>
+                                         <dc:publisher>CNRS/LACITO</dc:publisher>
+                                         <dc:type xsi:type="olac:discourse-type" olac:code="narrative"/>
+                                         <dc:type xsi:type="olac:linguistic-type" olac:code="primary_text"/>
+                                         <dc:format xsi:type="dcterms:IMT">audio/x-wav</dc:format>
+                                         <dc:source>original numérique</dc:source>
+                                         <dcterms:created xsi:type="dcterms:W3CDTF">2011-11-27</dcterms:created>
+                                         <dcterms:extent>PT0H05M41S</dcterms:extent>
+                                         <dc:identifier xsi:type="dcterms:URI">http://lacito.vjf.cnrs.fr/archivage/tools/audio/crdo-NRU_F4_TRADER_AND_HIS_SON_EGG.wav</dc:identifier>
+                                         <dcterms:requires xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-NRU_F4_TRADER_AND_HIS_SON_AUDIO_SOUND</dcterms:requires>
+                                         <dcterms:license xsi:type="dcterms:URI">http://creativecommons.org/licenses/by-nc-nd/2.5/</dcterms:license>
+                                         <dcterms:accessRights>Freely available for non-commercial use</dcterms:accessRights>
+                                         <dc:rights>Copyright (c) Michaud, Alexis</dc:rights>
+                                         <dcterms:isPartOf xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-COLLECTION_LACITO</dcterms:isPartOf>
+                                         <crdo:collection>Lacito</crdo:collection>
+                                </crdo:item>
+                                <crdo:item crdo:datestamp="2012-09-21" crdo:id="crdo-NRU_F4_TRADING_EGG">
+                                         <dc:title xml:lang="en">Trading</dc:title>
+                                         <dc:subject xsi:type="olac:language" olac:code="nru">Na</dc:subject>
+                                         <dc:language xsi:type="olac:language" olac:code="nru"/>
+                                         <dc:description xml:lang="en">This is a description of trade in the old times (about the middle of the 20th century), which was provided, in conversational mode, after the recording of the story « Trader and his son ». The speaker provides some explanations about how hemp clothes, one of the commodities produced in Yongning, used to be produced and sold.</dc:description>
+                                         <dcterms:spatial xml:lang="fr">Chine, province du Yunnan, comté de Yongning, village de ə˧lɑ˧-ʁwɤ˧</dcterms:spatial>
+                                         <dcterms:spatial xml:lang="cn">中国云南省丽江市宁蒗县永宁乡平静村</dcterms:spatial>
+                                         <dcterms:spatial xsi:type="dcterms:Point">east=100.699997; north=27.798995;</dcterms:spatial>
+                                         <dc:contributor xsi:type="olac:role" olac:code="depositor">Michaud, Alexis</dc:contributor>
+                                         <dc:contributor xsi:type="olac:role" olac:code="researcher">Michaud, Alexis</dc:contributor>
+                                         <dc:contributor xsi:type="olac:role" olac:code="speaker">Latami, Dashi-Lame (lɑ˧tʰɑ˧mi˥-ʈæ˧ʂɯ˧-lɑ˩mv̩˩)</dc:contributor>
+                                         <dc:contributor xsi:type="olac:role" olac:code="interviewer">Michaud, Alexis</dc:contributor>
+                                         <dc:publisher>CNRS/LACITO</dc:publisher>
+                                         <dc:type xsi:type="olac:discourse-type" olac:code="narrative"/>
+                                         <dc:type xsi:type="olac:linguistic-type" olac:code="primary_text"/>
+                                         <dc:format xsi:type="dcterms:IMT">audio/x-wav</dc:format>
+                                         <dc:source>original numérique</dc:source>
+                                         <dcterms:created xsi:type="dcterms:W3CDTF">2011-11-27</dcterms:created>
+                                         <dcterms:extent>PT0H10M01S</dcterms:extent>
+                                         <dc:identifier xsi:type="dcterms:URI">http://lacito.vjf.cnrs.fr/archivage/tools/audio/crdo-NRU_F4_TRADING_EGG.wav</dc:identifier>
+                                         <dcterms:requires xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-NRU_F4_TRADING_AUDIO_SOUND</dcterms:requires>
+                                         <dcterms:license xsi:type="dcterms:URI">http://creativecommons.org/licenses/by-nc-nd/2.5/</dcterms:license>
+                                         <dcterms:accessRights>Freely available for non-commercial use</dcterms:accessRights>
+                                         <dc:rights>Copyright (c) Michaud, Alexis</dc:rights>
+                                         <dcterms:isPartOf xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-COLLECTION_LACITO</dcterms:isPartOf>
+                                         <crdo:collection>Lacito</crdo:collection>
+                                </crdo:item>
+                                <crdo:item crdo:datestamp="2012-09-21" crdo:id="crdo-NRU_F4_TOOTH_EGG">
+                                         <dc:title xml:lang="en">Tooth: how a fake relic became a real one</dc:title>
+                                         <dc:subject xsi:type="olac:language" olac:code="nru">Na</dc:subject>
+                                         <dc:language xsi:type="olac:language" olac:code="nru"/>
+                                         <dc:description xml:lang="en">This recording narrates how a young man who studied Tibetan Buddhism in Lhasa came back empty-handed, without a gift for his mother ; on the way, he plucked a tooth from a dead horse and told his mother it was a god’s tooth. His mother marvelled at this extraordinary gift and prayed three times a day to the tooth. Her faith was so intense that the tooth, originally a fake relic, eventually started to blaze and sparkle.</dc:description>
+                                         <dcterms:spatial xml:lang="fr">Chine, province du Yunnan, comté de Yongning, village de ə˧lɑ˧-ʁwɤ˧</dcterms:spatial>
+                                         <dcterms:spatial xml:lang="cn">中国云南省丽江市宁蒗县永宁乡平静村</dcterms:spatial>
+                                         <dcterms:spatial xsi:type="dcterms:Point">east=100.699997; north=27.798995;</dcterms:spatial>
+                                         <dc:contributor xsi:type="olac:role" olac:code="depositor">Michaud, Alexis</dc:contributor>
+                                         <dc:contributor xsi:type="olac:role" olac:code="researcher">Michaud, Alexis</dc:contributor>
+                                         <dc:contributor xsi:type="olac:role" olac:code="speaker">Latami, Dashi-Lame (lɑ˧tʰɑ˧mi˥-ʈæ˧ʂɯ˧-lɑ˩mv̩˩)</dc:contributor>
+                                         <dc:contributor xsi:type="olac:role" olac:code="interviewer">Michaud, Alexis</dc:contributor>
+                                         <dc:publisher>CNRS/LACITO</dc:publisher>
+                                         <dc:type xsi:type="olac:discourse-type" olac:code="narrative"/>
+                                         <dc:type xsi:type="olac:linguistic-type" olac:code="primary_text"/>
+                                         <dc:format xsi:type="dcterms:IMT">audio/x-wav</dc:format>
+                                         <dc:source>original numérique</dc:source>
+                                         <dcterms:created xsi:type="dcterms:W3CDTF">2011-11-27</dcterms:created>
+                                         <dcterms:extent>PT0H05M46S</dcterms:extent>
+                                         <dc:identifier xsi:type="dcterms:URI">http://lacito.vjf.cnrs.fr/archivage/tools/audio/crdo-NRU_F4_TOOTH_EGG.wav</dc:identifier>
+                                         <dcterms:requires xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-NRU_F4_TOOTH_AUDIO_SOUND</dcterms:requires>
+                                         <dcterms:license xsi:type="dcterms:URI">http://creativecommons.org/licenses/by-nc-nd/2.5/</dcterms:license>
+                                         <dcterms:accessRights>Freely available for non-commercial use</dcterms:accessRights>
+                                         <dc:rights>Copyright (c) Michaud, Alexis</dc:rights>
+                                         <dcterms:isPartOf xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-COLLECTION_LACITO</dcterms:isPartOf>
+                                         <crdo:collection>Lacito</crdo:collection>
+                                </crdo:item>
+                                <crdo:item crdo:datestamp="2012-09-21" crdo:id="crdo-NRU_F4_HOW_I_LEARNT_EGG">
+                                        <dc:title xml:lang="en">How I learnt: an account of how the narrator learnt about the Na's traditions</dc:title>
+                                        <dc:subject xsi:type="olac:language" olac:code="nru">Na</dc:subject>
+                                        <dc:language xsi:type="olac:language" olac:code="nru"/>
+                                        <dcterms:spatial xml:lang="fr">Chine, province du Yunnan, comté de Yongning, village de ə˧lɑ˧-ʁwɤ˧</dcterms:spatial>
+                                        <dcterms:spatial xml:lang="cn">中国云南省丽江市宁蒗县永宁乡平静村</dcterms:spatial>
+                                        <dcterms:spatial xsi:type="dcterms:Point">east=100.699997; north=27.798995;</dcterms:spatial>
+                                        <dc:contributor xsi:type="olac:role" olac:code="depositor">Michaud, Alexis</dc:contributor>
+                                        <dc:contributor xsi:type="olac:role" olac:code="researcher">Michaud, Alexis</dc:contributor>
+                                        <dc:contributor xsi:type="olac:role" olac:code="speaker">Latami, Dashi-Lame (lɑ˧tʰɑ˧mi˥-ʈæ˧ʂɯ˧-lɑ˩mv̩˩)</dc:contributor>
+                                        <dc:contributor xsi:type="olac:role" olac:code="interviewer">Michaud, Alexis</dc:contributor>
+                                        <dc:publisher>CNRS/LACITO</dc:publisher>
+                                        <dc:type xsi:type="olac:discourse-type" olac:code="narrative"/>
+                                        <dc:type xsi:type="olac:linguistic-type" olac:code="primary_text"/>
+                                        <dc:format xsi:type="dcterms:IMT">audio/x-wav</dc:format>
+                                        <dc:source>original numérique</dc:source>
+                                        <dcterms:created xsi:type="dcterms:W3CDTF">2011-11-27</dcterms:created>
+                                        <dcterms:extent>PT0H07M04S</dcterms:extent>
+                                         <dc:identifier xsi:type="dcterms:URI">http://lacito.vjf.cnrs.fr/archivage/tools/audio/crdo-NRU_F4_HOW_I_LEARNT_EGG.wav</dc:identifier>
+                                        <dcterms:requires xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-NRU_F4_HOW_I_LEARNT_AUDIO_SOUND</dcterms:requires>
+                                        <dcterms:license xsi:type="dcterms:URI">http://creativecommons.org/licenses/by-nc-nd/2.5/</dcterms:license>
+                                        <dcterms:accessRights>Freely available for non-commercial use</dcterms:accessRights>
+                                        <dc:rights>Copyright (c) Michaud, Alexis</dc:rights>
+                                        <dcterms:isPartOf xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-COLLECTION_LACITO</dcterms:isPartOf>
+                                        <crdo:collection>Lacito</crdo:collection>
+                                </crdo:item>
 

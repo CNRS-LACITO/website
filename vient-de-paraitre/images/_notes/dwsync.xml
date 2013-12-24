@@ -33,7 +33,7 @@
 <file name="coyaud_osmanthes65.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129140699900000000" remote="129140699900000000" />
 <file name="hommages_250.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="128256426360000000" remote="128256426360000000" />
 <file name="hommages_65.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129140699950000000" remote="129140699950000000" />
-<file name="hommages_137.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129364482610000000" remote="129364482610000000" />
+<file name="hommages_137.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129364518610000000" remote="129364518610000000" />
 <file name="Aka_II_8_65.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129140699890000000" remote="129140699890000000" />
 <file name="aka_II_8_250.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="128256426190000000" remote="128256426190000000" />
 <file name="adoption250.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="128257871390000000" remote="128257871390000000" />
@@ -223,7 +223,7 @@
 <file name="melakarta65.jpg" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129126203190000000" remote="129126203190000000" />
 <file name="bujeaud65.jpg" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129177213400000000" remote="129177213400000000" />
 <file name="Lemarechal_typologie65.jpg" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129053468660000000" remote="129053468660000000" />
-<file name="hommages_137.jpg" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129364482610000000" remote="129364482610000000" />
+<file name="hommages_137.jpg" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129364518610000000" remote="129364518610000000" />
 <file name="mukherjee_independance250.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129319608550000000" remote="129319608550000000" />
 <file name="coyaud_poesie-chinoise65.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129386994250000000" remote="129386994250000000" />
 <file name="enquete-description1_65.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129387142140000000" remote="129387142140000000" />
@@ -262,28 +262,28 @@
 <file name="aka_II_10_65.jpg" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129530464170000000" remote="129530464170000000" />
 <file name="valma_lslt19_250.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129629763470000000" remote="129629763470000000" />
 <file name="valma_lslt19_65.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129629763800000000" remote="129629763800000000" />
-<file name="moyse_topics65.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129645513560000000" remote="129645513560000000" />
+<file name="moyse_topics65.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129645549560000000" remote="129645549560000000" />
 <file name="leblic-maagenin200.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129616904740000000" remote="129616904740000000" />
 <file name="Valma_LSLT19_250.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129629762960000000" remote="129629762960000000" />
 <file name="moyse_topics250.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129645513560000000" remote="129645513560000000" />
 <file name="Valma_LSLT19_65.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129629762960000000" remote="129629762960000000" />
 <file name="leblic-maagenin-600.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129616907730000000" remote="129616907730000000" />
 <file name="Lemarechal_typologie250.jpg" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129328347690000000" remote="129328347690000000" />
-<file name="L&S139_65.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129750774380000000" remote="129750774380000000" />
+<file name="L&S139_65.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129750810380000000" remote="129750810380000000" />
 <file name="lebarbier_contes250.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129730147640000000" remote="129730147640000000" />
 <file name="Henri_Sungwadia250.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129678164610000000" remote="129678164610000000" />
 <file name="stuf_65-1_250.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129797542800000000" remote="129797542800000000" />
 <file name="langage&societe_sp.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129739451030000000" remote="129739451030000000" />
 <file name="L&S139_250.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129750774380000000" remote="129750774380000000" />
-<file name="fernandez-sami65.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129791421220000000" remote="129791421220000000" />
-<file name="stuf_65-1_65.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129797542310000000" remote="129797542310000000" />
-<file name="lebarbier_contes65.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129730147640000000" remote="129730147640000000" />
-<file name="Henri_Sungwadia65.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129678164610000000" remote="129678164610000000" />
+<file name="fernandez-sami65.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129791457220000000" remote="129791457220000000" />
+<file name="stuf_65-1_65.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129797578310000000" remote="129797578310000000" />
+<file name="lebarbier_contes65.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129730183640000000" remote="129730183640000000" />
+<file name="Henri_Sungwadia65.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129678200610000000" remote="129678200610000000" />
 <file name="fernandez-sami250.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129791421220000000" remote="129791421220000000" />
-<file name="stuf_65-1_65.jpg" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129797542310000000" remote="129797542310000000" />
-<file name="lebarbier_contes65.jpg" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129730147640000000" remote="129730147640000000" />
-<file name="fernandez-sami65.jpg" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129791421220000000" remote="129791421220000000" />
-<file name="L&S139_65.jpg" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129750774380000000" remote="129750774380000000" />
+<file name="stuf_65-1_65.jpg" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129797578310000000" remote="129797578310000000" />
+<file name="lebarbier_contes65.jpg" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129730183640000000" remote="129730183640000000" />
+<file name="fernandez-sami65.jpg" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129791457220000000" remote="129791457220000000" />
+<file name="L&S139_65.jpg" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129750810380000000" remote="129750810380000000" />
 <file name="Henri_Sungwadia65.jpg" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129678164610000000" remote="129678164610000000" />
 <file name="moyse_topics65.jpg" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129645513560000000" remote="129645513560000000" />
 </dwsync>

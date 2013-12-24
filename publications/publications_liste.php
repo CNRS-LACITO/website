@@ -135,7 +135,15 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
 
 
 
-
+<?php 
+/*nom_complet=$_GET['NomPrenomAuteur'];
+$nom_temp=split(" ",$nom_complet);
+$nom=utf8_encode($nom_temp);
+echo mb_detect_encoding($nom_temp[1]);
+$nom=strtr($nom_temp[1],'àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ',
+'aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY');
+//echo $nom;*/
+?>
 
 
 
@@ -186,19 +194,19 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                   </td>
                 </tr>
                 <?php do { 
-				$row_liste_pub['Identifiant']= utf8_encode($row_liste_pub['Identifiant']);
-					$row_liste_pub['Titre']= utf8_encode($row_liste_pub['Titre']);
-					 $row_liste_pub['s']= utf8_encode($row_liste_pub['s']); 
-					 $row_liste_pub['u']= utf8_encode($row_liste_pub['u']);
-					 $row_liste_pub['t']= utf8_encode($row_liste_pub['t']); 
-					 $row_liste_pub['o']= utf8_encode($row_liste_pub['o']);
-					 $row_liste_pub['Auteurs']= utf8_encode($row_liste_pub['Auteurs']); 
-					 $row_liste_pub['Collation']= utf8_encode($row_liste_pub['Collation']); 
-					 $row_liste_pub['Annee']= utf8_encode($row_liste_pub['Annee']); 
-					 $row_liste_pub['URL']= utf8_encode($row_liste_pub['URL']); 
+				$row_liste_pub['Identifiant']= $row_liste_pub['Identifiant'];
+					$row_liste_pub['Titre']= $row_liste_pub['Titre'];
+					 $row_liste_pub['s']= $row_liste_pub['s']; 
+					 $row_liste_pub['u']= $row_liste_pub['u'];
+					 $row_liste_pub['t']= $row_liste_pub['t']; 
+					 $row_liste_pub['o']= $row_liste_pub['o'];
+					 $row_liste_pub['Auteurs']= $row_liste_pub['Auteurs']; 
+					 $row_liste_pub['Collation']= $row_liste_pub['Collation']; 
+					 $row_liste_pub['Annee']= $row_liste_pub['Annee']; 
+					 $row_liste_pub['URL']= $row_liste_pub['URL']; 
 					 // 07/06/11 P.Grison zone_libre
-					 $row_liste_pub['zone_libre']= utf8_encode($row_liste_pub['zone_libre']); 
-					 $row_liste_pub['cote']= utf8_encode($row_liste_pub['cote']); 
+					 $row_liste_pub['zone_libre']= $row_liste_pub['zone_libre']; 
+					 $row_liste_pub['cote']= $row_liste_pub['cote']; 
 				
 				?>
                 <tr valign="top">

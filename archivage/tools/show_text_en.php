@@ -8,6 +8,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <!-- InstanceBeginEditable name="doctitle" -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script type="text/javascript" src="jwplayer.js"></script>
 
 <title>Ressource</title>
 <!-- InstanceEndEditable --><link rel="stylesheet" type="text/css" href="../../styles/html5/styles_html5.css">

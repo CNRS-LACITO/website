@@ -24,7 +24,7 @@
 <file name="caucase_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129294694340000000" remote="129294694340000000" />
 <file name="oceanie.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129411181310988347" remote="129411181310000000" />
 <file name="oceanie_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129411184730023905" remote="129411184730000000" />
-<file name="afrique.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129718936150000000" remote="129718936150000000" />
+<file name="afrique.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129881985582731772" remote="129881985580000000" />
 <file name="afrique_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129286118270000000" remote="129286118270000000" />
 <file name="nepal.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129600548700000000" remote="129600548700000000" />
 <file name="nepal_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129600548700000000" remote="129600548700000000" />
@@ -37,18 +37,18 @@
 <file name="outils.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129811999656907615" remote="129811999650000000" />
 <file name="depot_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129812011829293836" remote="129812011820000000" />
 <file name="depot.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129812255213814634" remote="129812255210000000" />
-<file name="index.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129882190359231111" remote="129882190350000000" />
-<file name="index_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129857059270000000" remote="129857059270000000" />
+<file name="index.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="130032387683965148" remote="130032387680000000" />
+<file name="index_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="130011816690000000" remote="130011816690000000" />
 <file name="depot.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129814574200000000" remote="129814574200000000" />
 <file name="depot_en.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129812280740000000" remote="129812280740000000" />
-<file name="index.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129882190359231111" remote="129882190960000000" />
-<file name="index_en.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129882191036359841" remote="129882190980000000" />
+<file name="index.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130032387440000000" remote="130032387440000000" />
+<file name="index_en.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130032387440000000" remote="130032387440000000" />
 <file name="outils.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129812280860000000" remote="129812280860000000" />
 <file name="outils_en.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129812280860000000" remote="129812280860000000" />
-<file name="presentation.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129816441490000000" remote="129816441490000000" />
-<file name="presentation_en.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129859513688417194" remote="129859513690000000" />
-<file name="presentation.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129814573107821216" remote="129814573100000000" />
-<file name="presentation_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129816441490000000" remote="129816441490000000" />
+<file name="presentation.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129984830224396242" remote="129984830300000000" />
+<file name="presentation_en.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129984829896703718" remote="129984830250000000" />
+<file name="presentation.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129923690148522254" remote="129923690140000000" />
+<file name="presentation_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129984829896703718" remote="129984829890000000" />
 <file name="index_temp.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129796448980000000" remote="129881986170000000" />
 <file name="depot_en_temp.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129796448980000000" remote="129796448980000000" />
 <file name="instructions.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129423446100000000" remote="129423446100000000" />
@@ -72,4 +72,11 @@
 <file name="depot_temp.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129796457420000000" remote="129796457420000000" />
 <file name="index_en_old.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129881985600172770" remote="129881986170000000" />
 <file name="index_old.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129881985603332950" remote="129881986170000000" />
+<file name="personnel_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129899314670911854" remote="129899314670000000" />
+<file name="presentation_en_temp.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129984829739667448" remote="129984829730000000" />
+<file name="balkan.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="130011784515370252" remote="130011784510000000" />
+<file name="amersud.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129881985584481872" remote="129881985580000000" />
+<file name="balkan_en.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129890686380144030" remote="129890686380000000" />
+<file name="europe.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130011827089555356" remote="130011826840000000" />
+<file name="europe_en.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130011827179480500" remote="130011826920000000" />
 </dwsync>

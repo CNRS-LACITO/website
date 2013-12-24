@@ -190,7 +190,7 @@
 					<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA6qqIGIzzm66FKOMoO6XtaBTow1JDc9bEDFAJIfZIA_Io33cCEBSs1pR8UT0Iis7_aL0Rli1hVWFfiw"
 					  type="text/javascript">//</script>
 
-				<!--	<script type="text/javascript">
+					<script type="text/javascript">
 					function load() &#x7b;
 					  if (GBrowserIsCompatible()) &#x7b;
 						var map = new GMap2(document.getElementById("map"));
@@ -203,7 +203,7 @@
 
 					  &#x7d;
 					&#x7d;
-					</script>-->
+					</script>
 				  <div>
 					<div id="map" style="width: 500px; height: 320px">x</div>
 				  </div>
@@ -215,12 +215,12 @@
 			<tr><td></td></tr>
 		</xsl:when>
 		<xsl:otherwise>
-		<!--	<script type="text/javascript">
+			<script type="text/javascript">
 			function load() &#x7b;
 			&#x7d;
 			function GUnload() &#x7b;
 			&#x7d;
-			</script>-->
+			</script>
 		</xsl:otherwise>
 	</xsl:choose>
 </xsl:template>
@@ -247,7 +247,7 @@
               		Version dégradée <b>Wav/22Khz</b> : <xsl:apply-templates select="dc:identifier"/>
             	</xsl:when>
             <xsl:otherwise>
-            Version originale : <xsl:apply-templates select="dc:identifier"/>
+            Version Wav/22Khz : <xsl:apply-templates select="dc:identifier"/>
             </xsl:otherwise>
             </xsl:choose>
 		</td>

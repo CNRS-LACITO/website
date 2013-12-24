@@ -152,7 +152,7 @@ $aff=str_replace("\'","'",$aff) ;
 	 <th><div align="center"><font size="-1"></font></div></th>
 	 <th><div align="center"><font size="-1">RESEARCHER(S)</font></div></th>
      <th><div align="center"><font size="-1"></font></div></th>
-	 <th><div align="center"><font size="-1">LOCUTOR(S)</font></div></th>
+	 <th><div align="center"><font size="-1">SPEAKER(S)</font></div></th>
 </tr>
 <tr><td></td><tr>
 <tr><td></td><tr>

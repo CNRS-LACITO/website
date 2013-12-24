@@ -3,11 +3,18 @@
 <file name="sortorder.xml" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171135530000000" remote="129171135530000000" />
 <file name="dicoInvertKey.xsl" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171135250000000" remote="129171135250000000" />
 <file name="dicoLimbu.dtd" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171135270000000" remote="129171135270000000" />
-<file name="dico.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171135210000000" remote="129171135210000000" />
+<file name="dico.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129975379113747619" remote="129975413030000000" />
 <file name="index.html" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="127907053800000000" remote="127907053800000000" />
 <file name="dico.xsl" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171135230000000" remote="129171135230000000" />
 <file name="liste.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171135530000000" remote="129171135530000000" />
 <file name="dicoList.xsl" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="127907053810000000" remote="127907053810000000" />
 <file name="invertkey.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="127907053800000000" remote="127907053800000000" />
 <file name="dicoLimbu04.xml" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171135280000000" remote="129171135280000000" />
+<file name="dico.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129979899279570311" remote="129979899270000000" />
+<file name="qtPlayerManager.js" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129961555658476996" remote="129961555650000000" />
+<file name="sortorder.xml" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129171135530000000" remote="129171135530000000" />
+<file name="liste.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129171135530000000" remote="129171135530000000" />
+<file name="dicoInvertKey.xsl" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129171135250000000" remote="129171135250000000" />
+<file name="dicoList.xsl" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="127907053810000000" remote="127907053810000000" />
+<file name="dico.xsl" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129171135230000000" remote="129171135230000000" />
 </dwsync>
