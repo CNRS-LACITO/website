@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Language" content="fr">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>araki / South Santo</title>
+<title>Recherche</title>
 <!-- InstanceEndEditable -->
 <link rel="stylesheet" type="text/css" href="LacitoStyle.css">
 <link rel="stylesheet" type="text/css" href="../../styles/xcharte.css">
@@ -14,7 +14,7 @@
 
 <script language="JavaScript" type="text/JavaScript">
 <!--
-function flvFPW1(){//v1.44
+function window.open(){//v1.44
 // Copyright 2002-2004, Marja Ribbers-de Vroed, FlevOOware (www.flevooware.nl/dreamweaver/)
 var v1=arguments,v2=v1[2].split(","),v3=(v1.length>3)?v1[3]:false,v4=(v1.length>4)?parseInt(v1[4]):0,v5=(v1.length>5)?parseInt(v1[5]):0,v6,v7=0,v8,v9,v10,v11,v12,v13,v14,v15,v16;
 v11=new Array("width,left,"+v4,"height,top,"+v5);for (i=0;i<v11.length;i++){v12=v11[i].split(",");
@@ -95,7 +95,7 @@ v2[v6]=v12[0]+"="+v14;}}if (v10[0]==v12[1]){v16=parseInt(v10[1]);v15=v6;
 				<option value="1">Sans pr&eacute;f&eacute;rence</option>
 				<option selected value="2">Au niveau de la phrase</option>
 				<option value="3">Au niveau du mot</option>
-				<option value="3">Au niveau du morphème</option>
+				<option value="3">Au niveau du morphï¿½me</option>
 			</select>
 			<td>
 		</tr>
@@ -128,16 +128,5 @@ v2[v6]=v12[0]+"="+v14;}}if (v10[0]==v12[1]){v16=parseInt(v10[1]);v15=v6;
       </td>
     </tr>
   </table>
-</div>
- <!-- Start of StatCounter Code -->
-<script type="text/javascript" language="javascript">
-var sc_project=2319041;
-var sc_invisible=1;
-var sc_partition=21;
-var sc_security="1fae5b4b";
-var sc_text=3;
-</script>
-
-<script type="text/javascript" language="javascript" src="http://www.statcounter.com/counter/frames.js"></script><noscript><a href="http://www.statcounter.com/" target="_blank"><img  src="http://c22.statcounter.com/counter.php?sc_project=2319041&amp;java=0&amp;security=1fae5b4b&amp;invisible=0" alt="best website stats" border="0"></a> </noscript>
-<!-- End of StatCounter Code -->
-</body><!-- InstanceEnd --></html>
+</div> <!-- InstanceEndEditable -->
+</body></html>

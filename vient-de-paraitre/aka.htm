@@ -12,44 +12,37 @@
 <script language="JavaScript" src="../z-outils/outils.js"></script>
 <script language="JavaScript" type="text/JavaScript">
 <!--
-
 function MM_reloadPage(init) {  //reloads the window if Nav4 resized
   if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
     document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
   else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
 }
 MM_reloadPage(true);
-//-->
-</script>
-<script language="JavaScript" type="text/JavaScript">
-<!--
-function flvFPW1(){//v1.44
-// Copyright 2002-2004, Marja Ribbers-de Vroed, FlevOOware (   www.flevooware.nl/dreamweaver/)
-var v1=arguments,v2=v1[2].split(","),v3=(v1.length>3)?v1[3]:false,v4=( v1.length>4)?parseInt(v1[4]):0,v5=(v1.length>5)?parseInt(v1[5]):0,v6,v7=0,v8,v9,v10,v11,v12,v13,v14,v15,v16;v11=new Array("width,left,"+v4,"height,top,"+v5);for (i=0;i< v11.length;i++){v12=v11[i].split(",");
-l_iTarget=parseInt(v12[2]);
-if (l_iTarget>1||v1[2].indexOf("%")>-1){v13=eval("screen."+v12[0]);
-for (v6=0;v6< v2.length;v6++){v10=v2[v6].split("=");
-if (v10[0]==v12[0]){v14=parseInt(v10[1]);if (v10[1].indexOf("%")>-1){v14= (v14/100)*v13;v2[v6]=v12[0]+"="+v14;
-}}if (v10[0]==v12[1]){v16=parseInt(v10[1]);v15=v6;}}if (l_iTarget==2){v7=(v13-v14)/2;v15= v2.length;
-}else if (l_iTarget==3){v7=v13-v14-v16;}v2[v15]=v12[1]+"="+v7;
-}}v8= v2.join(",");v9=window.open(v1[0],v1[1],v8);
-if (v3){v9.focus();}document.MM_returnValue=false;return v9;}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
 //-->
 </script>
 <!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+.Style1 {color: #820E12}
+-->
+</style>
 </head>
 <body marginwidth="0" marginheight="0" >
-  <div class="bandeau-liens" id="divbandeau-lienCNRS"> <a href="http://www.cnrs.fr/" target="_blank">Le CNRS</a> </div>
+  <div class="bandeau-liens" id="divbandeau-lienCNRS"> <a href="http://www.cnrs.fr/fr/organisme/presentation.htm" target="_blank">Le CNRS</a> </div>
 <div id="divbandeau-traitvert1"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
   <div id="divbandeau-lienAccueil" class="bandeau-liens"> <a href="http://www.cnrs.fr/shs/" target="_blank">Accueil SHS</a> </div>
 <div id="divbandeau-traitvert2"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
-  <div id="divbandeau-lienAutres" class="bandeau-liens"><a href="http://www2.cnrs.fr/band/5.htm" target="_blank">Autres sites CNRS</a></div> 
-  <div id="divbandeau-traitvert3"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
+  <div id="divbandeau-lienAutres" class="bandeau-liens"><a href="http://www.cnrs.fr/fr/une/sites-cnrs.htm" target="_blank">Autres sites CNRS</a></div> 
+<div id="divbandeau-traitvert3"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
 
 <table width="751"  border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td width="150"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="65" alt=""></td>
-    <td colspan="2"><img src="../z-outils/images/charte/bandeau-haut-droit.gif" alt="" width="600" height="65" border="0"></td>
+    <td colspan="2"><img src="../z-outils/images/charte/bandeau-haut-droit.gif" alt="" width="100%" border="0"></td>
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
   </tr>
   <tr>
@@ -60,7 +53,7 @@ if (v3){v9.focus();}document.MM_returnValue=false;return v9;}
   <tr>
     <td width="150">&nbsp;</td>
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="62"></td>
-    <td width="599" height="1"><!-- InstanceBeginEditable name="Visuel" --><a href="index.htm"><img src="../images/bandeaux/vient_de_paraitre.jpg" width="600" height="82" border="0"></a><!-- InstanceEndEditable --></td>
+    <td width="599" height="1"><!-- InstanceBeginEditable name="Visuel" --><a href="index.htm"><img src="../images/bandeaux/vient_de_paraitre.jpg" width="100%" border="0"></a><!-- InstanceEndEditable --></td>
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="62"></td>
   </tr>
   <tr>
@@ -84,22 +77,20 @@ if (v3){v9.focus();}document.MM_returnValue=false;return v9;}
   <tr>
     <td width="150">&nbsp;</td>
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
-    <td width="599" rowspan="2"><div id="ZonePrint">
+    <td width="599" rowspan="2" class="Xtextcourant" valign="top"><div id="ZonePrint">
       <!-- InstanceBeginEditable name="Contenu" -->
       <table width="100%"  border="0" cellspacing="0" cellpadding="10">
         <tr>
           <td><p>&nbsp;</p>
-            <p class="titre"><a href="../membres/thomas.htm">Jacqueline M. C. Thomas</a>, S. Bahuchet, A. Epelboin et <a href="http://www.vjf.cnrs.fr/lms/equipe.htm" target="_blank">S. F&uuml;rniss</a>, &eacute;diteurs de :<br>
+            <h1><a href="../membres/thomas.htm">Jacqueline M. C. Thomas</a>, S. Bahuchet, A. Epelboin et <a href="http://www.vjf.cnrs.fr/lms/equipe.htm" target="_blank">S. F&uuml;rniss</a>, &eacute;diteurs de :<br>
               <br>
-Simha Arom, Serge Bahuchet, France Cloarec-Heiss, Alain Epelboin, Susanne F&uuml;rniss, Henri Guillaume, <a href="../membres/motte.htm">&Eacute;lisabeth Motte-Florac</a>, Claude S&eacute;n&eacute;chal et <a href="../membres/thomas.htm">Jacqueline M.C. Thomas</a><br>
-avec des documents de Lucien Demesse</p>
-			<h3 align="left" class="intertitre">  Encyclop&eacute;die des Pygm&eacute;es Aka  - Techniques, langage et soci&eacute;t&eacute; des chasseurs-cueilleurs de la for&ecirc;t centrafricaine <br>
-			  (Sud-Centrafrique et Nord-Congo)</h3>
-            <div align="justify">
-              <p><img src="images/aka_II_9_250.jpg" alt="akaII8" width="250" height="374" border="1" align="right">Dernier fascicule paru : </p>
+              Simha Arom, Serge Bahuchet, France Cloarec-Heiss, Alain Epelboin, Susanne F&uuml;rniss, Henri Guillaume, <a href="../membres/motte.htm">&Eacute;lisabeth Motte-Florac</a>, Claude S&eacute;n&eacute;chal et <a href="../membres/thomas.htm">Jacqueline M.C. Thomas</a><br>
+              avec des documents de Lucien Demesse</h1>
+            <h1 align="left">  Encyclop&eacute;die des Pygm&eacute;es Aka  - Techniques, langage et soci&eacute;t&eacute; des chasseurs-cueilleurs de la for&ecirc;t centrafricaine (Sud-Centrafrique et Nord-Congo)</h1>
+            <p><strong>Dernier fascicule paru : </strong></p>
               <p><span class="intertitre">THOMAS Jacqueline M.C., S. Bahuchet, A. Epelboin et S. F&uuml;rniss (eds) , 2008, <em>Encyclop&eacute;die des Pygm&eacute;es Aka II - Dictionnaire ethnographique Aka-Fran&ccedil;ais (fasc. 9) - G-NG-H</em>, </span><a href="http://www.peeters-leuven.be/boekoverz.asp?nr=8514" target="_blank">Peeters</a>, coll. Tradition Orale 50, SELAF 447, 219&nbsp;p. </p>
               <p>&nbsp;</p>
-              <p>Cet ouvrage s'inscrit dans une suite de travaux consacr&eacute;s aux populations foresti&egrave;res d'Afrique Centrale et, parmi elles, plus particuli&egrave;rement aux Pygm&eacute;es Aka. Il constitue pour cette ethnie la premi&egrave;re partie d'une &eacute;tude pluridisciplinaire centr&eacute;e sur l'approche linguistique des diff&eacute;rents aspects de la r&eacute;alit&eacute; sociale. Dans cette perspective, la langue se situe &agrave; la fois comme un aspect de cette r&eacute;alit&eacute; sociale et comme le thesaurus et le v&eacute;hicule de celle-ci. L'ouvrage r&eacute;sulte de la coop&eacute;ration d'un groupe de travail officiellement constitu&eacute; depuis 1977, mais dont les activit&eacute;s coordonn&eacute;es de plus ou moins pr&egrave;s remontent &agrave; 1971. Il rassemble les connaissances acquises sur cette population pygm&eacute;e et sur son milieu naturel et humain par des chercheurs de diff&eacute;rentes disciplines : linguistique, ethnologie, ethnolinguistique, ethno-sciences (ethnobotanique, ethnozoologie, ethnom&eacute;decine et ethnopharmacologie), &eacute;cologie, ethnomusicologie.<br>
+              <p><img src="images/aka_II_9_250.jpg" alt="akaII8" width="250" height="374" hspace="5" border="1" align="right">Cet ouvrage s'inscrit dans une suite de travaux consacr&eacute;s aux populations foresti&egrave;res d'Afrique Centrale et, parmi elles, plus particuli&egrave;rement aux Pygm&eacute;es Aka. Il constitue pour cette ethnie la premi&egrave;re partie d'une &eacute;tude pluridisciplinaire centr&eacute;e sur l'approche linguistique des diff&eacute;rents aspects de la r&eacute;alit&eacute; sociale. Dans cette perspective, la langue se situe &agrave; la fois comme un aspect de cette r&eacute;alit&eacute; sociale et comme le thesaurus et le v&eacute;hicule de celle-ci. L'ouvrage r&eacute;sulte de la coop&eacute;ration d'un groupe de travail officiellement constitu&eacute; depuis 1977, mais dont les activit&eacute;s coordonn&eacute;es de plus ou moins pr&egrave;s remontent &agrave; 1971. Il rassemble les connaissances acquises sur cette population pygm&eacute;e et sur son milieu naturel et humain par des chercheurs de diff&eacute;rentes disciplines : linguistique, ethnologie, ethnolinguistique, ethno-sciences (ethnobotanique, ethnozoologie, ethnom&eacute;decine et ethnopharmacologie), &eacute;cologie, ethnomusicologie.<br>
   Le premier livre comporte une substantielle introduction ethnologique et linguistique ainsi qu'une r&eacute;flexion sur la probl&eacute;matique du dictionnaire et une initiation &agrave; sa pratique. Le deuxi&egrave;me livre, le dictionnaire aka-fran&ccedil;ais, compte environ dix mille entr&eacute;es largement illustr&eacute;es, linguistiquement, ethnologiquement, dans le domaine naturaliste et graphiquement. L'ensemble de l'ouvrage comprend une troisi&egrave;me partie, le lexique fran&ccedil;ais-aka, et une quatri&egrave;me partie th&eacute;matique.<br>
   L'int&eacute;r&ecirc;t de l'&eacute;tude de cette population r&eacute;side dans le caract&egrave;re tr&egrave;s particulier de sa situation linguistique, sociale et politique. Cette ethnie parle une langue qui aujourd'hui lui est propre, bien que manifestement emprunt&eacute;e &agrave; un moment de son histoire &agrave; un groupe de Grands Noirs (bantu C 10), mais les conditions de relations avec son voisinage modifient constamment sa situation linguistique.<br>
   Chasseurs-collecteurs, ils ont une parfaite connaissance de leur milieu forestier auquel ils pr&eacute;sentent, de toutes les populations foresti&egrave;res locales, la plus harmonieuse adaptation. Cependant, ces &ldquo;ma&icirc;tres de la for&ecirc;t&rdquo;, reconnus comme tels par tous, n'auraient pas de vocabulaire propre de leur domaine, si l'on en croit leur appartenance linguistique. L'origine non foresti&egrave;re des populations environnantes, auxquelles ils devraient leur nomenclature, rend cette hypoth&egrave;se inconcevable. L'examen comparatif de leur vocabulaire &eacute;claire la question d'un jour diff&eacute;rent.<br>
@@ -124,60 +115,60 @@ avec des documents de Lucien Demesse</p>
               <table width="100%" border="1" cellspacing="1" cellpadding="1">
                 <tr>
                   <td colspan="2"><strong><a name="premier"></a>Premier Livre : Les Pygm&eacute;es aka <a href="#plan"><img src="../images/icones/fleche-haut.gif" alt="toplan" width="10" height="9" border="0"></a></strong></td>
-                  </tr>
+                </tr>
                 <tr>
-                  <td width="15%"><a href="images/aka_I_1_250.jpg" target="_blank"><img src="images/aka_I_1_65.jpg" alt="aka" width="65" height="98" border="1"></a></td>
+                  <td width="15%"><div align="center"><a href="images/aka_I_1_250.jpg" target="_blank"><img src="images/aka_I_1_65.jpg" alt="aka" width="65" height="98" border="1"></a></div></td>
                   <td><a href="http://www.peeters-leuven.be/boekoverz.asp?nr=5562" target="_blank">Fascicule 1</a>. Introduction &agrave; l'Encyclop&eacute;die (<strong>1983</strong>, 140 p.)</td>
                 </tr>
                 <tr>
-                  <td width="15%"><a href="images/aka_I_2_250.jpg" target="_blank"><img src="images/aka_I_2_65.jpg" alt="aka" width="65" height="98" border="1"></a></td>
+                  <td width="15%"><div align="center"><a href="images/aka_I_2_250.jpg" target="_blank"><img src="images/aka_I_2_65.jpg" alt="aka" width="65" height="98" border="1"></a></div></td>
                   <td><a href="http://www.peeters-leuven.be/boekoverz.asp?nr=5864" target="_blank">Fascicule 2</a>. Le monde des Aka (<strong>1991</strong>, 242 p.)</td>
                 </tr>
                 <tr>
-                  <td width="15%"><a href="images/aka_I_3_250.jpg" target="_blank"><img src="images/aka_I_3_65.jpg" alt="aka" width="65" height="99" border="1"></a></td>
+                  <td width="15%"><div align="center"><a href="images/aka_I_3_250.jpg" target="_blank"><img src="images/aka_I_3_65.jpg" alt="aka" width="65" height="99" border="1"></a></div></td>
                   <td><a href="http://www.peeters-leuven.be/boekoverz.asp?nr=5866" target="_blank">Fascicule 3</a>. La soci&eacute;t&eacute; (<strong>1991</strong>, 244 p.)</td>
                 </tr>
                 <tr>
-                  <td width="15%"><a href="images/aka_I_4_250.jpg" target="_blank"><img src="images/aka_I_4_65.jpg" alt="aka" width="65" height="100" border="1"></a></td>
+                  <td width="15%"><div align="center"><a href="images/aka_I_4_250.jpg" target="_blank"><img src="images/aka_I_4_65.jpg" alt="aka" width="65" height="100" border="1"></a></div></td>
                   <td><a href="http://www.peeters-leuven.be/boekoverz.asp?nr=5868" target="_blank">Fascicule 4</a>. La langue (<strong>1991</strong>, 183 p.)</td>
                 </tr>
                 <tr>
                   <td colspan="2"><strong><a name="deuxieme"></a>Deuxi&egrave;me Livre : Dictionnaire ethnographique aka-fran&ccedil;ais <a href="#plan"><img src="../images/icones/fleche-haut.gif" alt="toplan" width="10" height="9" border="0"></a></strong></td>
-                  </tr>
+                </tr>
                 <tr>
-                  <td width="15%"><img src="images/aka_II_1_65.jpg" width="65" height="97" border="1"></td>
+                  <td width="15%"><div align="center"><img src="images/aka_II_1_65.jpg" width="65" height="97" border="1"></div></td>
                   <td><a href="http://www.peeters-leuven.be/boekoverz.asp?nr=7523" target="_blank">Fascicule 1</a>. Phon&egrave;me p (<strong>1981</strong>, 144 p.) (<strong>2003</strong>, 183 p.)</td>
                 </tr>
                 <tr>
-                  <td width="15%"><a href="images/aka_II_2_250.jpg" target="_blank"><img src="images/aka_II_2_65.jpg" alt="aka" width="65" height="99" border="1"></a></td>
+                  <td width="15%"><div align="center"><a href="images/aka_II_2_250.jpg" target="_blank"><img src="images/aka_II_2_65.jpg" alt="aka" width="65" height="99" border="1"></a></div></td>
                   <td><a href="http://www.peeters-leuven.be/boekoverz.asp?nr=5884" target="_blank">Fascicule 2</a>. Phon&egrave;me b (<strong>1993</strong>, 389 p.)</td>
                 </tr>
                 <tr>
-                  <td width="15%"><a href="images/aka_II_3_250.jpg" target="_blank"><img src="images/aka_II_3_65.jpg" alt="aka" width="65" height="98" border="1"></a></td>
+                  <td width="15%"><div align="center"><a href="images/aka_II_3_250.jpg" target="_blank"><img src="images/aka_II_3_65.jpg" alt="aka" width="65" height="98" border="1"></a></div></td>
                   <td><a href="http://www.peeters-leuven.be/boekoverz.asp?nr=5892" target="_blank">Fascicule 3</a>. Phon&egrave;mes mb, m, v (<strong>1993</strong>, 332 p.)</td>
                 </tr>
                 <tr>
-                  <td width="15%"><a href="images/aka_II_4_250.jpg" target="_blank"><img src="images/aka_II_4_65.jpg" alt="aka" width="65" height="98" border="1"></a></td>
+                  <td width="15%"><div align="center"><a href="images/aka_II_4_250.jpg" target="_blank"><img src="images/aka_II_4_65.jpg" alt="aka" width="65" height="98" border="1"></a></div></td>
                   <td><a href="http://www.peeters-leuven.be/boekoverz.asp?nr=6674" target="_blank">Fascicule 4</a>. Phon&egrave;mes t, d (<strong>1998</strong>, 251 p.)</td>
                 </tr>
                 <tr>
-                  <td width="15%"><img src="images/aka_II_5_65.jpg" width="65" height="111" border="1"></td>
+                  <td width="15%"><div align="center"><img src="images/aka_II_5_65.jpg" width="65" height="111" border="1"></div></td>
                   <td><a href="http://www.peeters-leuven.be/boekoverz.asp?nr=7494" target="_blank">Fascicule 5</a>. Phon&egrave;mes nd, n, l (<strong>2003</strong>, 245 p.)</td>
                 </tr>
                 <tr>
-                  <td width="15%"><a href="images/aka_II_6_250.jpg" target="_blank"><img src="images/aka_II_6_65.jpg" width="65" height="99" border="1"></a></td>
+                  <td width="15%"><div align="center"><a href="images/aka_II_6_250.jpg" target="_blank"><img src="images/aka_II_6_65.jpg" width="65" height="99" border="1"></a></div></td>
                   <td><a href="http://www.peeters-leuven.be/boekoverz.asp?nr=7820" target="_blank">Fascicule 6</a>. Phon&egrave;me s (<strong>2004</strong>, 260 p.)</td>
                 </tr>
                 <tr>
-                  <td width="15%"><a href="images/Aka_II_7_250.jpg" target="_blank"><img src="images/Aka_II_7_65.jpg" width="65" height="97" border="1"></a></td>
+                  <td width="15%"><div align="center"><a href="images/Aka_II_7_250.jpg" target="_blank"><img src="images/Aka_II_7_65.jpg" width="65" height="97" border="1"></a></div></td>
                   <td><a href="http://www.peeters-leuven.be/boekoverz.asp?nr=7995" target="_blank">Fascicule 7</a>. Phon&egrave;mes z, nz, ny, y (<strong>2005</strong>, 299 p.)</td>
                 </tr>
                 <tr>
-                  <td width="15%"><a href="images/aka_II_8_250.jpg" target="_blank"><img src="images/Aka_II_8_65.jpg" width="65" height="97" border="1"></a></td>
+                  <td width="15%"><div align="center"><a href="images/aka_II_8_250.jpg" target="_blank"><img src="images/Aka_II_8_65.jpg" width="65" height="97" border="1"></a></div></td>
                   <td><a href="http://www.peeters-leuven.be/boekoverz.asp?nr=8208" target="_blank">Fascicule 8</a>. Phon&egrave;me k (<strong>2007</strong>, 385 p.)</td>
                 </tr>
                 <tr>
-                  <td width="15%"><a href="images/aka_II_9_250.jpg" target="_blank"><img src="images/aka_II_9_65.jpg" alt="akaII9" width="65" height="97" border="1"></a></td>
+                  <td width="15%"><div align="center"><a href="images/aka_II_9_250.jpg" target="_blank"><img src="images/aka_II_9_65.jpg" alt="akaII9" width="65" height="97" border="1"></a></div></td>
                   <td><a href="http://www.peeters-leuven.be/boekoverz.asp?nr=8514" target="_blank">Fascicule 9</a>. Phon&egrave;mes g, ng, h (<strong>2008</strong>, 219 p.)</td>
                 </tr>
                 <tr>
@@ -190,12 +181,11 @@ avec des documents de Lucien Demesse</p>
                 </tr>
                 <tr>
                   <td colspan="2"><strong><a name="troisieme"></a>Troisi&egrave;me Livre : Lexique alphab&eacute;tique fran&ccedil;ais-aka <a href="#plan"><img src="../images/icones/fleche-haut.gif" alt="toplan" width="10" height="9" border="0"></a></strong></td>
-                  </tr>
+                </tr>
                 <tr>
                   <td colspan="2"><strong><a name="quatrieme"></a>Quatri&egrave;me Livre : Lexique th&eacute;matique - Milieu naturel, Milieu int&eacute;rieur et relationnel, Soci&eacute;t&eacute;, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Techniques <a href="#plan"><img src="../images/icones/fleche-haut.gif" alt="toplan" width="10" height="9" border="0"></a></strong></td>
-                  </tr>
-              </table>
-              </div></td>
+                </tr>
+              </table>            </td>
         </tr>
       </table>
       <!-- InstanceEndEditable --></div>
@@ -214,35 +204,34 @@ avec des documents de Lucien Demesse</p>
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
   </tr>
 </table>
-<!-- Start of StatCounter Code -->
-<script type="text/javascript" language="javascript">
-var sc_project=2319041; 
-var sc_invisible=1; 
-var sc_partition=21; 
-var sc_security="1fae5b4b"; 
-var sc_text=3; 
-</script>
-
-<script type="text/javascript" language="javascript" src="http://www.statcounter.com/counter/frames.js"></script><noscript><a href="http://www.statcounter.com/" target="_blank"><img  src="http://c22.statcounter.com/counter.php?sc_project=2319041&amp;java=0&amp;security=1fae5b4b&amp;invisible=0" alt="best website stats" border="0"></a> </noscript>
-<!-- End of StatCounter Code -->
 <p>&nbsp;</p>
  <p>&nbsp;</p>
  <div id="divpartenaires" >
    <table width="150"  border="0" cellspacing="0" cellpadding="0">
-     <tr><td><a href="http://www.cnrs.fr" target="_blank"><img src="../images/logos/logo-cnrs.jpg" alt="cnrs" width="150" height="62" border="0"></a></td>
+     <tr>
+       <td><a href="http://www.cnrs.fr" target="_blank"><img src="../images/logos/logo-cnrs.jpg" alt="cnrs" width="150" height="62" border="0"></a></td>
      </tr>
-     <tr><td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="1"></td></tr>
-     <tr><td><a href="http://www.univ-paris3.fr/1207750810633/0/fiche___defaultstructureksup/&RH=1235649944785" target="_blank"><img src="../images/logos/logo-paris-3.gif" alt="paris3" width="150" height="53" border="0"></a></td>
+     <tr>
+       <td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" alt="aa" width="150" height="1"></td>
      </tr>
-     <tr><td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="1"></td></tr>
-     <tr><td><a href="http://www.paris-sorbonne.fr/fr/spip.php?rubrique1096" target="_blank"><img src="../images/logos/logo-paris-4.gif" alt="paris4" width="150" height="53" border="0"></a></td>
+     <tr>
+       <td><a href="http://www.univ-paris3.fr/1207750810633/0/fiche___defaultstructureksup/&RH=1235649944785" target="_blank"><img src="../images/logos/logo-paris-3.gif" alt="paris3" width="150" height="53" border="0"></a></td>
      </tr>
-	 <tr><td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="1"></td></tr>
-     <tr><td><a href="http://www.typologie.cnrs.fr/" target="_blank"><img src="../images/logos/logo-typo.gif" alt="tul" width="150" height="53" border="0"></a></td>
+     <tr>
+       <td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" alt="aa" width="150" height="1"></td>
+     </tr>
+     <tr>
+       <td><a href="http://www.paris-sorbonne.fr/fr/spip.php?rubrique1096" target="_blank"><img src="../images/logos/logo-paris-4.gif" alt="paris4" width="150" height="53" border="0"></a></td>
+     </tr>
+     <tr>
+       <td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" alt="aa" width="150" height="1"></td>
+     </tr>
+     <tr>
+       <td><a href="http://www.typologie.cnrs.fr/" target="_blank"><img src="../images/logos/logo-typo.gif" alt="tul" width="150" height="53" border="0"></a></td>
      </tr>
    </table>
-</div>
- <p>
+ </div>
+<p>
      <script type='text/javascript'>function Go(){return}</script>
      <script type='text/javascript' src='../z-outils/deroulants/top_pos_var.js'></script>
      <script type='text/javascript' src='../z-outils/deroulants/menu_var.js'></script>
@@ -251,97 +240,72 @@ var sc_text=3;
  <noscript>
  <p>Your browser does not support script</p>
 </noscript>
+ <div id="divnavgauche-spec">
+   <table border="0" cellpadding="0" cellspacing="0"  width="150">
+     <tr>
+       <td height="2"><img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
+     </tr>
+     <tr>
+       	<td width="100%"  class="Xnavgauche" >
+        	<table border="0" cellpadding="10" cellspacing="0"  width="100%">
+      			<tr>
+       	 			<td width="100%" class="Xnavgauche"><h2><a href="INTRANET/index.htm">Intranet <img border="0" src="../z-outils/images/boite-outils/icones/intranet.gif" width="18" height="12"
+							alt="aa"></a></h2></td>
+      			</tr>
+       		</table>
+       </td>
+     </tr>
+     <tr>
+       <td height="2"><img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
+     </tr>
+    </table>
+ </div>
+ <div id="divnavgauche-searchLabo">
+   <table cellspacing="0" cellpadding="0" hspace="11" border="0">
+     <tr>
+     	<td width="100%" class="Xnavgauche"><h2 >Rechercher</h2>
+                 <p>Sur le WEB 
+                   du laboratoire</p>
+               <br>
+      	 </td>
+         </tr>
+         <tr>
+     	 <td>       
+				<form name="rechercher-spm" action="http://lacito.vjf.cnrs.fr/moteur/engine.php" method="GET">
+				<input type="hidden" name="action"  value="go">
+				<table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td><input name ="blork" maxLength="50" size="10" class="text"></td>
+						<td><img border="0" src="../z-outils/images/boite-outils/espaceur.gif" width="10" height="8"
+							alt="aa"></td>
+						<td><input name="submit2" type="image" src="../z-outils/images/charte/ok.gif" 
+                             border="0" width="20" height="20">
+						</td>
+					</tr>
+				</table>
+  				</form>
+          </td>
+        </tr>
+       </table>
+        <tr>
+       <td height="2"><img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
+		</tr>
 
-<div id="divnavgauche-spec"> 
-  <table border="0" cellpadding="0" cellspacing="0"  width="150">
-    <tr> 
-      <td height="2"> <img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
-    </tr>
-    <tr> 
-      <td width="100%"  class="Xnavgauche" > 
-        <table border="0" cellpadding="10" cellspacing="0"  width="100%">
-          <tr> 
-            <td width="100%" class="Xnavgauche"> 
-              <p class="intertitre"><a href="../pratique/organigramme.htm">Les membres</a></p>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr> 
-      <td height="2"> <img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
-    </tr>
-    <tr> 
-      <td width="100%"  class="Xnavgauche" > 
-        <table border="0" cellpadding="10" cellspacing="0"  width="100%">
-          <tr> 
-            <td width="100%" class="Xnavgauche"> 
-              <p class="intertitre" >Rechercher</p>
-              <p>Sur le WEB du Lacito</p>
-              <p><br>
-              <br>
-              <!--Sur le WEB du CNRS --><br>
-              <br>
-              <br>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr> 
-      <td height="2"> <img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
-    </tr>
-  </table>
-</div>
-<div id="divnavgauche-searchLabo"> 
-  <form name="rechercher-spm" action="http://lacito.vjf.cnrs.fr/moteur/engine.php" method="GET">
-  <input type="hidden" name="action" value="go">
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr> 
-        <td> 
-          <input name ="blork" maxLength="50" size="10" class="text">
-        </td>
-        <td> <img border="0" src="../z-outils/images/boite-outils/espaceur.gif" width="10" height="8"
-                alt=""></td>
-        <td> <input name="submit" type="image" src="../z-outils/images/charte/ok.gif" 
-                                border="0" width="20" height="20">
-        </td>
-      </tr>
-    </table>
-  </form>
-</div>
-<!--<div id="divnavgauche-search"> 
-  <form name="rechercher-spm" action="http://www.cnrs.fr/rechercher/" method="POST"
-       target="_blank">
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr> 
-        <td> 
-          <input name ="request" maxLength="50" size="10" class="BoiteRechercher">
-        </td>
-        <td> <img border="0" src="../z-outils/images/boite-outils/espaceur.gif" width="10" height="8"
-                alt=""></td>
-        <td valign="middle" > 
-          <input name="submit" type="image" src="../z-outils/images/charte/ok.gif" 
-                                border="0" width="20" height="20">
-        </td>
-      </tr>
-    </table>
-  </form>
-</div>-->
-<div id="divnavhaut-nom-labo"> 
+ </div>
+<div id="divnavhaut-nom-labo">
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr> 
-      <td class="Xnavhaut"> 
-      <p> <a href="../index.htm"><img src="../images/logos/Logo_Lacito.jpg" alt="lacito" width="143" height="57" border="0"></a></p>      </td>
+    <tr>
+      <td valign="top" class="Xnavhaut"><p> <a href="../index.htm"><img src="../images/logos/Logo_Lacito.jpg" alt="aa" width="141" height="59" hspace="10" border="0" align="left"></a> <span class="Style1">Langues et civilisations<br>
+        à tradition orale <br>
+        (UMR7107)</span></p></td>
     </tr>
   </table>
 </div>
 <map name="Map2">
-  <area shape="rect" coords="28,23,46,43" href="javascript:impression()" alt="Imprimer/to print">
-  <area shape="rect" coords="50,23,67,43" href="javascript:writemail('vjf.cnrs.fr','behaghel','',1);" alt="Contact">
-  <area shape="rect" coords="68,23,85,43" href="../pratique/index.htm" alt="Plan du site/Site map">
-  <area shape="rect" coords="87,23,105,43" href="../pratique/credits.htm" alt="Cr&eacute;dits/Copyrights">
-  <area shape="rect" coords="107,23,128,43" href="../pratique/to_build.htm" alt="Outils/Plug-ins">
+  <area shape="rect" coords="28,23,46,43" href="javascript:impression()" alt="Imprimer">
+  <area shape="rect" coords="49,22,66,42" href="javascript:writemail('vjf.cnrs.fr','behaghel','',1);" alt="Contacter le webmestre">
+  <area shape="rect" coords="68,23,85,43" href="../pratique/index.htm" alt="Plan du site">
+  <area shape="rect" coords="87,23,105,43" href="../pratique/credits.htm" alt="Crédits">
   <area shape="rect" coords="9,24,25,43" href="../index.htm" alt="Accueil">
 </map>
 </body>

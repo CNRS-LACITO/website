@@ -3,11 +3,10 @@
 <html><!-- InstanceBegin template="/Templates/popup.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta http-equiv="Content-Language" content="fr">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <!-- InstanceBeginEditable name="doctitle" -->
 <title>Metadata</title>
-<!-- InstanceEndEditable -->
-<link rel="stylesheet" type="text/css" href="../../styles/xcharte.css">
+<!-- InstanceEndEditable --><link rel="stylesheet" type="text/css" href="../../styles/xcharte.css">
 <link rel="stylesheet" type="text/css" href="../../styles/styles.css">
 <!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
 </head>
@@ -32,25 +31,16 @@
 <map name="map">
 <area shape="rect" coords="330,5,445,20" HREF="javascript:window.close()">
 </map>
-<div id="divnavhaut-nom-labo">
+<div id="divnavhaut-nom-labo"> 
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr>
-      <td class="Xnavhaut">
-        <p> <a href="#" target="_blank">Langues et civilisations &agrave; tradition orale  <br>
-          (LACITO)</a> </p>
+    <tr> 
+      <td class="Xnavhaut"> 
+        <p> <a href="#" target="_blank">Langues et civilisations <br>
+&agrave; tradition orale <br>
+(UMR7107)</a> </p>
       </td>
     </tr>
   </table>
 </div>
- <!-- Start of StatCounter Code -->
-<script type="text/javascript" language="javascript">
-var sc_project=2319041;
-var sc_invisible=1;
-var sc_partition=21;
-var sc_security="1fae5b4b";
-var sc_text=3;
-</script>
 
-<script type="text/javascript" language="javascript" src="http://www.statcounter.com/counter/frames.js"></script><noscript><a href="http://www.statcounter.com/" target="_blank"><img  src="http://c22.statcounter.com/counter.php?sc_project=2319041&amp;java=0&amp;security=1fae5b4b&amp;invisible=0" alt="best website stats" border="0"></a> </noscript>
-<!-- End of StatCounter Code -->
 </body><!-- InstanceEnd --></html>

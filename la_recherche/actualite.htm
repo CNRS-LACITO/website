@@ -12,44 +12,37 @@
 <script language="JavaScript" src="../z-outils/outils.js"></script>
 <script language="JavaScript" type="text/JavaScript">
 <!--
-
 function MM_reloadPage(init) {  //reloads the window if Nav4 resized
   if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
     document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
   else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
 }
 MM_reloadPage(true);
-//-->
-</script>
-<script language="JavaScript" type="text/JavaScript">
-<!--
-function flvFPW1(){//v1.44
-// Copyright 2002-2004, Marja Ribbers-de Vroed, FlevOOware (   www.flevooware.nl/dreamweaver/)
-var v1=arguments,v2=v1[2].split(","),v3=(v1.length>3)?v1[3]:false,v4=( v1.length>4)?parseInt(v1[4]):0,v5=(v1.length>5)?parseInt(v1[5]):0,v6,v7=0,v8,v9,v10,v11,v12,v13,v14,v15,v16;v11=new Array("width,left,"+v4,"height,top,"+v5);for (i=0;i< v11.length;i++){v12=v11[i].split(",");
-l_iTarget=parseInt(v12[2]);
-if (l_iTarget>1||v1[2].indexOf("%")>-1){v13=eval("screen."+v12[0]);
-for (v6=0;v6< v2.length;v6++){v10=v2[v6].split("=");
-if (v10[0]==v12[0]){v14=parseInt(v10[1]);if (v10[1].indexOf("%")>-1){v14= (v14/100)*v13;v2[v6]=v12[0]+"="+v14;
-}}if (v10[0]==v12[1]){v16=parseInt(v10[1]);v15=v6;}}if (l_iTarget==2){v7=(v13-v14)/2;v15= v2.length;
-}else if (l_iTarget==3){v7=v13-v14-v16;}v2[v15]=v12[1]+"="+v7;
-}}v8= v2.join(",");v9=window.open(v1[0],v1[1],v8);
-if (v3){v9.focus();}document.MM_returnValue=false;return v9;}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
 //-->
 </script>
 <!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+.Style1 {color: #820E12}
+-->
+</style>
 </head>
 <body marginwidth="0" marginheight="0" >
-  <div class="bandeau-liens" id="divbandeau-lienCNRS"> <a href="http://www.cnrs.fr/" target="_blank">Le CNRS</a> </div>
+  <div class="bandeau-liens" id="divbandeau-lienCNRS"> <a href="http://www.cnrs.fr/fr/organisme/presentation.htm" target="_blank">Le CNRS</a> </div>
 <div id="divbandeau-traitvert1"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
   <div id="divbandeau-lienAccueil" class="bandeau-liens"> <a href="http://www.cnrs.fr/shs/" target="_blank">Accueil SHS</a> </div>
 <div id="divbandeau-traitvert2"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
-  <div id="divbandeau-lienAutres" class="bandeau-liens"><a href="http://www2.cnrs.fr/band/5.htm" target="_blank">Autres sites CNRS</a></div> 
-  <div id="divbandeau-traitvert3"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
+  <div id="divbandeau-lienAutres" class="bandeau-liens"><a href="http://www.cnrs.fr/fr/une/sites-cnrs.htm" target="_blank">Autres sites CNRS</a></div> 
+<div id="divbandeau-traitvert3"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
 
 <table width="751"  border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td width="150"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="65" alt=""></td>
-    <td colspan="2"><img src="../z-outils/images/charte/bandeau-haut-droit.gif" alt="" width="600" height="65" border="0"></td>
+    <td colspan="2"><img src="../z-outils/images/charte/bandeau-haut-droit.gif" alt="" width="100%" border="0"></td>
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
   </tr>
   <tr>
@@ -60,7 +53,7 @@ if (v3){v9.focus();}document.MM_returnValue=false;return v9;}
   <tr>
     <td width="150">&nbsp;</td>
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="62"></td>
-    <td width="599" height="1"><!-- InstanceBeginEditable name="Visuel" --><img src="../images/bandeaux/paysageuldeme.jpg" alt="paysage ould&eacute;m&eacute;"><!-- InstanceEndEditable --></td>
+    <td width="599" height="1"><!-- InstanceBeginEditable name="Visuel" --><img src="../images/bandeaux/paysageuldeme.jpg" alt="paysage ould&eacute;m&eacute;" width="100%"><!-- InstanceEndEditable --></td>
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="62"></td>
   </tr>
   <tr>
@@ -84,14 +77,24 @@ if (v3){v9.focus();}document.MM_returnValue=false;return v9;}
   <tr>
     <td width="150">&nbsp;</td>
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
-    <td width="599" rowspan="2"><div id="ZonePrint">
+    <td width="599" rowspan="2" class="Xtextcourant" valign="top"><div id="ZonePrint">
       <!-- InstanceBeginEditable name="Contenu" -->
       <table width="100%"  border="0" cellspacing="0" cellpadding="10">
         <tr>
           <td>
-            <h2 class="intertitre">Actualit&eacute; de la recherche au Lacito et sur le campus de Villejuif (listes des équipes <a href="http://www.vjf.cnrs.fr/caghaudricourt/agh.html" target="_blank">ici</a>)</h2>
-            <h3><a name="avenir"></a>Actualit&eacute;s &agrave; venir ou en cours (passées <a href="#passees">ici</a> ; exposés  au Lacito <a href="conferences.htm">ici</a>)</h3>
-            <h4><strong>Le Lacito &agrave; l'honneur, au travers de ses membres</strong></h4>
+            <p class="intertitre">Actualit&eacute; de la recherche au Lacito et sur le campus de Villejuif (listes des équipes <a href="http://www.vjf.cnrs.fr/caghaudricourt/agh.html" target="_blank">ici</a>)</p>
+            <h1>&nbsp;</h1>
+            <h1><a name="avenir"></a>Actualit&eacute;s &agrave; venir ou en cours (passées <a href="#passees">ici</a> ; exposés  au sein du Lacito <a href="conferences.htm">ici</a>)</h1>
+            <ul class="liste-liens"><li>
+                <p><strong> 10 juiin 2010</strong> <br>
+                  conférence de <strong><a href="../membres/randa.htm?id=1564&tx_wfqbe_pi1[uid]=3994">Vladimir Randa</a></strong>, chercheur  au <strong>Lacito</strong>, sur <br>
+                  <strong>« Le Grand Blanc » : les multiples facettes de l'ours polaire dans le contexte inuit</strong><br>
+                  au Centre culturel canadien.<br>
+                </p>
+              </li>
+              </ul>
+            <h4><br>
+              Le Lacito &agrave; l'honneur, au travers de ses membres</h4>
             <ul class="liste-liens"><li>
                 <p><strong>Hommage &agrave; la po&eacute;sie indienne en la personne de P. Mukherjee</strong><br>
                   Notre ami et coll&egrave;gue <a href="../membres/mukherjee.htm">Prithwindra Mukherjee</a> <br>
@@ -116,27 +119,49 @@ Et les paroles prononc&eacute;es vendredi &eacute;taient impr&eacute;gn&eacute;e
                   </p>
                 </li>
               </ul>
-            <h3 class="intertitre"><a name="passees" id="passees"></a>Événements pass&eacute;s</h3>
-            <ul class="liste-liens">
-                  <li>
-                    <p><a name="guerin"></a><strong> samedi 3 avril 2010 de 17h à 19h</strong>, expos&eacute;  de<strong> <a href="../membres/guerin.htm">Françoise Guérin</a></strong>, MC à l'université de <strong>Paris-Sorbonne-Paris IV</strong> et membre du <strong>Lacito</strong><br>
-                      &agrave; la <strong>Soci&eacute;t&eacute; de Linguistique de Paris</strong><br>
-                      &Eacute;cole Pratique des Hautes &Eacute;tudes, IVe section <br>
-                      45-47 rue des &Eacute;coles - 75005 PARIS <br>
-                      Salle Gaston Paris (Escalier E     1er &eacute;tage) <br>
-                      <strong>Dynamique syntaxique en tchétchène</strong><br>
-                      Respecter la réalité des faits de langue en lien avec les faits sociaux est un point de vue qui place la dynamique au cœur de la description linguistique. Cela permet de rendre compte du fonctionnement d’une langue et des changements que ses locuteurs insensiblement lui font subir. Il en résulte que l’étude de la variation est une indication importante d’un changement possible à venir. Ceci ouvre la possibilité de la prédictivité en linguistique. <br>
-                           
-                      La dynamique et l’évolution linguistique du tchétchène, en ciblant plus précisément le domaine de la syntaxe, seront présentées dans cette communication. Les premières attestations écrites concernant cette langue remontent à la fin du XIXe siècle et permettent d’avoir ainsi un point de référence dans le passé. Le tchétchène étudié est celui qui est parlé à Grozny, variété qui sert, depuis 1928, de base à la langue littéraire. <br>
-                           
-                      Après une présentation rapide de quelques faits de grammaticalisation, je me pencherai sur un cas de recatégorisation d’une modalité énonciative. La disparition de l’utilisation d’une construction pronominale particulière sera également évoquée. Enfin, je m’arrêterai plus longuement sur un changement de structure. Comme toutes les langues caucasiques, le tchétchène présente une structure ergative dominante. Une seule construction ne présente pas le schéma attendu. Peut-on déterminer le moment de cette évolution ? Quels facteurs peuvent expliquer son apparition ? Ce sont quelques unes des questions auxquelles je tenterai de répondre.</p>
-                  </li>
+            <h1><a name="passees" id="passees"></a>Événements pass&eacute;s</h1>
+          <ul class="liste-liens">
+            <li>
+              <p><strong><a name="dicanio"></a> 4 mai 2010</strong>, <br>
+                le Sedyl-Celia et le Lacito vous invitaient à écouter l'exposé de <br>
+                <strong>Christian DiCanio</strong>, &laquo; The Phonetics of Tone in Trique &raquo;<br>
+                <em>Abstract</em>:<br>
+                Oto-Manguean languages are well-known for having complex tonal systems which interact with laryngeal features (Silverman, 1997). Phonologically speaking, certain tones may only be allowed to co-occur with specific phonation types (breathiness, creak), or they may be restricted from co-occurring with them. Phonetically speaking, when tones and phonation types do co-occur, their coarticulatory patterns may vary according to language-specific principles (allo-tonic alternations) or general phonetic principles. Yet, despite the complexity of these languages, there are few studies which have investigated the implementation, coarticulation, or perceptibility of the different tonal contrasts (but see Avelino 2004).<br>
+                In this talk, I will discuss two sets of studies examining the phonetics of the tonal system of San Martín Itunyoso Trique, an Oto-Manguean language spoken in Oaxaca, Mexico. Itunyoso Trique has 9 tones which co-occur with breathy and creaky phonation types (DiCanio, 2008). In the first study, I examine how tones are coarticulated with different phonation types. While the field of phonetics has made progress understanding how tone and laryngeals are produced and perceived (Brunelle 2009, Edmondson &amp; Esling 2006, Esposito 2006, Michaud 2004, Xu 1994, 2004, among others), little is known as to whether coarticulatory patterns are language-specific or explainable by general constraints on laryngeal mechanics. For Trique, I show that most of the effects of laryngeals on pitch have a general explanation, but the phasing relationship between tones and phonation types is subject to language-specific constraints. <br>
+                In the second study, I examine the perception of Trique tones produced in a modal phonation context. The results from AXB discrimination and AXB identification tasks with Trique and French listeners show a quasi-categorical (Hallé et al, 2004) perception for Trique listeners for many of the tonal comparisons. French speakers did not perceive tone categorically. Tonal comparisons not categorically-perceived for Trique listeners were those contrasts which were the most acoustically similar or with the smallest functional load in the linguistic system. These results are discussed in light of a hybrid, multi-store model of perception (Xu, Gandour, and Francis, 2006).<br>
+                <em>Bibliography</em>: <br>
+                Avelino Becerra, H. (2004) Topics in Yalálag Zapotec, with Particular Reference to its Phonetic Structures. PhD thesis,  	UCLA. <br>
+                Brunelle, M. (2009). Tone perception in Northern and Southern Vietnamese. Journal of Phonetics, 37(1):79–96. <br>
+                DiCanio, Christian T. (2008) The Phonetics and Phonology of San Martín Itunyoso Trique. PhD thesis, University of  	California, Berkeley. <br>
+                Edmondson, J. A. and Esling, J. H. (2006). The valves of the throat and their functioning in tone, vocal register, and  	stress: laryngoscopic case studies. Phonology, 23(2):157–191. <br>
+                Esposito, C. (2006). The Effects of Linguistic Experience on the Perception of Phonation. PhD thesis, UCLA. <br>
+                Hallé, P. A., Chang, Y. C., and Best, C. T. (2004). Identification and discrimination of Mandarin Chinese tones by  	Mandarin Chinese vs. French listeners. Journal of Phonetics, 32(3):395–421. <br>
+                Michaud, A. (2004). Final consonants and glottalization: New perspectives from Hanoi Vietnamese. Phonetica,  	61:119–146.<br>
+                Silverman, D. (1997) Laryngeal complexity in Otomanguean vowels. Phonology, 14:235–261. <br>
+                Xu, Y. (1994). Production and perception of coarticulated tones. Journal of the Acoustical Society of America,  	96(4):2240–2253. <br>
+                Xu, Y. (2004). Understanding tone from the perspective of production and perception. Language and Linguistics,  	5:757–797.<br>
+                Xu, Y., Gandour, J. T., and Francis, A. L. (2006). Effects of language experience and stimulus complexity on the  	categorical perception of pitch direction. Journal of the Acoustical Society of America, 120(2):1063–1074.<br>
+                            </p>
+            </li>
+            <li>
+              <p><a name="guerin"></a><strong>  3 avril 2010</strong>, expos&eacute;  de<strong> <a href="../membres/guerin.htm">Françoise Guérin</a></strong>, MC à l'université de <strong>Paris-Sorbonne-Paris IV</strong> et membre du <strong>Lacito</strong><br>
+  &agrave; la <strong>Soci&eacute;t&eacute; de Linguistique de Paris</strong><br>
+  &Eacute;cole Pratique des Hautes &Eacute;tudes, IVe section <br>
+                45-47 rue des &Eacute;coles - 75005 PARIS <br>
+                Salle Gaston Paris (Escalier E     1er &eacute;tage) <br>
+                <strong>Dynamique syntaxique en tchétchène</strong><br>
+                Respecter la réalité des faits de langue en lien avec les faits sociaux est un point de vue qui place la dynamique au cœur de la description linguistique. Cela permet de rendre compte du fonctionnement d’une langue et des changements que ses locuteurs insensiblement lui font subir. Il en résulte que l’étude de la variation est une indication importante d’un changement possible à venir. Ceci ouvre la possibilité de la prédictivité en linguistique. <br>
+                     
+                La dynamique et l’évolution linguistique du tchétchène, en ciblant plus précisément le domaine de la syntaxe, seront présentées dans cette communication. Les premières attestations écrites concernant cette langue remontent à la fin du XIXe siècle et permettent d’avoir ainsi un point de référence dans le passé. Le tchétchène étudié est celui qui est parlé à Grozny, variété qui sert, depuis 1928, de base à la langue littéraire. <br>
+                     
+                Après une présentation rapide de quelques faits de grammaticalisation, je me pencherai sur un cas de recatégorisation d’une modalité énonciative. La disparition de l’utilisation d’une construction pronominale particulière sera également évoquée. Enfin, je m’arrêterai plus longuement sur un changement de structure. Comme toutes les langues caucasiques, le tchétchène présente une structure ergative dominante. Une seule construction ne présente pas le schéma attendu. Peut-on déterminer le moment de cette évolution ? Quels facteurs peuvent expliquer son apparition ? Ce sont quelques unes des questions auxquelles je tenterai de répondre.</p>
+            </li>
                 <li>
-                <p><strong><a name="mukherjee"></a>samedi 27 mars 2010 de 15h à 18h</strong>, au <strong>Salon du Livre</strong> de Paris, éditions Publibook (<strong>stand U43</strong>)<br>
-                  signature par<strong> <a href="../membres/mukherjee.htm">Prithwindra Mukherjee</a></strong> de son dernier ouvrage<br>
-                  <strong>Thât/ Mélakartâ, Les échelles fondamentales de la musique indienne du Nord et du Sud</strong>, recherche effectuée entre 1981-2003 au Département d'Ethnomusicologie du Lacito, <br>
-                  avec une préface par le Pandit Ravi Shankar. (ouvrage présenté <a href="../vient-de-paraitre/mukherjee_melakarta.htm">ici</a>)</p>
-              </li>
+                  <p><strong><a name="mukherjee"></a>samedi 27 mars 2010 de 15h à 18h</strong>, au <strong>Salon du Livre</strong> de Paris, éditions Publibook (<strong>stand U43</strong>)<br>
+                    signature par<strong> <a href="../membres/mukherjee.htm">Prithwindra Mukherjee</a></strong> de son dernier ouvrage<br>
+                    <strong>Thât/ Mélakartâ, Les échelles fondamentales de la musique indienne du Nord et du Sud</strong>, recherche effectuée entre 1981-2003 au Département d'Ethnomusicologie du Lacito, <br>
+                    avec une préface par le Pandit Ravi Shankar. (ouvrage présenté <a href="../vient-de-paraitre/mukherjee_melakarta.htm">ici</a>)</p>
+                </li>
               <li>
                 <p><strong><a name="michaud"></a>vendredi 19 mars 2010</strong>, conférence d'<a href="../membres/michaud.htm">Alexis Michaud</a> <br>
                   &quot;<strong>Tone sandhi in numeral-plus-classifier determiners: data from Na, Laze and Naxi, and phylogenetic implications for the Na language group</strong>&quot; <br>
@@ -175,7 +200,7 @@ Et les paroles prononc&eacute;es vendredi &eacute;taient impr&eacute;gn&eacute;e
               <li>
                 <p><strong><a name="languesencontact"></a>mardi</strong> <strong>15 et mercredi 16 décembre 2009,</strong> <br>
                   Journées d'étude du programme « Langues en contact »  de la fédération <strong>Typologie &amp; universaux linguistiques</strong>.<br>
-                  <a href="../documents/zz_autres/Langues-en-contact.jpg"><img src="../documents/zz_autres/Langues-en-contact.jpg" alt="languesencontact" width="550" border="0"></a><br>
+                  <a href="../documents/zz_autres/Langues-en-contact.jpg"><img src="../documents/zz_autres/Langues-en-contact.jpg" alt="languesencontact" width="100%" border="0"></a><br>
                   L'équivalent  en pdf <a href="../documents/pdf/programme-Dec09.pdf" target="_blank">ici</a>.</p>
               </li>
               <li>
@@ -197,7 +222,7 @@ Et les paroles prononc&eacute;es vendredi &eacute;taient impr&eacute;gn&eacute;e
                     Pour assister à la cérémonie d'inauguration, il revient à Motalava avec sa femme, ses enfants et une collègue musicologue. Mais une fois sur place, tout ne se passe pas exactement comme prévu</em>...<br>
                   <br>
                   [cliquer sur l'image pour consulter l'affiche complète en pdf)<br>
-                  <a href="../documents/pdf/salaire-poete.pdf" target="_blank"><img src="../documents/zz_autres/salaire-poete.jpg" alt="poete" width="550"></a><br>
+                  <a href="../documents/pdf/salaire-poete.pdf" target="_blank"><img src="../documents/zz_autres/salaire-poete.jpg" alt="poete" width="100%"></a><br>
                    </p>
               </li>
               <li>
@@ -234,7 +259,7 @@ Et les paroles prononc&eacute;es vendredi &eacute;taient impr&eacute;gn&eacute;e
                   le <strong>jeudi 5 novembre</strong> 2009, de 18h à 19h30,<br>
                   <em>résumé</em> : F. J. exposera, avec des exemples pris dans une grande variété de langues, comment il faudrait reprendre la question de la césure entre linguistique interne (les mécanismes structuraux du changement linguistique) et linguistique externe (la pression des sociétés des locuteurs). Il montrera comment certaines tendances contemporaines de la linguistique permettent de mieux articuler les deux aspects, et de montrer aux étudiants que la linguistique n'est ni une science faite de formules abstruses, ni un exercice politique sur les langues menacées, mais un domaine passionnant et accueillant. (présentation powerpoint <a href="../images/diaporamas/linguistique_externe.ppt">ici</a>).<br>
                   Autres conférences :<br>
-                  <img src="../documents/zz_autres/linguistique_sorbonne.jpg" alt="sorbonne" width="550" border="1"></p>
+                  <img src="../documents/zz_autres/linguistique_sorbonne.jpg" alt="sorbonne" width="100%" border="1"></p>
               </li>
               <li>
                 <p><strong><a name="alex"></a> 19 juin 2009</strong>,<br>
@@ -245,7 +270,7 @@ Et les paroles prononc&eacute;es vendredi &eacute;taient impr&eacute;gn&eacute;e
                     Pour assister à la cérémonie d'inauguration, il revient à Motalava avec sa femme, ses enfants et une collègue musicologue. Mais une fois sur place, tout ne se passe pas exactement comme prévu</em>...<br>
                   <br>
                   [cliquer sur l'image pour la voir en plus grand]<br>
-                  <a href="../documents/zz_autres/poete_fr.jpg" target="_blank"><img src="../documents/zz_autres/poete_fr.jpg" alt="poete" width="550"></a><br>
+                  <a href="../documents/zz_autres/poete_fr.jpg" target="_blank"><img src="../documents/zz_autres/poete_fr.jpg" alt="poete" width="100%"></a><br>
                 </p>
               </li>
               <li>
@@ -338,7 +363,7 @@ Et les paroles prononc&eacute;es vendredi &eacute;taient impr&eacute;gn&eacute;e
                   <strong>Programme</strong> (cliquer dessus pour le voir  plus grand) : </p>
               </li>
             </ul>
-            <p><a href="../documents/zz_autres/SemTerrainLlacan2008.jpg" target="_blank"><img src="../documents/zz_autres/SemTerrainLlacan2008_sm.jpg" alt="llacan" width="580" border="0"></a><br>
+            <p><a href="../documents/zz_autres/SemTerrainLlacan2008.jpg" target="_blank"><img src="../documents/zz_autres/SemTerrainLlacan2008_sm.jpg" alt="llacan" width="100%" border="0"></a><br>
             </p>
             <ul class="liste-liens">
               <li>
@@ -372,35 +397,34 @@ Et les paroles prononc&eacute;es vendredi &eacute;taient impr&eacute;gn&eacute;e
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
   </tr>
 </table>
-<!-- Start of StatCounter Code -->
-<script type="text/javascript" language="javascript">
-var sc_project=2319041; 
-var sc_invisible=1; 
-var sc_partition=21; 
-var sc_security="1fae5b4b"; 
-var sc_text=3; 
-</script>
-
-<script type="text/javascript" language="javascript" src="http://www.statcounter.com/counter/frames.js"></script><noscript><a href="http://www.statcounter.com/" target="_blank"><img  src="http://c22.statcounter.com/counter.php?sc_project=2319041&amp;java=0&amp;security=1fae5b4b&amp;invisible=0" alt="best website stats" border="0"></a> </noscript>
-<!-- End of StatCounter Code -->
 <p>&nbsp;</p>
  <p>&nbsp;</p>
  <div id="divpartenaires" >
    <table width="150"  border="0" cellspacing="0" cellpadding="0">
-     <tr><td><a href="http://www.cnrs.fr" target="_blank"><img src="../images/logos/logo-cnrs.jpg" alt="cnrs" width="150" height="62" border="0"></a></td>
+     <tr>
+       <td><a href="http://www.cnrs.fr" target="_blank"><img src="../images/logos/logo-cnrs.jpg" alt="cnrs" width="150" height="62" border="0"></a></td>
      </tr>
-     <tr><td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="1"></td></tr>
-     <tr><td><a href="http://www.univ-paris3.fr/1207750810633/0/fiche___defaultstructureksup/&RH=1235649944785" target="_blank"><img src="../images/logos/logo-paris-3.gif" alt="paris3" width="150" height="53" border="0"></a></td>
+     <tr>
+       <td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" alt="aa" width="150" height="1"></td>
      </tr>
-     <tr><td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="1"></td></tr>
-     <tr><td><a href="http://www.paris-sorbonne.fr/fr/spip.php?rubrique1096" target="_blank"><img src="../images/logos/logo-paris-4.gif" alt="paris4" width="150" height="53" border="0"></a></td>
+     <tr>
+       <td><a href="http://www.univ-paris3.fr/1207750810633/0/fiche___defaultstructureksup/&RH=1235649944785" target="_blank"><img src="../images/logos/logo-paris-3.gif" alt="paris3" width="150" height="53" border="0"></a></td>
      </tr>
-	 <tr><td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="1"></td></tr>
-     <tr><td><a href="http://www.typologie.cnrs.fr/" target="_blank"><img src="../images/logos/logo-typo.gif" alt="tul" width="150" height="53" border="0"></a></td>
+     <tr>
+       <td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" alt="aa" width="150" height="1"></td>
+     </tr>
+     <tr>
+       <td><a href="http://www.paris-sorbonne.fr/fr/spip.php?rubrique1096" target="_blank"><img src="../images/logos/logo-paris-4.gif" alt="paris4" width="150" height="53" border="0"></a></td>
+     </tr>
+     <tr>
+       <td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" alt="aa" width="150" height="1"></td>
+     </tr>
+     <tr>
+       <td><a href="http://www.typologie.cnrs.fr/" target="_blank"><img src="../images/logos/logo-typo.gif" alt="tul" width="150" height="53" border="0"></a></td>
      </tr>
    </table>
-</div>
- <p>
+ </div>
+<p>
      <script type='text/javascript'>function Go(){return}</script>
      <script type='text/javascript' src='../z-outils/deroulants/top_pos_var.js'></script>
      <script type='text/javascript' src='../z-outils/deroulants/menu_var.js'></script>
@@ -409,97 +433,72 @@ var sc_text=3;
  <noscript>
  <p>Your browser does not support script</p>
 </noscript>
+ <div id="divnavgauche-spec">
+   <table border="0" cellpadding="0" cellspacing="0"  width="150">
+     <tr>
+       <td height="2"><img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
+     </tr>
+     <tr>
+       	<td width="100%"  class="Xnavgauche" >
+        	<table border="0" cellpadding="10" cellspacing="0"  width="100%">
+      			<tr>
+       	 			<td width="100%" class="Xnavgauche"><h2><a href="INTRANET/index.htm">Intranet <img border="0" src="../z-outils/images/boite-outils/icones/intranet.gif" width="18" height="12"
+							alt="aa"></a></h2></td>
+      			</tr>
+       		</table>
+       </td>
+     </tr>
+     <tr>
+       <td height="2"><img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
+     </tr>
+    </table>
+ </div>
+ <div id="divnavgauche-searchLabo">
+   <table cellspacing="0" cellpadding="0" hspace="11" border="0">
+     <tr>
+     	<td width="100%" class="Xnavgauche"><h2 >Rechercher</h2>
+                 <p>Sur le WEB 
+                   du laboratoire</p>
+               <br>
+      	 </td>
+         </tr>
+         <tr>
+     	 <td>       
+				<form name="rechercher-spm" action="http://lacito.vjf.cnrs.fr/moteur/engine.php" method="GET">
+				<input type="hidden" name="action"  value="go">
+				<table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td><input name ="blork" maxLength="50" size="10" class="text"></td>
+						<td><img border="0" src="../z-outils/images/boite-outils/espaceur.gif" width="10" height="8"
+							alt="aa"></td>
+						<td><input name="submit2" type="image" src="../z-outils/images/charte/ok.gif" 
+                             border="0" width="20" height="20">
+						</td>
+					</tr>
+				</table>
+  				</form>
+          </td>
+        </tr>
+       </table>
+        <tr>
+       <td height="2"><img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
+		</tr>
 
-<div id="divnavgauche-spec"> 
-  <table border="0" cellpadding="0" cellspacing="0"  width="150">
-    <tr> 
-      <td height="2"> <img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
-    </tr>
-    <tr> 
-      <td width="100%"  class="Xnavgauche" > 
-        <table border="0" cellpadding="10" cellspacing="0"  width="100%">
-          <tr> 
-            <td width="100%" class="Xnavgauche"> 
-              <p class="intertitre"><a href="../pratique/organigramme.htm">Les membres</a></p>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr> 
-      <td height="2"> <img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
-    </tr>
-    <tr> 
-      <td width="100%"  class="Xnavgauche" > 
-        <table border="0" cellpadding="10" cellspacing="0"  width="100%">
-          <tr> 
-            <td width="100%" class="Xnavgauche"> 
-              <p class="intertitre" >Rechercher</p>
-              <p>Sur le WEB du Lacito</p>
-              <p><br>
-              <br>
-              <!--Sur le WEB du CNRS --><br>
-              <br>
-              <br>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr> 
-      <td height="2"> <img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
-    </tr>
-  </table>
-</div>
-<div id="divnavgauche-searchLabo"> 
-  <form name="rechercher-spm" action="http://lacito.vjf.cnrs.fr/moteur/engine.php" method="GET">
-  <input type="hidden" name="action" value="go">
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr> 
-        <td> 
-          <input name ="blork" maxLength="50" size="10" class="text">
-        </td>
-        <td> <img border="0" src="../z-outils/images/boite-outils/espaceur.gif" width="10" height="8"
-                alt=""></td>
-        <td> <input name="submit" type="image" src="../z-outils/images/charte/ok.gif" 
-                                border="0" width="20" height="20">
-        </td>
-      </tr>
-    </table>
-  </form>
-</div>
-<!--<div id="divnavgauche-search"> 
-  <form name="rechercher-spm" action="http://www.cnrs.fr/rechercher/" method="POST"
-       target="_blank">
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr> 
-        <td> 
-          <input name ="request" maxLength="50" size="10" class="BoiteRechercher">
-        </td>
-        <td> <img border="0" src="../z-outils/images/boite-outils/espaceur.gif" width="10" height="8"
-                alt=""></td>
-        <td valign="middle" > 
-          <input name="submit" type="image" src="../z-outils/images/charte/ok.gif" 
-                                border="0" width="20" height="20">
-        </td>
-      </tr>
-    </table>
-  </form>
-</div>-->
-<div id="divnavhaut-nom-labo"> 
+ </div>
+<div id="divnavhaut-nom-labo">
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr> 
-      <td class="Xnavhaut"> 
-      <p> <a href="../index.htm"><img src="../images/logos/Logo_Lacito.jpg" alt="lacito" width="143" height="57" border="0"></a></p>      </td>
+    <tr>
+      <td valign="top" class="Xnavhaut"><p> <a href="../index.htm"><img src="../images/logos/Logo_Lacito.jpg" alt="aa" width="141" height="59" hspace="10" border="0" align="left"></a> <span class="Style1">Langues et civilisations<br>
+        à tradition orale <br>
+        (UMR7107)</span></p></td>
     </tr>
   </table>
 </div>
 <map name="Map2">
-  <area shape="rect" coords="28,23,46,43" href="javascript:impression()" alt="Imprimer/to print">
-  <area shape="rect" coords="50,23,67,43" href="javascript:writemail('vjf.cnrs.fr','behaghel','',1);" alt="Contact">
-  <area shape="rect" coords="68,23,85,43" href="../pratique/index.htm" alt="Plan du site/Site map">
-  <area shape="rect" coords="87,23,105,43" href="../pratique/credits.htm" alt="Cr&eacute;dits/Copyrights">
-  <area shape="rect" coords="107,23,128,43" href="../pratique/to_build.htm" alt="Outils/Plug-ins">
+  <area shape="rect" coords="28,23,46,43" href="javascript:impression()" alt="Imprimer">
+  <area shape="rect" coords="49,22,66,42" href="javascript:writemail('vjf.cnrs.fr','behaghel','',1);" alt="Contacter le webmestre">
+  <area shape="rect" coords="68,23,85,43" href="../pratique/index.htm" alt="Plan du site">
+  <area shape="rect" coords="87,23,105,43" href="../pratique/credits.htm" alt="Crédits">
   <area shape="rect" coords="9,24,25,43" href="../index.htm" alt="Accueil">
 </map>
 </body>

@@ -12,45 +12,37 @@
 <script language="JavaScript" src="../../z-outils/outils.js"></script>
 <script language="JavaScript" type="text/JavaScript">
 <!--
-
 function MM_reloadPage(init) {  //reloads the window if Nav4 resized
   if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
     document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
   else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
 }
 MM_reloadPage(true);
-//-->
-</script>
-<script language="JavaScript" type="text/JavaScript">
-<!--
-function flvFPW1(){//v1.44
-// Copyright 2002-2004, Marja Ribbers-de Vroed, FlevOOware (www.flevooware.nl/dreamweaver/)
-var v1=arguments,v2=v1[2].split(","),v3=(v1.length>3)?v1[3]:false,v4=(v1.length>4)?parseInt(v1[4]):0,v5=(v1.length>5)?parseInt(v1[5]):0,v6,v7=0,v8,v9,v10,v11,v12,v13,v14,v15,v16;
-v11=new Array("width,left,"+v4,"height,top,"+v5);for (i=0;i<v11.length;i++){v12=v11[i].split(",");
-l_iTarget=parseInt(v12[2]);if (l_iTarget>1||v1[2].indexOf("%")>-1){v13=eval("screen."+v12[0]);
-for (v6=0;
-v6<v2.length;v6++){v10=v2[v6].split("=");if (v10[0]==v12[0]){v14=parseInt(v10[1]);
-if (v10[1].indexOf("%")>-1){v14=(v14/100)*v13;
-v2[v6]=v12[0]+"="+v14;}}if (v10[0]==v12[1]){v16=parseInt(v10[1]);v15=v6;
-}}if (l_iTarget==2){v7=(v13-v14)/2;v15=v2.length;}else if (l_iTarget==3){v7=v13-v14-v16;
-}v2[v15]=v12[1]+"="+v7;}}v8=v2.join(",");v9=window.open(v1[0],v1[1],v8);if (v3){v9.focus();
-}document.MM_returnValue=false;return v9;}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
 //-->
 </script>
 <!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+.Style1 {color: #820E12}
+-->
+</style>
 </head>
 <body marginwidth="0" marginheight="0" >
-  <div class="bandeau-liens" id="divbandeau-lienCNRS"> <a href="http://www.cnrs.fr/" target="_blank">Le CNRS</a> </div>
+  <div class="bandeau-liens" id="divbandeau-lienCNRS"> <a href="http://www.cnrs.fr/fr/organisme/presentation.htm" target="_blank">Le CNRS</a> </div>
 <div id="divbandeau-traitvert1"><img src="../../z-outils/images/charte/trait-vertical.gif"></div>
   <div id="divbandeau-lienAccueil" class="bandeau-liens"> <a href="http://www.cnrs.fr/shs/" target="_blank">Accueil SHS</a> </div>
 <div id="divbandeau-traitvert2"><img src="../../z-outils/images/charte/trait-vertical.gif"></div>
-  <div id="divbandeau-lienAutres" class="bandeau-liens"><a href="http://www2.cnrs.fr/band/5.htm" target="_blank">Autres sites CNRS</a></div> 
-  <div id="divbandeau-traitvert3"><img src="../../z-outils/images/charte/trait-vertical.gif"></div>
+  <div id="divbandeau-lienAutres" class="bandeau-liens"><a href="http://www.cnrs.fr/fr/une/sites-cnrs.htm" target="_blank">Autres sites CNRS</a></div> 
+<div id="divbandeau-traitvert3"><img src="../../z-outils/images/charte/trait-vertical.gif"></div>
 
 <table width="751"  border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td width="150"><img src="../../z-outils/images/boite-outils/espaceur.gif" width="150" height="65"></td>
-    <td colspan="3"><img src="../../z-outils/images/charte/bandeau-haut-droit.gif" alt="" width="600" height="65" border="0"></td>
+    <td colspan="3"><img src="../../z-outils/images/charte/bandeau-haut-droit.gif" alt="" width="100%" border="0"></td>
     <td width="1" class="separateur"><img src="../../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
   </tr>
   <tr>
@@ -61,7 +53,7 @@ v2[v6]=v12[0]+"="+v14;}}if (v10[0]==v12[1]){v16=parseInt(v10[1]);v15=v6;
   <tr>
     <td width="150">&nbsp;</td>
     <td width="1" class="separateur"><img src="../../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
-    <td height="1" colspan="2"><!-- InstanceBeginEditable name="Visuel" --><img src="../../images/bandeaux/bandeau_archivage.jpg" alt="" width="600" height="65" border="0"><!-- InstanceEndEditable --></td>
+    <td height="1" colspan="2"><!-- InstanceBeginEditable name="Visuel" --><img src="../../images/bandeaux/bandeau_archivage.jpg" alt="" width="100%" border="0"><!-- InstanceEndEditable --></td>
     <td width="1" class="separateur"><img src="../../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
   </tr>
   <tr>
@@ -87,49 +79,25 @@ v2[v6]=v12[0]+"="+v14;}}if (v10[0]==v12[1]){v16=parseInt(v10[1]);v15=v6;
   <tr>
     <td width="150">&nbsp;</td>
     <td width="1" class="separateur"><img src="../../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
-    <td rowspan="2" colspan="2" class="Xtextcourant" width="600">	<div id="divXnavdroite"><!-- InstanceBeginEditable name="MenuDroit" -->
+    <td rowspan="2" colspan="2" class="Xtextcourant" width="600" valign="top">	<div id="divXnavdroite"><!-- InstanceBeginEditable name="MenuDroit" -->
       <table width="100%"  border="0" cellspacing="0" cellpadding="5">
         <tr>
           <td class="Xscde-navdroite"><a href="Ajie_en.htm">Aji&euml; corpus</a></td>
         </tr>
         <tr>
-          <td class="Xscde-navdroite"><a href="Araki_en.htm">Araki corpus</a> </td>
-        </tr>
-        <tr>
           <td class="Xscde-navdroite"><a href="Bwatoo_en.htm">Bwatoo corpus</a></td>
         </tr>
         <tr>
-          <td class="Xscde-navdroite"><a href="Cemuhi_en.htm">Cemuhi corpus </a></td>
-        </tr>
-        <tr>
-          <td class="Xscde-navdroite"><a href="Dorig_en.htm">Dorig corpus</a> </td>
+          <td class="Xscde-navdroite"><a href="Cemuhi_en.htm">Cèmuhî corpus </a></td>
         </tr>
         <tr>
           <td class="Xscde-navdroite"><a href="Drehu_en.htm">Drehu corpus</a> </td>
         </tr>
         <tr>
-          <td class="Xscde-navdroite"><a href="East_Uvean_en.htm">East Uvean corpus</a></td>
-        </tr>
-        <tr>
-          <td class="Xscde-navdroite"><a href="Fagauvea_en.htm">Fagauvea corpus</a> </td>
-        </tr>
-        <tr>
           <td class="Xscde-navdroite"><a href="Iaai_en.htm">Iaai corpus</a> </td>
         </tr>
         <tr>
-          <td class="Xscde-navdroite"><a href="Koro_en.htm">Koro corpus</a> </td>
-        </tr>
-        <tr>
-          <td class="Xscde-navdroite"><a href="Kwenyii_en.htm">Kw&ecirc;nyii corpus</a> </td>
-        </tr>
-        <tr>
-          <td class="Xscde-navdroite"><a href="Lakon_en.htm">Lakona corpus</a> </td>
-        </tr>
-        <tr>
-          <td class="Xscde-navdroite"><a href="Mwesen_en.htm">Mwesen corpus</a> </td>
-        </tr>
-        <tr>
-          <td class="Xscde-navdroite"><a href="Mwotlap_en.htm">Mwotlap corpus</a> </td>
+          <td class="Xscde-navdroite"><a href="Kwenyii_en.htm">Kwényïï corpus</a> </td>
         </tr>
         <tr>
           <td class="Xscde-navdroite"><a href="Nelemwa_en.htm">N&ecirc;l&ecirc;mwa corpus</a></td>
@@ -144,7 +112,10 @@ v2[v6]=v12[0]+"="+v14;}}if (v10[0]==v12[1]){v16=parseInt(v10[1]);v15=v6;
           <td class="Xscde-navdroite"><a href="Paici_en.htm">Paic&icirc; corpus</a></td>
         </tr>
         <tr>
-          <td class="Xscde-navdroite"><a href="Pije_en.htm">Pij&eacute; corpus</a> </td>
+          <td class="Xscde-navdroite"><a href="Pije_en.htm">Pije corpus</a> </td>
+        </tr>
+        <tr>
+          <td class="Xscde-navdroite"><a href="Fagauvea_en.htm">West Uvean Corpus</a></td>
         </tr>
         <tr>
           <td class="Xscde-navdroite"><a href="Xaracuu_en.htm">X&acirc;r&acirc;c&ugrave;&ugrave; corpus </a> </td>
@@ -153,7 +124,7 @@ v2[v6]=v12[0]+"="+v14;}}if (v10[0]==v12[1]){v16=parseInt(v10[1]);v15=v6;
           <td class="Xscde-navdroite"><a href="Xaragure_en.htm">X&acirc;r&acirc;gur&egrave; corpus</a> </td>
         </tr>
         <tr>
-          <td class="Xscde-navdroite"><a href="Yuanga_en.htm">Yuanga corpus</a> </td>
+          <td class="Xscde-navdroite"><a href="Yuanga_en.htm">Zuanga or Yuanga corpus</a> </td>
         </tr>
         <tr>
           <td class="Xscde-navdroite"><a href="../oceanie_en.htm">to the Oceanic Languages</a><a href="../presentation_en.htm"></a></td>
@@ -162,51 +133,50 @@ v2[v6]=v12[0]+"="+v14;}}if (v10[0]==v12[1]){v16=parseInt(v10[1]);v15=v6;
     <!-- InstanceEndEditable --></div>
       <div id="ZonePrint" class="ZonePrint">    
       <!-- InstanceBeginEditable name="Contenu" -->
-      <h3><a name="up"></a><em>Numee corpus</em> </h3>
-      <p class="intertitre"><a href="../../ALC/Languages/Numee_popup.htm" target="_blank" onClick="flvFPW1(this.href,'popupLink','width=400,height=400,scrollbars=yes,resizable=yes',1);return document.MM_returnValue"><img src="../../images/icones/info.gif" alt="a" width="15" height="15" border="0"><em>Numee</em></a><em>: a brief note</em> </p>
+      <h1><a name="up"></a>Numee corpus </h1>
+      <p class="intertitre">&nbsp;</p>
+      <p class="intertitre"><a href="../../ALC/Languages/Numee_popup.htm" target="_blank" onClick="window.open(this.href,'popupLink','width=400,height=400,scrollbars=yes,resizable=yes',1);return false"><img src="../../images/icones/info.gif" alt="a" width="15" height="15" border="0">Numee</a>: a brief note </p>
       <p>&nbsp;</p>
       <ul class="liste-liens">
-        <li><a href="#histoire">The history of the Angw&egrave;r&egrave;r&egrave;s</a></li>
-        <li><a href="#Ketiware">Ketiware and the girl from Goro</a></li>
-        <li><a href="#fille">The girl from Mont Dore</a></li>
-        <li><a href="#guerre">The war between the Drojis and the Draames</a></li>
-        <li><a href="#Vendegou">The Vendegous&rsquo; arrival on the &Icirc;le des Pins</a></li>
-        <li><a href="#faucon">The falcon from Ouen Island</a></li>
-        <li><a href="#aigle">The son of the Fisher eagle</a></li>
-        <li><a href="#rat">The rat, the sultan&rsquo;s fowl and the squid</a></li>
+        <li><a href="#histoire">The History of the Angw&egrave;r&egrave;r&egrave;s</a></li>
+        <li><a href="#Ketiware">Ketiware and the Girl from Goro</a></li>
+        <li><a href="#fille">The Girl from Mont Dore</a></li>
+        <li><a href="#guerre">The War between the Drojis and the Draames</a></li>
+        <li><a href="#Vendegou">The Vendegous&rsquo; Arrival on the &Icirc;le des Pins</a></li>
+        <li><a href="#faucon">The Falcon from Ouen Island</a></li>
+        <li><a href="#aigle">The Son of the Fisher Eagle</a></li>
+        <li><a href="#rat">The Rat, the Sultan&rsquo;s Fowl and the Squid</a></li>
         </ul>
       <p>&nbsp; </p>
-      <p class="intertitre"><a name="histoire"></a><a href="../tools/show_text.php?id=crdo-KDK_HIST_SOUND" target="_blank"><img src="../../images/icones/h_parleur.gif" alt="a" width="20" height="20" border="0">The history of the Angw&egrave;r&egrave;r&egrave;s</a><br>
-      New Caledonia, 1966 </p>
+      <p class="intertitre"><a name="histoire"></a><a href="../tools/show_text.php?id=crdo-KDK_HIST_SOUND" target="_blank"><img src="../../images/icones/h_parleur.gif" alt="a" width="20" height="20" border="0">The History of the Angw&egrave;r&egrave;r&egrave;s</a><br>
+      New Caledonia, 1966, <a href="../../membres/rivierre.htm">Jean-Claude Rivierre</a></p>
       <p>This history of the Angw&egrave;r&egrave;r&egrave;s is told by Roch Angw&egrave;r&egrave;r&egrave;, in Goro, in 1966. The tumultuous history of this lineage, exiled from Mont Dore at the beginning of colonization, also portrays the clans from Ouen island, the &Icirc;le des Pins and Goro island. The narrator recalls, in the presence of Chief Charles Atiti, the circumstances of his arrival on Goro, at the origin of his current status within the local society. The story reveals, in an exemplary manner, the strategies, changes in status and acceptance mechanisms which come into play because of these displacements, either forced or voluntary, of clans to new territories.</p>
-      <p class="intertitre"><a name="Ketiware"></a><a href="../tools/show_text.php?id=crdo-KDK_GORO_SOUND" target="_blank"><img src="../../images/icones/h_parleur.gif" alt="a" width="20" height="20" border="0">Ketiware and the girl from Goro</a><br>
-      New Caledonia, 1966</p>
+      <p class="intertitre"><a name="Ketiware"></a><a href="../tools/show_text.php?id=crdo-KDK_GORO_SOUND" target="_blank"><img src="../../images/icones/h_parleur.gif" alt="a" width="20" height="20" border="0">Ketiware and the Girl from Goro</a><br>
+      New Caledonia, 1966, <a href="../../membres/rivierre.htm">Jean-Claude Rivierre</a></p>
       <p class="ZonePrint">One must remember that the Lifou chiefdom is largely represented in southern New Caledonia, and more particularly by the Vend&eacute;gous who became chiefs in the &Icirc;le des Pins several centuries ago (cf. the text &quot;La venue des Vend&eacute;gou &agrave; l'&icirc;le des Pins&quot;). This story - which must be understood within these relations - was told in Goro in 1966 by Roch Angw&egrave;r&egrave;r&egrave;. It is well known in the south of the Grande Terre and several versions have been collected in the two languages of the Drubea-Kapone area.</p>
       <p class="ZonePrint">[summary]  The fame of K&eacute;tiwar&eacute;, chief of Lifou, attracted droves of marriage candidates from the Loyalty Islands and the Grande Terre. But approaching this hero turned out to be a course littered with obstacles as, living in a banyan tree under the appearance of a snake (blackbanded sea krait), he would only come out to terrify those who came to visit him. Only the girl from Goro had the necessary knowledge and help to get the better of K&eacute;tiwar&eacute;.</p>
-      <p class="intertitre"><a name="fille"></a><a href="../tools/show_text.php?id=crdo-KDK_DORE_SOUND" target="_blank"><img src="../../images/icones/h_parleur.gif" alt="a" width="20" height="20" border="0">The girl from Mont Dore</a> <a href="#up"><img src="../../images/icones/fleche-haut.gif" alt="a" width="10" height="9" border="0"></a><br>
-      New Caledonia, 1962</p>
+      <p class="intertitre"><a name="fille"></a><a href="../tools/show_text.php?id=crdo-KDK_DORE_SOUND" target="_blank"><img src="../../images/icones/h_parleur.gif" alt="a" width="20" height="20" border="0">The Girl from Mont Dore</a> <a href="#up"><img src="../../images/icones/fleche-haut.gif" alt="a" width="10" height="9" border="0"></a><br>
+      New Caledonia, 1962, <a href="../../membres/rivierre.htm">Jean-Claude Rivierre</a></p>
       <p class="ZonePrint">This lovely legend recounted by Philippe B&eacute;to&eacute; from Ouen Island, was recorded in 1962 by Andr&eacute; G. Haudricourt. Its transcription and translation were established using Haudricourt&rsquo;s notes and the recording presented here, a passage of which has become practically inaudible. Just after sentence 92, two and a half minutes of the narration were therefore cut out. Luckily, the passage consisted in repetitions of a single scene (the heroine calling towards her two visitors from the &Icirc;le des Pins). Its suppression does not interfere with comprehension and does not alter the quality of the text as a whole.</p>
       <p class="ZonePrint">[summary] Two men from the &Icirc;le des Pins come by canoe to seek the hand of a girl from Mont Dore. This union, they argue, would bring about a new era of exchanges and visits between the two allianced chiefdoms. Alas, the undertaking turns into a disaster before the girl from Mont Dore even leaves the shores of the Grande Terre. Both her own acquaintances and in those of her husband, create obstacles, and aggressions crop up to prevent the union from being completed.</p>
-      <p class="intertitre"><a name="guerre"></a><a href="../tools/show_text.php?id=crdo-KDK_GUERRE_SOUND" target="_blank"><img src="../../images/icones/h_parleur.gif" alt="a" width="20" height="20" border="0">The war between the Drojis and the Draames</a><br>
-      New Caledonia, 1966</p>
+      <p class="intertitre"><a name="guerre"></a><a href="../tools/show_text.php?id=crdo-KDK_GUERRE_SOUND" target="_blank"><img src="../../images/icones/h_parleur.gif" alt="a" width="20" height="20" border="0">The War between the Drojis and the Draames</a><br>
+      New Caledonia, 1966, <a href="../../membres/rivierre.htm">Jean-Claude Rivierre</a></p>
       <p class="ZonePrint">This short account well illustrates the nguma told in the far south of the Grande Terre. Most of these texts are about the interclannic conflicts which preceded and accompanied, in the 19th century, the beginnings of colonization. Are mentioned in particular the wars of chief A-Draam&ecirc;, his challenges to the chiefdom of Pa&iuml;ta, or, as here, his troubles with his neighbors on the south east coast. The scattering of the Drojis who formerly inhabited the Unya region is recounted here by one of the clan&rsquo;s descendents. In this account, in the Ouen Island dialect, recorded in Goro in 1966, the narrator (Apollonie Womw&acirc;) gives only the essential elements and only very elusively mentions, towards the end of her story, the role played by the chiefdom of the &Icirc;le des Pins in the obliteration of part of the members of her clan.</p>
-      <p class="intertitre"><a name="Vendegou" id="Vendegou"></a><a href="../tools/show_text.php?id=crdo-KDK_VADEKU_SOUND" target="_blank"><img src="../../images/icones/h_parleur.gif" alt="a" width="20" height="20" border="0">The Vendegous&rsquo; arrival on the &Icirc;le des Pins</a><br>
-      New Caledonia, 1966</p>
+      <p class="intertitre"><a name="Vendegou" id="Vendegou"></a><a href="../tools/show_text.php?id=crdo-KDK_VADEKU_SOUND" target="_blank"><img src="../../images/icones/h_parleur.gif" alt="a" width="20" height="20" border="0">The Vendegous&rsquo; Arrival on the &Icirc;le des Pins</a><br>
+      New Caledonia, 1966, <a href="../../membres/rivierre.htm">Jean-Claude Rivierre</a></p>
       <p class="ZonePrint">This account of the Vend&eacute;gou&rsquo;s arrival on the &Icirc;le des Pins was told in Touaourou in 1966 by Alexis Vend&eacute;gou, the eldest member of the branch of the clan living in the south east of the Grande Terre. The narrator recalls several essential facts concerning the chiefdom of the &Icirc;le des Pins, which, as is known since the publication of Father Lambert [Lambert P., <em>Moeurs et superstitions des N&eacute;o-Cal&eacute;doniens</em>, Noum&eacute;a, Nouvelle Imprimerie Noum&eacute;enne, 1900, 367 p., 65 gravures], was founded by Pil&eacute; K&eacute;tiwar&eacute; and his companions who came from Lifou by canoe. This narrative presents the relation between this spectacular arrival and the early successes of these newcomers, especially their winning a surfing contest which was underway when they arrived. The kinship between the name Vend&eacute;gou and that of a Mou (Lifou) chief lineage is proof, according to the narrator, of the tradition&rsquo;s truth. However, more yet than in Father Lambert&rsquo;s account, it is the physical aspect and the beauty of the visitors which is stressed, the fact that they made up a &ldquo;separate people&rdquo; which intrigued and delighted their hosts.</p>
-      <p class="intertitre"><a name="faucon"></a><a href="../tools/show_text.php?id=crdo-KDK_FAUCON_SOUND" target="_blank"><img src="../../images/icones/h_parleur.gif" alt="a" width="20" height="20" border="0">The falcon from Ouen Island</a> <a href="#up"><img src="../../images/icones/fleche-haut.gif" alt="a" width="10" height="9" border="0"></a><br>
-      New Caledonia, 1966</p>
+      <p class="intertitre"><a name="faucon"></a><a href="../tools/show_text.php?id=crdo-KDK_FAUCON_SOUND" target="_blank"><img src="../../images/icones/h_parleur.gif" alt="a" width="20" height="20" border="0">The Falcon from Ouen Island</a> <a href="#up"><img src="../../images/icones/fleche-haut.gif" alt="a" width="10" height="9" border="0"></a><br>
+      New Caledonia, 1966, <a href="../../membres/rivierre.htm">Jean-Claude Rivierre</a></p>
       <p class="ZonePrint">The story of the falcon from Ouen Island was told in 1966 by Apollonie Womw&acirc; while this speaker from Ouen Island was staying in Goro with her husband, chief Antoine Wapar&egrave; W&ecirc;r&ecirc;. The narrator gives a somewhat shortened version of this story, usually filled with more detail, which had already been collected in similar form from several different locations on the east coast of the Grande Terre.</p>
       <p class="ZonePrint">[summary]  The &ldquo;Streaked Fantail&rdquo; bird (<em>Rhipidura spilodera verreauxi</em>), the chiefdom&rsquo;s auxiliary, helps the Peregrine Falcon (<em>Falco peregrinus nesiotes</em>), inhabitant of the high summits, to recuperate his goods stolen during an incursion from the sea. Here &ldquo;Falcon of the false mango (<em>Cerbera</em>) mountain&rdquo; is the victim of Wak&ocirc;do, the presiding genie of the place called Jokuru, a reef situated off shore from Ouen Island, in the direction of the &Icirc;le des Pins. Wak&ocirc;do, it is said, is sometimes visible in the form of a shark who is a lucky omen when preceding a canoe but an evil omen when following it. The &ldquo;Streaked Fantail&rdquo; bird&rsquo;s feat earned it the honor of being distinguished among the feathered beings. The burning down of the aggressor&rsquo;s hut is said to be the cause of the fog often visible over the Jokuru reef...</p>
-      <p class="intertitre"><a name="aigle"></a><a href="../tools/show_text.php?id=crdo-KDK_KAKO_SOUND" target="_blank"><img src="../../images/icones/h_parleur.gif" alt="a" width="20" height="20" border="0">The son of the Fisher eagle</a><br>
-      New Caledonia, Touaourou, 1966</p>
+      <p class="intertitre"><a name="aigle"></a><a href="../tools/show_text.php?id=crdo-KDK_KAKO_SOUND" target="_blank"><img src="../../images/icones/h_parleur.gif" alt="a" width="20" height="20" border="0">The Son of the Fisher Eagle</a><br>
+      New Caledonia, Touaourou, 1966, <a href="../../membres/rivierre.htm">Jean-Claude Rivierre</a></p>
       <p class="ZonePrint">This story belongs to the type concerning children &ldquo;conceived in the bush&rdquo;, richly illustrated in the New Caledonian oral literature. Several examples of this kind of story can be found in the collection of Kanak Stories [Bensa A. et Rivierre J.-C. : <em>Histoires canaques</em>, Paris, cilf (&quot;Fleuve et Flamme&quot;, textes bilingues), 1983, 159 p.] devoted to the oral texts of northern central Grande Terre. In these stories, the child born of nature soon returns to the bush or, as here, commits suicide in order to reach the land of the dead, after having shed his ornaments and his weapons. As if unnatural alliances and breaking social rules could only have a tragic outcome.</p>
       <p class="ZonePrint">[summary]  A woman from the hinterland goes to the seashore one day, where she hears a noise but cannot determine its origin. On the shore, she eats a fish caught by an eagle, becomes pregnant and gives birth to a boy. The child is soon covered with insults by her for transgressing taboos and breaking the rules of society. Their argument and their despair lead them both to their death.</p>
-      <p class="intertitre"><a name="rat"></a><a href="../tools/show_text.php?id=crdo-KDK_RAT_SOUND" target="_blank"><img src="../../images/icones/h_parleur.gif" alt="a" width="20" height="20" border="0">The rat, the sultan&rsquo;s fowl and the squid</a> <a href="#up"><img src="../../images/icones/fleche-haut.gif" alt="a" width="10" height="9" border="0"></a><br>
-      New Caledonia, 1962</p>
+      <p class="intertitre"><a name="rat"></a><a href="../tools/show_text.php?id=crdo-KDK_RAT_SOUND" target="_blank"><img src="../../images/icones/h_parleur.gif" alt="a" width="20" height="20" border="0">The Rat, the Sultan&rsquo;s Fowl and the Squid</a> <a href="#up"><img src="../../images/icones/fleche-haut.gif" alt="a" width="10" height="9" border="0"></a><br>
+      New Caledonia, 1962, <a href="../../membres/rivierre.htm">Jean-Claude Rivierre</a></p>
       <p class="ZonePrint">This story was told by Charles Atiti in Goro in 1962. It was recorded by A. G. Haudricourt and was transcribed and translated in Paris by J. C. Rivierre with the help of Isaac Vend&eacute;gou, and recently revised with the help of Cl&eacute;ment Vend&eacute;gou. The twistings and turnings of this famous story are here located in Lar&eacute; and Tiga, as if, for the teller, the story were part of the Loyalty Islands&rsquo; folklore. In this version, the moral of this &ldquo;legend&rdquo; is clearly reaffirmed: the rat saves the life of the sultan fowl who, with no further ado, abandons it on the spot. The squid then saves the rat, who continuously makes fun of it for its personal appearance. Indeed, in the domain of helping others, it is best not to do too much...</p>
-      <p>&nbsp; </p>
-      <p><a href="../../membres/rivierre.htm">Jean-Claude Rivierre</a> </p>
-    <!-- InstanceEndEditable --></div></td>
+      <!-- InstanceEndEditable --></div></td>
     <td width="1" class="separateur"><img src="../../z-outils/images/boite-outils/espaceur.gif" width="1" height="500"></td>
   </tr>
   <tr>
@@ -222,35 +192,34 @@ v2[v6]=v12[0]+"="+v14;}}if (v10[0]==v12[1]){v16=parseInt(v10[1]);v15=v6;
     <td width="1" class="separateur"><img src="../../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
   </tr>
 </table>
-<!-- Start of StatCounter Code -->
-<script type="text/javascript" language="javascript">
-var sc_project=2319041; 
-var sc_invisible=1; 
-var sc_partition=21; 
-var sc_security="1fae5b4b"; 
-var sc_text=3; 
-</script>
-
-<script type="text/javascript" language="javascript" src="http://www.statcounter.com/counter/frames.js"></script><noscript><a href="http://www.statcounter.com/" target="_blank"><img  src="http://c22.statcounter.com/counter.php?sc_project=2319041&amp;java=0&amp;security=1fae5b4b&amp;invisible=0" alt="best website stats" border="0"></a> </noscript>
-<!-- End of StatCounter Code -->
 <p>&nbsp;</p>
  <p>&nbsp;</p>
  <div id="divpartenaires" >
    <table width="150"  border="0" cellspacing="0" cellpadding="0">
-     <tr><td><a href="http://www.cnrs.fr" target="_blank"><img src="../../images/logos/logo-cnrs.jpg" alt="cnrs" width="150" height="62" border="0"></a></td>
+     <tr>
+       <td><a href="http://www.cnrs.fr" target="_blank"><img src="../../images/logos/logo-cnrs.jpg" alt="cnrs" width="150" height="62" border="0"></a></td>
      </tr>
-     <tr><td class="separateur"><img src="../../z-outils/images/boite-outils/espaceur.gif" width="150" height="1"></td></tr>
-     <tr><td><a href="http://www.univ-paris3.fr/1207750810633/0/fiche___defaultstructureksup/&RH=1235649944785" target="_blank"><img src="../../images/logos/logo-paris-3.gif" alt="paris3" width="150" height="53" border="0"></a></td>
+     <tr>
+       <td class="separateur"><img src="../../z-outils/images/boite-outils/espaceur.gif" alt="aa" width="150" height="1"></td>
      </tr>
-     <tr><td class="separateur"><img src="../../z-outils/images/boite-outils/espaceur.gif" width="150" height="1"></td></tr>
-     <tr><td><a href="http://www.paris-sorbonne.fr/fr/spip.php?rubrique1096" target="_blank"><img src="../../images/logos/logo-paris-4.gif" alt="paris4" width="150" height="53" border="0"></a></td>
+     <tr>
+       <td><a href="http://www.univ-paris3.fr/1207750810633/0/fiche___defaultstructureksup/&RH=1235649944785" target="_blank"><img src="../../images/logos/logo-paris-3.gif" alt="paris3" width="150" height="53" border="0"></a></td>
      </tr>
-	 <tr><td class="separateur"><img src="../../z-outils/images/boite-outils/espaceur.gif" width="150" height="1"></td></tr>
-     <tr><td><a href="http://www.typologie.cnrs.fr/" target="_blank"><img src="../../images/logos/logo-typo.gif" alt="tul" width="150" height="53" border="0"></a></td>
+     <tr>
+       <td class="separateur"><img src="../../z-outils/images/boite-outils/espaceur.gif" alt="aa" width="150" height="1"></td>
+     </tr>
+     <tr>
+       <td><a href="http://www.paris-sorbonne.fr/fr/spip.php?rubrique1096" target="_blank"><img src="../../images/logos/logo-paris-4.gif" alt="paris4" width="150" height="53" border="0"></a></td>
+     </tr>
+     <tr>
+       <td class="separateur"><img src="../../z-outils/images/boite-outils/espaceur.gif" alt="aa" width="150" height="1"></td>
+     </tr>
+     <tr>
+       <td><a href="http://www.typologie.cnrs.fr/" target="_blank"><img src="../../images/logos/logo-typo.gif" alt="tul" width="150" height="53" border="0"></a></td>
      </tr>
    </table>
-</div>
- <p>
+ </div>
+<p>
    <script type='text/javascript'>function Go(){return}</script>
      <script type='text/javascript' src='../../z-outils/deroulants/top_pos_var.js'></script>
      <script type='text/javascript' src='../../z-outils/deroulants/menu_var.js'></script>
@@ -259,98 +228,72 @@ var sc_text=3;
  <noscript>
  <p>Your browser does not support script</p>
 </noscript>
+ <div id="divnavgauche-spec">
+   <table border="0" cellpadding="0" cellspacing="0"  width="150">
+     <tr>
+       <td height="2"><img border="0" src="../../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
+     </tr>
+     <tr>
+       	<td width="100%"  class="Xnavgauche" >
+        	<table border="0" cellpadding="10" cellspacing="0"  width="100%">
+      			<tr>
+       	 			<td width="100%" class="Xnavgauche"><h2><a href="INTRANET/index.htm">Intranet <img border="0" src="../../z-outils/images/boite-outils/icones/intranet.gif" width="18" height="12"
+							alt="aa"></a></h2></td>
+      			</tr>
+       		</table>
+       </td>
+     </tr>
+     <tr>
+       <td height="2"><img border="0" src="../../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
+     </tr>
+    </table>
+ </div>
+ <div id="divnavgauche-searchLabo">
+    <table cellspacing="0" cellpadding="0" hspace="11" border="0">
+     <tr>
+     	<td width="100%" class="Xnavgauche"><h2 >Rechercher</h2>
+                 <p>Sur le WEB 
+                   du laboratoire</p>
+               <br>
+      	 </td>
+         </tr>
+         <tr>
+     	 <td>       
+				<form name="rechercher-spm" action="http://lacito.vjf.cnrs.fr/moteur/engine.php" method="GET">
+				<input type="hidden" name="action"  value="go">
+				<table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td><input name ="blork" maxLength="50" size="10" class="text"></td>
+						<td><img border="0" src="../../z-outils/images/boite-outils/espaceur.gif" width="10" height="8"
+							alt="aa"></td>
+						<td><input name="submit2" type="image" src="../../z-outils/images/charte/ok.gif" 
+                             border="0" width="20" height="20">
+						</td>
+					</tr>
+				</table>
+  				</form>
+          </td>
+        </tr>
+       </table>
+        <tr>
+       <td height="2"><img border="0" src="../../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
+		</tr>
 
-<div id="divnavgauche-spec"> 
-  <table border="0" cellpadding="0" cellspacing="0"  width="150">
-    <tr> 
-      <td height="2"> <img border="0" src="../../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
-    </tr>
-    <tr> 
-      <td width="100%"  class="Xnavgauche" > 
-        <table border="0" cellpadding="10" cellspacing="0"  width="100%">
-          <tr> 
-            <td width="100%" class="Xnavgauche"> 
-              <p class="intertitre"><a href="../../pratique/organigramme.htm">Les membres</a></p>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr> 
-      <td height="2"> <img border="0" src="../../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
-    </tr>
-    <tr> 
-      <td width="100%"  class="Xnavgauche" > 
-        <table border="0" cellpadding="10" cellspacing="0"  width="100%">
-          <tr> 
-            <td width="100%" class="Xnavgauche"> 
-              <p class="intertitre" >Rechercher</p>
-              <p>Sur le WEB du Lacito</p>
-              <p><br>
-              <br>
-              <!--Sur le WEB du CNRS--> <br>
-              <br>
-              <br>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr> 
-      <td height="2"> <img border="0" src="../../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
-    </tr>
-  </table>
-</div>
-<div id="divnavgauche-searchLabo"> 
-  <form name="rechercher-spi" action="http://lacito.vjf.cnrs.fr/moteur/engine.php" method="GET">
-  <input type="hidden" name ="action" value="go">
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr> 
-        <td> 
-          <input name ="blork" maxLength="50" size="10" class="text">
-        </td>
-        <td> <img border="0" src="../../z-outils/images/boite-outils/espaceur.gif" width="10" height="8"
-                alt=""></td>
-        <td> <input name="submit" type="image" src="../../z-outils/images/charte/ok.gif" 
-                                border="0" width="20" height="20">
-        </td>
-      </tr>
-    </table>
-  </form>
-</div>
-<!--<div id="divnavgauche-search"> 
-  <form name="rechercher-spi" action="http://www.cnrs.fr/rechercher/" method="POST"
-       target="_blank">
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr> 
-        <td> 
-          <input name ="request" maxLength="50" size="10" class="BoiteRechercher">
-        </td>
-        <td> <img border="0" src="../z-outils/images/boite-outils/espaceur.gif" width="10" height="8"
-                alt=""></td>
-        <td valign="middle" > 
-          <input name="submit" type="image" src="../z-outils/images/charte/ok.gif" 
-                                border="0" width="20" height="20">
-        </td>
-      </tr>
-    </table>
-  </form>
-</div>-->
-<div id="divnavhaut-nom-labo"> 
+ </div>
+<div id="divnavhaut-nom-labo">
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr> 
-      <td class="Xnavhaut"> 
-        <p> <a href="../../index.htm"><img src="../../images/logos/Logo_Lacito.jpg" alt="lacito" width="143" height="53" border="0"></a></p>
-      </td>
+    <tr>
+      <td valign="top" class="Xnavhaut"><p> <a href="../../index.htm"><img src="../../images/logos/Logo_Lacito.jpg" alt="aa" width="141" height="59" hspace="10" border="0" align="left"></a> <span class="Style1">Langues et civilisations<br>
+        à tradition orale <br>
+        (UMR7107)</span></p></td>
     </tr>
   </table>
 </div>
 <map name="Map2">
-  <area shape="rect" coords="28,23,46,43" href="javascript:impression()" alt="Imprimer/to print">
-  <area shape="rect" coords="49,23,66,43" href="javascript:writemail('vjf.cnrs.fr','behaghel','',1);" alt="Contact">
-  <area shape="rect" coords="68,23,85,43" href="../../pratique/index.htm" alt="Plan du site/Site map">
-  <area shape="rect" coords="87,23,105,43" href="../../pratique/credits.htm" alt="Cr&eacute;dits/Copyrights">
-  <area shape="rect" coords="107,23,128,43" href="../../pratique/to_build.htm" alt="Plug-ins">
+  <area shape="rect" coords="28,23,46,43" href="javascript:impression()" alt="Imprimer">
+  <area shape="rect" coords="49,23,66,43" href="javascript:writemail('vjf.cnrs.fr','behaghel','',1);" alt="Contacter le webmestre">
+  <area shape="rect" coords="68,23,85,43" href="../../pratique/index.htm" alt="Plan du site">
+  <area shape="rect" coords="87,23,105,43" href="../../pratique/credits.htm" alt="Crédits">
   <area shape="rect" coords="8,24,24,43" href="../../index.htm" alt="Accueil">
 </map>
 </body>

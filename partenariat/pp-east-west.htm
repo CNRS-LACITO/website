@@ -12,45 +12,37 @@
 <script language="JavaScript" src="../z-outils/outils.js"></script>
 <script language="JavaScript" type="text/JavaScript">
 <!--
-
 function MM_reloadPage(init) {  //reloads the window if Nav4 resized
   if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
     document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
   else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
 }
 MM_reloadPage(true);
-//-->
-</script>
-<script language="JavaScript" type="text/JavaScript">
-<!--
-function flvFPW1(){//v1.44
-// Copyright 2002-2004, Marja Ribbers-de Vroed, FlevOOware (www.flevooware.nl/dreamweaver/)
-var v1=arguments,v2=v1[2].split(","),v3=(v1.length>3)?v1[3]:false,v4=(v1.length>4)?parseInt(v1[4]):0,v5=(v1.length>5)?parseInt(v1[5]):0,v6,v7=0,v8,v9,v10,v11,v12,v13,v14,v15,v16;
-v11=new Array("width,left,"+v4,"height,top,"+v5);for (i=0;i<v11.length;i++){v12=v11[i].split(",");
-l_iTarget=parseInt(v12[2]);if (l_iTarget>1||v1[2].indexOf("%")>-1){v13=eval("screen."+v12[0]);
-for (v6=0;
-v6<v2.length;v6++){v10=v2[v6].split("=");if (v10[0]==v12[0]){v14=parseInt(v10[1]);
-if (v10[1].indexOf("%")>-1){v14=(v14/100)*v13;
-v2[v6]=v12[0]+"="+v14;}}if (v10[0]==v12[1]){v16=parseInt(v10[1]);v15=v6;
-}}if (l_iTarget==2){v7=(v13-v14)/2;v15=v2.length;}else if (l_iTarget==3){v7=v13-v14-v16;
-}v2[v15]=v12[1]+"="+v7;}}v8=v2.join(",");v9=window.open(v1[0],v1[1],v8);if (v3){v9.focus();
-}document.MM_returnValue=false;return v9;}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
 //-->
 </script>
 <!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+.Style1 {color: #820E12}
+-->
+</style>
 </head>
 <body marginwidth="0" marginheight="0" >
-  <div class="bandeau-liens" id="divbandeau-lienCNRS"> <a href="http://www.cnrs.fr/" target="_blank">Le CNRS</a> </div>
+  <div class="bandeau-liens" id="divbandeau-lienCNRS"> <a href="http://www.cnrs.fr/fr/organisme/presentation.htm" target="_blank">Le CNRS</a> </div>
 <div id="divbandeau-traitvert1"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
   <div id="divbandeau-lienAccueil" class="bandeau-liens"> <a href="http://www.cnrs.fr/shs/" target="_blank">Accueil SHS</a> </div>
 <div id="divbandeau-traitvert2"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
-  <div id="divbandeau-lienAutres" class="bandeau-liens"><a href="http://www2.cnrs.fr/band/5.htm" target="_blank">Autres sites CNRS</a></div> 
-  <div id="divbandeau-traitvert3"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
+  <div id="divbandeau-lienAutres" class="bandeau-liens"><a href="http://www.cnrs.fr/fr/une/sites-cnrs.htm" target="_blank">Autres sites CNRS</a></div> 
+<div id="divbandeau-traitvert3"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
 
 <table width="751"  border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td width="150"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="65"></td>
-    <td colspan="3"><img src="../z-outils/images/charte/bandeau-haut-droit.gif" alt="" width="600" height="65" border="0"></td>
+    <td colspan="3"><img src="../z-outils/images/charte/bandeau-haut-droit.gif" alt="" width="100%" border="0"></td>
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
   </tr>
   <tr>
@@ -87,7 +79,7 @@ v2[v6]=v12[0]+"="+v14;}}if (v10[0]==v12[1]){v16=parseInt(v10[1]);v15=v6;
   <tr>
     <td width="150">&nbsp;</td>
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
-    <td rowspan="2" colspan="2" class="Xtextcourant" width="600">	<div id="divXnavdroite"><!-- InstanceBeginEditable name="MenuDroit" -->
+    <td rowspan="2" colspan="2" class="Xtextcourant" width="600" valign="top">	<div id="divXnavdroite"><!-- InstanceBeginEditable name="MenuDroit" -->
       <table width="100%"  border="0" cellspacing="0" cellpadding="5">
         <tr>
           <td class="Xscde-navdroite"><span class="titre"><a href="pp-franco-bulgare.htm">Les dialectes balkaniques de Bulgarie</a></span></td>
@@ -105,19 +97,21 @@ v2[v6]=v12[0]+"="+v14;}}if (v10[0]==v12[1]){v16=parseInt(v10[1]);v15=v6;
     <!-- InstanceEndEditable --></div>
       <div id="ZonePrint" class="ZonePrint">    
       <!-- InstanceBeginEditable name="Contenu" -->
-        <h3 class="intertitre"> East meets West</h3>
+        <h1> East meets West</h1>
+        <h4 class="intertitre">&nbsp;</h4>
         <h4 class="intertitre">Un projet pluri-disciplinaire en Asie Centrale et dans le Nord-Est de l&rsquo;Inde<br>
           2000-2003-2007</h4>
         <p class="intertitre">Coordinateur<span class="titre">&nbsp;: <a href="../membres/jacquesson.htm">Fran&ccedil;ois Jacquesson </a></span></p>
         <p class="intertitre">&nbsp;</p>
         <table width="43%" border="0" align="center" cellpadding="0" cellspacing="0">
               <tr>
-                <td><img src="images/mausoleeIsmail.jpg" alt="mausolee" width="245" height="172"><br>
-                  <p><em>Le mausol&eacute;e d&rsquo;Isma&iuml;l Samani (Xe si&egrave;cle) &agrave; Boukhara</em><br>
-                  (photo F. Jacquesson)</p>                </td>
+                <td><div align="center"><img src="images/mausoleeIsmail.jpg" alt="mausolee" width="245" height="172"><br>
+                </div>
+                  <p align="center"><em>Le mausol&eacute;e d&rsquo;Isma&iuml;l Samani (Xe si&egrave;cle) &agrave; Boukhara</em><br>
+                (photo F. Jacquesson)</p>                </td>
               </tr>
         </table>
-            <p>&nbsp;</p>
+        <p>&nbsp;</p>
             <p><strong>1.1. Participants en France (ordre alphab&eacute;tique)</strong><br>
               Ethnologie<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Svetlana Jacquesson (IFEAC puis MPI Halle)<br>
@@ -151,25 +145,28 @@ G&eacute;n&eacute;tique des populations<br>
             <p><strong>2.1. Au Karakalpakstan</strong></p>
             <table width="70%" border="0" align="center" cellpadding="0" cellspacing="0">
               <tr>
-                <td><img src="images/equipe.jpg" alt="equipe" width="400" height="212"><br>
+                <td><div align="center"><img src="images/equipe.jpg" alt="equipe" width="400" height="212"><br>
+                </div>
                   <p align="center"><em>L&rsquo;&eacute;quipe au Karakalpakstan pendant la Mission n&deg;3</em> <br>
                     La 5e &agrave; partir de la g. est Sv. Jacquesson. L&rsquo;homme en chapeau marron est le Dr. Ezbergenov. A sa gauche (bras nus), E. Heyer.
                     L&rsquo;homme le plus grand &agrave; dr. est Ph. Mennecier. La photo est de F. Jacquesson</p>                </td>
               </tr>
             </table>
             <p>La premi&egrave;re r&eacute;gion f&eacute;d&eacute;ratrice, et la seule o&ugrave; les membres du Projet aient travaill&eacute; vraiment de concert, est le Karakalpakstan, un territoire dot&eacute; d&rsquo;un statut administratif particulier, mais appartenant &agrave; l&rsquo;&eacute;tat d&rsquo;Ouzb&eacute;kistan.</p>
-            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
               <tr>
-                <td><img src="images/ouzbekistan_frontieres.jpg" alt="frontieres" width="100%"><br>
+                <td><div align="center"><img src="images/ouzbekistan_frontieres.jpg" alt="frontieres" width="100%"><br>
+                </div>
                   <p align="center"><em>L&rsquo;Ouzb&eacute;kistan</em> (fronti&egrave;res en tirets)<br>
                   Sa partie occidentale, au sud de la mer d&rsquo;Aral, est le territoire autonome du Karakalpakstan, dont la capitale est Noukous. (carte F. Jacquesson)</p>                </td>
               </tr>
             </table>
-            <p>&nbsp;</p>
+        <p>&nbsp;</p>
             <p><strong>2.2. Les missions au Karakalpakstan</strong></p>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
-                <td><img src="images/uzbekistan.jpg" alt="uzbekistan" width="100%"><br>
+                <td><div align="center"><img src="images/uzbekistan.jpg" alt="uzbekistan" width="100%"><br>
+                </div>
                   <p align="center"><em>Le sud de l&rsquo;Aral et le delta de l&rsquo;Amou</em> (not&eacute;s &laquo;&nbsp;Qoraqalpoghiston&nbsp;&raquo;)<br>
                     Muynoq marquait autrefois le rivage de l&rsquo;Aral, c&rsquo;&eacute;tait un port.<br>
                     La r&eacute;gion beaucoup plus habit&eacute;e, de part et d&rsquo;autre de la fronti&egrave;re Ouzb&egrave;ke/Turm&egrave;ne est le Khorezm.<br>
@@ -254,7 +251,8 @@ G&eacute;n&eacute;tique des populations<br>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L&rsquo;un d&rsquo;entre eux, nomm&eacute; <em><a href="../colloque/migrations/index.htm">Workshop Migrations</a></em> a eu lieu entre 5 et 7 septembre 2007, &agrave; Porquerolles. Il poss&egrave;de ses propres pages web, o&ugrave; l&rsquo;on peut trouver des renseignements d&eacute;taill&eacute;s, les r&eacute;sum&eacute;s des contributions et certaines d&rsquo;entre elles au complet. Il a &eacute;t&eacute; con&ccedil;u, avec l&rsquo;appui du secr&eacute;tariat du th&egrave;me OMLL (remercions notamment Eva Hoogland), comme un effort de synth&egrave;se sur un probl&egrave;me clef de ce th&egrave;me &laquo;&nbsp;Origine de l&rsquo;Homme, du Langage, des Langues&nbsp;&raquo;, en rassemblant des coll&egrave;gues soucieux de contribuer &agrave; une r&eacute;flexion de fond sur les causes et les mani&egrave;res des migrations humaines. Jean-Marie Hombert, l&rsquo;un des fondateurs d&rsquo;OHLL puis OMLL, nous a fait l&rsquo;honneur d&rsquo;y participer activement. Le colloque s&rsquo;est tenu dans une atmosph&egrave;re tr&egrave;s cordiale. Il a contribu&eacute; &agrave; &eacute;claircir les lignes de d&eacute;bat, tout en favorisant un dialogue aimable, utile, d&eacute;tendu.</p>
             <table width="52%" border="0" align="center" cellpadding="0" cellspacing="0">
               <tr>
-                <td><img src="images/DSC03825.JPG" alt="migrations" width="295" height="219"><br>
+                <td><div align="center"><img src="images/DSC03825.JPG" alt="migrations" width="295" height="219"><br>
+                </div>
                   <p align="center">Pendant le colloque <em>Migrations</em>, sept. 2007, Porquerolles.
                     De g. &agrave; dr. Herv&eacute; Le Bras, Alf Hornborg, Djamel Kouloughli</p>                </td>
               </tr>
@@ -276,35 +274,34 @@ G&eacute;n&eacute;tique des populations<br>
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
   </tr>
 </table>
-<!-- Start of StatCounter Code -->
-<script type="text/javascript" language="javascript">
-var sc_project=2319041; 
-var sc_invisible=1; 
-var sc_partition=21; 
-var sc_security="1fae5b4b"; 
-var sc_text=3; 
-</script>
-
-<script type="text/javascript" language="javascript" src="http://www.statcounter.com/counter/frames.js"></script><noscript><a href="http://www.statcounter.com/" target="_blank"><img  src="http://c22.statcounter.com/counter.php?sc_project=2319041&amp;java=0&amp;security=1fae5b4b&amp;invisible=0" alt="best website stats" border="0"></a> </noscript>
-<!-- End of StatCounter Code -->
 <p>&nbsp;</p>
  <p>&nbsp;</p>
  <div id="divpartenaires" >
    <table width="150"  border="0" cellspacing="0" cellpadding="0">
-     <tr><td><a href="http://www.cnrs.fr" target="_blank"><img src="../images/logos/logo-cnrs.jpg" alt="cnrs" width="150" height="62" border="0"></a></td>
+     <tr>
+       <td><a href="http://www.cnrs.fr" target="_blank"><img src="../images/logos/logo-cnrs.jpg" alt="cnrs" width="150" height="62" border="0"></a></td>
      </tr>
-     <tr><td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="1"></td></tr>
-     <tr><td><a href="http://www.univ-paris3.fr/1207750810633/0/fiche___defaultstructureksup/&RH=1235649944785" target="_blank"><img src="../images/logos/logo-paris-3.gif" alt="paris3" width="150" height="53" border="0"></a></td>
+     <tr>
+       <td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" alt="aa" width="150" height="1"></td>
      </tr>
-     <tr><td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="1"></td></tr>
-     <tr><td><a href="http://www.paris-sorbonne.fr/fr/spip.php?rubrique1096" target="_blank"><img src="../images/logos/logo-paris-4.gif" alt="paris4" width="150" height="53" border="0"></a></td>
+     <tr>
+       <td><a href="http://www.univ-paris3.fr/1207750810633/0/fiche___defaultstructureksup/&RH=1235649944785" target="_blank"><img src="../images/logos/logo-paris-3.gif" alt="paris3" width="150" height="53" border="0"></a></td>
      </tr>
-	 <tr><td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="1"></td></tr>
-     <tr><td><a href="http://www.typologie.cnrs.fr/" target="_blank"><img src="../images/logos/logo-typo.gif" alt="tul" width="150" height="53" border="0"></a></td>
+     <tr>
+       <td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" alt="aa" width="150" height="1"></td>
+     </tr>
+     <tr>
+       <td><a href="http://www.paris-sorbonne.fr/fr/spip.php?rubrique1096" target="_blank"><img src="../images/logos/logo-paris-4.gif" alt="paris4" width="150" height="53" border="0"></a></td>
+     </tr>
+     <tr>
+       <td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" alt="aa" width="150" height="1"></td>
+     </tr>
+     <tr>
+       <td><a href="http://www.typologie.cnrs.fr/" target="_blank"><img src="../images/logos/logo-typo.gif" alt="tul" width="150" height="53" border="0"></a></td>
      </tr>
    </table>
-</div>
- <p>
+ </div>
+<p>
    <script type='text/javascript'>function Go(){return}</script>
      <script type='text/javascript' src='../z-outils/deroulants/top_pos_var.js'></script>
      <script type='text/javascript' src='../z-outils/deroulants/menu_var.js'></script>
@@ -313,98 +310,72 @@ var sc_text=3;
  <noscript>
  <p>Your browser does not support script</p>
 </noscript>
+ <div id="divnavgauche-spec">
+   <table border="0" cellpadding="0" cellspacing="0"  width="150">
+     <tr>
+       <td height="2"><img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
+     </tr>
+     <tr>
+       	<td width="100%"  class="Xnavgauche" >
+        	<table border="0" cellpadding="10" cellspacing="0"  width="100%">
+      			<tr>
+       	 			<td width="100%" class="Xnavgauche"><h2><a href="INTRANET/index.htm">Intranet <img border="0" src="../z-outils/images/boite-outils/icones/intranet.gif" width="18" height="12"
+							alt="aa"></a></h2></td>
+      			</tr>
+       		</table>
+       </td>
+     </tr>
+     <tr>
+       <td height="2"><img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
+     </tr>
+    </table>
+ </div>
+ <div id="divnavgauche-searchLabo">
+    <table cellspacing="0" cellpadding="0" hspace="11" border="0">
+     <tr>
+     	<td width="100%" class="Xnavgauche"><h2 >Rechercher</h2>
+                 <p>Sur le WEB 
+                   du laboratoire</p>
+               <br>
+      	 </td>
+         </tr>
+         <tr>
+     	 <td>       
+				<form name="rechercher-spm" action="http://lacito.vjf.cnrs.fr/moteur/engine.php" method="GET">
+				<input type="hidden" name="action"  value="go">
+				<table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td><input name ="blork" maxLength="50" size="10" class="text"></td>
+						<td><img border="0" src="../z-outils/images/boite-outils/espaceur.gif" width="10" height="8"
+							alt="aa"></td>
+						<td><input name="submit2" type="image" src="../z-outils/images/charte/ok.gif" 
+                             border="0" width="20" height="20">
+						</td>
+					</tr>
+				</table>
+  				</form>
+          </td>
+        </tr>
+       </table>
+        <tr>
+       <td height="2"><img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
+		</tr>
 
-<div id="divnavgauche-spec"> 
-  <table border="0" cellpadding="0" cellspacing="0"  width="150">
-    <tr> 
-      <td height="2"> <img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
-    </tr>
-    <tr> 
-      <td width="100%"  class="Xnavgauche" > 
-        <table border="0" cellpadding="10" cellspacing="0"  width="100%">
-          <tr> 
-            <td width="100%" class="Xnavgauche"> 
-              <p class="intertitre"><a href="../pratique/organigramme.htm">Les membres</a></p>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr> 
-      <td height="2"> <img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
-    </tr>
-    <tr> 
-      <td width="100%"  class="Xnavgauche" > 
-        <table border="0" cellpadding="10" cellspacing="0"  width="100%">
-          <tr> 
-            <td width="100%" class="Xnavgauche"> 
-              <p class="intertitre" >Rechercher</p>
-              <p>Sur le WEB du Lacito</p>
-              <p><br>
-              <br>
-              <!--Sur le WEB du CNRS--> <br>
-              <br>
-              <br>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr> 
-      <td height="2"> <img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
-    </tr>
-  </table>
-</div>
-<div id="divnavgauche-searchLabo"> 
-  <form name="rechercher-spi" action="http://lacito.vjf.cnrs.fr/moteur/engine.php" method="GET">
-  <input type="hidden" name ="action" value="go">
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr> 
-        <td> 
-          <input name ="blork" maxLength="50" size="10" class="text">
-        </td>
-        <td> <img border="0" src="../z-outils/images/boite-outils/espaceur.gif" width="10" height="8"
-                alt=""></td>
-        <td> <input name="submit" type="image" src="../z-outils/images/charte/ok.gif" 
-                                border="0" width="20" height="20">
-        </td>
-      </tr>
-    </table>
-  </form>
-</div>
-<!--<div id="divnavgauche-search"> 
-  <form name="rechercher-spi" action="http://www.cnrs.fr/rechercher/" method="POST"
-       target="_blank">
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr> 
-        <td> 
-          <input name ="request" maxLength="50" size="10" class="BoiteRechercher">
-        </td>
-        <td> <img border="0" src="../z-outils/images/boite-outils/espaceur.gif" width="10" height="8"
-                alt=""></td>
-        <td valign="middle" > 
-          <input name="submit" type="image" src="../z-outils/images/charte/ok.gif" 
-                                border="0" width="20" height="20">
-        </td>
-      </tr>
-    </table>
-  </form>
-</div>-->
-<div id="divnavhaut-nom-labo"> 
+ </div>
+<div id="divnavhaut-nom-labo">
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr> 
-      <td class="Xnavhaut"> 
-        <p> <a href="../index.htm"><img src="../images/logos/Logo_Lacito.jpg" alt="lacito" width="143" height="53" border="0"></a></p>
-      </td>
+    <tr>
+      <td valign="top" class="Xnavhaut"><p> <a href="../index.htm"><img src="../images/logos/Logo_Lacito.jpg" alt="aa" width="141" height="59" hspace="10" border="0" align="left"></a> <span class="Style1">Langues et civilisations<br>
+        à tradition orale <br>
+        (UMR7107)</span></p></td>
     </tr>
   </table>
 </div>
 <map name="Map2">
-  <area shape="rect" coords="28,23,46,43" href="javascript:impression()" alt="Imprimer/to print">
-  <area shape="rect" coords="49,23,66,43" href="javascript:writemail('vjf.cnrs.fr','behaghel','',1);" alt="Contact">
-  <area shape="rect" coords="68,23,85,43" href="../pratique/index.htm" alt="Plan du site/Site map">
-  <area shape="rect" coords="87,23,105,43" href="../pratique/credits.htm" alt="Cr&eacute;dits/Copyrights">
-  <area shape="rect" coords="107,23,128,43" href="../pratique/to_build.htm" alt="Plug-ins">
+  <area shape="rect" coords="28,23,46,43" href="javascript:impression()" alt="Imprimer">
+  <area shape="rect" coords="49,23,66,43" href="javascript:writemail('vjf.cnrs.fr','behaghel','',1);" alt="Contacter le webmestre">
+  <area shape="rect" coords="68,23,85,43" href="../pratique/index.htm" alt="Plan du site">
+  <area shape="rect" coords="87,23,105,43" href="../pratique/credits.htm" alt="Crédits">
   <area shape="rect" coords="8,24,24,43" href="../index.htm" alt="Accueil">
 </map>
 </body>

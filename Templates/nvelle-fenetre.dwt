@@ -21,19 +21,24 @@ MM_reloadPage(true);
 //-->
 </script>
 <!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<style type="text/css">
+<!--
+.Style1 {color: #820E12}
+-->
+</style>
 </head>
 <body marginwidth="0" marginheight="0" >
   <div class="bandeau-liens" id="divbandeau-lienCNRS"> <a href="http://www2.cnrs.fr/band/2.htm" target="_blank">Le CNRS</a> </div>
-  <div id="divbandeau-traitvert1"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
+<div id="divbandeau-traitvert1"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
   <div id="divbandeau-lienAccueil" class="bandeau-liens"> <a href="http://www.shs.cnrs-dir.fr/" target="_blank">Accueil SHS</a> </div>
-  <div id="divbandeau-traitvert2"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
+<div id="divbandeau-traitvert2"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
   <div id="divbandeau-lienAutres" class="bandeau-liens"><a href="http://www2.cnrs.fr/band/5.htm" target="_blank">Autres sites CNRS</a></div> 
-  <div id="divbandeau-traitvert3"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
+<div id="divbandeau-traitvert3"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
 
 <table width="751"  border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td width="150"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="65"></td>
-    <td><img src="../z-outils/images/charte/bandeau-haut-droit.gif" alt="" width="600" height="65" border="0"></td>
+    <td><div align="right"><img src="../z-outils/images/charte/bandeau-haut-droit.gif" alt="" width="600" height="65" border="0"></div></td>
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="65"></td>
   </tr>
   <tr>
@@ -41,7 +46,7 @@ MM_reloadPage(true);
     <td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
   </tr>
   <tr>
-    <td  colspan="2">
+    <td colspan="2" class="Xtextcourant">
       <!-- TemplateBeginEditable name="Contenu" -->
       <table width="100%"  border="0" cellspacing="0" cellpadding="10">
         <tr>
@@ -68,14 +73,14 @@ MM_reloadPage(true);
 </table>
 <p>&nbsp;</p>
  <p>&nbsp;</p>
- <div id="divnavhaut-nom-labo"> 
-  <table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr> 
-      <td class="Xnavhaut"> 
-        <p> <a href="../index.htm"><img src="../images/logos/Logo_Lacito.jpg" width="143" height="53" border="0"></a></p>
-      </td>
-    </tr>
-  </table>
-</div>
+ <div id="divnavhaut-nom-labo">
+   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+     <tr>
+       <td valign="top" class="Xnavhaut"><p> <a href="../index.htm"><img src="../images/logos/Logo_Lacito.jpg" alt="aa" width="141" height="59" hspace="10" border="0" align="left"></a> <span class="Style1">Langues et civilisations<br>
+         à tradition orale <br>
+       (UMR7107)</span></p></td>
+     </tr>
+   </table>
+ </div>
 </body>
 </html>

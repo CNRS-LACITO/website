@@ -7,7 +7,6 @@
 <!-- TemplateBeginEditable name="doctitle" -->
 <title>Harmonisation des sites du CNRS : Maquette modele UNE</title>
 <!-- TemplateEndEditable --><link rel="stylesheet" type="text/css" href="../styles/xcharte.css">
-<link rel="stylesheet" type="text/css" href="../styles/styles.css">
 <script language="JavaScript" src="../z-outils/init.js"></script>
 <script language="JavaScript" src="../z-outils/outils.js"></script>
 <script language="JavaScript" type="text/JavaScript">
@@ -24,19 +23,25 @@ MM_reloadPage(true);
 //-->
 </script>
 <!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<link href="../styles/styles.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.Style1 {color: #820E12}
+-->
+</style>
 </head>
 <body marginwidth="0" marginheight="0" >
-  <div class="bandeau-liens" id="divbandeau-lienCNRS"> <a href="http://www.cnrs.fr/" target="_blank">Le CNRS</a> </div>
-<div id="divbandeau-traitvert1"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
+  <div class="bandeau-liens" id="divbandeau-lienCNRS"> <a href="http://www.cnrs.fr/fr/organisme/presentation.htm" target="_blank">Le CNRS</a> </div>
+  <div id="divbandeau-traitvert1"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
   <div id="divbandeau-lienAccueil" class="bandeau-liens"> <a href="http://www.cnrs.fr/shs/" target="_blank">Accueil SHS</a> </div>
 <div id="divbandeau-traitvert2"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
   <div id="divbandeau-lienAutres" class="bandeau-liens"><a href="http://www2.cnrs.fr/band/5.htm" target="_blank">Autres sites CNRS</a></div> 
-  <div id="divbandeau-traitvert3"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
+<div id="divbandeau-traitvert3"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
 
-<table width="751"  border="0" cellspacing="0" cellpadding="0">
+<table width="750"  border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td width="150"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="65"></td>
-    <td colspan="4"><img src="../z-outils/images/charte/bandeau-haut-droit.gif" alt="" width="600" height="65" border="0" usemap="#Map"></td>
+    <td colspan="4" align="right"><img src="../z-outils/images/charte/bandeau-haut-droit.gif" alt="" width="100%" border="0" usemap="#Map"></td>
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
   </tr>
   <tr>
@@ -51,7 +56,8 @@ MM_reloadPage(true);
     <script>
 	   var UrlCredits = '../z-outils/images/charte/une/bandeaux-une/credits/'+numImage + '.htm';
 	   var OnClickStr='MM_openBrWindow(UrlCredits,\'popup\',\'width=750,height=600,scrollbars=yes\')';
-	  document.write('<a href="javascript:'+ OnClickStr + ';"><img width=600 height=135 alt="" border="0" src="../z-outils/images/charte/une/bandeaux-une/' + numImage + '.jpg' + '"></a>');
+<!--	  document.write('<a href="javascript:'+ OnClickStr + ';"><img width=600 height=135 alt="" border="0" src="../z-outils/images/charte/une/bandeaux-une/' + numImage + '.jpg' + '"></a>');-->
+	  document.write('<a href="javascript:'+ OnClickStr + ';"><img width="100%" alt="" border="0" src="../z-outils/images/charte/une/bandeaux-une/' + numImage + '.jpg' + '"></a>');
 	</script><!-- TemplateEndEditable --></td>
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="135"></td>
   </tr>
@@ -66,25 +72,14 @@ MM_reloadPage(true);
   <tr>
     <td width="150">&nbsp;</td>
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
-    <td width="448" rowspan="2">
-      <table width="100%"  border="0" cellspacing="0" cellpadding="10">
+    <td width="448" rowspan="2" valign="top" class="Xtextcourant">
+      <table width="100%"  border="0" cellpadding="10" cellspacing="0">
         <tr>
           <td><!-- TemplateBeginEditable name="Contenu" -->
           <div id="ZonePrint">
-            <table width="100%"  border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td width="35"><img src="../z-outils/images/boite-outils/icones/alaune-grd.gif" alt="" width="31" height="31" border="0"></td>
-                <td>
-                  <p class="titre">A la Une<br>
-                      <br>
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td width="35">&nbsp;</td>
-                <td>
-                  <p class="intertitre"><img src="../z-outils/images/site/photo1.jpg" alt="" width="56" height="43" hspace="5" border="0" align="left">Duis
-                    autem vel eum (style intertitre) </p>
+              <h1><img src="../z-outils/images/boite-outils/icones/a-la-une.gif" alt="" width="24" height="24" hspace="5" border="0">A la Une</h1>
+                  <h2><img src="../z-outils/images/site/photo1.jpg" alt="" width="56" height="43" hspace="5" border="0" align="left">Duis
+                    autem vel eum (style h2) </h2>
                   <p>gubergren, no sea takimata sanctus est Lorem ipsum dolor
                     sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
                     elitr, sed diam nonumy eirmod tempor invidunt ut labore et
@@ -93,82 +88,65 @@ MM_reloadPage(true);
                     ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
                     erat, sed diam voluptua (pas de style).</p>
-                  <p><img src="../z-outils/images/boite-outils/lire-la-suite.gif" alt="" width="19" height="11" border="0" align="absmiddle"><a href="#">Lire la suite</a> </p>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
+                  <p><img src="../z-outils/images/boite-outils/lire-la-suite.gif" alt="" width="20" height="15" hspace="5" border="0" align="absmiddle"><a href="#">Lire la suite</a> </p>
                   <p><img src="../z-outils/images/boite-outils/filet-couleur.gif" width="100%" height="1"></p>
-                </td>
-              </tr>
-              <tr>
-                <td width="35"><img src="../z-outils/images/boite-outils/icones/actulabo2.gif" alt="" width="30" height="30" border="0"></td>
-                <td>
-                  <p class="titre">Actualit&eacute;s du laboratoire </p>
-                </td>
-              </tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td>
-                  <p class="intertitre"><img src="../z-outils/images/site/photo2.jpg" alt="" 
+                  <h1><img src="../z-outils/images/boite-outils/icones/presentation-labo-applat.gif" alt="" width="29" height="29" hspace="5" border="0">Actualit&eacute;s du laboratoire </h1>
+                  <h2><img src="../z-outils/images/site/photo2.jpg" alt="" 
 			            width="56" height="43" hspace="5" border="0" align="left">Duis
-                    autem vel eum</p>
+                    autem vel eum</h2>
                   <p>iriure dolor in hendrerit in vulputate velit esse molestie
                     consequat, vel illum <a href="../modeles/.">dolore</a> eu
                     feugiat nulla facilisis. At vero eos et accusam et justo
                     duo dolores et ea rebum.</p>
-                  <p><img src="../z-outils/images/boite-outils/lire-la-suite.gif" alt="" width="19" height="11" border="0" align="absmiddle"><a href="#">Lire la suite</a> </p>
+                  <p><img src="../z-outils/images/boite-outils/lire-la-suite.gif" alt="" width="20" height="15" border="0" align="absmiddle"><a href="#">Lire la suite</a> </p>
                   <p>&nbsp;</p>
                   <p><span class="intertitre"><img src="../z-outils/images/site/photo2.jpg" alt="" 
 			            width="56" height="43" hspace="5" border="0" align="left"></span></p>
-                  <p class="intertitre">Duis autem vel eum</p>
+                  <h2>Duis autem vel eum</h2>
                   <p>iriure dolor in hendrerit in vulputate velit esse molestie
-                    consequat, vel illum dolore eu feugiat nulla facilisis. At
-                    vero eos et accusam et justo duo dolores et ea rebum.</p>
-                  <p><img src="../z-outils/images/boite-outils/lire-la-suite.gif" alt="" width="19" height="11" border="0" align="absmiddle"><a href="#">Lire la suite</a></p>
-                </td>
-              </tr>
-            </table>
+                    consequat, vel illum dolore eu feugiat nulla facilisis. </p>
+                  <p class="petit">At
+                    vero eos et accusam et justo duo dolores et ea rebum. (style petit) </p>
+                  <p><img src="../z-outils/images/boite-outils/lire-la-suite.gif" alt="" width="20" height="15" border="0" align="absmiddle"><a href="#">Lire la suite</a></p>
           </div>
           <!-- TemplateEndEditable --></td>
         </tr>
       </table>
     </td>
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
-    <td width="150" rowspan="2">
+    <td width="150" rowspan="2" valign="top">
       <!-- TemplateBeginEditable name="Droite" -->
       <table width="100%"  border="0" cellspacing="0" cellpadding="5">
         <tr>
           <td class="Xnavdroite">
-            <p class="titre"><img src="../z-outils/images/boite-outils/icones/anoter.gif" alt="" hspace="5" border="0" align="absmiddle">A
-              noter </p>
-          </td>
+            <h1><img src="../z-outils/images/boite-outils/icones/a-noter-grd.gif" alt="" width="30" height="30" hspace="5" border="0" align="absmiddle">A
+              noter </h1></td>
         </tr>
         <tr>
           <td class="Xnavdroite">
-            <p class="intertitre"><a href="#">Lorem
-                ipsum dolor (style intertitre) </a></p>
+            <h2><a href="../modeles/sec-model03.htm" class="Xnavdroite">Lorem
+                ipsum dolor (style h2) </a></h2>
             <p> sit amet, consetetur sadipscing elitr, sed diam (pas de style)</p>
           </td>
         </tr>
         <tr>
           <td class="Xnavdroite">
-            <p class="intertitre"><a href="../modeles/."><img src="../z-outils/images/boite-outils/icones/mailinglist.gif" alt="" width="23" height="19" border="0" align="left">Lorem ipsum</a></p>
+            <h2><a href="../modeles/."><img src="../z-outils/images/boite-outils/icones/mailing-list.gif" alt="" width="22" height="18" hspace="5" border="0" align="left">Lorem ipsum</a></h2>
             <p>sit amet, consetetur<br>
         sadipscing elitr consetetur </p>
           </td>
         </tr>
         <tr>
           <td class="Xnavdroite">
-            <p class="intertitre"><a href="../modeles/.">Ut wisi enim ad minim
-                veniam, quis nostrud exerci tation </a></p>
+            <h2><a href="../modeles/.">Ut wisi enim ad minim
+                veniam, quis nostrud exerci tation </a></h2>
             <p>ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
               Duis autem vel eum iriure dolor in hendrerit in vulputate velit
               esse molestie consequat</p>
           </td>
         </tr>
       </table>
-      <!-- TemplateEndEditable --></td>
+    <!-- TemplateEndEditable --></td>
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="500"></td>
   </tr>
   <tr>
@@ -186,37 +164,34 @@ MM_reloadPage(true);
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
   </tr>
 </table>
-<!-- Start of StatCounter Code -->
-<script type="text/javascript" language="javascript">
-var sc_project=2319041; 
-var sc_invisible=0; 
-var sc_partition=21; 
-var sc_security="1fae5b4b"; 
-var sc_text=3; 
-</script>
-
-<script type="text/javascript" language="javascript" src="http://www.statcounter.com/counter/frames.js"></script><noscript><a href="http://www.statcounter.com/" target="_blank"><img  src="http://c22.statcounter.com/counter.php?sc_project=2319041&amp;java=0&amp;security=1fae5b4b&amp;invisible=0" alt="best website stats" border="0"></a> </noscript>
-<!-- End of StatCounter Code -->
 <p>&nbsp;</p>
  <p>&nbsp;</p>
-<div id="divpartenaires" >
- <table width="150"  border="0" cellspacing="0" cellpadding="0">
-     <tr><td><a href="http://www.cnrs.fr" target="_blank"><img src="../images/logos/logo-cnrs.jpg" alt="cnrs" width="150" height="62" border="0"></a></td>
-    </tr>
-     <tr><td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="1"></td></tr>
-     <tr><td><a href="http://www.univ-paris3.fr/1207750810633/0/fiche___defaultstructureksup/&RH=1235649944785" target="_blank"><img src="../images/logos/logo-paris-3.gif" alt="paris3" width="150" height="53" border="0"></a></td>
-    </tr>
-     <tr><td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="1"></td></tr>
-     <tr><td><a href="http://www.paris-sorbonne.fr/fr/spip.php?rubrique1096" target="_blank"><img src="../images/logos/logo-paris-4.gif" alt="paris4" width="150" height="53" border="0"></a></td>
-    </tr>
-     <tr><td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="1"></td>
-    </tr>
+ <div id="divpartenaires" >
+   <table width="150"  border="0" cellspacing="0" cellpadding="0">
+     <tr>
+       <td><a href="http://www.cnrs.fr" target="_blank"><img src="../images/logos/logo-cnrs.jpg" alt="cnrs" width="150" height="62" border="0"></a></td>
+     </tr>
+     <tr>
+       <td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" alt="aa" width="150" height="1"></td>
+     </tr>
+     <tr>
+       <td><a href="http://www.univ-paris3.fr/1207750810633/0/fiche___defaultstructureksup/&RH=1235649944785" target="_blank"><img src="../images/logos/logo-paris-3.gif" alt="paris3" width="150" height="53" border="0"></a></td>
+     </tr>
+     <tr>
+       <td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" alt="aa" width="150" height="1"></td>
+     </tr>
+     <tr>
+       <td><a href="http://www.paris-sorbonne.fr/fr/spip.php?rubrique1096" target="_blank"><img src="../images/logos/logo-paris-4.gif" alt="paris4" width="150" height="53" border="0"></a></td>
+     </tr>
+     <tr>
+       <td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" alt="aa" width="150" height="1"></td>
+     </tr>
      <tr>
        <td><a href="http://www.typologie.cnrs.fr/" target="_blank"><img src="../images/logos/logo-typo.gif" alt="tul" width="150" height="53" border="0"></a></td>
-    </tr>
-  </table>
+     </tr>
+   </table>
 </div>
- <p>
+<p>
    <script type='text/javascript'>function Go(){return}</script>
      <script type='text/javascript' src='../z-outils/deroulants/top_pos_var.js'></script>
      <script type='text/javascript' src='../z-outils/deroulants/menu_var.js'></script>
@@ -226,97 +201,71 @@ var sc_text=3;
  <p>Your browser does not support script</p>
 </noscript>
 
-<div id="divnavgauche-spec"> 
-  <table border="0" cellpadding="0" cellspacing="0"  width="150">
-    <tr> 
-      <td height="2"> <img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
-    </tr>
-    <tr> 
-      <td width="100%"  class="Xnavgauche" > 
-        <table border="0" cellpadding="10" cellspacing="0"  width="100%">
-          <tr> 
-            <td width="100%" class="Xnavgauche"> 
-              <p class="intertitre"><a href="../pratique/organigramme.htm">Les membres</a></p>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr> 
-      <td height="2"> <img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
-    </tr>
-    <tr> 
-      <td width="100%"  class="Xnavgauche" > 
-        <table border="0" cellpadding="10" cellspacing="0"  width="100%">
-          <tr> 
-            <td width="100%" class="Xnavgauche"> 
-              <p class="intertitre" >Rechercher</p>
-              Sur le WEB du Lacito</p>
-              <p><br>
-              <br>
-              <!--Sur le WEB du CNRS --><br>
-              <br>
-              <br>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr> 
-      <td height="2"> <img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
-    </tr>
-  </table>
-</div>
-<div id="divnavgauche-searchLabo"> 
-  <form name="rechercher-spm" action="http://lacito.vjf.cnrs.fr/moteur/engine.php" method="GET">
-  <input type="hidden" name="action"  value="go">
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr> 
-        <td> 
-          <input name ="blork" maxLength="50" size="10" class="text">
-		</td>
-        <td> <img border="0" src="../z-outils/images/boite-outils/espaceur.gif" width="10" height="8"
-                alt=""></td>
-        <td> <input name="submit" type="image" src="../z-outils/images/charte/ok.gif" 
-                                border="0" width="20" height="20">
-        </td>
-      </tr>
+ <div id="divnavgauche-spec">
+   <table border="0" cellpadding="0" cellspacing="0"  width="150">
+     <tr>
+       <td height="2"><img border="0" src="z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
+     </tr>
+     <tr>
+       	<td width="100%"  class="Xnavgauche" >
+        	<table border="0" cellpadding="10" cellspacing="0"  width="100%">
+      			<tr>
+       	 			<td width="100%" class="Xnavgauche"><h2><a href="INTRANET/index.htm">Intranet <img border="0" src="../z-outils/images/boite-outils/icones/intranet.gif" width="18" height="12"
+							alt="aa"></a></h2></td>
+      			</tr>
+       		</table>
+       </td>
+     </tr>
+     <tr>
+       <td height="2"><img border="0" src="z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
+     </tr>
     </table>
-  </form>
-</div>
-<!--<p><div id="divnavgauche-search"> 
-  <form name="rechercher" action="http://www.cnrs.fr/rechercher/" method="POST"
-       target="_blank">
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr> 
-        <td> 
-          <p><input name ="request" maxLength="50" size="10" class="BoiteRechercher">
-        </td>
-        <td> <img border="0" src="../z-outils/images/boite-outils/espaceur.gif" width="10" height="8"
-                alt=""></td>
-        <td valign="middle" > 
-          <p><input name="submit" type="image" src="../z-outils/images/charte/ok.gif" 
-                                border="0" width="20" height="20">
-        </td>
-      </tr>
-    </table>
-  </form>
-</div>-->
-<div id="divnavhaut-nom-labo"> 
+ </div>
+ <div id="divnavgauche-searchLabo">
+     <table cellspacing="0" cellpadding="0" hspace="11" border="0">
+     <tr>
+     	<td width="100%" class="Xnavgauche"><h2>Rechercher</h2>
+                 <p>Sur le WEB 
+                   du laboratoire</p>
+               <br>
+      	 </td>
+         </tr>
+         <tr>
+     	 <td>       
+				<form name="rechercher-spm" action="http://lacito.vjf.cnrs.fr/moteur/engine.php" method="GET">
+				<input type="hidden" name="action"  value="go">
+				<table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td><input name ="blork" maxLength="50" size="10" class="text"></td>
+						<td><img border="0" src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"
+							alt="aa"></td>
+					  <td><input name="submit2" type="image" src="../z-outils/images/charte/ok.gif" 
+                             border="0" width="20" height="20">
+						</td>
+					</tr>
+				</table>
+  				</form>
+          </td>
+        </tr> 
+       </table>
+       <tr>
+       <td height="2"><img border="0" src="z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
+		</tr>
+ </div>
+ <div id="divnavhaut-nom-labo">
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr> 
-      <td class="Xnavhaut"> 
-        <p><a href="../pratique/contact.htm"><img src="../images/logos/Logo_Lacito.jpg" alt="lacito" width="143" height="57" border="0"></a></p>
-      </td>
+    <tr>
+      <td valign="top" class="Xnavhaut"><p> <a href="index.htm"><img src="../images/logos/Logo_Lacito.jpg" alt="aa" width="141" height="59" hspace="10" border="0" align="left"></a> <span class="Style1">Langues et civilisations<br>
+        à tradition orale <br>
+        (UMR7107)</span></p></td>
     </tr>
   </table>
 </div>
 <map name="Map2">
-  <area shape="rect" coords="28,23,46,43" href="javascript:impression()" alt="Imprimer/to print">
-  <area shape="rect" coords="48,23,65,43" href="javascript:writemail('vjf.cnrs.fr','behaghel','',1);" alt="Contact">
-  <area shape="rect" coords="68,23,85,43" href="../pratique/index.htm"  alt="Plan du site/Site map">
-  <area shape="rect" coords="87,23,105,43" href="../pratique/credits.htm" alt="Credits/Copyrights">
-  <area shape="rect" coords="107,23,128,43" href="../pratique/to_build.htm" alt="Outils/Plug-ins">
+  <area shape="rect" coords="28,23,46,43" href="javascript:impression()" alt="Imprimer">
+  <area shape="rect" coords="49,23,66,43" href="javascript:writemail('vjf.cnrs.fr','behaghel','',1);" alt="Contacter le webmestre">
+  <area shape="rect" coords="68,23,85,43" href="../pratique/index.htm"  alt="Plan du site">
+  <area shape="rect" coords="87,23,105,43" href="../pratique/credits.htm" alt="Crédits">
 </map>
 </body>
 </html>

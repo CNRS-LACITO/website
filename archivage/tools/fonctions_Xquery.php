@@ -18,7 +18,7 @@
 					<a
 						href=\"aide.php#$term\"
 						target=\"_blank\"
-						onClick=\"flvFPW1(this.href,'popupLink','width=640,height=400,scrollbars=yes,resizable=yes',1);return document.MM_returnValue\">
+						onClick=\"window.open(this.href,'popupLink','width=640,height=400,scrollbars=yes,resizable=yes',1);return false\">
 						<img class=\"sansBordure\" src=\"../../images/icones/aide.gif\"/>
 					</a>");
 	}
@@ -61,7 +61,7 @@
 								href="{$href}"
 								title ="Ecouter ce texte"
 								target="_blank"
-								onClick="flvFPW1(this.href,\'popupLink\',\'width=640,height=400,scrollbars=yes,resizable=yes\',1);return document.MM_returnValue"
+								onClick="window.open(this.href,\'popupLink\',\'width=640,height=400,scrollbars=yes,resizable=yes\',1);return false"
 								><img class="sansBordure" src="../../images/icones/h_parleur.gif"/></a>
 							</td>
 							<td valign="top"> </td>
@@ -70,7 +70,7 @@
 								href="show_metadatas.php?id={$id}"
 								title="A propos de {$title}"
 								target="_blank"
-								onClick="flvFPW1(this.href,\'popupLink\',\'width=640,height=400,scrollbars=yes,resizable=yes\',1);return document.MM_returnValue"><img class="sansBordure" src="../../images/icones/info.gif"/></a>
+								onClick="window.open(this.href,\'popupLink\',\'width=640,height=400,scrollbars=yes,resizable=yes\',1);return false"><img class="sansBordure" src="../../images/icones/info.gif"/></a>
 							</td>
 							<td valign="top"> </td>
 							{  if (string-length($title) > $sizeTitle)

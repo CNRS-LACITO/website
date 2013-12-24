@@ -12,28 +12,16 @@
 <script language="JavaScript" src="../z-outils/outils.js"></script>
 <script language="JavaScript" type="text/JavaScript">
 <!--
-
 function MM_reloadPage(init) {  //reloads the window if Nav4 resized
   if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
     document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
   else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
 }
 MM_reloadPage(true);
-//-->
-</script>
-<script language="JavaScript" type="text/JavaScript">
-<!--
-function flvFPW1(){//v1.44
-// Copyright 2002-2004, Marja Ribbers-de Vroed, FlevOOware (   www.flevooware.nl/dreamweaver/)
-var v1=arguments,v2=v1[2].split(","),v3=(v1.length>3)?v1[3]:false,v4=( v1.length>4)?parseInt(v1[4]):0,v5=(v1.length>5)?parseInt(v1[5]):0,v6,v7=0,v8,v9,v10,v11,v12,v13,v14,v15,v16;v11=new Array("width,left,"+v4,"height,top,"+v5);for (i=0;i< v11.length;i++){v12=v11[i].split(",");
-l_iTarget=parseInt(v12[2]);
-if (l_iTarget>1||v1[2].indexOf("%")>-1){v13=eval("screen."+v12[0]);
-for (v6=0;v6< v2.length;v6++){v10=v2[v6].split("=");
-if (v10[0]==v12[0]){v14=parseInt(v10[1]);if (v10[1].indexOf("%")>-1){v14= (v14/100)*v13;v2[v6]=v12[0]+"="+v14;
-}}if (v10[0]==v12[1]){v16=parseInt(v10[1]);v15=v6;}}if (l_iTarget==2){v7=(v13-v14)/2;v15= v2.length;
-}else if (l_iTarget==3){v7=v13-v14-v16;}v2[v15]=v12[1]+"="+v7;
-}}v8= v2.join(",");v9=window.open(v1[0],v1[1],v8);
-if (v3){v9.focus();}document.MM_returnValue=false;return v9;}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
 //-->
 </script>
 <!-- InstanceBeginEditable name="head" -->
@@ -44,19 +32,24 @@ if (v3){v9.focus();}document.MM_returnValue=false;return v9;}
 -->
 </style>
 <!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+.Style1 {color: #820E12}
+-->
+</style>
 </head>
 <body marginwidth="0" marginheight="0" >
-  <div class="bandeau-liens" id="divbandeau-lienCNRS"> <a href="http://www.cnrs.fr/" target="_blank">Le CNRS</a> </div>
+  <div class="bandeau-liens" id="divbandeau-lienCNRS"> <a href="http://www.cnrs.fr/fr/organisme/presentation.htm" target="_blank">Le CNRS</a> </div>
 <div id="divbandeau-traitvert1"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
   <div id="divbandeau-lienAccueil" class="bandeau-liens"> <a href="http://www.cnrs.fr/shs/" target="_blank">Accueil SHS</a> </div>
 <div id="divbandeau-traitvert2"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
-  <div id="divbandeau-lienAutres" class="bandeau-liens"><a href="http://www2.cnrs.fr/band/5.htm" target="_blank">Autres sites CNRS</a></div> 
-  <div id="divbandeau-traitvert3"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
+  <div id="divbandeau-lienAutres" class="bandeau-liens"><a href="http://www.cnrs.fr/fr/une/sites-cnrs.htm" target="_blank">Autres sites CNRS</a></div> 
+<div id="divbandeau-traitvert3"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
 
 <table width="751"  border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td width="150"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="65" alt=""></td>
-    <td colspan="2"><img src="../z-outils/images/charte/bandeau-haut-droit.gif" alt="" width="600" height="65" border="0"></td>
+    <td colspan="2"><img src="../z-outils/images/charte/bandeau-haut-droit.gif" alt="" width="100%" border="0"></td>
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
   </tr>
   <tr>
@@ -67,7 +60,7 @@ if (v3){v9.focus();}document.MM_returnValue=false;return v9;}
   <tr>
     <td width="150">&nbsp;</td>
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="62"></td>
-    <td width="599" height="1"><!-- InstanceBeginEditable name="Visuel" --> <span class="Xchemin"><img src="../images/bandeaux/dauphins.jpg" width="600" height="85"></span><!-- InstanceEndEditable --></td>
+    <td width="599" height="1"><!-- InstanceBeginEditable name="Visuel" --> <span class="Xchemin"><img src="../images/bandeaux/dauphins.jpg" width="100%"></span><!-- InstanceEndEditable --></td>
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="62"></td>
   </tr>
   <tr>
@@ -91,108 +84,152 @@ if (v3){v9.focus();}document.MM_returnValue=false;return v9;}
   <tr>
     <td width="150">&nbsp;</td>
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
-    <td width="599" rowspan="2"><div id="ZonePrint">
+    <td width="599" rowspan="2" class="Xtextcourant" valign="top"><div id="ZonePrint">
       <!-- InstanceBeginEditable name="Contenu" -->
       <table width="100%"  border="0" cellspacing="0" cellpadding="10">
         <tr>
-          <td><p class="intertitre"><a name="up"></a><a href="#enseignements">&bull; Enseignements</a></p>
-            <p class="intertitre"><a href="#theses">&bull; Th&egrave;ses bient&ocirc;t ou d&eacute;j&agrave; soutenues</a></p>
-            <p class="intertitre"><a href="#theseencours">&bull; Th&egrave;ses en cours</a></p>
-            <h3><a name="enseignements"></a>Enseignements donnés par des chercheurs du Lacito (màj 16 mars 2010)</h3>
+          <td><h1><a name="up"></a>Enseignements</h1>
+            <ul class="liste-liens">
+              <li>
+                <p><a href="#theses">Accès aux th&egrave;ses bient&ocirc;t ou d&eacute;j&agrave; soutenues</a></p>
+              </li>
+              <li>
+                <p><a href="#theseencours">Accès aux th&egrave;ses en cours</a></p>
+              </li>
+            </ul>
+            <h1><br>
+              <a name="enseignements"></a>Enseignements donnés par des chercheurs du Lacito (màj 11 mai 2010)</h1>
             <table width="100%" border="1">
               <tr>
-                <td width="15%"><p><a href="http://www.univ-paris3.fr/1207750810633/0/fiche___defaultstructureksup/&RH=1235649944785" target="_blank"><img src="../images/logos/paris3.jpg" alt="paris3" width="110" height="80" border="0"></a><br>
+                <td width="15%"><p align="center"><a href="http://www.univ-paris3.fr/1207750810633/0/fiche___defaultstructureksup/&RH=1235649944785" target="_blank"><img src="../images/logos/paris3.jpg" alt="paris3" width="110" height="80" border="0"></a><br>
                     <br>
                         <strong>Université Sorbonne Nouvelle - Paris 3</strong></p>                  </td>
                 <td><ul class="liste-liens">
-                  <li><a href="ens-mazaudon.htm">Diversit&eacute; des langues et changement historique</a><br>
-                    <strong>Master</strong> <strong>M1</strong> de Linguistique &agrave; l'<a href="http://www.cavi.univ-paris3.fr/ilpga/ilpga/" target="_blank">ILPGA</a> par <a href="../membres/mazaudon.htm"> M. Mazaudon</a> <br>
-                    1er semestre (2008-2009 ; 2009-2010)</li>
-                  <li><a href="ens-michail.htm">Introduction &agrave; l'&eacute;tude des langues tib&eacute;to-birmanes</a><br>
-                    <strong>Master</strong> <strong>M2</strong> de Linguistique &agrave; l<a href="http://www.cavi.univ-paris3.fr/ilpga/ilpga/" target="_blank">'ILPGA</a> par <a href="../membres/michailovsky.htm">B. Michailovsky</a> et divers intervenants <a href="../membres/tournadre.htm"></a> <br>
-1er semestre (2008-2009 ; 2009-2010)</li>
-                  <li><strong><a href="ens-fernandez.htm">La structuration informationnelle, entre typologie et universaux linguistiques</a></strong> <br>
-                    <strong>Doctorat</strong> de Linguistique &agrave; <a href="http://www.cavi.univ-paris3.fr/Ilpga/ed/" target="_blank">l'ED 268</a>, Paris III par <a href="../membres/fernandez.htm">M.M.&nbsp;J.&nbsp;Fernandez-Vest</a><br>
-(2008-2009 ; 2009-2010)</li>
+                  <li>
+                    <p><a href="ens-mazaudon.htm">Diversit&eacute; des langues et changement historique</a><br>
+                        <strong>Master M1 de Linguistique</strong> &agrave; l'<a href="http://www.cavi.univ-paris3.fr/ilpga/ilpga/" target="_blank">ILPGA</a> par <a href="../membres/mazaudon.htm"> M. Mazaudon</a> <br>
+                      1er semestre (2008-2009 ; 2009-2010)</p>
+                  </li>
+                  <li>
+                    <p><a href="ens-michail.htm">Introduction &agrave; l'&eacute;tude des langues tib&eacute;to-birmanes</a><br>
+                        <strong>Master M2 de Linguistique</strong> &agrave; l<a href="http://www.cavi.univ-paris3.fr/ilpga/ilpga/" target="_blank">'ILPGA</a> par <a href="../membres/michailovsky.htm">B. Michailovsky</a> et divers intervenants <a href="../membres/tournadre.htm"></a> <br>
+                      1er semestre (2008-2009 ; 2009-2010)</p>
+                  </li>
+                  <li>
+                    <p><strong><a href="ens-fernandez.htm">La structuration informationnelle, entre typologie et universaux linguistiques</a></strong> <br>
+                        <strong>Doctorat de Linguistique</strong> &agrave; <a href="http://www.cavi.univ-paris3.fr/Ilpga/ed/" target="_blank">l'ED 268</a>, Paris III par <a href="../membres/fernandez.htm">M.M.&nbsp;J.&nbsp;Fernandez-Vest</a><br>
+                      (2008-2009 ; 2009-2010)</p>
+                  </li>
                 </ul></td>
               </tr>
               <tr>
-                <td width="15%"><p><a href="http://www.paris-sorbonne.fr/fr/spip.php?rubrique1096" target="_blank"><img src="../images/logos/paris4.jpg" alt="paris4" width="110" height="95" border="0"></a><br>
+                <td width="15%"><p align="center"><a href="http://www.paris-sorbonne.fr/fr/spip.php?rubrique1096" target="_blank"><img src="../images/logos/paris4.jpg" alt="paris4" width="110" height="95" border="0"></a><br>
                     <br>
                         <strong>Université Paris Sorbonne - Paris IV</strong></p>                  </td>
                 <td><ul class="liste-liens">
-                  <li><a href="ens-guentche.htm">Sémantique grammaticale</a><br>
-                    <a href="http://www.paris-sorbonne.fr/fr/spip.php?article7807" target="_blank"><strong>Master</strong> <strong>M2</strong></a> de Linguistique à l'UFR &quot;Langue Française&quot; par <a href="../membres/guentcheva.htm">Z. Guentchéva</a><br>
-                    2e semestre (2008-2009 ; 2009-2010)</li>
-                  <li><strong>Structures et systèmes de quelques langues naturelles : <br>
-introduction aux langues finno-ougriennes (finnois et same)</strong><br>
-<strong>Licence</strong> <strong>L1</strong><strong> </strong>par <a href="../membres/fernandez.htm">M.M.J. Fernandez-Vest</a> <br>
-2e semestre (2008-2009 ; 2009-2010)<br>
-À la Sorbonne (salle D664),  le mardi de 9h à 10h</li>
-                  <li><strong><a href="ens-typologie.htm">Typologie  et diversit&eacute; des langues</a> (Langues et civilisations &agrave; tradition orale)</strong><br>
-                        <strong>– Licence L3</strong> de Linguistique par<a href="../membres/lahaussois.htm"> A. Lahaussois</a> (thulung-rai) (2009-2010)<br>
-                        <strong>– </strong><a href="http://www.paris-sorbonne.fr/fr/spip.php?article7808" target="_blank">Master <strong>M2</strong></a> de Linguistique par  <a href="../membres/bril.htm">I. Bril </a>(n&eacute;l&eacute;mwa) &amp; <a href="../membres/pilot.htm">C. Pilot-Raichoor</a> (dravidien) (2008-2009)<br>
+                  <li>
+                    <p><strong>Typologie  et diversit&eacute; des langues (Langues et civilisations &agrave; tradition orale)</strong><br>
+                        <strong>– Licence L3 de Linguistique</strong> par<a href="../membres/lahaussois.htm"> A. Lahaussois</a> (thulung-rai) (2009-2010)<br>
+                        <strong>–</strong> <a href="http://www.paris-sorbonne.fr/fr/spip.php?article7808" target="_blank"><strong>Master M2 de Linguistique</strong></a> par <a href="../membres/bril.htm">I. Bril </a>(n&eacute;l&eacute;mwa) &amp; <a href="../membres/pilot.htm">C. Pilot-Raichoor</a> (dravidien) (2008-2009)<br>
+                    </p>
+                  </li>
+                  <li>
+                      <p><strong>Structures et systèmes de quelques langues naturelles : <br>
+                        introduction aux langues finno-ougriennes (finnois et same)</strong><br>
+                        <strong>Licence</strong> <strong>L1 de Linguistique</strong><strong> </strong>par <a href="../membres/fernandez.htm">M.M.J. Fernandez-Vest</a> <br>
+                        2e semestre (2008-2009 ; 2009-2010)<br>
+                        À la Sorbonne (salle D664),  le mardi de 9h à 10h</p>
+                  </li>
+                  <li>
+                    <p><a href="ens-guentche.htm">Sémantique grammaticale</a><br>
+                        <a href="http://www.paris-sorbonne.fr/fr/spip.php?article7807" target="_blank"><strong>Master</strong> <strong>M2 de Linguistique</strong></a> à l'UFR &quot;Langue Française&quot; par <a href="../membres/guentcheva.htm">Z. Guentchéva</a><br>
+                      2e semestre (2008-2009 ; 2009-2010)</p>
                   </li>
                   </ul></td>
               </tr>
               <tr>
-                <td width="15%"><p><a href="http://www.inalco.fr/index.php?id_secteur=1&def_lang=fr" target="_blank"><img src="../images/logos/inalco.jpg" alt="inalco" width="110" height="68" border="0"></a><br>
+                <td width="15%"><p align="center"><a href="http://www.inalco.fr/index.php?id_secteur=1&def_lang=fr" target="_blank"><img src="../images/logos/inalco.jpg" alt="inalco" width="110" height="68" border="0"></a><br>
                     <br>
                         <strong>Institut National des Langues et Civilisations Orientales</strong></p>                  </td>
                 <td><ul class="liste-liens">
-                  <li><strong>Linguistique historique et comparatisme austron&eacute;sien</strong><br>
-                    « Le comparatisme austronésien » <br>
-                    <strong>Master</strong> <strong>M1</strong> de Linguistique par <a href="../membres/bril.htm">I. Bril</a> (2008-2009 ; 2009-2010)</li>
-                  <li><strong>Langues et linguistique océanienne</strong><strong><br>
-                    </strong>« Linguistique océanienne », <strong><br>
-                      Licence</strong> de Linguistique par <a href="../membres/moyse.htm">C. Moyse-Faurie</a> (2007-2008) ; par <a href="../membres/bril.htm">I. Bril</a> (1er semestre 2008-2009 ; 2009-2010)</li>
-                  <li><a href="ens-adamou.htm">Le patrimoine plurilingue de la Gr&egrave;ce</a><strong><br>  
-                    Master</strong> <strong>M2</strong>   deLinguistique et diversités des langues. UE d'ouverture par <a href="../membres/adamou.htm">E. Adamou</a>  
-                    (2009-2010)</li>
+                  <li>
+                    <p><strong>Langues, littératures et civilisation du Pacifique<br>
+                      </strong><strong>Licence L1, L2 et L3</strong> « Linguistique océanienne » par <a href="../membres/moyse.htm">C. Moyse-Faurie</a> (2008-2009 ; 2009-2010)</p>
+                  </li>
+                  <li>
+                    <p><strong>Asie du Sud, Asie du Sud-Est, Haute-Asie, Pacifique</strong><br>
+                      – <strong>Master M1</strong> «Comparatisme austronésien »  et « Linguistique océanienne » par <a href="../membres/bril.htm">I. Bril</a> (2008-2009 ; 2009-2010)<br>
+                      – Suivi des mémoires<strong> M1 et M2</strong> par   <a href="../membres/bril.htm">I. Bril</a> (2009-2010) et <a href="../membres/moyse.htm">C. Moyse-Faurie</a> (2008-2009 ; 2009-2010)</p>
+                  </li>
+                  <li>
+                    <p><a href="ens-adamou.htm">Le patrimoine plurilingue de la Gr&egrave;ce</a><strong><br>  
+                      </strong>  <strong>Master</strong> <strong>M2 deLinguistique et diversités des langues</strong>. UE d'ouverture par <a href="../membres/adamou.htm">E. Adamou</a>  
+                      (2009-2010)</p>
+                  </li>
                 </ul></td>
               </tr>
               <tr>
-                <td width="15%"><p>    <a href="http://www.ehess.fr/fr/" target="_blank"><img src="../images/logos/ehess.jpg" alt="ehess" width="82" height="84" border="0"></a><br>
+                <td width="15%"><p align="center">    <a href="http://www.ehess.fr/fr/" target="_blank"><img src="../images/logos/ehess.jpg" alt="ehess" width="82" height="84" border="0"></a><br>
                     <br>
                         <strong>L'École des hautes études en sciences sociales</strong></p>                  </td>
                 <td><ul class="liste-liens">
                   <li><a href="ens-adamou.htm">Le patrimoine plurilingue de la Gr&egrave;ce</a> par <a href="../membres/adamou.htm">E. Adamou</a><strong><br>
                                   </strong>Parcours de sp&eacute;cialisation &quot;Histoire et cultures sud-est-europ&eacute;ennes&quot; <br>
-                                  Master <strong>M2</strong> de Sciences Sociales    par <a href="../membres/adamou.htm">E. Adamou</a> <br>
+                                  <strong>Master M2 de Sciences Sociales</strong>    par <a href="../membres/adamou.htm">E. Adamou</a> <br>
                         (2008-2009 ; 2009-2010)</li>
                 </ul></td>
               </tr>
               <tr>
-                <td width="15%"><a href="http://www.univ-nc.nc/" target="_blank"><img src="../images/logos/nlle-caledonie.jpg" alt="nlle_caledonie" width="110" height="89" border="0"></a><br>
-                  <br>
-                  <strong>Université de la Nouvelle-Calédonie</strong></td>
+                <td width="15%"><div align="center"><a href="http://www.univ-nc.nc/" target="_blank"><img src="../images/logos/nlle-caledonie.jpg" alt="nlle_caledonie" width="110" height="89" border="0"></a><br>
+                    <br>
+                    <strong>Université de la Nouvelle-Calédonie</strong></div></td>
                 <td><ul class="liste-liens">
-                  <li><strong><a href="http://www.univ-nc.nc/-Licence-Langues-litteratures-et-.html?lang=fr" target="_blank">Langues et cultures océaniennes</a></strong><br>
-                    « Linguistique historique et comparatisme austronésien », <strong><br>
-                      Licence</strong> par <a href="../membres/moyse.htm">C. Moyse-Faurie</a> (2008-2009)</li>
+                  <li>
+                    <p><strong>Langues et cultures océaniennes</strong><br>
+                      <strong>Licence L3 </strong> « Linguistique historique et comparatisme austronésien » <br>
+                        par <a href="../membres/moyse.htm">C. Moyse-Faurie</a> (2008-2009 ; 2009-2010)</p>
+                  </li>
+                  <li>
+                    <p><strong>Arts, lettres et civilisations</strong><br>
+                      <strong>Master pluridisciplinaire</strong> « Les langues océaniennes et leurs particularités typologiques » par <a href="../membres/moyse.htm">C. Moyse-Faurie</a> (2009-2010) </p>
+                  </li>
                 </ul></td>
               </tr>
             </table>
-            <h3><a name="theses"></a>Th&egrave;ses bient&ocirc;t ou d&eacute;j&agrave; soutenues (depuis  2003) <a href="#up"><img src="../images/icones/fleche-haut.gif" alt="toup" width="10" height="9" border="0"></a></h3>
-           <ul class="liste-liens">
+            <h1><br>
+              <a name="theses"></a>Th&egrave;ses bient&ocirc;t ou d&eacute;j&agrave; soutenues (depuis  2003) <a href="#up"><img src="../images/icones/fleche-haut.gif" alt="toup" width="10" height="9" border="0"></a></h1>
+            <ul class="liste-liens">
              <li>
-               <p><strong>HAMLAOUI Fatima</strong>, <em>Le focus &agrave; l'interface de la syntaxe et de la phonologie: le cas du fran&ccedil;ais dans une perspective typologique</em>, dir. G. Rebuschi, Paris III, mention très honorable avec félicitations du jury (<strong>9 décembre 2009</strong>)<br>
-               Membres  du jury : <br>
+               <p>Shiho<strong> Yamamoto</strong>, <em>Recherches sur les relatives à pivot interne en japonais</em>, dir. G.&nbsp;Rebuschi, Paris IIII, mention très honorable avec félicitations du jury (14 mars 2010)<br>
+                 <em>Membres du jury</em> :<br>
+                 Mme Injoo Choi-Jonin (Toulouse II &amp; Lacito), pré-rapporteur et présidente ; <br>
+                 Mme Dominique Klingler (Sorbonne-Nouvelle--Paris 3), expert ; <br>
+                 Mme Marie-Claude Paris, U. Paris VII (pré-rapporteur) ; <br>
+                 Georges Rebuschi (Sorbonne-Nouvelle et Lacito), directeur de recherche.</p>
+             </li>
+             <li>
+               <p>Straton <strong>Rurangirwa</strong>, <em>Situation sociolinguistique du Rwanda</em>, dir. K.S. Kabore, Paris III (mars 2010).</p>
+             </li>
+             <li>
+               <p>Fatima<strong> Hamlaoui </strong>, <em>Le focus &agrave; l'interface de la syntaxe et de la phonologie: le cas du fran&ccedil;ais dans une perspective typologique</em>, dir. G. Rebuschi, Paris III, mention très honorable avec félicitations du jury (<strong>9 décembre 2009</strong>)<br>
+                 <em>Membres  du jury</em> : <br>
                  Marie-Hélène Côté, U. d'Ottawa (rapporteur)<br> 
-                 Caroline Féry, Wolfang-Goethe-Universität, Frankfort ((rapporteur)) <br>
+                 Caroline Féry, Wolfang-Goethe-Universität, Frankfort (rapporteur) <br>
                  Elisabeth Selkirk, U. du Massachusetts à Amherst <br>
                  Annie Rialland, Sorbonne-Nouvelle - Paris 3 (présidente du jury) <br>
-                 Georges Rebuschi, Sorbonne-Nouvelle &amp; LACITO (Directeur de recherche).</p>
+                 Georges Rebuschi, Sorbonne-Nouvelle &amp; LACITO (directeur de recherche).</p>
              </li>
              <li>
                <p>J&eacute;r&eacute;mie<strong> Delorme</strong>, <em>Eléments de toponymie générale du Grand-Bornand à Passamainty, terrain de longue durée et enquêtes contrastives en terrain varié dans les domaines roman, polynésien, basque et bantu</em>, dir. A. Lemar&eacute;chal, Paris&nbsp;IV (<strong>29 mai 2009</strong>)</p>
              </li>
-             <li>Ali<strong> Abdoulhamid</strong>, <em>Analyse syntaxique des constructions participiales absolues en fran&ccedil;ais</em>, dir. G.&nbsp;Rebuschi, Paris III (<strong>20 f&eacute;vrier 2009</strong>)</li>
+             <li>
+               <p>Ali<strong> Abdoulhamid</strong>, <em>Analyse syntaxique des constructions participiales absolues en fran&ccedil;ais</em>, dir. G.&nbsp;Rebuschi, Paris III (<strong>20 f&eacute;vrier 2009</strong>)</p>
+             </li>
              <li>
                <p><a name="schmitt"></a>Hubert<strong> Schmitt</strong>, <em>Chanson populaire et identit&eacute; limousines, 1900-1950</em>, th&egrave;se, Paris IV (<strong>15&nbsp;d&eacute;cembre 2008</strong>)<strong></strong><br>
-  <em>Jury</em> : D. Pistone (Co-dir. de th&egrave;se, Paris IV) ; A.-M. Despringre (Co-dir. de th&egrave;se, Antilles- Guyane ; Patrick Sauzer ; Liliane Jagueneau (Poitiers) ; Jean-Jacques Casteret (Institut Occitan)<br>
+                 <em>Jury</em> : D. Pistone (Co-dir. de th&egrave;se, Paris IV) ; A.-M. Despringre (Co-dir. de th&egrave;se, Antilles- Guyane ; Patrick Sauzer ; Liliane Jagueneau (Poitiers) ; Jean-Jacques Casteret (Institut Occitan)<br>
                </p>
-           </li>
+             </li>
              <li>
                <p><a name="marijana"></a>Marijana<strong> Petrovic-Rignault</strong>,<em> Description syntaxique et s&eacute;mantique du valaque  (un parler daco-roumain de Serbie)</em>, th&egrave;se, Paris IV (<strong>6 d&eacute;cembre 2008</strong>)<br>
                  <em>Jury</em> : Zlatka Guentch&eacute;va (CNRS), directrice, Petya Assenova (Sofia), Alain Lemar&eacute;chal (Paris IV), Franck Neveu (Univ. de Caen et CRISCO) et Biljana Sikimic (Acad&eacute;mie des Sciences, Serbie).</p>
@@ -258,163 +295,160 @@ introduction aux langues finno-ougriennes (finnois et same)</strong><br>
              <li>
                <p>Hee-Young <strong>Lee</strong>, <em>L'auxiliation aspectuelle en cor&eacute;en et en fran&ccedil;ais</em>, th&egrave;se, dir. A. Lemar&eacute;chal, Paris IV (<strong>16&nbsp;juin 2003</strong>)</p>
              </li>
-             <li>Nora<strong> Boneh</strong>, <em>La repr&eacute;sentation syntaxique du temps : le cas de l'h&eacute;breu moderne, de l'arabe standard et dialectal</em>, co-dir. G. Rebuschi &amp; M.-A. Rouveret, th&egrave;se, Paris VIII (<strong>8 avril 2003</strong>)</li>
+             <li>
+               <p>Nora<strong> Boneh</strong>, <em>La repr&eacute;sentation syntaxique du temps : le cas de l'h&eacute;breu moderne, de l'arabe standard et dialectal</em>, co-dir. G. Rebuschi &amp; M.-A. Rouveret, th&egrave;se, Paris VIII (<strong>8 avril 2003</strong>)</p>
+             </li>
            </ul>
-           <h3><a name="theseencours"></a>Th&egrave;ses en cours (m&agrave;j 19 avril 2010) <a href="#up"><img src="../images/icones/fleche-haut.gif" alt="toup" width="10" height="9" border="0"></a></h3>
-           <ul class="liste-liens"><li>
-               <p><strong><a href="../membres/achariyayos.htm">ACHARIYAYOS Jirasak</a></strong>, <em>Recherche sur les particules &eacute;nonciatives en tha&iuml;</em>, dir. M.M.J. Fernandez-Vest, Paris III.</p>
-           </li>
+            <h1><br>
+              <a name="theseencours"></a>Th&egrave;ses en cours (m&agrave;j 21 juin 2010) <a href="#up"><img src="../images/icones/fleche-haut.gif" alt="toup" width="10" height="9" border="0"></a></h1>
+            <ul class="liste-liens"><li>
+               <p><strong><a href="../membres/achariyayos.htm">ACHARIYAYOS Jirasak</a></strong>, <em>Recherche sur les particules énonciatives et structure informationnelle en thaï</em>, Paris III, dir. M.M.J. Fernandez-Vest.</p>
+            </li>
              <li> 
-               <p><strong>AGHALI-ZAKARA Mohamed</strong>, <em>Identit&eacute; touar&egrave;gue</em>, dir. K.S. Kabore, Paris III.</p>
+               <p><strong>AGHALI-ZAKARA Mohamed</strong>, <em>Identit&eacute; touar&egrave;gue</em>, Paris III, dir. K.S. Kabore.</p>
              </li>
              <li>
-               <p><strong>BALLARIN Hélène</strong>,  <em>La cohérence sémantique des lettres de Paul. Comment la traduire en langue nawdn, langue africaine de tradition orale ?</em>, dir. M.M.J. Fernandez-Vest, Paris III.</p>
+               <p><strong>BALLARIN Hélène</strong>,  <em>La cohérence sémantique des lettres de Paul. Comment la traduire en langue nawdn, langue africaine de tradition orale ?</em>, Paris III, dir. M.M.J. Fernandez-Vest.</p>
              </li>
              <li>
-               <p class="Style3"><a href="../membres/bearune.htm">BEARUNE Suzie</a>, <em>L'expression linguistique de l'espace en nengone (Mar&eacute;, &icirc;les Loyaut&eacute;, Nouvelle-Cal&eacute;donie)</em>, dir. C.&nbsp;Moyse-Faurie, INALCO.</p>
+               <p class="Style3"><a href="../membres/bearune.htm">BEARUNE Suzie</a>, <em>L'expression linguistique de l'espace en nengone (Mar&eacute;, &icirc;les Loyaut&eacute;, Nouvelle-Cal&eacute;donie)</em>, INALCO, dir. C.&nbsp;Moyse-Faurie.</p>
              </li>
              <li>
-               <p><strong>BELKO BAYORO Adamou</strong>, <em>Toponymie et histoire de la ville de Niamey</em>, dir. K.S. Kabore, Paris III.</p>
+               <p><strong>BELKO BAYORO Adamou</strong>, <em>Toponymie et histoire de la ville de Niamey</em>, Paris III, dir. K.S. Kabore.</p>
              </li>
              <li>
-               <p><a href="../membres/bellahsene.htm">BELLAHSENE Linda</a>,<em>Temps, aspects et modalit&eacute; : le cas de la particule pr&eacute;verbiale </em>ad <em>en berb&egrave;re (kabyle)</em>, dir. Z. Guentch&eacute;va, Paris IV.</p>
+               <p><a href="../membres/bellahsene.htm">BELLAHSENE Linda</a>,<em>Temps, aspects et modalit&eacute; : le cas de la particule pr&eacute;verbiale </em>ad <em>en berb&egrave;re (kabyle)</em>, Paris IV, dir. Z. Guentch&eacute;va.</p>
              </li>
              <li>
-               <p><strong>BUDDHAPONG Sudarat</strong>, <em>Le passif et ses &eacute;quivalents en thai et en fran&ccedil;ais</em>, dir. A. Lemar&eacute;chal, Paris&nbsp;IV.</p>
+               <p><strong>BUDDHAPONG Sudarat</strong>, <em>Le passif et ses &eacute;quivalents en thai et en fran&ccedil;ais</em>, Paris&nbsp;IV, dir. A. Lemar&eacute;chal.</p>
              </li>
              <li>
-               <p><strong><a href="../membres/capo.htm">CAPO Manon</a></strong>, <em>Voix et voies du passé à Tibarama (Nouvelle-Calédonie). Dynamiques discursives et construction sociale de l’histoire locale</em>, co-dir. A. Bensa, EHESS &amp; C. Moyse-Faurie, UMR7107.</p>
+               <p><strong><a href="../membres/capo.htm">CAPO Manon</a></strong>, <em>Voix et voies du passé à Tibarama (Nouvelle-Calédonie). Dynamiques discursives et construction sociale de l’histoire locale</em>, EHESS, co-dir. A. Bensa &amp; C. Moyse-Faurie (Lacito).</p>
              </li>
              <li>
-               <p><strong>DAO Huy-Linh</strong>, <em>La finitude aux interfaces syntaxe-sémantique-pragmatique. Représentations et acquisition : le cas des apprenants vietnamophones de L2 français</em>, co-dir. G. Rebuschi, Paris III &amp; A. Rouveret, Paris VII.</p>
+               <p><strong>DAO Huy-Linh</strong>, <em>La finitude aux interfaces syntaxe-sémantique-pragmatique. Représentations et acquisition : le cas des apprenants vietnamophones de L2 français</em>, Paris III, co-dir. G. Rebuschi &amp; A. Rouveret (Paris VII).</p>
              </li>
-             <li><strong>DAVID Lorena</strong>, <em>Etude contrastive des relatives libres en francais et en roumain</em>, co-dir. G. Rebuschi &amp; F. Lefeuvre, Paris III</li>
+             <li>
+               <p><strong>DAVID Lorena</strong>, <em>Etude contrastive des relatives libres en francais et en roumain</em>, Paris III, co-dir. G. Rebuschi &amp; F. Lefeuvre.</p>
+             </li>
              <li> 
-               <p><a href="../membres/djoupa.htm">DJOUPA Alexandre</a>, <em>Analyse de quelques marqueurs et de quelques op&eacute;rations en langue fagauvea (Ouv&eacute;a, &icirc;les Loyaut&eacute;)</em>, dir. C. Moyse-Faurie, INALCO. </p>
+               <p><a href="../membres/djoupa.htm">DJOUPA Alexandre</a>, <em>Analyse de quelques marqueurs et de quelques op&eacute;rations en langue fagauvea (Ouv&eacute;a, &icirc;les Loyaut&eacute;)</em>, INALCO, dir. C. Moyse-Faurie. </p>
              </li>
              <li>
-               <p><strong>ED-DAHBY Idrissia</strong>, <em>Traduction et mélange des langues arabe et française dans la presse marocaine</em>,  dir. M.M.J. Fernandez-Vest, Paris III.</p>
+               <p><a href="../membres/dotte.htm">DOTTE Anne-Laure</a>, <em>Aménagement terminologique des langues minoritaires: application au iaai (Ouvéa, Nouvelle-Calédonie)</em>, Lyon 2 (DDL), co-dir. C. Grinevald &amp; C. Moyse-Faurie (Lacito).</p>
              </li>
              <li>
-               <p><strong>FOUILLEUL Thierry</strong>, <em>Gen&egrave;se du syst&egrave;me verbal en hongrois et dans les langues ob-ougriennes</em>, dir. A. Lemar&eacute;chal, Paris IV.</p>
+               <p><strong>ED-DAHBY Idrissia</strong>, <em>Traduction et mélange des langues arabe et française dans la presse marocaine</em>, Paris III,  dir. M.M.J. Fernandez-Vest.</p>
              </li>
              <li>
-               <p><strong>GARCÍA MARKÍNA Yekatarina</strong>, <em>L'opposition entre</em> ser <em>et</em> estar <em>en espagnol et ses &eacute;quivalents dans d'autres langues romanes</em>, co-dir. G. Rebuschi &amp; A. Salazar-Orivg, Paris III.</p>
+               <p><strong>FOUILLEUL Thierry</strong>, <em>Gen&egrave;se du syst&egrave;me verbal en hongrois et dans les langues ob-ougriennes</em>, Paris IV, dir. A. Lemar&eacute;chal.</p>
              </li>
              <li>
-               <p><strong>HENRI Agn&egrave;s</strong>, <em>Description du mele-fila (langue d'Efate, Polyn&eacute;sie)</em>, dir. A. Lemar&eacute;chal, Paris IV.</p>
+               <p><strong>GARCÍA MARKÍNA Yekatarina</strong>, <em>L'opposition entre</em> ser <em>et</em> estar <em>en espagnol et ses &eacute;quivalents dans d'autres langues romanes</em>, Paris III, co-dir. G. Rebuschi &amp; A. Salazar-Orivg.</p>
              </li>
              <li>
-               <p><strong><a href="../membres/hever.htm">HEVÉR-JOLY Krisztina</a></strong>, <em>Typologie des systèmes de pronoms dans les langues finno-ougriennes (finnois, hongrois, mordve erzya)</em>, dir. MM.J. Fernandez-Vest, Paris III.</p>
+               <p><strong>HENRI Agn&egrave;s</strong>, <em>Description du mele-fila (langue d'Efate, Polyn&eacute;sie)</em>, Paris IV, dir. A. Lemar&eacute;chal.</p>
              </li>
              <li>
-               <p><strong><a href="../membres/hnin_tun.htm">HNIN TUN San San</a></strong>, <em>La grammaire du discours en birman parlé : les fonctions des particules énonciatives du birman parlé</em>, dir. F. Jacquesson, Paris III.</p>
+               <p><strong><a href="../membres/hever.htm">HEVÉR-JOLY Krisztina</a></strong>, <em>Typologie des systèmes de pronoms dans les langues finno-ougriennes (finnois, hongrois, mordve erzya)</em>, Paris III, dir. MM.J. Fernandez-Vest.</p>
              </li>
              <li>
-               <p><strong><a href="../membres/iwasa.htm">IWASA Kazue</a></strong>, <em>L'apport de l'&eacute;tude des manuscrits &agrave; la linguistique des langues yi (lolo). Etude d'un manuscrit bilingue chinois-yi</em>, dir.  M. Mazaudon, Paris III.</p>
+               <p><strong><a href="../membres/hnin_tun.htm">HNIN TUN San San</a></strong>, <em>La grammaire du discours en birman parlé : les fonctions des particules énonciatives du birman parlé</em>, Paris III, dir. F. Jacquesson.</p>
              </li>
              <li>
-               <p><strong>KHAMIS Adoum</strong>, <em>L'enseignement des langues nationales au Tchad : probl&egrave;mes g&eacute;n&eacute;raux et applications au mango</em>, dir. L. Bouquiaux, Paris III.</p>
+               <p><strong><a href="../membres/iwasa.htm">IWASA Kazue</a></strong>, <em>L'apport de l'&eacute;tude des manuscrits &agrave; la linguistique des langues yi (lolo). Etude d'un manuscrit bilingue chinois-yi</em>, Paris III, dir.  M. Mazaudon.</p>
              </li>
              <li>
-               <p><strong>KIHOUAMI Edmond</strong>, <em>Etude ethnolinguistique des proverbes chez les Lari de la r&eacute;gion du Pool (Congo)</em>, dir. L. Bouquiaux, Paris III.</p>
+               <p><strong>KHAMIS Adoum</strong>, <em>L'enseignement des langues nationales au Tchad : probl&egrave;mes g&eacute;n&eacute;raux et applications au mango, Paris III</em>, dir. L. Bouquiaux.</p>
              </li>
              <li>
-               <p><strong>KOMAGATA Hiromi</strong>,<em> La structure informationnelle et actancielle : &eacute;tude comparative de textes japonais et fran&ccedil;ais</em>, dir. M.M.J. Fernandez-Vest, Paris III.</p>
+               <p><strong>KIHOUAMI Edmond</strong>, <em>Etude ethnolinguistique des proverbes chez les Lari de la r&eacute;gion du Pool (Congo)</em>, Paris III, dir. L. Bouquiaux.</p>
              </li>
              <li>
-               <p><strong><a href="../membres/kozareva.htm">KOZAREVA Yordanka</a></strong>, <em>R&eacute;flexion sur la traduction et ses enjeux linguistiques notamment &agrave; partir de textes litt&eacute;raires bulgares</em>, dir. M.M.J. Fernandez-Vest, Paris III. </p>
+               <p><strong>KOMAGATA Hiromi</strong>,<em> La structure informationnelle et actancielle : &eacute;tude comparative de textes japonais et fran&ccedil;ais</em>, Paris III, dir. M.M.J. Fernandez-Vest.</p>
              </li>
              <li>
-               <p><strong><a href="../membres/lafhej.htm">LAFHEJ Imen</a></strong>, <em>Étude contrastive des procédés de relativisation en français et en arabe : approche typologique</em>, co-dir. G. Rebuschi &amp; F. Lefeuvre, Paris III.</p>
+               <p><strong><a href="../membres/kozareva.htm">KOZAREVA Yordanka</a></strong>, <em>R&eacute;flexion sur la traduction et ses enjeux linguistiques notamment &agrave; partir de textes litt&eacute;raires bulgares</em>, Paris III, dir. M.M.J. Fernandez-Vest. </p>
              </li>
              <li>
-               <p><strong>LIANG-BOLLE Zhuzhu</strong>, dir. G. Rebuschi, Paris III.</p>
+               <p><strong><a href="../membres/lafhej.htm">LAFHEJ Imen</a></strong>, <em>Étude contrastive des procédés de relativisation en français et en arabe : approche typologique</em>, Paris III, co-dir. G. Rebuschi &amp; F. Lefeuvre.</p>
              </li>
              <li>
-               <p><strong>MARRI Amon</strong>, <em>Typologie de la structuration informationnelle, à partir d'une analyse contrastive estonien-français</em>, co-dir. M.M.J. Fernandez-Vest, Paris III &amp; Ago Künnap, Tartu, Estonie.</p>
+               <p><strong>MARRI Amon</strong>, <em>Information structuring: a textual and typological approach</em> [Typologie de la structuration informationnelle, à partir d'une analyse contrastive estonien-français], Paris III, co-dir. M.M.J. Fernandez-Vest &amp; Ago Künnap (Tartu, Estonie).</p>
              </li>
              <li>
-               <p><strong><a href="../membres/matera.htm">MATERA Patrycja</a></strong>, <em>La notion de sujet à l'intersection de la morphologie casuelle, de l'aspect, des rôles sémantiques et de la position structurale ; application aux phrases fléchies sans argument nominatif dans les langues slaves</em>, dir. G. Rebuschi, Paris III.</p>
+               <p><strong><a href="../membres/matera.htm">MATERA Patrycja</a></strong>, <em>La notion de sujet à l'intersection de la morphologie casuelle, de l'aspect, des rôles sémantiques et de la position structurale ; application aux phrases fléchies sans argument nominatif dans les langues slaves</em>, Paris III, dir. G. Rebuschi.</p>
              </li>
              <li>
-               <p><strong><a href="../membres/matsumoto.htm">MATSUMOTO Asuka</a></strong>, <em>Typologie des constructions verbales à prédicat complexe : composition  en japonais et dérivation préfixale en polonais</em>, co-dir. A. Lemaréchal, Paris IV &amp; R. Huszcza, U. de Varsovie.</p>
+               <p><strong><a href="../membres/matsumoto.htm">MATSUMOTO Asuka</a></strong>, <em>Typologie des constructions verbales à prédicat complexe : composition  en japonais et dérivation préfixale en polonais</em>, Paris IV, co-dir. A. Lemaréchal &amp; R. Huszcza (U. de Varsovie).</p>
              </li>
              <li>
-               <p><strong>MILORAVA Sophio</strong>, <em>Les verbes de position, mouvement et d&eacute;placement en g&eacute;orgien et en fran&ccedil;ais</em>, dir. A. Lemar&eacute;chal, Paris IV.</p>
+               <p><strong>MILORAVA Sophio</strong>, <em>Les verbes de position, mouvement et d&eacute;placement en g&eacute;orgien et en fran&ccedil;ais</em>, Paris IV, dir. A. Lemar&eacute;chal.</p>
              </li>
              <li>
-               <p><strong>MOTTAGHI Mahmoubeh</strong>, <em>Problèmes de création terminologique dans les langues de spécialité : emprunts anglais </em>vs<em>. néologismes persans dans les articles de biologie publiés en Iran</em>, dir. M.M.J. Fernandez-Vest, Paris III.</p>
+               <p><strong>MOTTAGHI Mahmoubeh</strong>, <em>Problèmes de création terminologique dans les langues de spécialité : emprunts anglais </em>vs<em>. néologismes persans dans les articles de biologie publiés en Iran</em>, Paris III, dir. M.M.J. Fernandez-Vest.</p>
              </li>
              <li>
-               <p><strong><a href="../membres/mtavangu.htm">MTAVANGU Norbert</a></strong>, <em>La contribution des Français au développement du swahili : cas d'étude de Charles Sacleux (1856-1943)</em>, dir. O. Racine-Issa, INALCO.</p>
+               <p><strong><a href="../membres/mtavangu.htm">MTAVANGU Norbert</a></strong>, <em>La contribution des Français au développement du swahili : cas d'étude de Charles Sacleux (1856-1943)</em>, INALCO, dir. O. Racine-Issa.</p>
              </li>
              <li>
-               <p><strong><a href="../membres/oisel.htm">OISEL Guillaume</a></strong>, <em>Morphosyntaxe et sémantique des auxiliaires et des connecteurs du tibétain littéraire. Etude diachronique et synchronique</em>, dir. N. Tournadre (u. de Provence), Paris III.</p>
+               <p><strong><a href="../membres/oisel.htm">OISEL Guillaume</a></strong>, <em>Morphosyntaxe et sémantique des auxiliaires et des connecteurs du tibétain littéraire. Etude diachronique et synchronique</em>, Paris III, dir. N. Tournadre (univ. de Provence).</p>
              </li>
              <li>
-               <p><a href="../membres/ollomo.htm">OLLOMO ELLA R&eacute;gis</a>, <em>Description linguistique du shiwa, langue bantu du Gabon : phonologie, morphologie, syntaxe, lexique</em>, co-dir. K.S. Kabore, Paris III &amp; M.-F. Rombi, UMR 5145.</p>
+               <p><a href="../membres/ollomo.htm">OLLOMO ELLA R&eacute;gis</a>, <em>Description linguistique du shiwa, langue bantu du Gabon : phonologie, morphologie, syntaxe, lexique</em>, Paris III, co-dir. K.S. Kabore &amp; M.-F. Rombi (CNRS-UMR 5145).</p>
              </li>
              <li>
-               <p><strong><a href="../membres/opengin.htm">OPENGIN Ergin</a></strong>, <em>Les emplois du cas oblique et ses répercussions morphosyntaxiques (sur l'énoncé et la phrase entière) en kurde-kurmanji et d'autres parlers iraniens</em>, dir. F. Jacquesson, Paris III.</p>
+               <p><strong><a href="../membres/opengin.htm">OPENGIN Ergin</a></strong>, <em>Les emplois du cas oblique et ses répercussions morphosyntaxiques (sur l'énoncé et la phrase entière) en kurde-kurmanji et d'autres parlers iraniens</em>, Paris III, dir. F. Jacquesson.</p>
              </li>
              <li>
-               <p><strong>PLANGARICA Tomor</strong>, <em>Dimension &eacute;nonciative et textuelle des temps verbaux de l'albanais</em>, dir. Z.&nbsp;Guentch&eacute;va, Paris IV.</p>
+               <p><strong>PLANGARICA Tomor</strong>, <em>Dimension &eacute;nonciative et textuelle des temps verbaux de l'albanais, Paris IV</em>, dir. Z.&nbsp;Guentch&eacute;va.</p>
              </li>
              <li>
-               <p><strong>POURQUI&Eacute; Marie</strong>,  <em></em>Caractérisations morphosyntaxiques de l’aphasie en basque, Paris III, co-dir. G. Rebuschi, Paris III &amp; J.-L. Nespoulos, univ. de Toulouse II-Le Mirail.</p>
+               <p><strong>POURQUI&Eacute; Marie</strong>,  <em></em>Caractérisations morphosyntaxiques de l’aphasie en basque, Paris III, co-dir. G. Rebuschi &amp; J.-L. Nespoulos (univ. de Toulouse II-Le Mirail).</p>
              </li>
              <li>
-               <p><span class="Style3"><strong>PRAT Fr&eacute;d&eacute;ric</strong>, <em>Repr&eacute;sentation d'un syst&egrave;me logico-s&eacute;mantique de type intentionnel : une extension possible de la grammaire de Montague</em>, dir. G. Rebuschi, Paris III.<br>
-                                </span></p>
-             </li>
-             <li>
-               <p><span class="Style4"><strong>RASOAMAKA H.</strong>, <em>Mode et modalit&eacute; en malgache et en allemand</em>, co-dir. A. Lemar&eacute;chal &amp; M.&nbsp;Dalmas, Paris IV.</span><br>
+               <p><span class="Style4"><strong>RASOAMAKA H.</strong>, <em>Mode et modalit&eacute; en malgache et en allemand</em>, Paris IV, co-dir. A. Lemar&eacute;chal &amp; M.&nbsp;Dalmas.</span><br>
                </p>
              </li>
              <li>
-               <p><strong>RURANGIRWA Straton</strong><span class="Style3">, <em>Situation sociolinguistique du Rwanda</em>, dir.  K.S. Kabore, Paris III.</span>.</p>
-             </li>
-             <li>
-               <p><strong>SIDOROV Kirill</strong>, <em>La focalisation en russe</em>, dir. G. Rebuschi, Paris III, <br>
+               <p><strong>SIDOROV Kirill</strong>, <em>La focalisation en russe</em>, Paris III, dir. G. Rebuschi. <br>
                </p>
              </li>
              <li>
-               <p><strong>SOMEYA Satoshi</strong>, <em>L'inchoatif en japonais</em>, dir. N. Tournadre, Paris VIII.<br>
+               <p><strong>SOMEYA Satoshi</strong>, <em>L'inchoatif en japonais</em>, Paris VIII, dir. N. Tournadre (univ. de Provence).<br>
                </p>
              </li>
              <li>
-               <p><strong>SORGO Germain J.</strong>, <em>Lexicologie du moore</em>, dir. L. Bouquiaux, Paris III.<br>
+               <p><strong>SORGO Germain J.</strong>, <em>Lexicologie du moore</em>, Paris III, dir. L. Bouquiaux.<br>
                </p>
              </li>
              <li>
-               <p><strong>TAINE Emile</strong>, <em>Analyse du syst&egrave;me de rep&eacute;rage spatial en langue drehu (Lifou, &icirc;les Loyaut&eacute;)</em>, dir. C.&nbsp;Moyse-Faurie, INALCO.<br>
+               <p><strong>TAINE Emile</strong>, <em>Analyse du syst&egrave;me de rep&eacute;rage spatial en langue drehu (Lifou, &icirc;les Loyaut&eacute;)</em>, INALCO, dir. C.&nbsp;Moyse-Faurie.</p>
+             </li>
+             <li>
+               <p><strong>TERIIEROOITERAI Claude</strong>, Titre?, univ. de la Polynésie française, co-dir. L. Peltzer &amp; C. Moyse-Faurie (Lacito).</p>
+             </li>
+             <li>
+               <p><strong>TOMBA DIOGO Cerena</strong>, <em>Définition d'un genre de la littérature orale: la devise (kumbu) chez les punus du Gabon</em>, INALCO, co-direction U. Baumgardt (Llacan) &amp; O. Racine-Issa (Lacito).<br>
                </p>
              </li>
              <li>
-               <p><strong>VELUPILLAI Uthaya</strong>, <em>Le corpus des inscriptions du temple de Cirk&acirc;li</em>, co-dir. &Eacute;. Sethupathy, Paris III.<br>
+               <p><a href="../membres/wacalie.htm">WACALIE Fabrice</a>, <em>Description morpho-syntaxique du nââ numèè (langue de Yaté, Extrême-Sud de la Nouvelle-Calédonie</em>, INALCO, co-dir. C. Moyse-Faurie &amp; J. Vernaudon (univ. Nelle-Calédonie).<br>
                </p>
              </li>
              <li>
-               <p><a href="../membres/wacalie.htm">WACALIE Fabrice</a>, <em>Description morpho-syntaxique du nââ numèè (langue de Yaté, Extrême-Sud de la Nouvelle-Calédonie</em>, INALCO, co-dir. C. Moyse-Faurie &amp; J. Vernaudon, univ. Nelle-Calédonie.<br>
+               <p><strong>WANG Min</strong>, <em>L'expression de l'aspect et du temps en chinois et en fran&ccedil;ais</em>, Paris&nbsp;IV, dir. A. Lemar&eacute;chal.<br>
                </p>
              </li>
              <li>
-               <p><strong>WANG Min</strong>, <em>L'expression de l'aspect et du temps en chinois et en fran&ccedil;ais</em>, dir. A. Lemar&eacute;chal, Paris&nbsp;IV.<br>
+               <p><strong>WETTA-GURRERA Madeleine</strong>, <em>La repr&eacute;sentation animale dans les textes de tradition orale paic&icirc;</em>, INALCO, co-dir. C.&nbsp;Moyse-Faurie &amp; B. Rigo (univ.  Nelle-Cal&eacute;donie).</p>
+             </li>
+             <li>
+               <p><strong><a href="../membres/wu.htm">WU Tong</a></strong>, <em>Typologie des langues à relatives prénominales</em>, Paris III, co-dir. G. Rebuschi &amp; G. Cinque (univ. de Venise). <br>
                </p>
              </li>
              <li>
-               <p><strong>WETTA-GURRERA Madeleine</strong>, <em>La repr&eacute;sentation animale dans les textes de tradition orale paic&icirc;</em>, dir. C.&nbsp;Moyse-Faurie, Univ. de Nouvelle-Cal&eacute;donie.</p>
-             </li>
-             <li>
-               <p><strong><a href="../membres/wu.htm">WU Tong</a></strong>, <em>Typologie des langues à relatives prénominales</em>, co-dir. G. Rebuschi, Paris III &amp; G. Cinque, univ. de Venise, <br>
-               </p>
-             </li>
-             <li>
-               <p><strong>YAMAMOTO Shiho</strong>, <em>Recherches sur la modification nominale et la quantification en japonais</em>, dir. G.&nbsp;Rebuschi, Paris III.</p>
-             </li>
-             <li>
-               <p><strong>ZEINO Ghassan</strong>, <em>Discours sp&eacute;cialis&eacute; et interculturalit&eacute; : le dialogue m&eacute;decin-patient fran&ccedil;ais-arabe</em>, dir. M.M.J. Fernandez-Vest, Paris III.   <a href="#up"><img src="../images/icones/fleche-haut.gif" alt="toup" width="10" height="9" border="0"></a></p>
+               <p><strong>ZEINO Ghassan</strong>, <em>Discours sp&eacute;cialis&eacute; et interculturalit&eacute; : le dialogue m&eacute;decin-patient fran&ccedil;ais-arabe</em>, Paris III, dir. M.M.J. Fernandez-Vest.   <a href="#up"><img src="../images/icones/fleche-haut.gif" alt="toup" width="10" height="9" border="0"></a></p>
              </li>
            </ul></td>
         </tr>
@@ -435,35 +469,34 @@ introduction aux langues finno-ougriennes (finnois et same)</strong><br>
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
   </tr>
 </table>
-<!-- Start of StatCounter Code -->
-<script type="text/javascript" language="javascript">
-var sc_project=2319041; 
-var sc_invisible=1; 
-var sc_partition=21; 
-var sc_security="1fae5b4b"; 
-var sc_text=3; 
-</script>
-
-<script type="text/javascript" language="javascript" src="http://www.statcounter.com/counter/frames.js"></script><noscript><a href="http://www.statcounter.com/" target="_blank"><img  src="http://c22.statcounter.com/counter.php?sc_project=2319041&amp;java=0&amp;security=1fae5b4b&amp;invisible=0" alt="best website stats" border="0"></a> </noscript>
-<!-- End of StatCounter Code -->
 <p>&nbsp;</p>
  <p>&nbsp;</p>
  <div id="divpartenaires" >
    <table width="150"  border="0" cellspacing="0" cellpadding="0">
-     <tr><td><a href="http://www.cnrs.fr" target="_blank"><img src="../images/logos/logo-cnrs.jpg" alt="cnrs" width="150" height="62" border="0"></a></td>
+     <tr>
+       <td><a href="http://www.cnrs.fr" target="_blank"><img src="../images/logos/logo-cnrs.jpg" alt="cnrs" width="150" height="62" border="0"></a></td>
      </tr>
-     <tr><td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="1"></td></tr>
-     <tr><td><a href="http://www.univ-paris3.fr/1207750810633/0/fiche___defaultstructureksup/&RH=1235649944785" target="_blank"><img src="../images/logos/logo-paris-3.gif" alt="paris3" width="150" height="53" border="0"></a></td>
+     <tr>
+       <td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" alt="aa" width="150" height="1"></td>
      </tr>
-     <tr><td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="1"></td></tr>
-     <tr><td><a href="http://www.paris-sorbonne.fr/fr/spip.php?rubrique1096" target="_blank"><img src="../images/logos/logo-paris-4.gif" alt="paris4" width="150" height="53" border="0"></a></td>
+     <tr>
+       <td><a href="http://www.univ-paris3.fr/1207750810633/0/fiche___defaultstructureksup/&RH=1235649944785" target="_blank"><img src="../images/logos/logo-paris-3.gif" alt="paris3" width="150" height="53" border="0"></a></td>
      </tr>
-	 <tr><td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="1"></td></tr>
-     <tr><td><a href="http://www.typologie.cnrs.fr/" target="_blank"><img src="../images/logos/logo-typo.gif" alt="tul" width="150" height="53" border="0"></a></td>
+     <tr>
+       <td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" alt="aa" width="150" height="1"></td>
+     </tr>
+     <tr>
+       <td><a href="http://www.paris-sorbonne.fr/fr/spip.php?rubrique1096" target="_blank"><img src="../images/logos/logo-paris-4.gif" alt="paris4" width="150" height="53" border="0"></a></td>
+     </tr>
+     <tr>
+       <td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" alt="aa" width="150" height="1"></td>
+     </tr>
+     <tr>
+       <td><a href="http://www.typologie.cnrs.fr/" target="_blank"><img src="../images/logos/logo-typo.gif" alt="tul" width="150" height="53" border="0"></a></td>
      </tr>
    </table>
-</div>
- <p>
+ </div>
+<p>
      <script type='text/javascript'>function Go(){return}</script>
      <script type='text/javascript' src='../z-outils/deroulants/top_pos_var.js'></script>
      <script type='text/javascript' src='../z-outils/deroulants/menu_var.js'></script>
@@ -472,97 +505,72 @@ var sc_text=3;
  <noscript>
  <p>Your browser does not support script</p>
 </noscript>
+ <div id="divnavgauche-spec">
+   <table border="0" cellpadding="0" cellspacing="0"  width="150">
+     <tr>
+       <td height="2"><img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
+     </tr>
+     <tr>
+       	<td width="100%"  class="Xnavgauche" >
+        	<table border="0" cellpadding="10" cellspacing="0"  width="100%">
+      			<tr>
+       	 			<td width="100%" class="Xnavgauche"><h2><a href="INTRANET/index.htm">Intranet <img border="0" src="../z-outils/images/boite-outils/icones/intranet.gif" width="18" height="12"
+							alt="aa"></a></h2></td>
+      			</tr>
+       		</table>
+       </td>
+     </tr>
+     <tr>
+       <td height="2"><img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
+     </tr>
+    </table>
+ </div>
+ <div id="divnavgauche-searchLabo">
+   <table cellspacing="0" cellpadding="0" hspace="11" border="0">
+     <tr>
+     	<td width="100%" class="Xnavgauche"><h2 >Rechercher</h2>
+                 <p>Sur le WEB 
+                   du laboratoire</p>
+               <br>
+      	 </td>
+         </tr>
+         <tr>
+     	 <td>       
+				<form name="rechercher-spm" action="http://lacito.vjf.cnrs.fr/moteur/engine.php" method="GET">
+				<input type="hidden" name="action"  value="go">
+				<table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td><input name ="blork" maxLength="50" size="10" class="text"></td>
+						<td><img border="0" src="../z-outils/images/boite-outils/espaceur.gif" width="10" height="8"
+							alt="aa"></td>
+						<td><input name="submit2" type="image" src="../z-outils/images/charte/ok.gif" 
+                             border="0" width="20" height="20">
+						</td>
+					</tr>
+				</table>
+  				</form>
+          </td>
+        </tr>
+       </table>
+        <tr>
+       <td height="2"><img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
+		</tr>
 
-<div id="divnavgauche-spec"> 
-  <table border="0" cellpadding="0" cellspacing="0"  width="150">
-    <tr> 
-      <td height="2"> <img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
-    </tr>
-    <tr> 
-      <td width="100%"  class="Xnavgauche" > 
-        <table border="0" cellpadding="10" cellspacing="0"  width="100%">
-          <tr> 
-            <td width="100%" class="Xnavgauche"> 
-              <p class="intertitre"><a href="../pratique/organigramme.htm">Les membres</a></p>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr> 
-      <td height="2"> <img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
-    </tr>
-    <tr> 
-      <td width="100%"  class="Xnavgauche" > 
-        <table border="0" cellpadding="10" cellspacing="0"  width="100%">
-          <tr> 
-            <td width="100%" class="Xnavgauche"> 
-              <p class="intertitre" >Rechercher</p>
-              <p>Sur le WEB du Lacito</p>
-              <p><br>
-              <br>
-              <!--Sur le WEB du CNRS --><br>
-              <br>
-              <br>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr> 
-      <td height="2"> <img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
-    </tr>
-  </table>
-</div>
-<div id="divnavgauche-searchLabo"> 
-  <form name="rechercher-spm" action="http://lacito.vjf.cnrs.fr/moteur/engine.php" method="GET">
-  <input type="hidden" name="action" value="go">
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr> 
-        <td> 
-          <input name ="blork" maxLength="50" size="10" class="text">
-        </td>
-        <td> <img border="0" src="../z-outils/images/boite-outils/espaceur.gif" width="10" height="8"
-                alt=""></td>
-        <td> <input name="submit" type="image" src="../z-outils/images/charte/ok.gif" 
-                                border="0" width="20" height="20">
-        </td>
-      </tr>
-    </table>
-  </form>
-</div>
-<!--<div id="divnavgauche-search"> 
-  <form name="rechercher-spm" action="http://www.cnrs.fr/rechercher/" method="POST"
-       target="_blank">
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr> 
-        <td> 
-          <input name ="request" maxLength="50" size="10" class="BoiteRechercher">
-        </td>
-        <td> <img border="0" src="../z-outils/images/boite-outils/espaceur.gif" width="10" height="8"
-                alt=""></td>
-        <td valign="middle" > 
-          <input name="submit" type="image" src="../z-outils/images/charte/ok.gif" 
-                                border="0" width="20" height="20">
-        </td>
-      </tr>
-    </table>
-  </form>
-</div>-->
-<div id="divnavhaut-nom-labo"> 
+ </div>
+<div id="divnavhaut-nom-labo">
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr> 
-      <td class="Xnavhaut"> 
-      <p> <a href="../index.htm"><img src="../images/logos/Logo_Lacito.jpg" alt="lacito" width="143" height="57" border="0"></a></p>      </td>
+    <tr>
+      <td valign="top" class="Xnavhaut"><p> <a href="../index.htm"><img src="../images/logos/Logo_Lacito.jpg" alt="aa" width="141" height="59" hspace="10" border="0" align="left"></a> <span class="Style1">Langues et civilisations<br>
+        à tradition orale <br>
+        (UMR7107)</span></p></td>
     </tr>
   </table>
 </div>
 <map name="Map2">
-  <area shape="rect" coords="28,23,46,43" href="javascript:impression()" alt="Imprimer/to print">
-  <area shape="rect" coords="50,23,67,43" href="javascript:writemail('vjf.cnrs.fr','behaghel','',1);" alt="Contact">
-  <area shape="rect" coords="68,23,85,43" href="../pratique/index.htm" alt="Plan du site/Site map">
-  <area shape="rect" coords="87,23,105,43" href="../pratique/credits.htm" alt="Cr&eacute;dits/Copyrights">
-  <area shape="rect" coords="107,23,128,43" href="../pratique/to_build.htm" alt="Outils/Plug-ins">
+  <area shape="rect" coords="28,23,46,43" href="javascript:impression()" alt="Imprimer">
+  <area shape="rect" coords="49,22,66,42" href="javascript:writemail('vjf.cnrs.fr','behaghel','',1);" alt="Contacter le webmestre">
+  <area shape="rect" coords="68,23,85,43" href="../pratique/index.htm" alt="Plan du site">
+  <area shape="rect" coords="87,23,105,43" href="../pratique/credits.htm" alt="Crédits">
   <area shape="rect" coords="9,24,25,43" href="../index.htm" alt="Accueil">
 </map>
 </body>

@@ -54,7 +54,7 @@
 
 <xsl:template name="langue">
 	<tr>
-		<td class="descripteur">Langue </td>
+		<td class="descripteur">Langue : </td>
 		<td class="valeur">
 			<xsl:for-each select="dc:subject[@xsi:type='olac:language']">
 				<xsl:apply-templates select="."/>
@@ -225,10 +225,10 @@
 	<tr><td></td></tr>
 	<tr><td></td></tr>
 
-<xsl:for-each select="dc:description|dcterms:abstract|dcterms:tableOfContents">
+<!--<xsl:for-each select="dc:description|dcterms:abstract|dcterms:tableOfContents">
 					<xsl:apply-templates select="."/>
 					<xsl:if test="position()!=last()"><br/></xsl:if>
-				</xsl:for-each>
+				</xsl:for-each>-->
 
 
 
@@ -251,7 +251,7 @@
 			<td class="descripteur">Fichier(s) source texte :
             <a	href="show_metadatas_text.php?id={$id_text}"
 					
-					onClick="flvFPW1(this.href,'popupLink','width=640,height=400,scrollbars=yes,resizable=yes',1);return document.MM_returnValue">
+					onClick="window.open(this.href,'popupLink','width=640,height=400,scrollbars=yes,resizable=yes',1);return false">
 						<img class="sansBordure" src="../../images/icones/info.gif"/>
 					</a>
             :

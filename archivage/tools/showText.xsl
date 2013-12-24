@@ -17,15 +17,52 @@
 	<!-- ******************************************************** -->
 
 	<xsl:template match="/">
+    
+    
+    
+    
+    
 		<script src="showhide.js" type="text/javascript">.</script>
 		<div style="margin-left: 5px;">
 			<div>Titre: <xsl:value-of select="$titre"/> 
 				(Langue: <xsl:value-of select="$lg"/>)
 	
 			</div>
-			<div>Mot à mot : <input checked="checked" name="interlinear" onclick="javascript:showhide(this, 7, 'inline')" type="checkbox"/>
-				Traductions: <input checked="checked" name="translation" onclick="javascript:showhide(this, 6, 'block')" type="checkbox"/>
-			</div>
+         
+         
+         <div>
+         
+         <xsl:if test="annot:TEXT/annot:S/annot:W[annot:TRANSL or annot:M/annot:TRANSL]">
+    		
+            Mot à mot : <input checked="checked" name="interlinear" onclick="javascript:showhide(this, 9, 'inline')" type="checkbox"/>
+   			 
+   		 </xsl:if>
+         
+         
+		<xsl:if test="annot:TEXT/annot:S/annot:TRANSL[@xml:lang='en']">
+    		
+    		Traduction (EN): <input checked="checked" name="translation1" onclick="javascript:showhide(this, 6, 'block')"  type="checkbox"/>
+   			
+   		 </xsl:if>
+         
+         <xsl:if test="annot:TEXT/annot:S/annot:TRANSL[@xml:lang='fr']">
+    		
+    		Traduction (FR): <input checked="checked" name="translation1" onclick="javascript:showhide(this, 7, 'block')"  type="checkbox"/>
+   			
+   		 </xsl:if>
+			
+            <xsl:if test="annot:TEXT/annot:S/annot:TRANSL[@xml:lang!='fr' and @xml:lang!='en']">
+    		
+    		Traductions (OTHER): <input checked="checked" name="translation1" onclick="javascript:showhide(this, 8, 'block')"  type="checkbox"/>
+   			 
+   		 </xsl:if>
+         
+         </div>
+         
+         
+			
+			
+	
 			<div>
 				<xsl:call-template name="player4qt-audio">
 					<xsl:with-param name="mediaUrl" select="$url_sound"/>
@@ -48,7 +85,7 @@
 									<td class="segmentInfo" width="25">S<xsl:value-of select="position()"/>
 									</td>
 									<td class="segmentContent" id="{@id}">
-										<div>
+										
 											<a href="javascript:boutonStop()">
 												<img src="stop.gif" alt="stop"/>
 											</a>
@@ -86,6 +123,7 @@
 												<xsl:value-of select="."/>
                                                
 											</div>
+                                            <br />
 										</xsl:for-each>
                                         
                                         </xsl:if>
@@ -93,7 +131,7 @@
                                         
                                         <!-- Cas ou W ou M contiennent la balise FORM et ou S ne contient pas la balise FORM -->
                                         <xsl:if test="not(annot:FORM) and (annot:W/annot:FORM or annot:W/annot:M/annot:FORM)">
-                                      	<div>
+                                      	
                                        	
                                                     
                                         <!-- Recuperation des mots ou morphemes puis concatenation pour former une phrase --> 
@@ -101,7 +139,7 @@
 											
                                            
                                             
-														<p class="word_sentence">
+														<div class="word_sentence">
 															<xsl:choose>
 																<xsl:when test="annot:M/annot:FORM">
 																	<xsl:for-each select="annot:M/annot:FORM">
@@ -113,26 +151,44 @@
 																	<xsl:value-of select="annot:FORM"/>
 																</xsl:when>
 															</xsl:choose>
-														</p>
+														</div>
+                                                        
                                                         
                                      
                                           </xsl:for-each>
                                      
                                       
-											</div>
+											
                                         </xsl:if>
                                        
-                                   </div>    
+                                    <br />
+                                     
+                                    <xsl:if test="annot:TRANSL">
                                        
                                     <!-- Recupere la traduction si il en existe une -->
-                                        <xsl:if test="annot:TRANSL">
-                                       
-                                        <xsl:for-each select="annot:TRANSL">
-											<div class="translation">
+                                        
+									
+                                      
+                                      <xsl:for-each select="annot:TRANSL[@xml:lang='en']">
+											<div class="translation1">
 												<xsl:value-of select="."/>
 											</div>
-										</xsl:for-each>
+                                          </xsl:for-each> 
+                                          
+                                          <xsl:for-each select="annot:TRANSL[@xml:lang='fr']">
+											<div class="translation2">
+												<xsl:value-of select="."/>
+											</div>
+                                          </xsl:for-each> 
+                                    
+                                          
+                                          <xsl:for-each select="annot:TRANSL[@xml:lang!='fr' and @xml:lang!='en']">
+											<div class="translation3">
+												<xsl:value-of select="."/>
+											</div>
                                         
+                                          </xsl:for-each>
+                                         
                                         </xsl:if>
                                         
                                         <br />

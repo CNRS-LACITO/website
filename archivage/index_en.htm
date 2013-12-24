@@ -12,50 +12,44 @@
 <script language="JavaScript" src="../z-outils/outils.js"></script>
 <script language="JavaScript" type="text/JavaScript">
 <!--
-
 function MM_reloadPage(init) {  //reloads the window if Nav4 resized
   if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
     document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
   else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
 }
 MM_reloadPage(true);
-//-->
-</script>
-<script language="JavaScript" type="text/JavaScript">
-<!--
-function flvFPW1(){//v1.44
-// Copyright 2002-2004, Marja Ribbers-de Vroed, FlevOOware (   www.flevooware.nl/dreamweaver/)
-var v1=arguments,v2=v1[2].split(","),v3=(v1.length>3)?v1[3]:false,v4=( v1.length>4)?parseInt(v1[4]):0,v5=(v1.length>5)?parseInt(v1[5]):0,v6,v7=0,v8,v9,v10,v11,v12,v13,v14,v15,v16;v11=new Array("width,left,"+v4,"height,top,"+v5);for (i=0;i< v11.length;i++){v12=v11[i].split(",");
-l_iTarget=parseInt(v12[2]);
-if (l_iTarget>1||v1[2].indexOf("%")>-1){v13=eval("screen."+v12[0]);
-for (v6=0;v6< v2.length;v6++){v10=v2[v6].split("=");
-if (v10[0]==v12[0]){v14=parseInt(v10[1]);if (v10[1].indexOf("%")>-1){v14= (v14/100)*v13;v2[v6]=v12[0]+"="+v14;
-}}if (v10[0]==v12[1]){v16=parseInt(v10[1]);v15=v6;}}if (l_iTarget==2){v7=(v13-v14)/2;v15= v2.length;
-}else if (l_iTarget==3){v7=v13-v14-v16;}v2[v15]=v12[1]+"="+v7;
-}}v8= v2.join(",");v9=window.open(v1[0],v1[1],v8);
-if (v3){v9.focus();}document.MM_returnValue=false;return v9;}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
 //-->
 </script>
 <!-- InstanceBeginEditable name="head" -->
 <style type="text/css">
 <!--
 .Style1 {color: #FF0000}
+.Style3 {color: #FF0000; font-weight: bold; }
 -->
 </style>
 <!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+.Style1 {color: #820E12}
+-->
+</style>
 </head>
 <body marginwidth="0" marginheight="0" >
-  <div class="bandeau-liens" id="divbandeau-lienCNRS"> <a href="http://www.cnrs.fr/" target="_blank">Le CNRS</a> </div>
+  <div class="bandeau-liens" id="divbandeau-lienCNRS"> <a href="http://www.cnrs.fr/fr/organisme/presentation.htm" target="_blank">Le CNRS</a> </div>
 <div id="divbandeau-traitvert1"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
   <div id="divbandeau-lienAccueil" class="bandeau-liens"> <a href="http://www.cnrs.fr/shs/" target="_blank">Accueil SHS</a> </div>
 <div id="divbandeau-traitvert2"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
-  <div id="divbandeau-lienAutres" class="bandeau-liens"><a href="http://www2.cnrs.fr/band/5.htm" target="_blank">Autres sites CNRS</a></div> 
-  <div id="divbandeau-traitvert3"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
+  <div id="divbandeau-lienAutres" class="bandeau-liens"><a href="http://www.cnrs.fr/fr/une/sites-cnrs.htm" target="_blank">Autres sites CNRS</a></div> 
+<div id="divbandeau-traitvert3"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
 
 <table width="751"  border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td width="150"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="65" alt=""></td>
-    <td colspan="2"><img src="../z-outils/images/charte/bandeau-haut-droit.gif" alt="" width="600" height="65" border="0"></td>
+    <td colspan="2"><img src="../z-outils/images/charte/bandeau-haut-droit.gif" alt="" width="100%" border="0"></td>
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
   </tr>
   <tr>
@@ -66,7 +60,7 @@ if (v3){v9.focus();}document.MM_returnValue=false;return v9;}
   <tr>
     <td width="150">&nbsp;</td>
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="62"></td>
-    <td width="599" height="1"><!-- InstanceBeginEditable name="Visuel" --><span class="Xchemin"><img src="../images/bandeaux/bandeau_archivage.jpg" width="600" height="65"></span><!-- InstanceEndEditable --></td>
+    <td width="599" height="1"><!-- InstanceBeginEditable name="Visuel" --><span class="Xchemin"><img src="../images/bandeaux/bandeau_archivage.jpg" width="100%"></span><!-- InstanceEndEditable --></td>
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="62"></td>
   </tr>
   <tr>
@@ -90,15 +84,15 @@ if (v3){v9.focus();}document.MM_returnValue=false;return v9;}
   <tr>
     <td width="150">&nbsp;</td>
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
-    <td width="599" rowspan="2"><div id="ZonePrint">
+    <td width="599" rowspan="2" class="Xtextcourant" valign="top"><div id="ZonePrint">
       <!-- InstanceBeginEditable name="Contenu" -->
       <table width="100%"  border="0" cellspacing="0" cellpadding="10">
         <tr>
-          <td><A href="index.htm">Vers fran&ccedil;ais</A>
-            <h3><a name="up"></a>Contents of the archives (<a href="instructions_en.htm">How to</a> / <a href="tools/search.php">Search</a>) </h3>
-            <P>The LACITO Archive provides free access to documents of connected, spontaneous speech, mostly in "rare" or endangered languages, recorded in their cultural context and transcribed in ...             <img src="../z-outils/images/boite-outils/lire-la-suite.gif" width="19" height="11"> <a href="presentation_en.htm">More</a>
+          <td><h1><a name="up"></a>Contents of the archives (<a href="instructions_en.htm">How to</a> / <a href="tools/search.php">Search</a>) </h1>
+            <P>            
+            <P>The LACITO Archive (<a href="http://crdo.risc.cnrs.fr/exist/crdo/" target="_blank">CRDO</a> website) provides free access to documents of connected, spontaneous speech, mostly in "rare" or endangered languages, recorded in their cultural context and transcribed in ... <img src="../z-outils/images/boite-outils/lire-la-suite.gif" width="19" height="11"> <a href="presentation_en.htm">More</a>
             <P><br>
-              The public Archive contain over 200 documents in 45 languages, annotated by some twenty specialists (this list does not take into account the documents which are currently being processed)
+              The public Archive contains over 200 documents in 45 languages, annotated by some twenty specialists (this list does not take into account the documents which are currently being processed)
             <ul class="liste-liens">
               <li><a href="#africa">African Languages</a></li>
               <li><a href="#balkan">Balkan Languages</a></li>
@@ -121,49 +115,63 @@ if (v3){v9.focus();}document.MM_returnValue=false;return v9;}
               </tr>
               
               <tr>
-                <td><a href="languages/Ihanzu_en.htm">Ihanzu</a></td>
-                <td>Bantu</td>
-                <td>Tanzania</td>
-                <td><a href="../membres/dunham.htm?langue=Nyilamba">Margaret Dunham</a></td>
-                <td><a href="tools/list_rsc.php?lg=Nyilamba" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></td>
+                <td><div align="left">
+                  <p align="center" class="intertitre"><a href="languages/Ihanzu_en.htm">Ihanzu</a></p>
+                </div></td>
+                <td><div align="center">Bantu</div></td>
+                <td><div align="center">Tanzania</div></td>
+                <td><div align="center"><a href="../membres/dunham.htm?langue=Nyilamba">Margaret Dunham</a></div></td>
+                <td><div align="center"><a href="tools/list_rsc.php?lg=Nyilamba" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
               </tr>
               <tr>
-                <td><div align="center"><a href="languages/Langi_en.htm">Langi</a></div></td>
+                <td><div align="left">
+                  <p align="center" class="intertitre"><a href="languages/Langi_en.htm">Langi</a></p>
+                </div></td>
                 <td><div align="center">Bantu</div></td>
                 <td><div align="center">Tanzania</div></td>
                 <td><div align="center"><a href="../membres/dunham.htm">Margaret Dunham</a></div>                  </td>
                 <td><div align="center"><a href="tools/list_rsc.php?lg=Langi" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
               </tr>
               <tr>
-                <td><a href="languages/Maore_en.htm">Maore</a></td>
-                <td>Bantu</td>
-                <td>The Comoros</td>
-                <td><a href="../membres/rombi.htm">Marie-Fran&ccedil;oise Rombi</a></td>
-                <td><a href="tools/list_rsc.php?lg=Maore" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></td>
+                <td><div align="left">
+                  <p align="center" class="intertitre"><a href="languages/Maore_en.htm">Maore</a></p>
+                </div></td>
+                <td><div align="center">Bantu</div></td>
+                <td><div align="center">The Comoros</div></td>
+                <td><div align="center"><a href="../membres/rombi.htm">Marie-Fran&ccedil;oise Rombi</a></div></td>
+                <td><div align="center"><a href="tools/list_rsc.php?lg=Maore" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
               </tr>
               <tr>
-                <td><a href="languages/Mbugwe_en.htm">Mbugwe</a></td>
-                <td>Bantu</td>
-                <td>Tanzania</td>
-                <td><a href="../membres/dunham.htm">Margaret Dunham</a></td>
-                <td><a href="tools/list_rsc.php?lg=Mbugwe" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></td>
+                <td><div align="left">
+                  <p align="center" class="intertitre"><a href="languages/Mbugwe_en.htm">Mbugwe</a></p>
+                </div></td>
+                <td><div align="center">Bantu</div></td>
+                <td><div align="center">Tanzania</div></td>
+                <td><div align="center"><a href="../membres/dunham.htm">Margaret Dunham</a></div></td>
+                <td><div align="center"><a href="tools/list_rsc.php?lg=Mbugwe" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
               </tr>
               <tr>
-                <td><div align="center"><a href="languages/Ngazidja_en.htm">Ngazidja</a></div></td>
+                <td><div align="left">
+                  <p align="center" class="intertitre"><a href="languages/Ngazidja_en.htm">Ngazidja</a></p>
+                </div></td>
                 <td><div align="center">Bantu</div></td>
                 <td><div align="center">The Comoros</div></td>
                 <td><div align="center"><a href="../membres/rombi.htm">Marie-Fran&ccedil;oise Rombi</a></div></td>
                 <td><div align="center"><a href="tools/list_rsc.php?lg=Ngazidja" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
               </tr>
               <tr>
-                <td><a href="languages/Nyilamba_en.htm">Nyilamba</a></td>
-                <td>Bantu</td>
-                <td>Tanzania</td>
-                <td><a href="../membres/dunham.htm">Margaret Dunham</a></td>
-                <td><a href="tools/list_rsc.php?lg=Nyilamba" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></td>
+                <td><div align="left">
+                  <p align="center" class="intertitre"><a href="languages/Nyilamba_en.htm">Nyilamba</a></p>
+                </div></td>
+                <td><div align="center">Bantu</div></td>
+                <td><div align="center">Tanzania</div></td>
+                <td><div align="center"><a href="../membres/dunham.htm">Margaret Dunham</a></div></td>
+                <td><div align="center"><a href="tools/list_rsc.php?lg=Nyilamba" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
               </tr>
               <tr>
-                <td><div align="center"><a href="languages/Ouldeme_en.htm">Uldeme, Wuzlam</a></div></td>
+                <td><div align="left">
+                  <p align="center" class="intertitre"><a href="languages/Ouldeme_en.htm">Uldeme, Wuzlam</a></p>
+                </div></td>
                 <td><div align="center">Chadic</div></td>
                 <td><div align="center">Cameroon</div></td>
                 <td><div align="center"><a href="../membres/colombel.htm">V&eacute;ronique de Colombel</a></div></td>
@@ -181,8 +189,10 @@ if (v3){v9.focus();}document.MM_returnValue=false;return v9;}
                 <th><div align="center">Archive </div></th>
               </tr>
               <tr>
-                <td><div align="center"><a href="languages/Romani_en.htm">Romani</a></div></td>
-                <td>Indo-Aryan</td>
+                <td><div align="left">
+                  <p align="center" class="intertitre"><a href="languages/Romani_en.htm">Romani</a></p>
+                </div></td>
+                <td><div align="center">Indo-Aryan</div></td>
                 <td><div align="center">Greece</div></td>
                 <td><div align="center"><a href="../membres/adamou.htm">Evangelia Adamou</a></div></td>
                 <td><div align="center"><a href="tools/list_rsc.php?lg=Romani, Balkans" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
@@ -199,28 +209,36 @@ if (v3){v9.focus();}document.MM_returnValue=false;return v9;}
                 <th><div align="center">Archive </div></th>
               </tr>
               <tr>
-                <td><div align="center"><a href="languages/Abzakh_en.htm">Abzakh</a></div></td>
-                <td>North Caucasian</td>
+                <td><div align="left">
+                  <p align="center" class="intertitre"><a href="languages/Abzakh_en.htm">Abzakh</a></p>
+                </div></td>
+                <td><div align="center">North Caucasian</div></td>
                 <td><div align="center">Serbia</div></td>
                 <td><div align="center">Niaz Batouka, Ren&eacute; Gsell, Catherine Paris</div></td>
                 <td><div align="center"><a href="tools/list_rsc.php?lg=Abzakh" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
               </tr>
               <tr>
-                <td><div align="center"><a href="languages/Bjedug_en.htm">Bjedug</a></div></td>
-                <td>North Caucasian</td>
+                <td><div align="left">
+                  <p align="center" class="intertitre"><a href="languages/Bjedug_en.htm">Bjedug</a></p>
+                </div></td>
+                <td><div align="center">North Caucasian</div></td>
                 <td><div align="center">Russia</div></td>
                 <td><div align="center">Asker Gadagati', <a href="../membres/michaud.htm">A. Michaud</a>, Catherine&nbsp;Paris</div></td>
                 <td><div align="center"><a href="tools/list_rsc.php?lg=Bjedug" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
               </tr>
               <tr>
-                <td><div align="center"><a href="languages/Shapsug_en.htm">Shapsug</a></div></td>
-                <td>North Caucasian</td>
+                <td><div align="left">
+                  <p align="center" class="intertitre"><a href="languages/Shapsug_en.htm">Shapsug</a></p>
+                </div></td>
+                <td><div align="center">North Caucasian</div></td>
                 <td><div align="center">Turkey</div></td>
                 <td><div align="center">Catherine Paris</div></td>
                 <td><div align="center"><a href="tools/list_rsc.php?lg=Shapsug" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
               </tr>
               <tr>
-                <td><div align="center"><a href="languages/Ubykh_en.htm">Ubykh</a></div></td>
+                <td><div align="left">
+                  <p align="center" class="intertitre"><a href="languages/Ubykh_en.htm">Ubykh</a></p>
+                </div></td>
                 <td><div align="center">North Caucasian</div></td>
                 <td><div align="center">Turkey</div></td>
                 <td><div align="center">Georges Dum&eacute;zil</div></td>
@@ -240,56 +258,181 @@ if (v3){v9.focus();}document.MM_returnValue=false;return v9;}
                   <th width="11%"><div align="center">Archive </div></th>
                 </tr>
                 <tr>
-                  <td><a href="languages/Ajie_en.htm">Aji&euml;</a></td>
-                  <td>Austronesian</td>
-                  <td>New Caledonia </td>
-                  <td>Jacqueline de La Fontinelle </td>
-                  <td><a href="tools/list_rsc.php?lg=Ajië" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></td>
+                  <td><div align="left">
+                    <p align="center" class="intertitre"><a href="languages/Ajie_en.htm">Aji&euml;</a></p>
+                  </div></td>
+                  <td><div align="center">Austronesian</div></td>
+                  <td><div align="center">New Caledonia </div></td>
+                  <td><div align="center">Jacqueline de La Fontinelle </div></td>
+                  <td><div align="center"><a href="tools/list_rsc.php?lg=Aji%EB" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
                 </tr>
                 <tr>
-                  <td><div align="center"><a href="languages/Araki_en.htm">Araki</a></div></td>
+                  <td><div align="left">
+                    <p align="center" class="intertitre"><a href="languages/Araki_en.htm">Araki</a></p>
+                  </div></td>
                   <td><div align="center">Austronesian</div></td>
                   <td><div align="center">Vanuatu</div></td>
                   <td><div align="center"><a href="../membres/francois.htm">Alexandre Fran&ccedil;ois</a></div></td>
                   <td><div align="center"><a href="tools/list_rsc.php?lg=Araki" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
                 </tr>
                 <tr>
-                  <td><a href="languages/Bwatoo_en.htm">Bwatoo</a></td>
-                  <td>Austronesian</td>
-                  <td><nobr>New Caledonia</nobr></td>
-                  <td><a href="../membres/rivierre.htm">Jean-Claude Rivierre</a></td>
-                  <td><a href="tools/list_rsc.php?lg=Bwatoo" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></td>
+                  <td><div align="left">
+                    <p align="center" class="intertitre"><a href="languages/Bwatoo_en.htm">Bwatoo</a> <br>
+                      (<span class="Style3">in French</span>)</p>
+                  </div></td>
+                  <td><div align="center">Austronesian</div></td>
+                  <td><div align="center">New Caledonia</div></td>
+                  <td><div align="center"><a href="../membres/rivierre.htm">Jean-Claude Rivierre</a></div></td>
+                  <td><div align="center"><a href="tools/list_rsc.php?lg=Bwatoo" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
                 </tr>
                 <tr>
-                  <td><a href="languages/Cemuhi_en.htm">Cemuhi</a></td>
-                  <td>Austronesian</td>
-                  <td><nobr>New Caledonia</nobr></td>
-                  <td><a href="../membres/rivierre.htm">Jean-Claude Rivierre</a></td>
-                  <td><a href="tools/list_rsc.php?lg=Cemuhi" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></td>
+                  <td><div align="left">
+                    <p align="center" class="intertitre"><a href="languages/Cemuhi_en.htm">Cèmuhî</a></p>
+                  </div></td>
+                  <td><div align="center">Austronesian</div></td>
+                  <td><div align="center">New Caledonia</div></td>
+                  <td><div align="center"><a href="../membres/rivierre.htm">Jean-Claude Rivierre</a></div></td>
+                  <td><div align="center"><a href="tools/list_rsc.php?lg=Cemuhi" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
                 </tr>
                 <tr>
-                  <td><div align="center"><a href="languages/Dorig_en.htm">Dorig</a></div></td>
+                  <td><div align="left">
+                    <p align="center" class="intertitre"><a href="languages/Dorig_en.htm">Dorig</a></p>
+                  </div></td>
                   <td><div align="center">Austronesian</div></td>
                   <td><div align="center">Vanuatu</div></td>
                   <td><div align="center"><a href="../membres/francois.htm">Alexandre Fran&ccedil;ois </a></div></td>
                   <td><div align="center"><a href="tools/list_rsc.php?lg=Dorig" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
                 </tr>
                 <tr>
-                  <td><div align="center"><a href="languages/Drehu_en.htm">Drehu</a></div></td>
+                  <td><div align="left">
+                    <p align="center" class="intertitre"><a href="languages/Drehu_en.htm">Drehu</a></p>
+                  </div></td>
                   <td><div align="center">Austronesian</div></td>
                   <td><div align="center"><nobr>New Caledonia</nobr></div></td>
                   <td><div align="center"><a href="../membres/moyse.htm">Claire Moyse-Faurie</a></div></td>
                   <td><div align="center"><a href="tools/list_rsc.php?lg=Drehu" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
                 </tr>
                 <tr>
-                  <td><a href="languages/East_Uvean_en.htm">East Uvean</a></td>
-                  <td>Austronesian</td>
-                  <td>Wallis &amp; Futuna</td>
-                  <td><a href="../membres/moyse.htm">Claire Moyse-Faurie</a></td>
-                  <td><a href="tools/list_rsc.php?lg=Wallisien" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></td>
+                  <td><div align="left">
+                    <p align="center" class="intertitre"><a href="languages/East_Uvean_en.htm">East Uvean</a><br>
+                    (<span class="Style3">in French</span>)</p>
+                  </div></td>
+                  <td><div align="center">Austronesian</div></td>
+                  <td><div align="center">Wallis &amp; Futuna</div></td>
+                  <td><div align="center"><a href="../membres/moyse.htm">Claire Moyse-Faurie</a></div></td>
+                  <td><div align="center"><a href="tools/list_rsc.php?lg=Wallisien" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
                 </tr>
                 <tr>
-                  <td><div align="center"><a href="languages/Fagauvea_en.htm">Fagauvea</a></div></td>
+                  <td><div align="center">East Futunan<br>
+                  </div></td>
+                  <td><div align="center">Austronesian</div></td>
+                  <td><div align="center">Wallis &amp; Futuna</div></td>
+                  <td><div align="center"><a href="../membres/moyse.htm">Claire Moyse-Faurie</a></div></td>
+                  <td><div align="center"><a href="tools/list_rsc.php?lg=Futunien" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
+                </tr>
+                <tr>
+                  <td><div align="left">
+                    <p align="center" class="intertitre"><a href="languages/Iaai_en.htm">Iaai</a></p>
+                  </div></td>
+                  <td><div align="center">Austronesian</div></td>
+                  <td><div align="center"><nobr>New Caledonia</nobr></div></td>
+                  <td><div align="center"><a href="../membres/ozanne.htm">Fran&ccedil;oise Ozanne-Rivierre</a>&dagger;</div></td>
+                  <td><div align="center"><a href="tools/list_rsc.php?lg=Iaai" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
+                </tr>
+                <tr>
+                  <td><div align="left">
+                    <p align="center" class="intertitre"><a href="languages/Koro_en.htm">Koro</a></p>
+                  </div></td>
+                  <td><div align="center">Austronesian</div></td>
+                  <td><div align="center">Vanuatu</div></td>
+                  <td><div align="center"><a href="../membres/francois.htm">Alexandre Fran&ccedil;ois </a></div></td>
+                  <td><div align="center"><a href="tools/list_rsc.php?lg=Koro" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
+                </tr>
+                <tr>
+                  <td><div align="left">
+                    <p align="center" class="intertitre"><a href="languages/Kwenyii_en.htm">Kwényïï</a></p>
+                  </div></td>
+                  <td><div align="center">Austronesian</div></td>
+                  <td><div align="center"><nobr>New Caledonia</nobr></div></td>
+                  <td><div align="center"><a href="../membres/rivierre.htm">Jean-Claude Rivierre</a></div></td>
+                  <td><div align="center"><a href="tools/list_rsc.php?lg=Kw%EAnyii" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
+                </tr>
+                <tr>
+                  <td><div align="left">
+                    <p align="center" class="intertitre"><a href="languages/Lakon_en.htm">Lakon</a></p>
+                  </div></td>
+                  <td><div align="center">Austronesian</div></td>
+                  <td><div align="center">Vanuatu</div></td>
+                  <td><div align="center"><a href="../membres/francois.htm">Alexandre Fran&ccedil;ois </a></div></td>
+                  <td><div align="center"><a href="tools/list_rsc.php?lg=Lakon" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
+                </tr>
+                <tr>
+                  <td><div align="left">
+                    <p align="center" class="intertitre"><a href="languages/Mwesen_en.htm">Mwesen</a></p>
+                  </div></td>
+                  <td><div align="center">Austronesian</div></td>
+                  <td><div align="center">Vanuatu</div></td>
+                  <td><div align="center"><a href="../membres/francois.htm">Alexandre Fran&ccedil;ois </a></div></td>
+                  <td><div align="center"><a href="tools/list_rsc.php?lg=Mwesen" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
+                </tr>
+                <tr>
+                  <td><div align="left">
+                    <p align="center" class="intertitre"><a href="languages/Mwotlap_en.htm">Mwotlap</a></p>
+                  </div></td>
+                  <td><div align="center">Austronesian</div></td>
+                  <td><div align="center"><nobr>Vanuatu</nobr></div></td>
+                  <td><div align="center"><a href="../membres/francois.htm">Alexandre Fran&ccedil;ois </a></div></td>
+                  <td><div align="center"><a href="tools/list_rsc.php?lg=Mwotlap" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
+                </tr>
+                <tr>
+                  <td><div align="left">
+                    <p align="center" class="intertitre"><a href="languages/Nelemwa_en.htm">Nêlêmwa</a></p>
+                  </div></td>
+                  <td><div align="center">Austronesian</div></td>
+                  <td><div align="center"><nobr>New Caledonia</nobr></div></td>
+                  <td><div align="center"><a href="../membres/bril.htm">Isabelle Bril</a></div></td>
+                  <td><div align="center"><a href="tools/list_rsc.php?lg=Nelemwa" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
+                </tr>
+                <tr>
+                  <td><div align="left">
+                    <p align="center" class="intertitre"><a href="languages/Nemi_en.htm">Nemi</a></p>
+                  </div></td>
+                  <td><div align="center">Austronesian</div></td>
+                  <td><div align="center"><nobr>New Caledonia</nobr></div></td>
+                  <td><div align="center"><a href="../membres/ozanne.htm">Fran&ccedil;oise Ozanne-Rivierre</a>&dagger;</div></td>
+                  <td><div align="center"><a href="tools/list_rsc.php?lg=Nemi" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
+                </tr>
+                <tr>
+                  <td><div align="left">
+                    <p align="center" class="intertitre"><a href="languages/Numee_en.htm">Num&egrave;&egrave;</a></p>
+                  </div></td>
+                  <td><div align="center">Austronesian</div></td>
+                  <td><div align="center">New Caledonia</div></td>
+                  <td><div align="center"><a href="../membres/rivierre.htm">Jean-Claude Rivierre</a></div></td>
+                  <td><div align="center"><a href="tools/list_rsc.php?lg=Num%E8%E8" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
+                </tr>
+                <tr>
+                  <td><div align="left">
+                    <p align="center" class="intertitre"><a href="languages/Paici_en.htm">Paic&icirc;</a></p>
+                  </div></td>
+                  <td><div align="center">Austronesian</div></td>
+                  <td><div align="center">New Caledonia</div></td>
+                  <td><div align="center"><a href="../membres/rivierre.htm">Jean-Claude Rivierre</a></div></td>
+                  <td><div align="center"><a href="tools/list_rsc.php?lg=Paic%EE" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
+                </tr>
+                <tr>
+                  <td><div align="left">
+                    <p align="center" class="intertitre"><a href="languages/Pije_en.htm">Pije</a></p>
+                  </div></td>
+                  <td><div align="center">Austronesian</div></td>
+                  <td><div align="center">New Caledonia</div></td>
+                  <td><div align="center"><a href="../membres/rivierre.htm">Jean-Claude Rivierre</a></div></td>
+                  <td><div align="center"><a href="tools/list_rsc.php?lg=Pij%E9" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
+                </tr>
+                <tr>
+                  <td><div align="left">
+                      <p align="center" class="intertitre"><a href="languages/Fagauvea_en.htm">West Uvean</a></p>
+                  </div></td>
                   <td><div align="center">Austronesian</div></td>
                   <td><div align="center"><nobr>New Caledonia</nobr></div></td>
                   <td><div align="center"><a href="../membres/moyse.htm">Claire Moyse-Faurie</a>, <a href="../membres/ozanne.htm">Fran&ccedil;oise Ozanne-Rivierre</a>&dagger;</div></td>
@@ -297,98 +440,28 @@ if (v3){v9.focus();}document.MM_returnValue=false;return v9;}
                   </div></td>
                 </tr>
                 <tr>
-                  <td><div align="center"><a href="languages/Iaai_en.htm">Iaai</a></div></td>
+                  <td><div align="left">
+                    <p align="center" class="intertitre"><a href="languages/Xaracuu_en.htm">Xârâcùù</a></p>
+                  </div></td>
                   <td><div align="center">Austronesian</div></td>
                   <td><div align="center"><nobr>New Caledonia</nobr></div></td>
-                  <td><div align="center"><a href="../membres/ozanne.htm">Fran&ccedil;oise Ozanne-Rivierre</a>&dagger;</div></td>
-                  <td><div align="center"><a href="tools/list_rsc.php?lg=Iaai" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
-                </tr>
-                <tr>
-                  <td><div align="center"><a href="languages/Koro_en.htm">Koro</a></div></td>
-                  <td><div align="center">Austronesian</div></td>
-                  <td><div align="center">Vanuatu</div></td>
-                  <td><div align="center"><a href="../membres/francois.htm">Alexandre Fran&ccedil;ois </a></div></td>
-                  <td><div align="center"><a href="tools/list_rsc.php?lg=Koro" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
-                </tr>
-                <tr>
-                  <td><div align="center"><a href="languages/Kwenyii_en.htm">Kw&ecirc;nyii</a></div></td>
-                  <td><div align="center">Austronesian</div></td>
-                  <td><div align="center"><nobr>New Caledonia</nobr></div></td>
-                  <td><div align="center"><a href="../membres/rivierre.htm">Jean-Claude Rivierre</a></div></td>
-                  <td><a href="tools/list_rsc.php?lg=Kwênyii" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></td>
-                </tr>
-                <tr>
-                  <td><div align="center"><a href="languages/Lakon_en.htm">Lakon</a></div></td>
-                  <td><div align="center">Austronesian</div></td>
-                  <td><div align="center">Vanuatu</div></td>
-                  <td><div align="center"><a href="../membres/francois.htm">Alexandre Fran&ccedil;ois </a></div></td>
-                  <td><div align="center"><a href="tools/list_rsc.php?lg=Lakon" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
-                </tr>
-                <tr>
-                  <td><div align="center"><a href="languages/Mwesen_en.htm">Mwesen</a></div></td>
-                  <td><div align="center">Austronesian</div></td>
-                  <td><div align="center">Vanuatu</div></td>
-                  <td><div align="center"><a href="../membres/francois.htm">Alexandre Fran&ccedil;ois </a></div></td>
-                  <td><div align="center"><a href="tools/list_rsc.php?lg=Mwesen" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
-                </tr>
-                <tr>
-                  <td><div align="center"><a href="languages/Mwotlap_en.htm">Mwotlap</a></div></td>
-                  <td><div align="center">Austronesian</div></td>
-                  <td><div align="center"><nobr>Vanuatu</nobr></div></td>
-                  <td><div align="center"><a href="../membres/francois.htm">Alexandre Fran&ccedil;ois </a></div></td>
-                  <td><div align="center"><a href="tools/list_rsc.php?lg=Mwotlap" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
-                </tr>
-                <tr>
-                  <td><div align="center"><a href="languages/Nelemwa_en.htm">Nelemwa</a></div></td>
-                  <td><div align="center">Austronesian</div></td>
-                  <td><div align="center"><nobr>New Caledonia</nobr></div></td>
-                  <td><div align="center"><a href="../membres/bril.htm">Isabelle Bril</a></div></td>
-                  <td><div align="center"><a href="tools/list_rsc.php?lg=Nelemwa" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
-                </tr>
-                <tr>
-                  <td><div align="center"><a href="languages/Nemi_en.htm">Nemi</a></div></td>
-                  <td><div align="center">Austronesian</div></td>
-                  <td><div align="center"><nobr>New Caledonia</nobr></div></td>
-                  <td><div align="center"><a href="../membres/ozanne.htm">Fran&ccedil;oise Ozanne-Rivierre</a>&dagger;</div></td>
-                  <td><div align="center"><a href="tools/list_rsc.php?lg=Nemi" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
-                </tr>
-                <tr>
-                  <td><a href="languages/Numee_en.htm">Num&egrave;&egrave;</a></td>
-                  <td>Austronesian</td>
-                  <td>New Caledonia</td>
-                  <td><a href="../membres/rivierre.htm">Jean-Claude Rivierre</a></td>
-                  <td><a href="tools/list_rsc.php?lg=Numèè" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></td>
-                </tr>
-                <tr>
-                  <td><a href="languages/Paici_en.htm">Paic&icirc;</a></td>
-                  <td>Austronesian</td>
-                  <td>New Caledonia</td>
-                  <td><a href="../membres/rivierre.htm">Jean-Claude Rivierre</a></td>
-                  <td><a href="tools/list_rsc.php?lg=Paicî" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></td>
-                </tr>
-                <tr>
-                  <td><a href="languages/Pije_en.htm">Pij&eacute;</a></td>
-                  <td>Austronesian</td>
-                  <td>New Caledonia</td>
-                  <td><a href="../membres/rivierre.htm">Jean-Claude Rivierre</a></td>
-                  <td><a href="tools/list_rsc.php?lg=Pijé" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></td>
-                </tr>
-                <tr>
-                  <td><div align="center"><a href="languages/Xaracuu_en.htm">Xaracuu</a></div></td>
-                  <td><div align="center">Austronesian</div></td>
-                  <td><div align="center"><nobr>New Caledonia</nobr></div></td>
-                  <td><div align="center"><a href="../membres/moyse.htm">Claire Moyse-Faurie</a></div></td>
+                  <td><div align="center"><a href="../membres/moyse.htm">Claire Moyse-Faurie</a><br>
+                    <a href="../membres/rivierre.htm">Jean-Claude Rivierre</a></div></td>
                   <td><div align="center"><a href="tools/list_rsc.php?lg=Xaracuu" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
                 </tr>
                 <tr>
-                  <td><div align="center"><a href="languages/Xaragure_en.htm">Xaragure</a></div></td>
+                  <td><div align="left">
+                    <p align="center" class="intertitre"><a href="languages/Xaragure_en.htm">Xârâgurè</a></p>
+                  </div></td>
                   <td><div align="center">Austronesian</div></td>
                   <td><div align="center"><nobr>New Caledonia</nobr></div></td>
                   <td><div align="center"><a href="../membres/moyse.htm">Claire Moyse-Faurie</a></div></td>
                   <td><div align="center"><a href="tools/list_rsc.php?lg=Xaragure" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
                 </tr>
                 <tr>
-                  <td><div align="center">                    <a href="languages/Yuanga_en.htm">Yuanga</a></div>                    </td>
+                  <td>                    <div align="left">
+                    <p align="center" class="intertitre"><a href="languages/Yuanga_en.htm">Zuanga or Yuanga</a></p>
+                  </div></td>
                   <td><div align="center">Austronesian</div></td>
                   <td><div align="center"><nobr>New Caledonia</nobr></div></td>
                   <td><div align="center"><a href="../membres/bril.htm">Isabelle Bril</a></div></td>
@@ -396,7 +469,7 @@ if (v3){v9.focus();}document.MM_returnValue=false;return v9;}
                 </tr>
                 <tr>
                   <td colspan="5" valign="middle" class="intertitre"><h3 class="intertitre" align="center"> <br>
-                      <a name="nepal"></a>Corpus of Nepal/Asia Languages (<a href="nepal_en.htm">introduction</a>) <a href="#up"><img src="../images/icones/fleche-haut.gif" width="10" height="9" border="0"></a></h3></td>
+                    <a name="nepal"></a>Corpus of Nepal/Asia Languages (<a href="nepal_en.htm">introduction</a>) <a href="#up"><img src="../images/icones/fleche-haut.gif" width="10" height="9" border="0"></a></h3></td>
                 </tr>
                <tr>
                   <th><div align="center">Language</div></th>
@@ -406,67 +479,80 @@ if (v3){v9.focus();}document.MM_returnValue=false;return v9;}
                   <th><div align="center">Archive </div></th>
                 </tr>
                 <tr>
-                  <td><a href="languages/Bahing_en.htm">Bahing</a></td>
+                  <td><div align="left">
+                    <p align="center" class="intertitre"><a href="languages/Bahing_en.htm">Bahing</a></p>
+                  </div></td>
                   <td><div align="center">Tibeto-burman</div></td>
                   <td><div align="center">Nepal</div></td>
                   <td><div align="center"><a href="../membres/michailovsky.htm">Boyd Michailovsky</a></div>                    </td>
-                  <td><a href="tools/list_rsc.php?lg=Bahing" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></td>
+                  <td><div align="center"><a href="tools/list_rsc.php?lg=Bahing" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
                 </tr>
                 <tr>
-                  <td><div align="center"><a href="languages/Hayu_en.htm">Hayu</a></div></td>
+                  <td><div align="left">
+                    <p align="center" class="intertitre"><a href="languages/Hayu_en.htm">Hayu</a></p>
+                  </div></td>
                   <td><div align="center">Tibeto-burman</div></td>
                   <td><div align="center">Nepal</div></td>
                   <td><div align="center"><a href="../membres/michailovsky.htm">Boyd Michailovsky</a></div></td>
                   <td><div align="center"><a href="tools/list_rsc.php?lg=Hayu" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
                 </tr>
                 <tr>
-                  <td><div align="center">Japhug</div>                    </td>
+                  <td><div align="center">
+                  Japhug <a href="../ALC/Languages/Japhug_popup.htm" target="_blank" onClick="window.open(this.href,'popupLink','width=400,height=400,scrollbars=yes,resizable=yes',1);return false"><img src="../images/icones/info.gif" alt="a" width="15" height="15" border="0"></a></div>                    </td>
                   <td><div align="center">Tibeto-burman</div></td>
                   <td><div align="center">China</div></td>
-                  <td><div align="center">Guillaume Jacques (CRLAO) </div>                    </td>
+                  <td><div align="center">Guillaume Jacques (Crlao) </div>                    </td>
                   <td><div align="center"><a href="tools/list_rsc.php?lg=Japhug" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div>                    </td>
                 </tr>
                 <tr>
-                  <td><a href="languages/Koyi_Rai_en.htm">Koyi Rai</a></td>
-                  <td>Tibeto-burman</td>
-                  <td>Nepal</td>
-                  <td><a href="../membres/lahaussois.htm">Aim&eacute;e Lahaussois</a></td>
-                  <td><a href="tools/list_rsc.php?lg=Koyi%20rai" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></td>
+                  <td><div align="left">
+                    <p align="center" class="intertitre"><a href="languages/Koyi_Rai_en.htm">Koyi Rai</a></p>
+                  </div></td>
+                  <td><div align="center">Tibeto-burman</div></td>
+                  <td><div align="center">Nepal</div></td>
+                  <td><div align="center"><a href="../membres/lahaussois.htm">Aim&eacute;e Lahaussois</a></div></td>
+                  <td><div align="center"><a href="tools/list_rsc.php?lg=Koyi%20rai" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
                 </tr>
                 <tr>
-                  <td><div align="center">Lahu</div>                    </td>
+                  <td><div align="center"> Lahu <a href="../ALC/Languages/Lahu_popup.htm" target="_blank" onClick="window.open(this.href,'popupLink','width=400,height=400,scrollbars=yes,resizable=yes',1);return false"><img src="../images/icones/info.gif" alt="a" width="15" height="15" border="0"></a></div>                    </td>
                   <td><div align="center">Tibeto-burman</div></td>
                   <td><div align="center">Thailand</div></td>
-                  <td><div align="center">James A. Matisoff (UC Berkeley) </div>                    </td>
+                  <td><div align="center">James A. Matisoff <br>
+                    (UC Berkeley) </div>                    </td>
                   <td><div align="center"><a href="tools/list_rsc.php?lg=Lahu" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div>                    </td>
                 </tr>
                 <tr>
-                  <td><div align="center"><a href="languages/Limbu_en.htm">Limbu</a></div></td>
+                  <td><div align="left">
+                    <p align="center" class="intertitre"><a href="languages/Limbu_en.htm">Limbu</a></p>
+                  </div></td>
                   <td><div align="center">Tibeto-burman</div></td>
                   <td><div align="center">Nepal</div></td>
                   <td><div align="center"><a href="../membres/michailovsky.htm">Boyd Michailovsky</a></div></td>
                   <td><div align="center"><a href="tools/list_rsc.php?lg=Limbu" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
                 </tr>
                 <tr>
-                  <td><div align="center"><a href="languages/Nepali_en.htm">Nepali</a></div></td>
+                  <td><div align="left">
+                    <p align="center" class="intertitre"><a href="languages/Nepali_en.htm">Nepali</a></p>
+                  </div></td>
                   <td><div align="center">Indo-Aryan</div></td>
                   <td><div align="center">Nepal</div></td>
-                  <td><div align="center">Marie Lecomte-Tilouine (HIMALAYA) </div></td>
+                  <td><div align="center">Marie Lecomte-Tilouine (Himalaya) </div></td>
                   <td><div align="center"><a href="tools/list_rsc.php?lg=Nepali" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
                 </tr>
                 <tr>
-                  <td><div align="center">Tamang (<span class="Style1">in French</span>)</div></td>
+                  <td><p align="center" class="intertitre"><a href="languages/Tamang_en.htm">Tamang</a> <br>
+                    (<span class="Style3">in French</span>)</p></td>
                   <td><div align="center">Tibeto-burman</div></td>
                   <td><div align="center">Nepal</div></td>
                   <td><div align="center"><a href="../membres/mazaudon.htm">Martine Mazaudon</a></div></td>
                   <td><div align="center"><a href="tools/list_rsc.php?lg=Tamang" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
                 </tr>
                 <tr>
-                  <td><a href="languages/Thulung_Rai_en.htm">Thulung Rai</a></td>
-                  <td>Tibeto-burman</td>
-                  <td>Nepal</td>
-                  <td><a href="../membres/lahaussois.htm">Aim&eacute;e Lahaussois</a></td>
-                  <td><a href="tools/list_rsc.php?lg=Thulung+Rai" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></td>
+                  <td>                    <p align="center" class="intertitre"><a href="languages/Thulung_Rai_en.htm">Thulung Rai</a></p></td>
+                  <td><div align="center">Tibeto-burman</div></td>
+                  <td><div align="center">Nepal</div></td>
+                  <td><div align="center"><a href="../membres/lahaussois.htm">Aim&eacute;e Lahaussois</a></div></td>
+                  <td><div align="center"><a href="tools/list_rsc.php?lg=Thulung+Rai" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
                 </tr>
                 <tr>
                   <td colspan="5" valign="middle" class="intertitre"><h3 class="intertitre" align="center"> <br>
@@ -480,22 +566,27 @@ if (v3){v9.focus();}document.MM_returnValue=false;return v9;}
                   <th><div align="center">Archive</div></th>
                 </tr>
                 <tr>
-                  <td><div align="center"><a href="languages/Yemeni_Arabic_en.htm">Yemeni Arabic
-                  </a></div></td>
+                  <td><div align="left">
+                    <p align="center" class="intertitre"><a href="languages/Yemeni_Arabic_en.htm">Yemeni Arabic
+                    </a></p>
+                  </div></td>
                   <td><div align="center">Semitic</div></td>
                   <td><div align="center">Yemen</div></td>
                   <td><div align="center"><a href="../membres/naim.htm">Samia Na&iuml;m</a></div></td>
                   <td><div align="center"><a href="tools/list_rsc.php?lg=Yemeni+Arabic" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
                 </tr>
                 <tr>
-                  <td><div align="center">Wayana</div></td>
+                  <td><div align="center">Wayana <a href="../ALC/Languages/Wayana_popup.htm" target="_blank" onClick="window.open(this.href,'popupLink','width=400,height=400,scrollbars=yes,resizable=yes',1);return false"><img src="../images/icones/info.gif" alt="a" width="15" height="15" border="0"></a></div></td>
                   <td><div align="center">Carib</div></td>
                   <td><div align="center">Guyana</div></td>
                   <td><div align="center">Herv&eacute; Rivi&egrave;re</div></td>
                   <td><div align="center"><a href="tools/list_rsc.php?lg=Wayana" ><img src="../images/icones/h_parleur.gif" alt="hear" width="20" height="20" border="0"></a></div></td>
                 </tr>
                 <tr>
-                  <td><div align="center"><a href="languages/Yucuna.htm">Yucuna</a> (<span class="Style1">in French</span>)</div></td>
+                  <td><div align="left">
+                    <p align="center" class="intertitre"><a href="languages/Yucuna.htm">Yucuna</a> <br>
+                      (<span class="Style3">in French</span>)</p>
+                  </div></td>
                   <td><div align="center">Arawakan</div></td>
                   <td><div align="center">Colombia</div></td>
                   <td><div align="center"><a href="../membres/fontaine.htm">Laurent Fontaine</a></div></td>
@@ -525,35 +616,34 @@ if (v3){v9.focus();}document.MM_returnValue=false;return v9;}
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
   </tr>
 </table>
-<!-- Start of StatCounter Code -->
-<script type="text/javascript" language="javascript">
-var sc_project=2319041; 
-var sc_invisible=1; 
-var sc_partition=21; 
-var sc_security="1fae5b4b"; 
-var sc_text=3; 
-</script>
-
-<script type="text/javascript" language="javascript" src="http://www.statcounter.com/counter/frames.js"></script><noscript><a href="http://www.statcounter.com/" target="_blank"><img  src="http://c22.statcounter.com/counter.php?sc_project=2319041&amp;java=0&amp;security=1fae5b4b&amp;invisible=0" alt="best website stats" border="0"></a> </noscript>
-<!-- End of StatCounter Code -->
 <p>&nbsp;</p>
  <p>&nbsp;</p>
  <div id="divpartenaires" >
    <table width="150"  border="0" cellspacing="0" cellpadding="0">
-     <tr><td><a href="http://www.cnrs.fr" target="_blank"><img src="../images/logos/logo-cnrs.jpg" alt="cnrs" width="150" height="62" border="0"></a></td>
+     <tr>
+       <td><a href="http://www.cnrs.fr" target="_blank"><img src="../images/logos/logo-cnrs.jpg" alt="cnrs" width="150" height="62" border="0"></a></td>
      </tr>
-     <tr><td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="1"></td></tr>
-     <tr><td><a href="http://www.univ-paris3.fr/1207750810633/0/fiche___defaultstructureksup/&RH=1235649944785" target="_blank"><img src="../images/logos/logo-paris-3.gif" alt="paris3" width="150" height="53" border="0"></a></td>
+     <tr>
+       <td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" alt="aa" width="150" height="1"></td>
      </tr>
-     <tr><td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="1"></td></tr>
-     <tr><td><a href="http://www.paris-sorbonne.fr/fr/spip.php?rubrique1096" target="_blank"><img src="../images/logos/logo-paris-4.gif" alt="paris4" width="150" height="53" border="0"></a></td>
+     <tr>
+       <td><a href="http://www.univ-paris3.fr/1207750810633/0/fiche___defaultstructureksup/&RH=1235649944785" target="_blank"><img src="../images/logos/logo-paris-3.gif" alt="paris3" width="150" height="53" border="0"></a></td>
      </tr>
-	 <tr><td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="1"></td></tr>
-     <tr><td><a href="http://www.typologie.cnrs.fr/" target="_blank"><img src="../images/logos/logo-typo.gif" alt="tul" width="150" height="53" border="0"></a></td>
+     <tr>
+       <td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" alt="aa" width="150" height="1"></td>
+     </tr>
+     <tr>
+       <td><a href="http://www.paris-sorbonne.fr/fr/spip.php?rubrique1096" target="_blank"><img src="../images/logos/logo-paris-4.gif" alt="paris4" width="150" height="53" border="0"></a></td>
+     </tr>
+     <tr>
+       <td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" alt="aa" width="150" height="1"></td>
+     </tr>
+     <tr>
+       <td><a href="http://www.typologie.cnrs.fr/" target="_blank"><img src="../images/logos/logo-typo.gif" alt="tul" width="150" height="53" border="0"></a></td>
      </tr>
    </table>
-</div>
- <p>
+ </div>
+<p>
      <script type='text/javascript'>function Go(){return}</script>
      <script type='text/javascript' src='../z-outils/deroulants/top_pos_var.js'></script>
      <script type='text/javascript' src='../z-outils/deroulants/menu_var.js'></script>
@@ -562,97 +652,72 @@ var sc_text=3;
  <noscript>
  <p>Your browser does not support script</p>
 </noscript>
+ <div id="divnavgauche-spec">
+   <table border="0" cellpadding="0" cellspacing="0"  width="150">
+     <tr>
+       <td height="2"><img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
+     </tr>
+     <tr>
+       	<td width="100%"  class="Xnavgauche" >
+        	<table border="0" cellpadding="10" cellspacing="0"  width="100%">
+      			<tr>
+       	 			<td width="100%" class="Xnavgauche"><h2><a href="INTRANET/index.htm">Intranet <img border="0" src="../z-outils/images/boite-outils/icones/intranet.gif" width="18" height="12"
+							alt="aa"></a></h2></td>
+      			</tr>
+       		</table>
+       </td>
+     </tr>
+     <tr>
+       <td height="2"><img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
+     </tr>
+    </table>
+ </div>
+ <div id="divnavgauche-searchLabo">
+   <table cellspacing="0" cellpadding="0" hspace="11" border="0">
+     <tr>
+     	<td width="100%" class="Xnavgauche"><h2 >Rechercher</h2>
+                 <p>Sur le WEB 
+                   du laboratoire</p>
+               <br>
+      	 </td>
+         </tr>
+         <tr>
+     	 <td>       
+				<form name="rechercher-spm" action="http://lacito.vjf.cnrs.fr/moteur/engine.php" method="GET">
+				<input type="hidden" name="action"  value="go">
+				<table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td><input name ="blork" maxLength="50" size="10" class="text"></td>
+						<td><img border="0" src="../z-outils/images/boite-outils/espaceur.gif" width="10" height="8"
+							alt="aa"></td>
+						<td><input name="submit2" type="image" src="../z-outils/images/charte/ok.gif" 
+                             border="0" width="20" height="20">
+						</td>
+					</tr>
+				</table>
+  				</form>
+          </td>
+        </tr>
+       </table>
+        <tr>
+       <td height="2"><img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
+		</tr>
 
-<div id="divnavgauche-spec"> 
-  <table border="0" cellpadding="0" cellspacing="0"  width="150">
-    <tr> 
-      <td height="2"> <img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
-    </tr>
-    <tr> 
-      <td width="100%"  class="Xnavgauche" > 
-        <table border="0" cellpadding="10" cellspacing="0"  width="100%">
-          <tr> 
-            <td width="100%" class="Xnavgauche"> 
-              <p class="intertitre"><a href="../pratique/organigramme.htm">Les membres</a></p>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr> 
-      <td height="2"> <img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
-    </tr>
-    <tr> 
-      <td width="100%"  class="Xnavgauche" > 
-        <table border="0" cellpadding="10" cellspacing="0"  width="100%">
-          <tr> 
-            <td width="100%" class="Xnavgauche"> 
-              <p class="intertitre" >Rechercher</p>
-              <p>Sur le WEB du Lacito</p>
-              <p><br>
-              <br>
-              <!--Sur le WEB du CNRS --><br>
-              <br>
-              <br>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr> 
-      <td height="2"> <img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
-    </tr>
-  </table>
-</div>
-<div id="divnavgauche-searchLabo"> 
-  <form name="rechercher-spm" action="http://lacito.vjf.cnrs.fr/moteur/engine.php" method="GET">
-  <input type="hidden" name="action" value="go">
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr> 
-        <td> 
-          <input name ="blork" maxLength="50" size="10" class="text">
-        </td>
-        <td> <img border="0" src="../z-outils/images/boite-outils/espaceur.gif" width="10" height="8"
-                alt=""></td>
-        <td> <input name="submit" type="image" src="../z-outils/images/charte/ok.gif" 
-                                border="0" width="20" height="20">
-        </td>
-      </tr>
-    </table>
-  </form>
-</div>
-<!--<div id="divnavgauche-search"> 
-  <form name="rechercher-spm" action="http://www.cnrs.fr/rechercher/" method="POST"
-       target="_blank">
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr> 
-        <td> 
-          <input name ="request" maxLength="50" size="10" class="BoiteRechercher">
-        </td>
-        <td> <img border="0" src="../z-outils/images/boite-outils/espaceur.gif" width="10" height="8"
-                alt=""></td>
-        <td valign="middle" > 
-          <input name="submit" type="image" src="../z-outils/images/charte/ok.gif" 
-                                border="0" width="20" height="20">
-        </td>
-      </tr>
-    </table>
-  </form>
-</div>-->
-<div id="divnavhaut-nom-labo"> 
+ </div>
+<div id="divnavhaut-nom-labo">
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr> 
-      <td class="Xnavhaut"> 
-      <p> <a href="../index.htm"><img src="../images/logos/Logo_Lacito.jpg" alt="lacito" width="143" height="57" border="0"></a></p>      </td>
+    <tr>
+      <td valign="top" class="Xnavhaut"><p> <a href="../index.htm"><img src="../images/logos/Logo_Lacito.jpg" alt="aa" width="141" height="59" hspace="10" border="0" align="left"></a> <span class="Style1">Langues et civilisations<br>
+        à tradition orale <br>
+        (UMR7107)</span></p></td>
     </tr>
   </table>
 </div>
 <map name="Map2">
-  <area shape="rect" coords="28,23,46,43" href="javascript:impression()" alt="Imprimer/to print">
-  <area shape="rect" coords="50,23,67,43" href="javascript:writemail('vjf.cnrs.fr','behaghel','',1);" alt="Contact">
-  <area shape="rect" coords="68,23,85,43" href="../pratique/index.htm" alt="Plan du site/Site map">
-  <area shape="rect" coords="87,23,105,43" href="../pratique/credits.htm" alt="Cr&eacute;dits/Copyrights">
-  <area shape="rect" coords="107,23,128,43" href="../pratique/to_build.htm" alt="Outils/Plug-ins">
+  <area shape="rect" coords="28,23,46,43" href="javascript:impression()" alt="Imprimer">
+  <area shape="rect" coords="49,22,66,42" href="javascript:writemail('vjf.cnrs.fr','behaghel','',1);" alt="Contacter le webmestre">
+  <area shape="rect" coords="68,23,85,43" href="../pratique/index.htm" alt="Plan du site">
+  <area shape="rect" coords="87,23,105,43" href="../pratique/credits.htm" alt="Crédits">
   <area shape="rect" coords="9,24,25,43" href="../index.htm" alt="Accueil">
 </map>
 </body>

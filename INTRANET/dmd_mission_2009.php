@@ -207,7 +207,7 @@ function MM_callJS(jsStr) { //v2.0
           <select name="type_mission" id="type_mission" onchange="document.form_mission.submit();">
             <option value="-1">Nature de la mission</option>
             <option value="COLLOQUE">COLLOQUE</option>
-            <option value="ENQUETE">ENQUETE LIGUISTIQUE</option>
+            <option value="ENQUETE">ENQUETE LINGUISTIQUE</option>
             <option value="COLLABORATION">COLLABORATION</option>
           </select>
         &nbsp;

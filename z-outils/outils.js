@@ -98,7 +98,7 @@ win.document.write('    <tr>');
 win.document.write('      <td class="Xnavhaut">'); 
 win.document.write('        <p> Langues et civilisations &agrave; tradition orale'); 
 win.document.write('          <br>');
-win.document.write('          (LACITO) </p>');
+win.document.write('          (UMR7107) </p>');
 win.document.write('      </td>');
 win.document.write('    </tr>');
 win.document.write('  </table>');

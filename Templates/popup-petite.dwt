@@ -3,7 +3,7 @@
 <html>
 <head>
   <meta http-equiv="Content-Language" content="fr">
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <!-- TemplateBeginEditable name="doctitle" -->
   <title>Mod&egrave;le petite popup</title>
   <!-- TemplateEndEditable -->
@@ -33,7 +33,7 @@
   <tr>
     <td class="Xtextcourant">
 	  <div class="ZonePrint">
-	    <p class="titre">Modèle de petite popup</p>
+	    <p class="titre">ModÃ¨le de petite popup</p>
 	    <p>&nbsp;</p>
         <p>contenu de la popup : la largeur de la popup est d&eacute;finie &agrave; l'appel
           de la fen&ecirc;tre</p>
@@ -63,6 +63,6 @@
 </table>
 <!-- TemplateEndEditable -->
 <map name="map1">
-    <area href="javascript:window.close();" shape="rect" coords="2,5,113,29" alt="Fermer la fenêtre">
+    <area href="javascript:window.close();" shape="rect" coords="2,5,113,29" alt="Fermer la fenÃªtre">
 </map>
 </body></html>

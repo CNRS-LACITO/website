@@ -18,14 +18,23 @@
 
 	<xsl:variable name="sizeTitle">35</xsl:variable>
 	<xsl:variable name="sizeResearcher">25</xsl:variable>
+    <xsl:variable name="sizeLocutor">25</xsl:variable>
 
 	<xsl:template match="/">
 		<xsl:for-each select=".//oai:record/oai:metadata/olac:olac[dc:subject[@xsi:type='olac:language'] = $lg][starts-with(dc:format,'audio/x-wav')][not(dcterms:accessRights='Access restricted (password protected)')]">
         		<xsl:variable name="countResearchers"><xsl:value-of select="count(dc:contributor[@olac:code='researcher'])"/></xsl:variable>
+                <xsl:variable name="countLocutors"><xsl:value-of select="count(dc:contributor[@olac:code='speaker'])"/></xsl:variable>
         		<xsl:variable name="title"><xsl:value-of select="dc:title"/></xsl:variable>
         		<xsl:variable name="researcher"><xsl:value-of select="dc:contributor[@olac:code='researcher'][1]"/></xsl:variable>
+                <xsl:variable name="locutor"><xsl:value-of select="dc:contributor[@olac:code='speaker'][1]"/></xsl:variable>
         		<xsl:variable name="researchers">
         			<xsl:for-each select="dc:contributor[@olac:code='researcher']">
+        				<xsl:value-of select="."/>
+        				<xsl:if test="position()!=last()"><xsl:text>; </xsl:text></xsl:if>
+        			</xsl:for-each>
+        		</xsl:variable>
+                <xsl:variable name="locutors">
+        			<xsl:for-each select="dc:contributor[@olac:code='speaker']">
         				<xsl:value-of select="."/>
         				<xsl:if test="position()!=last()"><xsl:text>; </xsl:text></xsl:if>
         			</xsl:for-each>
@@ -47,7 +56,7 @@
 					href="{$href}"
 					title ="Ecouter ce texte"
 					target="_blank"
-					onClick="flvFPW1(this.href,'popupLink','width=640,height=400,scrollbars=yes,resizable=yes',1);return document.MM_returnValue">
+					onClick="window.open(this.href,'popupLink','width=640,height=400,scrollbars=yes,resizable=yes',1);return false">
 						<img class="sansBordure" src="../../images/icones/h_parleur.gif"/>
 					</a>
 				</td>
@@ -57,7 +66,7 @@
 					href="show_metadatas.php?id={$id}"
 					title="A propos de {$title}"
 					target="_blank"
-					onClick="flvFPW1(this.href,'popupLink','width=640,height=400,scrollbars=yes,resizable=yes',1);return document.MM_returnValue">
+					onClick="window.open(this.href,'popupLink','width=640,height=400,scrollbars=yes,resizable=yes',1);return false">
 						<img class="sansBordure" src="../../images/icones/info.gif"/>
 					</a>
 				</td>
@@ -81,6 +90,18 @@
 						</xsl:otherwise>
 					</xsl:choose>
 					<xsl:if test="$countResearchers &gt; 1"> et...</xsl:if>
+				</td>
+                <td valign="top"> </td>
+				<td valign="top" title="{$locutors}">
+					<xsl:choose>
+						<xsl:when test="string-length($locutor) &gt; $sizeLocutor">
+							<xsl:value-of select="substring($locutor, 0, $sizeLocutor)"/>...
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:value-of select="$locutor"/>
+						</xsl:otherwise>
+					</xsl:choose>
+					<xsl:if test="$countLocutors &gt; 1"> et...</xsl:if>
 				</td>
 			</tr>
 		</xsl:for-each>

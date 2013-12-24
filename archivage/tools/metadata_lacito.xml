@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <harvest>
 <OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:crdo="http://crdo.risc.cnrs.fr/schemas/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:oai_dc="http://purl.org/dc/elements/1.1/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
-<responseDate>2010-01-15T10:37:57Z</responseDate>
+<responseDate>2010-04-01T00:05:09Z</responseDate>
 <request verb="Identify">http://crdo.vjf.cnrs.fr:8080/crdo_servlet/oai-pmh</request>
 <Identify>
 	<repositoryName>Centre de Ressources pour la Description de l'Oral (CRDO)</repositoryName>
@@ -35,7 +35,7 @@
 </Identify>
 </OAI-PMH>
 <OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:crdo="http://crdo.risc.cnrs.fr/schemas/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:oai_dc="http://purl.org/dc/elements/1.1/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
-<responseDate>2010-01-15T10:37:57Z</responseDate>
+<responseDate>2010-04-01T00:05:09Z</responseDate>
 <request verb="ListMetadataFormats">http://crdo.vjf.cnrs.fr:8080/crdo_servlet/oai-pmh</request>
 <ListMetadataFormats>
 <metadataFormat>
@@ -51,7 +51,7 @@
 </ListMetadataFormats>
 </OAI-PMH>
 <OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:crdo="http://crdo.risc.cnrs.fr/schemas/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:oai_dc="http://purl.org/dc/elements/1.1/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
-<responseDate>2010-01-15T10:37:57Z</responseDate>
+<responseDate>2010-04-01T00:05:09Z</responseDate>
 <request verb="ListSets">http://crdo.vjf.cnrs.fr:8080/crdo_servlet/oai-pmh</request>
 <ListSets>
 <set>
@@ -73,7 +73,7 @@
 </ListSets>
 </OAI-PMH>
 <OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:crdo="http://crdo.risc.cnrs.fr/schemas/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:oai_dc="http://purl.org/dc/elements/1.1/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
-<responseDate>2010-01-15T10:37:57Z</responseDate>
+<responseDate>2010-04-01T00:05:09Z</responseDate>
 <request metadataPrefix="olac" set="Lacito" verb="ListRecords">http://crdo.vjf.cnrs.fr:8080/crdo_servlet/oai-pmh</request>
 <ListRecords>
 <record>
@@ -1036,6 +1036,222 @@
 </record>
 <record>
     <header>
+        <identifier>oai:crdo.vjf.cnrs.fr:crdo-YCN_KANUMA</identifier>
+        <datestamp>2010-04-19</datestamp>
+        <setSpec>Lacito</setSpec>
+    </header>
+    <metadata>
+        <olac:olac xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xsi:schemaLocation="http://www.language-archives.org/OLAC/1.1/ http://www.language-archives.org/OLAC/1.1/olac.xsd">
+            <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">CNRS/LACITO</dc:publisher>
+            <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="fr">Histoire de Kanumá</dc:title>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="researcher" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Fontaine, Laurent</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="depositor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Fontaine, Laurent</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="speaker" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Matapi, Mario</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="translator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Matapi, Mario</dc:contributor>
+            <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="ycn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Yucuna</dc:subject>
+            <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="ycn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Yucuna</dc:language>
+            <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="fr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language"/>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="primary_text" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:linguistic-type"/>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="narrative" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:discourse-type"/>
+            <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Copyright (c) Fontaine, Laurent</dc:rights>
+            <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:IMT">text/xml</dc:format>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:DCMIType">Text</dc:type>
+            <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/exist/crdo/fontaine/ycn/crdo-YCN_KANUMA.xml</dc:identifier>
+            <dcterms:accessRights xmlns:dcterms="http://purl.org/dc/terms/">Freely available for non-commercial use</dcterms:accessRights>
+            <dcterms:license xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://creativecommons.org/licenses/by-nc-sa/2.5/</dcterms:license>
+            <dcterms:spatial xml:lang="fr" xmlns:dcterms="http://purl.org/dc/terms/">Colombie, Amazonas, La Pedrera</dcterms:spatial>
+            <dcterms:created xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:W3CDTF">2005-01-27</dcterms:created>
+            <dcterms:isFormatOf xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/exist/crdo/fontaine/ycn/crdo-YCN_KANUMA.xhtml</dcterms:isFormatOf>
+            <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-dtd_archive</dcterms:conformsTo>
+            <dcterms:requires xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-YCN_KANUMA_SOUND</dcterms:requires>
+        </olac:olac>
+    </metadata>
+</record>
+<record>
+    <header>
+        <identifier>oai:crdo.vjf.cnrs.fr:crdo-YCN_KANUMA_SOUND</identifier>
+        <datestamp>2010-04-19</datestamp>
+        <setSpec>Lacito</setSpec>
+    </header>
+    <metadata>
+        <olac:olac xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xsi:schemaLocation="http://www.language-archives.org/OLAC/1.1/ http://www.language-archives.org/OLAC/1.1/olac.xsd">
+            <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">CNRS/LACITO</dc:publisher>
+            <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="fr">Histoire de Kanumá</dc:title>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="researcher" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Fontaine, Laurent</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="depositor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Fontaine, Laurent</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="speaker" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Matapi, Mario</dc:contributor>
+            <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="ycn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Yucuna</dc:subject>
+            <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="ycn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Yucuna</dc:language>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="primary_text" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:linguistic-type"/>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="narrative" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:discourse-type"/>
+            <dc:description xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="fr">Kanumá est pour les Indiens de langue yucuna, le premier
+	homme. Primitif à l’origine, il vit d’abord avec les Amazones, une tribu de femmes
+	surnaturelles appelées Ñamatu, qui se comportent comme des hommes, et qui lui font faire
+	la cuisine comme une femme. Ces femmes pratiquent en secret le Yurupari et cachent les
+	flûtes sacrées de ce rite à Kanumá, jusqu’au jour où celui-ci leur dérobe... Après une
+	course poursuite entre Kanumá et les Ñamatu qui ont décidé de l’abandonner en descendant
+	le fleuve Miriti, puis le Caqueta jusqu’à l’embouchure de l’Amazone, Kanumá se retrouve
+	seul. Il rencontrera ensuite les deux filles de Je’chú (le Ciel) dont l’une deviendra sa
+	femme et lui apportera les tubercules (manioc, igname), les fruits du jardin
+	(chontaduro, ananas, etc.) et même la coca.</dc:description>
+            <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Copyright (c) Fontaine, Laurent</dc:rights>
+            <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:IMT">audio/x-wav</dc:format>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:DCMIType">Sound</dc:type>
+            <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/data/fontaine/crdo-YCN_KANUMA.wav</dc:identifier>
+            <dcterms:accessRights xmlns:dcterms="http://purl.org/dc/terms/">Freely available for non-commercial use</dcterms:accessRights>
+            <dcterms:license xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://creativecommons.org/licenses/by-nc-nd/2.5/</dcterms:license>
+            <dcterms:spatial xml:lang="fr" xmlns:dcterms="http://purl.org/dc/terms/">Colombie, Amazonas, La Pedrera</dcterms:spatial>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:Point">east=-69.555954; north=-1.3391845</dcterms:spatial>
+            <dcterms:created xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:W3CDTF">2005-01-27</dcterms:created>
+            <dcterms:extent xmlns:dcterms="http://purl.org/dc/terms/">PT4H40M57S</dcterms:extent>
+            <dcterms:isRequiredBy xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-YCN_KANUMA</dcterms:isRequiredBy>
+        </olac:olac>
+    </metadata>
+</record>
+<record>
+    <header>
+        <identifier>oai:crdo.vjf.cnrs.fr:crdo-YCN_KEYAKO</identifier>
+        <datestamp>2010-04-19</datestamp>
+        <setSpec>Lacito</setSpec>
+    </header>
+    <metadata>
+        <olac:olac xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xsi:schemaLocation="http://www.language-archives.org/OLAC/1.1/ http://www.language-archives.org/OLAC/1.1/olac.xsd">
+            <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">CNRS/LACITO</dc:publisher>
+            <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="fr">Histoire de Keyako</dc:title>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="researcher" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Fontaine, Laurent</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="depositor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Fontaine, Laurent</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="speaker" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Yucuna, Milciades</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="translator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Yucuna, Rey</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="transcriber" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Yucuna, Rey</dc:contributor>
+            <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="ycn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Yucuna</dc:subject>
+            <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="ycn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Yucuna</dc:language>
+            <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="fr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language"/>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="primary_text" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:linguistic-type"/>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="narrative" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:discourse-type"/>
+            <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Copyright (c) Fontaine, Laurent</dc:rights>
+            <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:IMT">text/xml</dc:format>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:DCMIType">Text</dc:type>
+            <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/exist/crdo/fontaine/ycn/crdo-YCN_KEYAKO.xml</dc:identifier>
+            <dcterms:accessRights xmlns:dcterms="http://purl.org/dc/terms/">Freely available for non-commercial use</dcterms:accessRights>
+            <dcterms:license xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://creativecommons.org/licenses/by-nc-sa/2.5/</dcterms:license>
+            <dcterms:spatial xml:lang="fr" xmlns:dcterms="http://purl.org/dc/terms/">Colombie, Amazonas, Mirití-Parana, Jariyé</dcterms:spatial>
+            <dcterms:created xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:W3CDTF">1998-12-28</dcterms:created>
+            <dcterms:isFormatOf xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/exist/crdo/fontaine/ycn/crdo-YCN_KEYAKO.xhtml</dcterms:isFormatOf>
+            <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-dtd_archive</dcterms:conformsTo>
+            <dcterms:requires xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-YCN_KEYAKO_SOUND</dcterms:requires>
+        </olac:olac>
+    </metadata>
+</record>
+<record>
+    <header>
+        <identifier>oai:crdo.vjf.cnrs.fr:crdo-YCN_KEYAKO_SOUND</identifier>
+        <datestamp>2010-05-10</datestamp>
+        <setSpec>Lacito</setSpec>
+    </header>
+    <metadata>
+        <olac:olac xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xsi:schemaLocation="http://www.language-archives.org/OLAC/1.1/ http://www.language-archives.org/OLAC/1.1/olac.xsd">
+            <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">CNRS/LACITO</dc:publisher>
+            <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="fr">Histoire de Keyako</dc:title>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="researcher" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role"> Fontaine, Laurent</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="depositor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role"> Fontaine, Laurent</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="speaker" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Milciades Yucuna</dc:contributor>
+            <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="ycn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Yucuna</dc:subject>
+            <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="ycn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Yucunai</dc:language>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="primary_text" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:linguistic-type"/>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="narrative" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:discourse-type"/>
+            <dc:description xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="fr">Il s’agit de l’histoire du premier indigène de langue yucuna,
+	de tribu Kamejeya, à avoir établi des contacts réguliers avec les Blancs, en descendant
+	le Caqueta et le Japura (même fleuve côté Brésil) jusqu’à un comptoir brésilien
+	(identifié ici comme Tefé), pour aller échanger de l’artisanat fabriqué par ses
+	servants indigènes (de tribus jurumi et jupichiya) contre des marchandises des Blancs.
+	Mais à son retour, des ragots se son propagés sur son compte : sa femme aurait organisé
+	des fêtes en son absence pour se soûler avec ses amants…</dc:description>
+            <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Copyright (c) Fontaine, Laurent</dc:rights>
+            <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:IMT">audio/x-wav</dc:format>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:DCMIType">Sound</dc:type>
+            <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/data/fontaine/crdo-YCN_KEYAKO.wav</dc:identifier>
+            <dcterms:accessRights xmlns:dcterms="http://purl.org/dc/terms/">Freely available for non-commercial use</dcterms:accessRights>
+            <dcterms:license xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://creativecommons.org/licenses/by-nc-nd/2.5/</dcterms:license>
+            <dcterms:spatial xml:lang="fr" xmlns:dcterms="http://purl.org/dc/terms/">Colombie, Amazonas, Mirití-Parana, Jariyé</dcterms:spatial>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:Point">east=-71.5723953; north=-1.4429123</dcterms:spatial>
+            <dcterms:created xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:W3CDTF">1998-12-28</dcterms:created>
+            <dcterms:extent xmlns:dcterms="http://purl.org/dc/terms/">PT28M53S</dcterms:extent>
+            <dcterms:isRequiredBy xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-YCN_KEYAKO</dcterms:isRequiredBy>
+        </olac:olac>
+    </metadata>
+</record>
+<record>
+    <header>
+        <identifier>oai:crdo.vjf.cnrs.fr:crdo-YCN_KOMEYAPHU</identifier>
+        <datestamp>2010-04-19</datestamp>
+        <setSpec>Lacito</setSpec>
+    </header>
+    <metadata>
+        <olac:olac xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xsi:schemaLocation="http://www.language-archives.org/OLAC/1.1/ http://www.language-archives.org/OLAC/1.1/olac.xsd">
+            <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">CNRS/LACITO</dc:publisher>
+            <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="fr">Mythe de Komeyaphu</dc:title>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="researcher" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Fontaine, Laurent</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="depositor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Fontaine, Laurent</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="speaker" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Yucuna, Arturo</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="translator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Yucuna, Ómar</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="transcriber" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Yucuna, Ómar</dc:contributor>
+            <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="ycn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Yucuna</dc:subject>
+            <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="ycn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Yucuna</dc:language>
+            <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="fr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language"/>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="primary_text" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:linguistic-type"/>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="narrative" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:discourse-type"/>
+            <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Copyright (c) Fontaine, Laurent</dc:rights>
+            <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:IMT">text/xml</dc:format>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:DCMIType">Text</dc:type>
+            <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/exist/crdo/fontaine/ycn/crdo-YCN_KOMEYAPHU.xml</dc:identifier>
+            <dcterms:accessRights xmlns:dcterms="http://purl.org/dc/terms/">Freely available for non-commercial use</dcterms:accessRights>
+            <dcterms:license xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://creativecommons.org/licenses/by-nc-sa/2.5/</dcterms:license>
+            <dcterms:spatial xml:lang="fr" xmlns:dcterms="http://purl.org/dc/terms/">La Pedrera, Amazonas, Colombie</dcterms:spatial>
+            <dcterms:created xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:W3CDTF">2005-01-29</dcterms:created>
+            <dcterms:isFormatOf xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/exist/crdo/fontaine/ycn/crdo-YCN_KOMEYAPHU.xhtml</dcterms:isFormatOf>
+            <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-dtd_archive</dcterms:conformsTo>
+            <dcterms:requires xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-YCN_KOMEYAPHU_SOUND</dcterms:requires>
+        </olac:olac>
+    </metadata>
+</record>
+<record>
+    <header>
+        <identifier>oai:crdo.vjf.cnrs.fr:crdo-YCN_KOMEYAPHU_SOUND</identifier>
+        <datestamp>2010-04-19</datestamp>
+        <setSpec>Lacito</setSpec>
+    </header>
+    <metadata>
+        <olac:olac xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xsi:schemaLocation="http://www.language-archives.org/OLAC/1.1/ http://www.language-archives.org/OLAC/1.1/olac.xsd">
+            <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">CNRS/LACITO</dc:publisher>
+            <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="fr">Mythe de Komeyaphu</dc:title>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="researcher" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Fontaine, Laurent</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="depositor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Laurent Fontaine</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="speaker" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Yucuna, Arturo</dc:contributor>
+            <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="ycn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Yucuna</dc:subject>
+            <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="ycn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Yucuna</dc:language>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="primary_text" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:linguistic-type"/>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="narrative" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:discourse-type"/>
+            <dc:description xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="fr">Le mythe de Komeyaphu (l’Arc-en-Ciel) est celui d’un homme qui
+	alla avec ses enfants séjourner chez le fils de la Lune, installé près de l’embouchure
+	de l’Amazone, à proximité de la mer. Une fois chez ce dernier, Komeyaphu souhaite
+	chasser des petits animaux pour ses enfants, mais à sa grande surprise, ils sont tous
+	gigantesques, ce qui lui occasionnera quelques soucis...</dc:description>
+            <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Copyright (c) Fontaine, Laurent</dc:rights>
+            <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:IMT">audio/x-wav</dc:format>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:DCMIType">Sound</dc:type>
+            <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/data/fontaine/crdo-YCN_KOMEYAPHU.wav</dc:identifier>
+            <dcterms:accessRights xmlns:dcterms="http://purl.org/dc/terms/">Freely available for non-commercial use</dcterms:accessRights>
+            <dcterms:license xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://creativecommons.org/licenses/by-nc-nd/2.5/</dcterms:license>
+            <dcterms:spatial xml:lang="fr" xmlns:dcterms="http://purl.org/dc/terms/">La Pedrera, Amazonas, Colombie</dcterms:spatial>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:Point">east=-69.555954; north=-1.3391845</dcterms:spatial>
+            <dcterms:created xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:W3CDTF">2005-01-29</dcterms:created>
+            <dcterms:extent xmlns:dcterms="http://purl.org/dc/terms/">PT22M35S</dcterms:extent>
+            <dcterms:isRequiredBy xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-YCN_KOMEYAPHU</dcterms:isRequiredBy>
+        </olac:olac>
+    </metadata>
+</record>
+<record>
+    <header>
         <identifier>oai:crdo.vjf.cnrs.fr:crdo-AKR_CRABE_COCOTIER</identifier>
         <datestamp>2008-10-10</datestamp>
         <setSpec>Lacito</setSpec>
@@ -1463,6 +1679,13 @@
         </olac:olac>
     </metadata>
 </record>
+<resumptionToken completeListSize="556" cursor="0" expirationDate="2010-05-17T15:01:05Z">tVhojcKqzF</resumptionToken>
+</ListRecords>
+</OAI-PMH>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:crdo="http://crdo.risc.cnrs.fr/schemas/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:oai_dc="http://purl.org/dc/elements/1.1/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+<responseDate>2010-04-01T00:05:09Z</responseDate>
+<request resumptionToken="tVhojcKqzF" verb="ListRecords">http://crdo.vjf.cnrs.fr:8080/crdo_servlet/oai-pmh</request>
+<ListRecords>
 <record>
     <header>
         <identifier>oai:crdo.vjf.cnrs.fr:crdo-MSN_QET_SOUND</identifier>
@@ -1651,13 +1874,6 @@
         </olac:olac>
     </metadata>
 </record>
-<resumptionToken completeListSize="540" cursor="0" expirationDate="2010-03-24T09:42:13Z">gmeBMMKdYT</resumptionToken>
-</ListRecords>
-</OAI-PMH>
-<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:crdo="http://crdo.risc.cnrs.fr/schemas/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:oai_dc="http://purl.org/dc/elements/1.1/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
-<responseDate>2010-01-15T10:37:57Z</responseDate>
-<request resumptionToken="gmeBMMKdYT" verb="ListRecords">http://crdo.vjf.cnrs.fr:8080/crdo_servlet/oai-pmh</request>
-<ListRecords>
 <record>
     <header>
         <identifier>oai:crdo.vjf.cnrs.fr:crdo-WWO_FARFADETS_SOUND</identifier>
@@ -3081,6 +3297,13 @@
         </olac:olac>
     </metadata>
 </record>
+<resumptionToken completeListSize="556" cursor="50" expirationDate="2010-05-17T15:01:05Z">hwDgywvvmy</resumptionToken>
+</ListRecords>
+</OAI-PMH>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:crdo="http://crdo.risc.cnrs.fr/schemas/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:oai_dc="http://purl.org/dc/elements/1.1/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+<responseDate>2010-04-01T00:05:09Z</responseDate>
+<request resumptionToken="hwDgywvvmy" verb="ListRecords">http://crdo.vjf.cnrs.fr:8080/crdo_servlet/oai-pmh</request>
+<ListRecords>
 <record>
     <header>
         <identifier>oai:crdo.vjf.cnrs.fr:crdo-KKT_MILLET_SOUND</identifier>
@@ -3268,13 +3491,6 @@
         </olac:olac>
     </metadata>
 </record>
-<resumptionToken completeListSize="540" cursor="50" expirationDate="2010-03-24T09:42:13Z">UzOIbxNEfO</resumptionToken>
-</ListRecords>
-</OAI-PMH>
-<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:crdo="http://crdo.risc.cnrs.fr/schemas/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:oai_dc="http://purl.org/dc/elements/1.1/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
-<responseDate>2010-01-15T10:37:57Z</responseDate>
-<request resumptionToken="UzOIbxNEfO" verb="ListRecords">http://crdo.vjf.cnrs.fr:8080/crdo_servlet/oai-pmh</request>
-<ListRecords>
 <record>
     <header>
         <identifier>oai:crdo.vjf.cnrs.fr:crdo-KKT_CONVERSATION_SOUND</identifier>
@@ -3500,6 +3716,84 @@
             <dcterms:isFormatOf xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/exist/crdo/lahaussois/tdh/crdo-LAA_0001.xhtml</dcterms:isFormatOf>
             <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-dtd_archive</dcterms:conformsTo>
             <dcterms:requires xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-LAA_0001_SOUND</dcterms:requires>
+        </olac:olac>
+    </metadata>
+</record>
+<record>
+    <header>
+        <identifier>oai:crdo.vjf.cnrs.fr:crdo-TDH_KAKCILIP_SOUND</identifier>
+        <datestamp>2010-04-07</datestamp>
+        <setSpec>Lacito</setSpec>
+    </header>
+    <metadata>
+        <olac:olac xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xsi:schemaLocation="http://www.language-archives.org/OLAC/1.1/ http://www.language-archives.org/OLAC/1.1/olac.xsd">
+            <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">CNRS/LACITO</dc:publisher>
+            <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="en">Kaktsilip</dc:title>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="researcher" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Lahaussois, Aimée</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="depositor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Lahaussois, Aimée</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="speaker" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Lakpa Thulung</dc:contributor>
+            <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="tdh" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Thulung Rai</dc:subject>
+            <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="tdh" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Thulung Rai</dc:language>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="primary_text" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:linguistic-type"/>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="narrative" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:discourse-type"/>
+            <dc:description xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="en">This is the story of Kaktsilip and his two sisters. The
+	latter, tired of feeding him, decide to leave their lazy brother. While he's sleeping,
+	they put him in a bamboo hut, and jump on it, crushing Kaktsilip underneath, before they
+	flee. Katsilip, who has in fact survived, tries to fish to feed himself, but is
+	unsuccessful, repeatedly turning up only a stone. He brings the stone home, where he
+	eventually discovers that it is a young girl, Wailungma. They marry, and Wailungma
+	teaches Kaktsilip some survival skills. Wailungma learns of the two sisters, and asks
+	Kaktsilip to call for them. He sends various animals to get them (first a louse, then a
+	flea, both of which are crushed by the sisters) before the rooster he sends next arouses
+	their curiosity with his call, and leads them back to Kaktsilip's house. The sisters beg
+	forgiveness for having tried to kill Kaktsilip, offering him 7 pig ribs (for the 7 ribs
+	of his they broke in the hut) and 7 copper pots as a wedding gift. To this day, Thulung
+	people offer pig ribs and copper pots as a wedding present.</dc:description>
+            <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Copyright (c) Lahaussois, Aimée</dc:rights>
+            <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:IMT">audio/x-wav</dc:format>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:DCMIType">Sound</dc:type>
+            <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/data/lahaussois/KAKCILIP.wav</dc:identifier>
+            <dc:coverage xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="fr">Dialecte de Deusa</dc:coverage>
+            <dcterms:accessRights xmlns:dcterms="http://purl.org/dc/terms/">Freely available for non-commercial use</dcterms:accessRights>
+            <dcterms:license xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://creativecommons.org/licenses/by-nc-nd/2.5/</dcterms:license>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/">Nepal, Katmandou</dcterms:spatial>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:Point">east=85.318244; north=27.702871</dcterms:spatial>
+            <dcterms:created xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:W3CDTF">2009-07-11</dcterms:created>
+            <dcterms:extent xmlns:dcterms="http://purl.org/dc/terms/">PT10M23S</dcterms:extent>
+            <dcterms:isRequiredBy xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-TDH_KAKCILIP</dcterms:isRequiredBy>
+        </olac:olac>
+    </metadata>
+</record>
+<record>
+    <header>
+        <identifier>oai:crdo.vjf.cnrs.fr:crdo-TDH_KAKCILIP</identifier>
+        <datestamp>2010-04-07</datestamp>
+        <setSpec>Lacito</setSpec>
+    </header>
+    <metadata>
+        <olac:olac xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xsi:schemaLocation="http://www.language-archives.org/OLAC/1.1/ http://www.language-archives.org/OLAC/1.1/olac.xsd">
+            <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">CNRS/LACITO</dc:publisher>
+            <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="en">Kaktsilip</dc:title>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="researcher" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Lahaussois, Aimée</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="depositor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Lahaussois, Aimée</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="speaker" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Lakpa Thulung</dc:contributor>
+            <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="tdh" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Thulung Rai</dc:subject>
+            <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="tdh" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Thulung Rai</dc:language>
+            <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language"/>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="primary_text" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:linguistic-type"/>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="narrative" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:discourse-type"/>
+            <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Copyright (c) Lahaussois, Aimée</dc:rights>
+            <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:IMT">text/xml</dc:format>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:DCMIType">Text</dc:type>
+            <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/exist/crdo/lahaussois/tdh/crdo-TDH_KAKCILIP.xml</dc:identifier>
+            <dc:coverage xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="fr">Dialecte de Deusa</dc:coverage>
+            <dcterms:accessRights xmlns:dcterms="http://purl.org/dc/terms/">Freely available for non-commercial use</dcterms:accessRights>
+            <dcterms:license xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://creativecommons.org/licenses/by-nc-sa/2.5/</dcterms:license>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/">Nepal, Katmandou</dcterms:spatial>
+            <dcterms:created xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:W3CDTF">2009-07-11</dcterms:created>
+            <dcterms:isFormatOf xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/exist/crdo/lahaussois/tdh/crdo-TDH_KAKCILIP.xhtml</dcterms:isFormatOf>
+            <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-dtd_archive</dcterms:conformsTo>
+            <dcterms:requires xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-TDH_KAKCILIP_SOUND</dcterms:requires>
         </olac:olac>
     </metadata>
 </record>
@@ -4701,6 +4995,13 @@
         </olac:olac>
     </metadata>
 </record>
+<resumptionToken completeListSize="556" cursor="100" expirationDate="2010-05-17T15:01:05Z">MokawGhOgJ</resumptionToken>
+</ListRecords>
+</OAI-PMH>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:crdo="http://crdo.risc.cnrs.fr/schemas/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:oai_dc="http://purl.org/dc/elements/1.1/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+<responseDate>2010-04-01T00:05:09Z</responseDate>
+<request resumptionToken="MokawGhOgJ" verb="ListRecords">http://crdo.vjf.cnrs.fr:8080/crdo_servlet/oai-pmh</request>
+<ListRecords>
 <record>
     <header>
         <identifier>oai:crdo.vjf.cnrs.fr:crdo-VAY_HAYUJ_SOUND</identifier>
@@ -4977,13 +5278,6 @@
         </olac:olac>
     </metadata>
 </record>
-<resumptionToken completeListSize="540" cursor="100" expirationDate="2010-03-24T09:42:14Z">LzxPTCCLVH</resumptionToken>
-</ListRecords>
-</OAI-PMH>
-<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:crdo="http://crdo.risc.cnrs.fr/schemas/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:oai_dc="http://purl.org/dc/elements/1.1/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
-<responseDate>2010-01-15T10:37:57Z</responseDate>
-<request resumptionToken="LzxPTCCLVH" verb="ListRecords">http://crdo.vjf.cnrs.fr:8080/crdo_servlet/oai-pmh</request>
-<ListRecords>
 <record>
     <header>
         <identifier>oai:crdo.vjf.cnrs.fr:crdo-VAY_HAYUN_SOUND</identifier>
@@ -6421,6 +6715,13 @@
         </olac:olac>
     </metadata>
 </record>
+<resumptionToken completeListSize="556" cursor="150" expirationDate="2010-05-17T15:01:06Z">HMdXTttJfk</resumptionToken>
+</ListRecords>
+</OAI-PMH>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:crdo="http://crdo.risc.cnrs.fr/schemas/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:oai_dc="http://purl.org/dc/elements/1.1/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+<responseDate>2010-04-01T00:05:09Z</responseDate>
+<request resumptionToken="HMdXTttJfk" verb="ListRecords">http://crdo.vjf.cnrs.fr:8080/crdo_servlet/oai-pmh</request>
+<ListRecords>
 <record>
     <header>
         <identifier>oai:crdo.vjf.cnrs.fr:crdo-BHJ_PRINCE_SOUND</identifier>
@@ -6546,6 +6847,330 @@
             <dcterms:extent xmlns:dcterms="http://purl.org/dc/terms/">PT7M58S</dcterms:extent>
             <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:TGN">1083309</dcterms:spatial>
             <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:Point">east=86.45; north=27.3666</dcterms:spatial>
+        </olac:olac>
+    </metadata>
+</record>
+<record>
+    <header>
+        <identifier>oai:crdo.vjf.cnrs.fr:crdo-NEP_HARELS</identifier>
+        <datestamp>2010-05-11</datestamp>
+        <setSpec>Lacito</setSpec>
+    </header>
+    <metadata>
+        <olac:olac xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xsi:schemaLocation="http://www.language-archives.org/OLAC/1.1/ http://www.language-archives.org/OLAC/1.1/olac.xsd">
+            <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="en">The hare and the jackal</dc:title>
+            <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">CNRS/LACITO</dc:publisher>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="speaker" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Tamata, Lal Shobha</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="researcher" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Lecomte-Tilouine, Marie</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="researcher" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Michailovsky, Boyd</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="interviewer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Lecomte-Tilouine, Marie</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="consultant" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Shahi, Prem Bahadur</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="consultant" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Saud, Bharat Kumar</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="depositor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Michailovsky, Boyd</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="annotator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Michailovsky, Boyd</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="sponsor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Agence National de la Recherche ANR-06-CORP-030-01</dc:contributor>
+            <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:IMT">text/xml</dc:format>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:DCMIType">Text</dc:type>
+            <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="nep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Nepali</dc:subject>
+            <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="nep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Nepali</dc:language>
+            <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language"/>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="primary_text" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:linguistic-type"/>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="narrative" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:discourse-type"/>
+            <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/exist/crdo/michailovsky/nee/crdo-NEP_HARELS.xml</dc:identifier>
+            <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Copyright (c) Michailovsky, Boyd</dc:rights>
+            <dcterms:alternative xml:lang="fr" xmlns:dcterms="http://purl.org/dc/terms/">Le lièvre et le chacal</dcterms:alternative>
+            <dcterms:alternative xml:lang="nep" xmlns:dcterms="http://purl.org/dc/terms/">Saso ra syal</dcterms:alternative>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/">Nepal, Seti Zone, Achham District, Bayala VDC, Bajuda</dcterms:spatial>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:TGN">7001433</dcterms:spatial>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:Point">east=81.349; north=28.061;</dcterms:spatial>
+            <dcterms:modified xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:W3CDTF">2009-01-26</dcterms:modified>
+            <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-dtd_archive</dcterms:conformsTo>
+            <dcterms:isFormatOf xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/exist/crdo/michailovsky/nee/crdo-NEP_HARELS.xhtml</dcterms:isFormatOf>
+            <dcterms:requires xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-NEP_HARELS_SOUND</dcterms:requires>
+            <dcterms:accessRights xmlns:dcterms="http://purl.org/dc/terms/">Freely available for non-commercial use</dcterms:accessRights>
+            <dcterms:license xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://creativecommons.org/licenses/by-nc-sa/2.5/</dcterms:license>
+        </olac:olac>
+    </metadata>
+</record>
+<record>
+    <header>
+        <identifier>oai:crdo.vjf.cnrs.fr:crdo-NEP_HARELS_SOUND</identifier>
+        <datestamp>2010-05-11</datestamp>
+        <setSpec>Lacito</setSpec>
+    </header>
+    <metadata>
+        <olac:olac xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xsi:schemaLocation="http://www.language-archives.org/OLAC/1.1/ http://www.language-archives.org/OLAC/1.1/olac.xsd">
+            <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="en">The hare and the jackal</dc:title>
+            <dc:description xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="en">Humorous story recorded to illustrate a dialect of Nepali spoken in Achham. The narrator is a woman over 50 years old of an artisan caste.</dc:description>
+            <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">CNRS/LACITO</dc:publisher>
+            <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">CNRS/UPR 299, Milieux, sociétés et cultures en Himalaya</dc:publisher>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="speaker" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Tamata, Lal Shobha</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="researcher" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Lecomte-Tilouine, Marie</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="interviewer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Lecomte-Tilouine, Marie</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="researcher" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Michailovsky, Boyd</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="depositor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Michailovsky, Boyd</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="sponsor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Agence National de la Recherche ANR-06-CORP-030-01</dc:contributor>
+            <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:IMT">audio/x-wav</dc:format>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:DCMIType">Sound</dc:type>
+            <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="nep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Nepali</dc:language>
+            <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="nep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Nepali</dc:subject>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="primary_text" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:linguistic-type"/>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="narrative" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:discourse-type"/>
+            <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/data/michailovsky/HARELS.wav</dc:identifier>
+            <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Copyright (c) Michailovsky, Boyd</dc:rights>
+            <dcterms:alternative xml:lang="fr" xmlns:dcterms="http://purl.org/dc/terms/">Le lièvre et le chacal</dcterms:alternative>
+            <dcterms:alternative xml:lang="nep" xmlns:dcterms="http://purl.org/dc/terms/">Saso ra syal</dcterms:alternative>
+            <dcterms:created xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:W3CDTF">2007-10-11</dcterms:created>
+            <dcterms:extent xmlns:dcterms="http://purl.org/dc/terms/">PT6M50S</dcterms:extent>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/">Nepal, Seti Zone, Achham District, Bayala VDC, Bajuda</dcterms:spatial>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:TGN">7001433</dcterms:spatial>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:Point">east=81.349; north=28.061;</dcterms:spatial>
+            <dcterms:isRequiredBy xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-NEP_HARELS</dcterms:isRequiredBy>
+            <dcterms:accessRights xmlns:dcterms="http://purl.org/dc/terms/">Freely available for non-commercial use</dcterms:accessRights>
+            <dcterms:license xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://creativecommons.org/licenses/by-nc-sa/2.5/</dcterms:license>
+        </olac:olac>
+    </metadata>
+</record>
+<record>
+    <header>
+        <identifier>oai:crdo.vjf.cnrs.fr:crdo-NEP_LATODB</identifier>
+        <datestamp>2010-05-11</datestamp>
+        <setSpec>Lacito</setSpec>
+    </header>
+    <metadata>
+        <olac:olac xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xsi:schemaLocation="http://www.language-archives.org/OLAC/1.1/ http://www.language-archives.org/OLAC/1.1/olac.xsd">
+            <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="en">The idiot brother</dc:title>
+            <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">CNRS/LACITO</dc:publisher>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="speaker" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">anonymous</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="researcher" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Lecomte-Tilouine, Marie</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="researcher" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Michailovsky, Boyd</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="interviewer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Lecomte-Tilouine, Marie</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="consultant" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Shahi, Prem Bahadur</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="consultant" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Saud, Bharat Kumar</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="annotator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Michailovsky, Boyd</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="depositor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Michailovsky, Boyd</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="sponsor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Agence National de la Recherche ANR-06-CORP-030-01</dc:contributor>
+            <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="nep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Nepali</dc:subject>
+            <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="nep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Nepali</dc:language>
+            <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language"/>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="narrative" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:discourse-type"/>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="primary_text" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:linguistic-type"/>
+            <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:IMT">text/xml</dc:format>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:DCMIType">Text</dc:type>
+            <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/exist/crdo/michailovsky/nee/crdo-NEP_LATODB.xml</dc:identifier>
+            <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Copyright (c) Michailovsky, Boyd</dc:rights>
+            <dcterms:alternative xml:lang="fr" xmlns:dcterms="http://purl.org/dc/terms/">Le frère crétin</dcterms:alternative>
+            <dcterms:alternative xml:lang="nep" xmlns:dcterms="http://purl.org/dc/terms/">Lato Bhai</dcterms:alternative>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/">Nepal, Seti Zone, Achham District, Dhanku VDC, Dungala</dcterms:spatial>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:TGN">7001433</dcterms:spatial>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:Point">east=81.332; north=29.073;</dcterms:spatial>
+            <dcterms:modified xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:W3CDTF">2009</dcterms:modified>
+            <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-dtd_archive</dcterms:conformsTo>
+            <dcterms:isFormatOf xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/exist/crdo/michailovsky/nee/crdo-NEP_LATODB.xhtml</dcterms:isFormatOf>
+            <dcterms:requires xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-NEP_LATODB_SOUND</dcterms:requires>
+            <dcterms:accessRights xmlns:dcterms="http://purl.org/dc/terms/">Freely available for non-commercial use</dcterms:accessRights>
+            <dcterms:license xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://creativecommons.org/licenses/by-nc-sa/2.5/</dcterms:license>
+        </olac:olac>
+    </metadata>
+</record>
+<record>
+    <header>
+        <identifier>oai:crdo.vjf.cnrs.fr:crdo-NEP_LATODB_SOUND</identifier>
+        <datestamp>2010-05-11</datestamp>
+        <setSpec>Lacito</setSpec>
+    </header>
+    <metadata>
+        <olac:olac xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xsi:schemaLocation="http://www.language-archives.org/OLAC/1.1/ http://www.language-archives.org/OLAC/1.1/olac.xsd">
+            <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="en">The cretin brother</dc:title>
+            <dc:description xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="en">Traditional story recorded to illustrate a dialect of Nepali spoken in Achham district, Nepal. The speaker is an elderly Brahman woman. The story may be also be known under the name "The long-haired girl" (Nep. "Lamcultheni").</dc:description>
+            <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">CNRS/LACITO</dc:publisher>
+            <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">CNRS/UPR 299, Milieux, sociétés et cultures en Himalaya</dc:publisher>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="speaker" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">anonymous</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="researcher" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Lecomte-Tilouine, Marie</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="interviewer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Lecomte-Tilouine, Marie</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="researcher" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Michailovsky, Boyd</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="depositor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Michailovsky, Boyd</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="sponsor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Agence National de la Recherche ANR-06-CORP-030-01</dc:contributor>
+            <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:IMT">audio/x-wav</dc:format>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:DCMIType">Sound</dc:type>
+            <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="nep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Nepali</dc:language>
+            <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="nep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Nepali</dc:subject>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="primary_text" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:linguistic-type"/>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="narrative" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:discourse-type"/>
+            <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/data/michailovsky/LATODB.wav</dc:identifier>
+            <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Copyright (c) Michailovsky, Boyd</dc:rights>
+            <dcterms:alternative xml:lang="fr" xmlns:dcterms="http://purl.org/dc/terms/">Le frère crétin</dcterms:alternative>
+            <dcterms:alternative xml:lang="nep" xmlns:dcterms="http://purl.org/dc/terms/">Lato Bhai</dcterms:alternative>
+            <dcterms:created xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:W3CDTF">2007-10-08</dcterms:created>
+            <dcterms:extent xmlns:dcterms="http://purl.org/dc/terms/">PT10M55S</dcterms:extent>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/">Nepal, Seti Zone, Achham District, Dhanku VDC, Dungala</dcterms:spatial>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:TGN">7001433</dcterms:spatial>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:Point">east=81.332; north=29.073;</dcterms:spatial>
+            <dcterms:isRequiredBy xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-NEP_LATODB</dcterms:isRequiredBy>
+            <dcterms:accessRights xmlns:dcterms="http://purl.org/dc/terms/">Freely available for non-commercial use</dcterms:accessRights>
+            <dcterms:license xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://creativecommons.org/licenses/by-nc-sa/2.5/</dcterms:license>
+        </olac:olac>
+    </metadata>
+</record>
+<record>
+    <header>
+        <identifier>oai:crdo.vjf.cnrs.fr:crdo-NEP_LATOLS</identifier>
+        <datestamp>2010-05-11</datestamp>
+        <setSpec>Lacito</setSpec>
+    </header>
+    <metadata>
+        <olac:olac xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xsi:schemaLocation="http://www.language-archives.org/OLAC/1.1/ http://www.language-archives.org/OLAC/1.1/olac.xsd">
+            <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="en">The cretin brother</dc:title>
+            <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">CNRS/LACITO</dc:publisher>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="researcher" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Lecomte-Tilouine, Marie</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="researcher" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Michailovsky, Boyd</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="interviewer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Lecomte-Tilouine, Marie</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="consultant" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Shahi, Prem Bahadur</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="consultant" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Saud, Bharat Kumar</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="depositor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Michailovsky, Boyd</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="annotator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Michailovsky, Boyd</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="sponsor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Agence National de la Recherche ANR-06-CORP-030-01</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="speaker" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Tamata, Lal Shobha</dc:contributor>
+            <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:IMT">text/xml</dc:format>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:DCMIType">Text</dc:type>
+            <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/exist/crdo/michailovsky/nee/crdo-NEP_LATOLS.xml</dc:identifier>
+            <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="nep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Nepali</dc:language>
+            <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language"/>
+            <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="nep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Nepali</dc:subject>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="primary_text" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:linguistic-type"/>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="narrative" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:discourse-type"/>
+            <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Copyright (c) Michailovsky, Boyd</dc:rights>
+            <dcterms:alternative xml:lang="fr" xmlns:dcterms="http://purl.org/dc/terms/">Le frère crétin</dcterms:alternative>
+            <dcterms:alternative xml:lang="nep" xmlns:dcterms="http://purl.org/dc/terms/">Lato Bhai</dcterms:alternative>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/">Nepal, Seti Zone, Achham District, Bayala VDC, Bajuda</dcterms:spatial>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:TGN">7001433</dcterms:spatial>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:Point">east=81.349; north=28.061;</dcterms:spatial>
+            <dcterms:modified xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:W3CDTF">2009-01-26</dcterms:modified>
+            <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-dtd_archive</dcterms:conformsTo>
+            <dcterms:isFormatOf xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/exist/crdo/michailovsky/nee/crdo-NEP_LATOLS.xhtml</dcterms:isFormatOf>
+            <dcterms:requires xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-NEP_LATOLS_SOUND</dcterms:requires>
+            <dcterms:accessRights xmlns:dcterms="http://purl.org/dc/terms/">Freely available for non-commercial use</dcterms:accessRights>
+            <dcterms:license xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://creativecommons.org/licenses/by-nc-sa/2.5/</dcterms:license>
+        </olac:olac>
+    </metadata>
+</record>
+<record>
+    <header>
+        <identifier>oai:crdo.vjf.cnrs.fr:crdo-NEP_LATOLS_SOUND</identifier>
+        <datestamp>2010-05-11</datestamp>
+        <setSpec>Lacito</setSpec>
+    </header>
+    <metadata>
+        <olac:olac xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xsi:schemaLocation="http://www.language-archives.org/OLAC/1.1/ http://www.language-archives.org/OLAC/1.1/olac.xsd">
+            <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="en">The cretin brother</dc:title>
+            <dc:description xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="en">Humorous story recorded to illustrate a dialect of Nepali spoken in Achham. The narrator is a woman over 50 years old of an artisan caste.</dc:description>
+            <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">CNRS/LACITO</dc:publisher>
+            <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">CNRS/UPR 299, Milieux, sociétés et cultures en Himalaya</dc:publisher>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="speaker" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Tamata, Lal Shobha</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="researcher" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Lecomte-Tilouine, Marie</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="interviewer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Lecomte-Tilouine, Marie</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="researcher" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Michailovsky, Boyd</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="depositor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Michailovsky, Boyd</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="sponsor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Agence National de la Recherche ANR-06-CORP-030-01</dc:contributor>
+            <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:IMT">audio/x-wav</dc:format>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:DCMIType">Sound</dc:type>
+            <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="nep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Nepali</dc:subject>
+            <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="nep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Nepali</dc:language>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="primary_text" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:linguistic-type"/>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="narrative" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:discourse-type"/>
+            <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/data/michailovsky/LATOLS.wav</dc:identifier>
+            <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Copyright (c) Michailovsky, Boyd</dc:rights>
+            <dcterms:alternative xml:lang="fr" xmlns:dcterms="http://purl.org/dc/terms/">Le frère crétin</dcterms:alternative>
+            <dcterms:alternative xml:lang="nep" xmlns:dcterms="http://purl.org/dc/terms/">Lato Bhai</dcterms:alternative>
+            <dcterms:created xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:W3CDTF">2007-10-11</dcterms:created>
+            <dcterms:extent xmlns:dcterms="http://purl.org/dc/terms/">PT6M50S</dcterms:extent>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/">Nepal, Seti Zone, Achham District, Bayala VDC, Bajuda</dcterms:spatial>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:TGN">7001433</dcterms:spatial>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:Point">east=81.349; north=28.061;</dcterms:spatial>
+            <dcterms:isRequiredBy xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-NEP_LATOLS</dcterms:isRequiredBy>
+            <dcterms:accessRights xmlns:dcterms="http://purl.org/dc/terms/">Freely available for non-commercial use</dcterms:accessRights>
+            <dcterms:license xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://creativecommons.org/licenses/by-nc-sa/2.5/</dcterms:license>
+        </olac:olac>
+    </metadata>
+</record>
+<record>
+    <header>
+        <identifier>oai:crdo.vjf.cnrs.fr:crdo-NEP_SYALDB</identifier>
+        <datestamp>2010-05-11</datestamp>
+        <setSpec>Lacito</setSpec>
+    </header>
+    <metadata>
+        <olac:olac xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xsi:schemaLocation="http://www.language-archives.org/OLAC/1.1/ http://www.language-archives.org/OLAC/1.1/olac.xsd">
+            <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="en">Tiger and Jackal</dc:title>
+            <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">CNRS/LACITO, Langues et civilisations à tradition orale</dc:publisher>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="speaker" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">"DB" (anonymous)</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="researcher" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Lecomte-Tilouine, Marie</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="interviewer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Lecomte-Tilouine, Marie</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="researcher" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Michailovsky, Boyd</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="consultant" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Shahi, Prem Bahadur</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="consultant" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Saud, Bharat Kumar</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="depositor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Michailovsky, Boyd</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="annotator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Michailovsky, Boyd</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="sponsor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Agence National de la Recherche ANR-06-CORP-030-01</dc:contributor>
+            <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:IMT">text/xml</dc:format>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:DCMIType">Text</dc:type>
+            <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="nep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Nepali</dc:subject>
+            <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="nep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Nepali</dc:language>
+            <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language"/>
+            <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/exist/crdo/michailovsky/nee/crdo-NEP_SYALDB.xml</dc:identifier>
+            <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Copyright (c) Michailovsky, Boyd</dc:rights>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="primary_text" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:linguistic-type"/>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="narrative" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:discourse-type"/>
+            <dcterms:alternative xml:lang="fr" xmlns:dcterms="http://purl.org/dc/terms/">Le tigre et le chacal</dcterms:alternative>
+            <dcterms:alternative xml:lang="nep" xmlns:dcterms="http://purl.org/dc/terms/">Bag ra syal</dcterms:alternative>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/">Nepal, Seti Zone, Achham District, Dhanku VDC, Dungala</dcterms:spatial>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:TGN">7001433</dcterms:spatial>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:Point">east=81.332; north=29.073;</dcterms:spatial>
+            <dcterms:modified xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:W3CDTF">2009</dcterms:modified>
+            <dcterms:conformsTo xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-dtd_archive</dcterms:conformsTo>
+            <dcterms:isFormatOf xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/exist/crdo/michailovsky/nee/crdo-NEP_SYALDB.xhtml</dcterms:isFormatOf>
+            <dcterms:requires xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-NEP_SYALDB_SOUND</dcterms:requires>
+            <dcterms:accessRights xmlns:dcterms="http://purl.org/dc/terms/">Freely available for non-commercial use</dcterms:accessRights>
+            <dcterms:license xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://creativecommons.org/licenses/by-nc-sa/2.5/</dcterms:license>
+        </olac:olac>
+    </metadata>
+</record>
+<record>
+    <header>
+        <identifier>oai:crdo.vjf.cnrs.fr:crdo-NEP_SYALDB_SOUND</identifier>
+        <datestamp>2010-05-11</datestamp>
+        <setSpec>Lacito</setSpec>
+    </header>
+    <metadata>
+        <olac:olac xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xsi:schemaLocation="http://www.language-archives.org/OLAC/1.1/ http://www.language-archives.org/OLAC/1.1/olac.xsd">
+            <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="en">Tiger and Jackal</dc:title>
+            <dc:description xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="en">Traditional story recorded to illustrate a dialect of Nepali spoken in Achham district, Nepal. The speaker is an elderly Brahman woman. The story is told in some haste.</dc:description>
+            <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">CNRS/LACITO</dc:publisher>
+            <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">CNRS/UPR 299, Milieux, sociétés et cultures en Himalaya</dc:publisher>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="speaker" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">"DB" (anonymous)</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="researcher" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Lecomte-Tilouine, Marie</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="researcher" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Michailovsky, Boyd</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="interviewer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Lecomte-Tilouine, Marie</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="depositor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Michailovsky, Boyd</dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="sponsor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role">Agence National de la Recherche ANR-06-CORP-030-01</dc:contributor>
+            <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:IMT">audio/x-wav</dc:format>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:DCMIType">Sound</dc:type>
+            <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="nep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Nepali</dc:language>
+            <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="nep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language">Nepali</dc:subject>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="primary_text" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:linguistic-type"/>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" olac:code="narrative" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:discourse-type"/>
+            <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/data/michailovsky/SYALDB.wav</dc:identifier>
+            <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Copyright (c) Michailovsky, Boyd</dc:rights>
+            <dcterms:alternative xml:lang="fr" xmlns:dcterms="http://purl.org/dc/terms/">Le Tigre et le chacal</dcterms:alternative>
+            <dcterms:alternative xml:lang="nep" xmlns:dcterms="http://purl.org/dc/terms/">Bag ra syal</dcterms:alternative>
+            <dcterms:created xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:W3CDTF">2007-10-08</dcterms:created>
+            <dcterms:extent xmlns:dcterms="http://purl.org/dc/terms/">PT04M51S</dcterms:extent>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/">Nepal, Seti Zone, Achham District, Dhanku VDC, Dungala</dcterms:spatial>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:TGN">7001433</dcterms:spatial>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:Point">east=81.332; north=29.073;</dcterms:spatial>
+            <dcterms:isRequiredBy xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-NEP_SYALDB</dcterms:isRequiredBy>
+            <dcterms:accessRights xmlns:dcterms="http://purl.org/dc/terms/">Freely available for non-commercial use</dcterms:accessRights>
+            <dcterms:license xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://creativecommons.org/licenses/by-nc-sa/2.5/</dcterms:license>
         </olac:olac>
     </metadata>
 </record>
@@ -6677,13 +7302,6 @@
         </olac:olac>
     </metadata>
 </record>
-<resumptionToken completeListSize="540" cursor="150" expirationDate="2010-03-24T09:42:14Z">YcClgtQmvD</resumptionToken>
-</ListRecords>
-</OAI-PMH>
-<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:crdo="http://crdo.risc.cnrs.fr/schemas/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:oai_dc="http://purl.org/dc/elements/1.1/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
-<responseDate>2010-01-15T10:37:57Z</responseDate>
-<request resumptionToken="YcClgtQmvD" verb="ListRecords">http://crdo.vjf.cnrs.fr:8080/crdo_servlet/oai-pmh</request>
-<ListRecords>
 <record>
     <header>
         <identifier>oai:crdo.vjf.cnrs.fr:crdo-UBY_CHEVRE_SOUND</identifier>
@@ -7798,6 +8416,13 @@
         </olac:olac>
     </metadata>
 </record>
+<resumptionToken completeListSize="556" cursor="200" expirationDate="2010-05-17T15:01:06Z">atlHtsVnkW</resumptionToken>
+</ListRecords>
+</OAI-PMH>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:crdo="http://crdo.risc.cnrs.fr/schemas/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:oai_dc="http://purl.org/dc/elements/1.1/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+<responseDate>2010-04-01T00:05:09Z</responseDate>
+<request resumptionToken="atlHtsVnkW" verb="ListRecords">http://crdo.vjf.cnrs.fr:8080/crdo_servlet/oai-pmh</request>
+<ListRecords>
 <record>
     <header>
         <identifier>oai:crdo.vjf.cnrs.fr:crdo-AXX_BOTAME_SOUND</identifier>
@@ -8320,13 +8945,6 @@
         </olac:olac>
     </metadata>
 </record>
-<resumptionToken completeListSize="540" cursor="200" expirationDate="2010-03-24T09:42:14Z">NTwaGlPldC</resumptionToken>
-</ListRecords>
-</OAI-PMH>
-<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:crdo="http://crdo.risc.cnrs.fr/schemas/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:oai_dc="http://purl.org/dc/elements/1.1/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
-<responseDate>2010-01-15T10:37:57Z</responseDate>
-<request resumptionToken="NTwaGlPldC" verb="ListRecords">http://crdo.vjf.cnrs.fr:8080/crdo_servlet/oai-pmh</request>
-<ListRecords>
 <record>
     <header>
         <identifier>oai:crdo.vjf.cnrs.fr:crdo-UVE_BEBEA_SOUND</identifier>
@@ -9443,6 +10061,13 @@
         </olac:olac>
     </metadata>
 </record>
+<resumptionToken completeListSize="556" cursor="250" expirationDate="2010-05-17T15:01:06Z">GONYiSkZfC</resumptionToken>
+</ListRecords>
+</OAI-PMH>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:crdo="http://crdo.risc.cnrs.fr/schemas/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:oai_dc="http://purl.org/dc/elements/1.1/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+<responseDate>2010-04-01T00:05:09Z</responseDate>
+<request resumptionToken="GONYiSkZfC" verb="ListRecords">http://crdo.vjf.cnrs.fr:8080/crdo_servlet/oai-pmh</request>
+<ListRecords>
 <record>
     <header>
         <identifier>oai:crdo.vjf.cnrs.fr:crdo-WLS_LIUFA2FB_1</identifier>
@@ -9946,13 +10571,6 @@
         </olac:olac>
     </metadata>
 </record>
-<resumptionToken completeListSize="540" cursor="250" expirationDate="2010-03-24T09:42:15Z">iqKdFrzwcL</resumptionToken>
-</ListRecords>
-</OAI-PMH>
-<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:crdo="http://crdo.risc.cnrs.fr/schemas/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:oai_dc="http://purl.org/dc/elements/1.1/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
-<responseDate>2010-01-15T10:37:57Z</responseDate>
-<request resumptionToken="iqKdFrzwcL" verb="ListRecords">http://crdo.vjf.cnrs.fr:8080/crdo_servlet/oai-pmh</request>
-<ListRecords>
 <record>
     <header>
         <identifier>oai:crdo.vjf.cnrs.fr:crdo-WLS_LIUFA1FA_2</identifier>
@@ -10971,6 +11589,13 @@
         </olac:olac>
     </metadata>
 </record>
+<resumptionToken completeListSize="556" cursor="300" expirationDate="2010-05-17T15:01:07Z">UCbAMUVcwo</resumptionToken>
+</ListRecords>
+</OAI-PMH>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:crdo="http://crdo.risc.cnrs.fr/schemas/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:oai_dc="http://purl.org/dc/elements/1.1/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+<responseDate>2010-04-01T00:05:09Z</responseDate>
+<request resumptionToken="UCbAMUVcwo" verb="ListRecords">http://crdo.vjf.cnrs.fr:8080/crdo_servlet/oai-pmh</request>
+<ListRecords>
 <record>
     <header>
         <identifier>oai:crdo.vjf.cnrs.fr:crdo-MOC_0009</identifier>
@@ -11451,13 +12076,6 @@
         </olac:olac>
     </metadata>
 </record>
-<resumptionToken completeListSize="540" cursor="300" expirationDate="2010-03-24T09:42:15Z">LAIzGNvmsO</resumptionToken>
-</ListRecords>
-</OAI-PMH>
-<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:crdo="http://crdo.risc.cnrs.fr/schemas/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:oai_dc="http://purl.org/dc/elements/1.1/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
-<responseDate>2010-01-15T10:37:57Z</responseDate>
-<request resumptionToken="LAIzGNvmsO" verb="ListRecords">http://crdo.vjf.cnrs.fr:8080/crdo_servlet/oai-pmh</request>
-<ListRecords>
 <record>
     <header>
         <identifier>oai:crdo.vjf.cnrs.fr:crdo-MOC_0019</identifier>
@@ -12543,6 +13161,13 @@
         </olac:olac>
     </metadata>
 </record>
+<resumptionToken completeListSize="556" cursor="350" expirationDate="2010-05-17T15:01:07Z">idyIxQvZsv</resumptionToken>
+</ListRecords>
+</OAI-PMH>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:crdo="http://crdo.risc.cnrs.fr/schemas/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:oai_dc="http://purl.org/dc/elements/1.1/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+<responseDate>2010-04-01T00:05:09Z</responseDate>
+<request resumptionToken="idyIxQvZsv" verb="ListRecords">http://crdo.vjf.cnrs.fr:8080/crdo_servlet/oai-pmh</request>
+<ListRecords>
 <record>
     <header>
         <identifier>oai:crdo.vjf.cnrs.fr:crdo-NEM_DIUUT_SOUND</identifier>
@@ -13059,13 +13684,6 @@
         </olac:olac>
     </metadata>
 </record>
-<resumptionToken completeListSize="540" cursor="350" expirationDate="2010-03-24T09:42:15Z">eamlbnGXIM</resumptionToken>
-</ListRecords>
-</OAI-PMH>
-<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:crdo="http://crdo.risc.cnrs.fr/schemas/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:oai_dc="http://purl.org/dc/elements/1.1/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
-<responseDate>2010-01-15T10:37:57Z</responseDate>
-<request resumptionToken="eamlbnGXIM" verb="ListRecords">http://crdo.vjf.cnrs.fr:8080/crdo_servlet/oai-pmh</request>
-<ListRecords>
 <record>
     <header>
         <identifier>oai:crdo.vjf.cnrs.fr:crdo-IAI_OVETH_SOUND</identifier>
@@ -14206,6 +14824,13 @@
         </olac:olac>
     </metadata>
 </record>
+<resumptionToken completeListSize="556" cursor="400" expirationDate="2010-05-17T15:01:07Z">pbDCWLbvZN</resumptionToken>
+</ListRecords>
+</OAI-PMH>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:crdo="http://crdo.risc.cnrs.fr/schemas/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:oai_dc="http://purl.org/dc/elements/1.1/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+<responseDate>2010-04-01T00:05:09Z</responseDate>
+<request resumptionToken="pbDCWLbvZN" verb="ListRecords">http://crdo.vjf.cnrs.fr:8080/crdo_servlet/oai-pmh</request>
+<ListRecords>
 <record>
     <header>
         <identifier>oai:crdo.vjf.cnrs.fr:crdo-NEE_PWA</identifier>
@@ -14778,13 +15403,6 @@
         </olac:olac>
     </metadata>
 </record>
-<resumptionToken completeListSize="540" cursor="400" expirationDate="2010-03-24T09:42:15Z">rVplSbPIWl</resumptionToken>
-</ListRecords>
-</OAI-PMH>
-<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:crdo="http://crdo.risc.cnrs.fr/schemas/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:oai_dc="http://purl.org/dc/elements/1.1/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
-<responseDate>2010-01-15T10:37:57Z</responseDate>
-<request resumptionToken="rVplSbPIWl" verb="ListRecords">http://crdo.vjf.cnrs.fr:8080/crdo_servlet/oai-pmh</request>
-<ListRecords>
 <record>
     <header>
         <identifier>oai:crdo.vjf.cnrs.fr:crdo-NEE_JOREE_NADIIN</identifier>
@@ -16007,6 +16625,13 @@
         </olac:olac>
     </metadata>
 </record>
+<resumptionToken completeListSize="556" cursor="450" expirationDate="2010-05-17T15:01:07Z">LyyJuDExCa</resumptionToken>
+</ListRecords>
+</OAI-PMH>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:crdo="http://crdo.risc.cnrs.fr/schemas/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:oai_dc="http://purl.org/dc/elements/1.1/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+<responseDate>2010-04-01T00:05:09Z</responseDate>
+<request resumptionToken="LyyJuDExCa" verb="ListRecords">http://crdo.vjf.cnrs.fr:8080/crdo_servlet/oai-pmh</request>
+<ListRecords>
 <record>
     <header>
         <identifier>oai:crdo.vjf.cnrs.fr:crdo-NEE_VAJHAMA3</identifier>
@@ -16578,13 +17203,6 @@
         </olac:olac>
     </metadata>
 </record>
-<resumptionToken completeListSize="540" cursor="450" expirationDate="2010-03-24T09:42:16Z">nbowHJtMpa</resumptionToken>
-</ListRecords>
-</OAI-PMH>
-<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:crdo="http://crdo.risc.cnrs.fr/schemas/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:oai_dc="http://purl.org/dc/elements/1.1/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
-<responseDate>2010-01-15T10:37:57Z</responseDate>
-<request resumptionToken="nbowHJtMpa" verb="ListRecords">http://crdo.vjf.cnrs.fr:8080/crdo_servlet/oai-pmh</request>
-<ListRecords>
 <record>
     <header>
         <identifier>oai:crdo.vjf.cnrs.fr:crdo-CAM_DUI_SOUND</identifier>
@@ -17688,6 +18306,13 @@
         </olac:olac>
     </metadata>
 </record>
+<resumptionToken completeListSize="556" cursor="500" expirationDate="2010-05-17T15:01:08Z">ynuCaldzrs</resumptionToken>
+</ListRecords>
+</OAI-PMH>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:crdo="http://crdo.risc.cnrs.fr/schemas/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:oai_dc="http://purl.org/dc/elements/1.1/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+<responseDate>2010-04-01T00:05:09Z</responseDate>
+<request resumptionToken="ynuCaldzrs" verb="ListRecords">http://crdo.vjf.cnrs.fr:8080/crdo_servlet/oai-pmh</request>
+<ListRecords>
 <record>
     <header>
         <identifier>oai:crdo.vjf.cnrs.fr:crdo-PRI_ENFANT</identifier>
@@ -17880,7 +18505,7 @@
         </olac:olac>
     </metadata>
 </record>
-<resumptionToken completeListSize="540" cursor="500"/>
+<resumptionToken completeListSize="556" cursor="550"/>
 </ListRecords>
 </OAI-PMH>
 </harvest>

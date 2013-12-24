@@ -12,45 +12,37 @@
 <script language="JavaScript" src="../../z-outils/outils.js"></script>
 <script language="JavaScript" type="text/JavaScript">
 <!--
-
 function MM_reloadPage(init) {  //reloads the window if Nav4 resized
   if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
     document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
   else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
 }
 MM_reloadPage(true);
-//-->
-</script>
-<script language="JavaScript" type="text/JavaScript">
-<!--
-function flvFPW1(){//v1.44
-// Copyright 2002-2004, Marja Ribbers-de Vroed, FlevOOware (www.flevooware.nl/dreamweaver/)
-var v1=arguments,v2=v1[2].split(","),v3=(v1.length>3)?v1[3]:false,v4=(v1.length>4)?parseInt(v1[4]):0,v5=(v1.length>5)?parseInt(v1[5]):0,v6,v7=0,v8,v9,v10,v11,v12,v13,v14,v15,v16;
-v11=new Array("width,left,"+v4,"height,top,"+v5);for (i=0;i<v11.length;i++){v12=v11[i].split(",");
-l_iTarget=parseInt(v12[2]);if (l_iTarget>1||v1[2].indexOf("%")>-1){v13=eval("screen."+v12[0]);
-for (v6=0;
-v6<v2.length;v6++){v10=v2[v6].split("=");if (v10[0]==v12[0]){v14=parseInt(v10[1]);
-if (v10[1].indexOf("%")>-1){v14=(v14/100)*v13;
-v2[v6]=v12[0]+"="+v14;}}if (v10[0]==v12[1]){v16=parseInt(v10[1]);v15=v6;
-}}if (l_iTarget==2){v7=(v13-v14)/2;v15=v2.length;}else if (l_iTarget==3){v7=v13-v14-v16;
-}v2[v15]=v12[1]+"="+v7;}}v8=v2.join(",");v9=window.open(v1[0],v1[1],v8);if (v3){v9.focus();
-}document.MM_returnValue=false;return v9;}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
 //-->
 </script>
 <!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+.Style1 {color: #820E12}
+-->
+</style>
 </head>
 <body marginwidth="0" marginheight="0" >
-  <div class="bandeau-liens" id="divbandeau-lienCNRS"> <a href="http://www.cnrs.fr/" target="_blank">Le CNRS</a> </div>
+  <div class="bandeau-liens" id="divbandeau-lienCNRS"> <a href="http://www.cnrs.fr/fr/organisme/presentation.htm" target="_blank">Le CNRS</a> </div>
 <div id="divbandeau-traitvert1"><img src="../../z-outils/images/charte/trait-vertical.gif"></div>
   <div id="divbandeau-lienAccueil" class="bandeau-liens"> <a href="http://www.cnrs.fr/shs/" target="_blank">Accueil SHS</a> </div>
 <div id="divbandeau-traitvert2"><img src="../../z-outils/images/charte/trait-vertical.gif"></div>
-  <div id="divbandeau-lienAutres" class="bandeau-liens"><a href="http://www2.cnrs.fr/band/5.htm" target="_blank">Autres sites CNRS</a></div> 
-  <div id="divbandeau-traitvert3"><img src="../../z-outils/images/charte/trait-vertical.gif"></div>
+  <div id="divbandeau-lienAutres" class="bandeau-liens"><a href="http://www.cnrs.fr/fr/une/sites-cnrs.htm" target="_blank">Autres sites CNRS</a></div> 
+<div id="divbandeau-traitvert3"><img src="../../z-outils/images/charte/trait-vertical.gif"></div>
 
 <table width="751"  border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td width="150"><img src="../../z-outils/images/boite-outils/espaceur.gif" width="150" height="65"></td>
-    <td colspan="3"><img src="../../z-outils/images/charte/bandeau-haut-droit.gif" alt="" width="600" height="65" border="0"></td>
+    <td colspan="3"><img src="../../z-outils/images/charte/bandeau-haut-droit.gif" alt="" width="100%" border="0"></td>
     <td width="1" class="separateur"><img src="../../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
   </tr>
   <tr>
@@ -61,7 +53,7 @@ v2[v6]=v12[0]+"="+v14;}}if (v10[0]==v12[1]){v16=parseInt(v10[1]);v15=v6;
   <tr>
     <td width="150">&nbsp;</td>
     <td width="1" class="separateur"><img src="../../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
-    <td height="1" colspan="2"><!-- InstanceBeginEditable name="Visuel" --><img src="../../images/bandeaux/bandeau_archivage.jpg" alt="" width="600" height="65" border="0"><!-- InstanceEndEditable --></td>
+    <td height="1" colspan="2"><!-- InstanceBeginEditable name="Visuel" --><img src="../../images/bandeaux/bandeau_archivage.jpg" alt="" width="100%" border="0"><!-- InstanceEndEditable --></td>
     <td width="1" class="separateur"><img src="../../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
   </tr>
   <tr>
@@ -87,22 +79,16 @@ v2[v6]=v12[0]+"="+v14;}}if (v10[0]==v12[1]){v16=parseInt(v10[1]);v15=v6;
   <tr>
     <td width="150">&nbsp;</td>
     <td width="1" class="separateur"><img src="../../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
-    <td rowspan="2" colspan="2" class="Xtextcourant" width="600">	<div id="divXnavdroite"><!-- InstanceBeginEditable name="MenuDroit" -->
+    <td rowspan="2" colspan="2" class="Xtextcourant" width="600" valign="top">	<div id="divXnavdroite"><!-- InstanceBeginEditable name="MenuDroit" -->
       <table width="100%"  border="0" cellspacing="0" cellpadding="5">
         <tr>
           <td class="Xscde-navdroite"><a href="Ajie.htm">Corpus aji&euml;</a> </td>
-        </tr>
-        <tr>
-          <td class="Xscde-navdroite"><a href="Araki.htm">Corpus araki</a> </td>
         </tr>
         <tr>
           <td class="Xscde-navdroite"><a href="Bwatoo.htm">Corpus bwatoo </a></td>
         </tr>
         <tr>
           <td class="Xscde-navdroite"><a href="Cemuhi.htm">Corpus cemuhi </a></td>
-        </tr>
-        <tr>
-          <td class="Xscde-navdroite"><a href="Dorig.htm">Corpus dorig </a> </td>
         </tr>
         <tr>
           <td class="Xscde-navdroite"><a href="Drehu.htm">Corpus drehu </a> </td>
@@ -114,19 +100,7 @@ v2[v6]=v12[0]+"="+v14;}}if (v10[0]==v12[1]){v16=parseInt(v10[1]);v15=v6;
           <td class="Xscde-navdroite"><a href="Iaai.htm">Corpus iaai </a> </td>
         </tr>
         <tr>
-          <td class="Xscde-navdroite"><a href="Koro.htm">Corpus koro </a> </td>
-        </tr>
-        <tr>
-          <td class="Xscde-navdroite"><a href="Kwenyii.htm">Corpus kw&ecirc;nyii </a> </td>
-        </tr>
-        <tr>
-          <td class="Xscde-navdroite"><a href="Lakon.htm">Corpus lakon </a> </td>
-        </tr>
-        <tr>
-          <td class="Xscde-navdroite"><a href="Mwesen.htm">Corpus mwesen </a> </td>
-        </tr>
-        <tr>
-          <td class="Xscde-navdroite"><a href="Mwotlap.htm">Corpus mwotlap </a> </td>
+          <td class="Xscde-navdroite"><a href="Kwenyii.htm">Corpus kwényïï </a> </td>
         </tr>
         <tr>
           <td class="Xscde-navdroite"><a href="Nelemwa.htm">Corpus n&ecirc;l&ecirc;mwa </a></td>
@@ -141,7 +115,7 @@ v2[v6]=v12[0]+"="+v14;}}if (v10[0]==v12[1]){v16=parseInt(v10[1]);v15=v6;
           <td class="Xscde-navdroite"><a href="Paici.htm">Corpus paic&icirc; </a></td>
         </tr>
         <tr>
-          <td class="Xscde-navdroite"><a href="Pije.htm">Corpus pij&eacute;</a> </td>
+          <td class="Xscde-navdroite"><a href="Pije.htm">Corpus pije</a> </td>
         </tr>
         <tr>
           <td class="Xscde-navdroite"><a href="East_Uvean.htm">Corpus wallisien</a></td>
@@ -153,7 +127,7 @@ v2[v6]=v12[0]+"="+v14;}}if (v10[0]==v12[1]){v16=parseInt(v10[1]);v15=v6;
           <td class="Xscde-navdroite"><a href="Xaragure.htm">Corpus x&acirc;r&acirc;gur&egrave; </a> </td>
         </tr>
         <tr>
-          <td class="Xscde-navdroite"><a href="Yuanga.htm">Corpus yuanga </a> </td>
+          <td class="Xscde-navdroite"><a href="Yuanga.htm">Corpus zuanga ou yuanga</a> </td>
         </tr>
         <tr>
           <td class="Xscde-navdroite"><a href="../oceanie.htm">vers les langues d'Oc&eacute;anie</a><a href="../presentation_en.htm"></a></td>
@@ -162,39 +136,46 @@ v2[v6]=v12[0]+"="+v14;}}if (v10[0]==v12[1]){v16=parseInt(v10[1]);v15=v6;
     <!-- InstanceEndEditable --></div>
       <div id="ZonePrint" class="ZonePrint">    
       <!-- InstanceBeginEditable name="Contenu" -->
-      <h3><a name="up"></a>Corpus x&acirc;r&acirc;c&ugrave;&ugrave;</h3>
-      <p class="intertitre">Fiche technique sur le <a href="../../ALC/Languages/Xaracuu_popup.htm" target="_blank" onClick="flvFPW1(this.href,'popupLink','width=400,height=400,scrollbars=yes,resizable=yes',1);return document.MM_returnValue">x&acirc;r&acirc;c&ugrave;&ugrave;<img src="../../images/icones/info.gif" alt="a" width="15" height="15" border="0"></a></p>
+      <h1><a name="up"></a>Corpus x&acirc;r&acirc;c&ugrave;&ugrave;</h1>
+      <p class="intertitre">&nbsp;</p>
+      <p class="intertitre">Fiche technique sur le <a href="../../ALC/Languages/Xaracuu_popup.htm" target="_blank" onClick="window.open(this.href,'popupLink','width=400,height=400,scrollbars=yes,resizable=yes',1);return false">x&acirc;r&acirc;c&ugrave;&ugrave;<img src="../../images/icones/info.gif" alt="a" width="15" height="15" border="0"></a></p>
       <p>&nbsp;</p>
       <ul class="liste-liens">
-        <li><a href="#bird">Histoire d'oiseaux</a></li>
-        <li><a href="#Ant">Fourmi et Roussette</a></li>
-        <li><a href="#Octopus">Le poulpe</a></li>
-        <li>          <a href="#Fireegoo">Fir&egrave;&egrave;g&ouml;&ouml;</a></li>
-        <li><a href="#Pweedi">Histoire de Pw&ecirc;&ecirc;di M&uuml;&uuml;</a></li>
+        <li><a href="#prosodie1">Prosodie xârâcùù (1)</a></li>
+        <li><a href="#prosodie2">Prosodie xârâcùù (2)</a></li>
         <li><a href="#Yoora">Yoora</a></li>
+        <li> <a href="#Fireegoo">Fir&egrave;&egrave;g&ouml;&ouml;</a></li>
+        <li><a href="#Pweedi">Histoire de Pw&ecirc;&ecirc;di M&uuml;&uuml;</a></li>
+        <li><a href="#Ant">Fourmi et Roussette</a></li>
+        <li><a href="#bird">Histoire d'oiseaux</a></li>
+        <li><a href="#Octopus">Le poulpe</a></li>
         </ul>
       <p>&nbsp;</p>
-      <p class="intertitre"><a name="bird"></a><a href="../tools/show_text.php?id=crdo-ANE_OISEAU_SOUND" target="_blank"><img src="../../images/icones/h_parleur.gif" alt="a" width="20" height="20" border="0">Histoire d'oiseaux</a><br>
-        Nouvelle-Cal&eacute;donie, N&eacute;x&ouml;, 1984 </p>
-      <p>Conte assortie d'une morale : l'oiseau-lunettes et le coucou-&eacute;ventail sont alli&eacute;s; l'oiseau-lunettes, devant se rendre &agrave; Ouv&eacute;a, confie au coucou la garde de ses sujets. Parmi ces derniers, un seul, la poule sultane, transgresse l'interdit et doit en subir les cons&eacute;quences.</p>
-      <p class="intertitre"><a name="Ant"></a><a href="../tools/show_text.php?id=crdo-ANE_FOURMI_SOUND" target="_blank"><img src="../../images/icones/h_parleur.gif" alt="a" width="20" height="20" border="0">Fourmi et Roussette</a><br>
-        Nouvelle-Cal&eacute;donie, K&egrave;r&egrave;ji, 1982 </p>
-      <p>Conte mettant en sc&egrave;ne une fourmi et une roussette. La fourmi, ayant manqu&eacute; de respect envers la roussette, est d&eacute;vor&eacute;e par cette derni&egrave;re. Mais l'union fait la force, ses cong&eacute;n&egrave;res prennent la rel&egrave;ve et continuent &agrave; tourmenter les roussettes !</p>
-      <p class="intertitre"><a name="Octopus"></a><a href="../tools/show_text.php?id=crdo-ANE_POULPE_SOUND" target="_blank"><img src="../../images/icones/h_parleur.gif" alt="a" width="20" height="20" border="0">Le poulpe</a><br>
-        Nouvelle-Cal&eacute;donie, N&eacute;x&ouml;, 1984 </p>
-      <p>    All&eacute;gorie sur le comportement de certains chefs, qui n&eacute;gligent leurs sujets pour ne s'occuper que de leurs propres int&eacute;r&ecirc;ts, et qui sont alors destitu&eacute;s.</p>
-      <p class="intertitre"><a name="Fireegoo"></a><a href="../tools/show_text.php?id=crdo-ANE_FIREGO_SOUND" target="_blank"><img src="../../images/icones/h_parleur.gif" alt="a" width="20" height="20" border="0">Fir&egrave;&egrave;g&ouml;&ouml;</a><br>
-        Nouvelle-Cal&eacute;donie, Thio, 1980 </p>
-      <p>    Histoire de rivalit&eacute;s entre des chefs, symbolis&eacute;s par des montagnes. Le mont Fir&egrave;&egrave;g&ouml;&ouml; qui surplombe la tribu d'Ourou&eacute;, au nord de Thio, avait humili&eacute; plusieurs chefs qu'il avait invit&eacute;s chez lui : ainsi, le mont M&egrave;r&egrave;n&egrave; avait d&ucirc; rest&eacute; courb&eacute; apr&egrave;s s'&ecirc;tre pench&eacute; pour ramasser un panier de coquillages et le mont Yoora, situ&eacute; au fond de la tribu de Ouindo, avait &eacute;t&eacute; br&ucirc;l&eacute; par Fir&egrave;&egrave;g&ouml;&ouml;. Ce r&eacute;cit concerne plus pr&eacute;cis&eacute;ment Fir&egrave;&egrave;g&ouml;&ouml;, chass&eacute; par ses cousins de la r&eacute;gion de Kouaoua et forc&eacute; de se r&eacute;fugier vers Borindi, avant de se fixer au-dessus d'Ourou&eacute;. Au cours de sa fuite, il aurait modifi&eacute; le paysage, cr&eacute;ant des &icirc;lots, les terres fertiles de Koum, d&eacute;pla&ccedil;ant certaines esp&egrave;ces d'herbes et transformant les fl&egrave;ches de ses poursuivants en pins colonnaires, symboles de l'habitat kanak.</p>
-      <p class="intertitre"><a name="Pweedi"></a><a href="../tools/show_text.php?id=crdo-ANE_PWEE_SOUND" target="_blank"><img src="../../images/icones/h_parleur.gif" alt="a" width="20" height="20" border="0">Histoire de Pw&ecirc;&ecirc;di M&uuml;&uuml;</a><br>
-        Nouvelle-Cal&eacute;donie, K&egrave;r&egrave;ji, 1982 </p>
-      <p>Cette l&eacute;gende &eacute;voque la difficult&eacute; que rencontre un cadet pour se faire une place &agrave; c&ocirc;t&eacute; de ses a&icirc;n&eacute;s. Pw&ecirc;&ecirc;di M&uuml;&uuml;, le cadet du clan M&uuml;&uuml;, d&eacute;crit comme plus malin que ses fr&egrave;res, est ainsi jalous&eacute; et doit fuir Ouass&eacute;, sa terre d'origine, pour &eacute;chapper &agrave; la mort. Se cherchant alors un territoire en parcourant la cha&icirc;ne centrale, il est rejet&eacute; &agrave; plusieurs reprises par les propri&eacute;taires des diff&eacute;rents lieux qu'il traverse. Il trouve enfin un endroit o&ugrave; s'installer sur la c&ocirc;te ouest, pr&egrave;s de La Foa. Il revient &agrave; Ouass&eacute; voir sa m&egrave;re, cr&eacute;e pour elle quelques &icirc;lots fertiles le long de la c&ocirc;te est, entre Canala et Ngoye, mais emporte avec lui tous les crabes et les poissons, &quot;comme si c'&eacute;taient les poux de sa t&ecirc;te&quot;, ne laissant comme produit de p&ecirc;che pour ses fr&egrave;res a&icirc;n&eacute;s qu'un lochon de pal&eacute;tuviers. Ce serait la raison pour laquelle la mer est dite plus poissonneuse &agrave; La Foa qu'&agrave; Canala.</p>
+      <p class="intertitre"><a name="prosodie1"></a><a href="../tools/show_text.php?id=crdo-ANE_JCR_001_B_SOUND" target="_blank"><img src="../../images/icones/h_parleur.gif" alt="sound" width="20" height="20" border="0">Prosodie xârâcùù (1)</a><br>
+        Nouvelle-Calédonie, Thio-Canala, 1977, Guy Tamai, <a href="../../membres/rivierre.htm">Jean-Claude Rivierre</a></p>
+      <p class="intertitre">Etude prosodique, d'un locuteur de 22 ans, originaire de la région de Thio. Enregistrements de mots, phrases et syntagmes.</p>
+      <p class="intertitre"><a name="prosodie2"></a><a href="../tools/show_text.php?id=crdo-ANE_JCR_002_B_SOUND" target="_blank"><img src="../../images/icones/h_parleur.gif" alt="sound" width="20" height="20" border="0">Prosodie xârâcùù (2)</a><br>
+        Nouvelle-Calédonie, Thio-Canala, 1977, Guy Tamai, <a href="../../membres/rivierre.htm">Jean-Claude Rivierre</a></p>
+      <p class="intertitre">Etude prosodique, d'un locuteur de 22 ans, originaire de la région de Thio. Enregistrements de mots, phrases et syntagmes.</p>
       <p class="intertitre"><a name="Yoora"></a><a href="../tools/show_text.php?id=crdo-ANE_YOORA_SOUND" target="_blank"><img src="../../images/icones/h_parleur.gif" alt="a" width="20" height="20" border="0">Yoora</a><br>
-        Nouvelle-Cal&eacute;donie, Thio, 1980 </p>
-      <p>    Ce mythe relate un &eacute;pisode de la rivalit&eacute; entre deux chefs, symbolis&eacute;s par des montagnes : Yoora, situ&eacute; au fond de la vall&eacute;e de Ouindo, dont on dit qu'on ne peut le gravir, son sommet s'&eacute;loignant au fur et &agrave; mesure de la mont&eacute;e, et Fir&egrave;&egrave;g&ouml;&ouml;, qui surplombe la tribu d'Ourou&eacute;. Humili&eacute; un jour par Fir&egrave;&egrave;g&ouml;&ouml;, qui l'avait invit&eacute; chez lui et l'avait bless&eacute; en le br&ucirc;lant, Yoora d&eacute;cide de se venger en invitant &agrave; son tour Fir&egrave;&egrave;g&ouml;&ouml;. Ce dernier, apr&egrave;s avoir perdu un pari, est d&eacute;finitivement rel&eacute;gu&eacute; dans la r&eacute;gion de Thio-Borindi, o&ugrave; il introduit la langue x&acirc;r&acirc;gur&egrave;.</p>
-      <p>&nbsp;</p>
-      <p><a href="../../membres/moyse.htm">Claire Moyse-Faurie </a> </p>
-      <!-- InstanceEndEditable --></div></td>
+Nouvelle-Cal&eacute;donie, Thio, 1980, Georges Chaanyiroa, <a href="../../membres/moyse.htm">Claire Moyse-Faurie </a></p>
+      <p> Ce mythe relate un &eacute;pisode de la rivalit&eacute; entre deux chefs, symbolis&eacute;s par des montagnes : Yoora, situ&eacute; au fond de la vall&eacute;e de Ouindo, dont on dit qu'on ne peut le gravir, son sommet s'&eacute;loignant au fur et &agrave; mesure de la mont&eacute;e, et Fir&egrave;&egrave;g&ouml;&ouml;, qui surplombe la tribu d'Ourou&eacute;. Humili&eacute; un jour par Fir&egrave;&egrave;g&ouml;&ouml;, qui l'avait invit&eacute; chez lui et l'avait bless&eacute; en le br&ucirc;lant, Yoora d&eacute;cide de se venger en invitant &agrave; son tour Fir&egrave;&egrave;g&ouml;&ouml;. Ce dernier, apr&egrave;s avoir perdu un pari, est d&eacute;finitivement rel&eacute;gu&eacute; dans la r&eacute;gion de Thio-Borindi, o&ugrave; il introduit la langue x&acirc;r&acirc;gur&egrave;.</p>
+      <p class="intertitre"><a name="Fireegoo"></a><a href="../tools/show_text.php?id=crdo-ANE_FIREGO_SOUND" target="_blank"><img src="../../images/icones/h_parleur.gif" alt="a" width="20" height="20" border="0">Fir&egrave;&egrave;g&ouml;&ouml;</a><br>
+        Nouvelle-Cal&eacute;donie, Thio, 1980, Georges Chaanyiroa, <a href="../../membres/moyse.htm">Claire Moyse-Faurie </a></p>
+      <p> Histoire de rivalit&eacute;s entre des chefs, symbolis&eacute;s par des montagnes. Le mont Fir&egrave;&egrave;g&ouml;&ouml; qui surplombe la tribu d'Ourou&eacute;, au nord de Thio, avait humili&eacute; plusieurs chefs qu'il avait invit&eacute;s chez lui : ainsi, le mont M&egrave;r&egrave;n&egrave; avait d&ucirc; rest&eacute; courb&eacute; apr&egrave;s s'&ecirc;tre pench&eacute; pour ramasser un panier de coquillages et le mont Yoora, situ&eacute; au fond de la tribu de Ouindo, avait &eacute;t&eacute; br&ucirc;l&eacute; par Fir&egrave;&egrave;g&ouml;&ouml;. Ce r&eacute;cit concerne plus pr&eacute;cis&eacute;ment Fir&egrave;&egrave;g&ouml;&ouml;, chass&eacute; par ses cousins de la r&eacute;gion de Kouaoua et forc&eacute; de se r&eacute;fugier vers Borindi, avant de se fixer au-dessus d'Ourou&eacute;. Au cours de sa fuite, il aurait modifi&eacute; le paysage, cr&eacute;ant des &icirc;lots, les terres fertiles de Koum, d&eacute;pla&ccedil;ant certaines esp&egrave;ces d'herbes et transformant les fl&egrave;ches de ses poursuivants en pins colonnaires, symboles de l'habitat kanak.</p>
+      <p class="intertitre"><a name="Pweedi"></a><a href="../tools/show_text.php?id=crdo-ANE_PWEE_SOUND" target="_blank"><img src="../../images/icones/h_parleur.gif" alt="a" width="20" height="20" border="0">Histoire de Pw&ecirc;&ecirc;di M&uuml;&uuml;</a><br>
+        Nouvelle-Cal&eacute;donie, K&egrave;r&egrave;ji, 1982, Apollinaire Satoayè Moindou, <a href="../../membres/moyse.htm">Claire Moyse-Faurie </a></p>
+      <p>Cette l&eacute;gende &eacute;voque la difficult&eacute; que rencontre un cadet pour se faire une place &agrave; c&ocirc;t&eacute; de ses a&icirc;n&eacute;s. Pw&ecirc;&ecirc;di M&uuml;&uuml;, le cadet du clan M&uuml;&uuml;, d&eacute;crit comme plus malin que ses fr&egrave;res, est ainsi jalous&eacute; et doit fuir Ouass&eacute;, sa terre d'origine, pour &eacute;chapper &agrave; la mort. Se cherchant alors un territoire en parcourant la cha&icirc;ne centrale, il est rejet&eacute; &agrave; plusieurs reprises par les propri&eacute;taires des diff&eacute;rents lieux qu'il traverse. Il trouve enfin un endroit o&ugrave; s'installer sur la c&ocirc;te ouest, pr&egrave;s de La Foa. Il revient &agrave; Ouass&eacute; voir sa m&egrave;re, cr&eacute;e pour elle quelques &icirc;lots fertiles le long de la c&ocirc;te est, entre Canala et Ngoye, mais emporte avec lui tous les crabes et les poissons, &quot;comme si c'&eacute;taient les poux de sa t&ecirc;te&quot;, ne laissant comme produit de p&ecirc;che pour ses fr&egrave;res a&icirc;n&eacute;s qu'un lochon de pal&eacute;tuviers. Ce serait la raison pour laquelle la mer est dite plus poissonneuse &agrave; La Foa qu'&agrave; Canala.</p>
+      <p class="intertitre"><a name="Ant"></a><a href="../tools/show_text.php?id=crdo-ANE_FOURMI_SOUND" target="_blank"><img src="../../images/icones/h_parleur.gif" alt="a" width="20" height="20" border="0">Fourmi et Roussette</a><br>
+        Nouvelle-Cal&eacute;donie, K&egrave;r&egrave;ji, 1982, Apollinaire Satoayè Moindou, <a href="../../membres/moyse.htm">Claire Moyse-Faurie </a></p>
+      <p>Conte mettant en sc&egrave;ne une fourmi et une roussette. La fourmi, ayant manqu&eacute; de respect envers la roussette, est d&eacute;vor&eacute;e par cette derni&egrave;re. Mais l'union fait la force, ses cong&eacute;n&egrave;res prennent la rel&egrave;ve et continuent &agrave; tourmenter les roussettes !</p>
+      <p class="intertitre"><a name="bird"></a><a href="../tools/show_text.php?id=crdo-ANE_OISEAU_SOUND" target="_blank"><img src="../../images/icones/h_parleur.gif" alt="a" width="20" height="20" border="0">Histoire d'oiseaux</a><br>
+Nouvelle-Cal&eacute;donie, N&eacute;x&ouml;, 1984, Simon Kédé, <a href="../../membres/moyse.htm">Claire Moyse-Faurie </a></p>
+      <p>Conte assorti d'une morale : l'oiseau-lunettes et le coucou-&eacute;ventail sont alli&eacute;s; l'oiseau-lunettes, devant se rendre &agrave; Ouv&eacute;a, confie au coucou la garde de ses sujets. Parmi ces derniers, un seul, la poule sultane, transgresse l'interdit et doit en subir les cons&eacute;quences.</p>
+      <p class="intertitre"><a name="Octopus"></a><a href="../tools/show_text.php?id=crdo-ANE_POULPE_SOUND" target="_blank"><img src="../../images/icones/h_parleur.gif" alt="a" width="20" height="20" border="0">Le poulpe</a><br>
+        Nouvelle-Cal&eacute;donie, N&eacute;x&ouml;, 1984, Simon Kédé, <a href="../../membres/moyse.htm">Claire Moyse-Faurie </a></p>
+      <p> All&eacute;gorie sur le comportement de certains chefs, qui n&eacute;gligent leurs sujets pour ne s'occuper que de leurs propres int&eacute;r&ecirc;ts, et qui sont alors destitu&eacute;s.</p>
+    <!-- InstanceEndEditable --></div></td>
     <td width="1" class="separateur"><img src="../../z-outils/images/boite-outils/espaceur.gif" width="1" height="500"></td>
   </tr>
   <tr>
@@ -210,35 +191,34 @@ v2[v6]=v12[0]+"="+v14;}}if (v10[0]==v12[1]){v16=parseInt(v10[1]);v15=v6;
     <td width="1" class="separateur"><img src="../../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
   </tr>
 </table>
-<!-- Start of StatCounter Code -->
-<script type="text/javascript" language="javascript">
-var sc_project=2319041; 
-var sc_invisible=1; 
-var sc_partition=21; 
-var sc_security="1fae5b4b"; 
-var sc_text=3; 
-</script>
-
-<script type="text/javascript" language="javascript" src="http://www.statcounter.com/counter/frames.js"></script><noscript><a href="http://www.statcounter.com/" target="_blank"><img  src="http://c22.statcounter.com/counter.php?sc_project=2319041&amp;java=0&amp;security=1fae5b4b&amp;invisible=0" alt="best website stats" border="0"></a> </noscript>
-<!-- End of StatCounter Code -->
 <p>&nbsp;</p>
  <p>&nbsp;</p>
  <div id="divpartenaires" >
    <table width="150"  border="0" cellspacing="0" cellpadding="0">
-     <tr><td><a href="http://www.cnrs.fr" target="_blank"><img src="../../images/logos/logo-cnrs.jpg" alt="cnrs" width="150" height="62" border="0"></a></td>
+     <tr>
+       <td><a href="http://www.cnrs.fr" target="_blank"><img src="../../images/logos/logo-cnrs.jpg" alt="cnrs" width="150" height="62" border="0"></a></td>
      </tr>
-     <tr><td class="separateur"><img src="../../z-outils/images/boite-outils/espaceur.gif" width="150" height="1"></td></tr>
-     <tr><td><a href="http://www.univ-paris3.fr/1207750810633/0/fiche___defaultstructureksup/&RH=1235649944785" target="_blank"><img src="../../images/logos/logo-paris-3.gif" alt="paris3" width="150" height="53" border="0"></a></td>
+     <tr>
+       <td class="separateur"><img src="../../z-outils/images/boite-outils/espaceur.gif" alt="aa" width="150" height="1"></td>
      </tr>
-     <tr><td class="separateur"><img src="../../z-outils/images/boite-outils/espaceur.gif" width="150" height="1"></td></tr>
-     <tr><td><a href="http://www.paris-sorbonne.fr/fr/spip.php?rubrique1096" target="_blank"><img src="../../images/logos/logo-paris-4.gif" alt="paris4" width="150" height="53" border="0"></a></td>
+     <tr>
+       <td><a href="http://www.univ-paris3.fr/1207750810633/0/fiche___defaultstructureksup/&RH=1235649944785" target="_blank"><img src="../../images/logos/logo-paris-3.gif" alt="paris3" width="150" height="53" border="0"></a></td>
      </tr>
-	 <tr><td class="separateur"><img src="../../z-outils/images/boite-outils/espaceur.gif" width="150" height="1"></td></tr>
-     <tr><td><a href="http://www.typologie.cnrs.fr/" target="_blank"><img src="../../images/logos/logo-typo.gif" alt="tul" width="150" height="53" border="0"></a></td>
+     <tr>
+       <td class="separateur"><img src="../../z-outils/images/boite-outils/espaceur.gif" alt="aa" width="150" height="1"></td>
+     </tr>
+     <tr>
+       <td><a href="http://www.paris-sorbonne.fr/fr/spip.php?rubrique1096" target="_blank"><img src="../../images/logos/logo-paris-4.gif" alt="paris4" width="150" height="53" border="0"></a></td>
+     </tr>
+     <tr>
+       <td class="separateur"><img src="../../z-outils/images/boite-outils/espaceur.gif" alt="aa" width="150" height="1"></td>
+     </tr>
+     <tr>
+       <td><a href="http://www.typologie.cnrs.fr/" target="_blank"><img src="../../images/logos/logo-typo.gif" alt="tul" width="150" height="53" border="0"></a></td>
      </tr>
    </table>
-</div>
- <p>
+ </div>
+<p>
    <script type='text/javascript'>function Go(){return}</script>
      <script type='text/javascript' src='../../z-outils/deroulants/top_pos_var.js'></script>
      <script type='text/javascript' src='../../z-outils/deroulants/menu_var.js'></script>
@@ -247,98 +227,72 @@ var sc_text=3;
  <noscript>
  <p>Your browser does not support script</p>
 </noscript>
+ <div id="divnavgauche-spec">
+   <table border="0" cellpadding="0" cellspacing="0"  width="150">
+     <tr>
+       <td height="2"><img border="0" src="../../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
+     </tr>
+     <tr>
+       	<td width="100%"  class="Xnavgauche" >
+        	<table border="0" cellpadding="10" cellspacing="0"  width="100%">
+      			<tr>
+       	 			<td width="100%" class="Xnavgauche"><h2><a href="INTRANET/index.htm">Intranet <img border="0" src="../../z-outils/images/boite-outils/icones/intranet.gif" width="18" height="12"
+							alt="aa"></a></h2></td>
+      			</tr>
+       		</table>
+       </td>
+     </tr>
+     <tr>
+       <td height="2"><img border="0" src="../../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
+     </tr>
+    </table>
+ </div>
+ <div id="divnavgauche-searchLabo">
+    <table cellspacing="0" cellpadding="0" hspace="11" border="0">
+     <tr>
+     	<td width="100%" class="Xnavgauche"><h2 >Rechercher</h2>
+                 <p>Sur le WEB 
+                   du laboratoire</p>
+               <br>
+      	 </td>
+         </tr>
+         <tr>
+     	 <td>       
+				<form name="rechercher-spm" action="http://lacito.vjf.cnrs.fr/moteur/engine.php" method="GET">
+				<input type="hidden" name="action"  value="go">
+				<table cellspacing="0" cellpadding="0" border="0">
+					<tr>
+						<td><input name ="blork" maxLength="50" size="10" class="text"></td>
+						<td><img border="0" src="../../z-outils/images/boite-outils/espaceur.gif" width="10" height="8"
+							alt="aa"></td>
+						<td><input name="submit2" type="image" src="../../z-outils/images/charte/ok.gif" 
+                             border="0" width="20" height="20">
+						</td>
+					</tr>
+				</table>
+  				</form>
+          </td>
+        </tr>
+       </table>
+        <tr>
+       <td height="2"><img border="0" src="../../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
+		</tr>
 
-<div id="divnavgauche-spec"> 
-  <table border="0" cellpadding="0" cellspacing="0"  width="150">
-    <tr> 
-      <td height="2"> <img border="0" src="../../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
-    </tr>
-    <tr> 
-      <td width="100%"  class="Xnavgauche" > 
-        <table border="0" cellpadding="10" cellspacing="0"  width="100%">
-          <tr> 
-            <td width="100%" class="Xnavgauche"> 
-              <p class="intertitre"><a href="../../pratique/organigramme.htm">Les membres</a></p>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr> 
-      <td height="2"> <img border="0" src="../../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
-    </tr>
-    <tr> 
-      <td width="100%"  class="Xnavgauche" > 
-        <table border="0" cellpadding="10" cellspacing="0"  width="100%">
-          <tr> 
-            <td width="100%" class="Xnavgauche"> 
-              <p class="intertitre" >Rechercher</p>
-              <p>Sur le WEB du Lacito</p>
-              <p><br>
-              <br>
-              <!--Sur le WEB du CNRS--> <br>
-              <br>
-              <br>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr> 
-      <td height="2"> <img border="0" src="../../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
-    </tr>
-  </table>
-</div>
-<div id="divnavgauche-searchLabo"> 
-  <form name="rechercher-spi" action="http://lacito.vjf.cnrs.fr/moteur/engine.php" method="GET">
-  <input type="hidden" name ="action" value="go">
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr> 
-        <td> 
-          <input name ="blork" maxLength="50" size="10" class="text">
-        </td>
-        <td> <img border="0" src="../../z-outils/images/boite-outils/espaceur.gif" width="10" height="8"
-                alt=""></td>
-        <td> <input name="submit" type="image" src="../../z-outils/images/charte/ok.gif" 
-                                border="0" width="20" height="20">
-        </td>
-      </tr>
-    </table>
-  </form>
-</div>
-<!--<div id="divnavgauche-search"> 
-  <form name="rechercher-spi" action="http://www.cnrs.fr/rechercher/" method="POST"
-       target="_blank">
-    <table cellspacing="0" cellpadding="0" border="0">
-      <tr> 
-        <td> 
-          <input name ="request" maxLength="50" size="10" class="BoiteRechercher">
-        </td>
-        <td> <img border="0" src="../z-outils/images/boite-outils/espaceur.gif" width="10" height="8"
-                alt=""></td>
-        <td valign="middle" > 
-          <input name="submit" type="image" src="../z-outils/images/charte/ok.gif" 
-                                border="0" width="20" height="20">
-        </td>
-      </tr>
-    </table>
-  </form>
-</div>-->
-<div id="divnavhaut-nom-labo"> 
+ </div>
+<div id="divnavhaut-nom-labo">
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr> 
-      <td class="Xnavhaut"> 
-        <p> <a href="../../index.htm"><img src="../../images/logos/Logo_Lacito.jpg" alt="lacito" width="143" height="53" border="0"></a></p>
-      </td>
+    <tr>
+      <td valign="top" class="Xnavhaut"><p> <a href="../../index.htm"><img src="../../images/logos/Logo_Lacito.jpg" alt="aa" width="141" height="59" hspace="10" border="0" align="left"></a> <span class="Style1">Langues et civilisations<br>
+        à tradition orale <br>
+        (UMR7107)</span></p></td>
     </tr>
   </table>
 </div>
 <map name="Map2">
-  <area shape="rect" coords="28,23,46,43" href="javascript:impression()" alt="Imprimer/to print">
-  <area shape="rect" coords="49,23,66,43" href="javascript:writemail('vjf.cnrs.fr','behaghel','',1);" alt="Contact">
-  <area shape="rect" coords="68,23,85,43" href="../../pratique/index.htm" alt="Plan du site/Site map">
-  <area shape="rect" coords="87,23,105,43" href="../../pratique/credits.htm" alt="Cr&eacute;dits/Copyrights">
-  <area shape="rect" coords="107,23,128,43" href="../../pratique/to_build.htm" alt="Plug-ins">
+  <area shape="rect" coords="28,23,46,43" href="javascript:impression()" alt="Imprimer">
+  <area shape="rect" coords="49,23,66,43" href="javascript:writemail('vjf.cnrs.fr','behaghel','',1);" alt="Contacter le webmestre">
+  <area shape="rect" coords="68,23,85,43" href="../../pratique/index.htm" alt="Plan du site">
+  <area shape="rect" coords="87,23,105,43" href="../../pratique/credits.htm" alt="Crédits">
   <area shape="rect" coords="8,24,24,43" href="../../index.htm" alt="Accueil">
 </map>
 </body>

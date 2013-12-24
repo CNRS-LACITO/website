@@ -22,11 +22,10 @@
 </table>
 <!-- TemplateBeginEditable name="Contenu" -->
 <table width="100%" border="0" cellspacing="0" cellpadding="10">
-  <tr>
-    <td>
+  <tr> 
+    <td class="Xtextcourant">
       <p>contenu de la popup : la largeur de la popup est d&eacute;finie &agrave; l'appel
-        de la fen&ecirc;tre<br>
-      </p>
+        de la fen&ecirc;tre      </p>
     </td>
   </tr>
 </table>
@@ -39,21 +38,11 @@
     <tr> 
       <td class="Xnavhaut"> 
         <p> <a href="#" target="_blank">Langues et civilisations <br>
-          &agrave; tradition orale  <br>
-          (LACITO)</a> </p>
+&agrave; tradition orale <br>
+(UMR7107)</a> </p>
       </td>
     </tr>
   </table>
 </div>
- <!-- Start of StatCounter Code -->
-<script type="text/javascript" language="javascript">
-var sc_project=2319041; 
-var sc_invisible=1; 
-var sc_partition=21; 
-var sc_security="1fae5b4b"; 
-var sc_text=3; 
-</script>
 
-<script type="text/javascript" language="javascript" src="http://www.statcounter.com/counter/frames.js"></script><noscript><a href="http://www.statcounter.com/" target="_blank"><img  src="http://c22.statcounter.com/counter.php?sc_project=2319041&amp;java=0&amp;security=1fae5b4b&amp;invisible=0" alt="best website stats" border="0"></a> </noscript>
-<!-- End of StatCounter Code -->
 </body></html>

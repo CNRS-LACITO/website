@@ -238,7 +238,7 @@
             </td>
             <td><a	href="show_metadatas_text.php?id={$id}"
 					
-					onClick="flvFPW1(this.href,'popupLink','width=640,height=400,scrollbars=yes,resizable=yes',1);return document.MM_returnValue">
+					onClick="window.open(this.href,'popupLink','width=640,height=400,scrollbars=yes,resizable=yes',1);return false">
 						<img class="sansBordure" src="../../images/icones/info.gif"/>
 					</a>
             :
