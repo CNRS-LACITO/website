@@ -1,3 +1,51 @@
+<?php
+require_once('Connections/connect_publiCNRS.php');
+
+$currentPage = $_SERVER["PHP_SELF"];
+
+$pageNum_liste_pub = 0;
+if (isset($_GET['pageNum_liste_pub'])) {
+	$pageNum_liste_pub = $_GET['pageNum_liste_pub'];
+	
+  
+}
+$startRow_liste_pub = $pageNum_liste_pub * 
+$colname_liste_pub = "Auteurs";
+if (isset($_GET['NomAuteur'])) {
+  $colname_liste_pub = (get_magic_quotes_gpc()) ? $_GET['NomAuteur'] : addslashes($_GET['NomAuteur']);
+}
+mysql_select_db($database_connect_publiCNRS, $connect_publiCNRS);
+
+
+$query_liste_pub = sprintf("SELECT * FROM bdd WHERE Annee LIKE '2011' or Annee LIKE '2012'  ORDER BY Annee DESC, Auteurs ASC, Titre ASC", $colname_liste_pub);
+
+
+$liste_pub = mysql_query($query_liste_pub, $connect_publiCNRS) or die(mysql_error());
+$row_liste_pub = mysql_fetch_assoc($liste_pub);
+if (isset($_GET['totalRows_liste_pub'])) {
+  $totalRows_liste_pub = $_GET['totalRows_liste_pub'];
+} else {
+  $all_liste_pub = mysql_query($query_liste_pub);
+  $totalRows_liste_pub = mysql_num_rows($all_liste_pub);
+}
+$totalPages_liste_pub = ceil($totalRows_liste_pub/$maxRows_liste_pub)-1;
+$queryString_liste_pub = "";
+if (!empty($_SERVER['QUERY_STRING'])) {
+  $params = explode("&", $_SERVER['QUERY_STRING']);
+  $newParams = array();
+  foreach ($params as $param) {
+    if (stristr($param, "pageNum_liste_pub") == false && stristr($param, "totalRows_liste_pub") == false) {
+      array_push($newParams, $param);
+    }
+  }
+  if (count($newParams) != 0) {
+    $queryString_liste_pub = "&" . htmlentities(implode("&", $newParams));
+  }
+}
+$queryString_liste_pub = sprintf("&totalRows_liste_pub=%d%s", $totalRows_liste_pub, $queryString_liste_pub);
+
+?>
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
                       "http://www.w3.org/TR/html4/strict.dtd">
 <html><!-- InstanceBegin template="/Templates/seconde-navgauche.dwt" codeOutsideHTMLIsLocked="false" -->
@@ -8,6 +56,7 @@
 <title>Productions scientifiques du Lacito</title>
 <!-- InstanceEndEditable --><link rel="stylesheet" type="text/css" href="../styles/xcharte.css">
 <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+<script src="../Scripts/Change_Version.js" type="text/javascript"></script>
 <script language="JavaScript" src="../z-outils/init.js"></script>
 <script language="JavaScript" src="../z-outils/outils.js"></script>
 <script language="JavaScript" type="text/JavaScript">
@@ -24,7 +73,11 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
 }
 //-->
 </script>
-<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<style type="text/css">
+.Style3 {color: #FF0000; font-weight: bold; }
+</style>
+<!-- InstanceEndEditable -->
 <style type="text/css">
 <!--
 .Style1 {color: #820E12}
@@ -39,7 +92,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
   <div id="divbandeau-lienAutres" class="bandeau-liens"><a href="http://www.cnrs.fr/fr/une/sites-cnrs.htm" target="_blank">Autres sites CNRS</a></div> 
 <div id="divbandeau-traitvert3"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
 
-<table width="751"  border="0" cellspacing="0" cellpadding="0">
+<table height="900" width="751"  border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td width="150"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="65" alt=""></td>
     <td colspan="2"><img src="../z-outils/images/charte/bandeau-haut-droit.gif" alt="" width="100%" border="0"></td>
@@ -81,20 +134,24 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
       <!-- InstanceBeginEditable name="Contenu" -->
       <table width="100%"  border="0" cellspacing="0" cellpadding="10">
         <tr>
-          <td><h1>Productions scientifiques consultables au Centre AGH</h1>
-          <p>(acc&egrave;s &agrave; la liste des<strong> publications consultables au centre de documentation A.-G. Haudricourt</strong><br>
-              les mises &agrave; jour sont effectu&eacute;es directement par les biblioth&eacute;caires du centre AGH
-              )<br>
-            Par ailleurs, liste de l'ensemble des <strong>publications déposées sur HAL</strong> par les membres du Lacito (<a href="http://hal.archives-ouvertes.fr/lab/lacito/" target="_blank">ici</a>).</p>
-            <table width="100%" border="0" cellpadding="8" cellspacing="0" class="table-avec-bordures">
-              <tr>
+          <td><h1 align="center"><a name="up"></a>Productions scientifiques des membres du Lacito</h1>
+            <p align="center">&nbsp;</p>
+          <p align="center" class="intertitre">Acc&egrave;s &agrave; la liste de<strong class="Style3"> toutes les productions scientifiques du Lacito</strong> (<a href="publications_liste.php?NomAuteur=&NomPrenomAuteur=TOUT LE LACITO">ici</a><strong>).</strong><br> 
+            <strong class="Style3">Articles et chapitres d'ouvrages récents</strong> (<a href="#articles">ici</a>)<br>
+          </p>
+          <p>L'ensemble des <strong>publications d&eacute;pos&eacute;es sur HAL</strong> par les membres du Lacito est consultable <a href="http://hal.archives-ouvertes.fr/lab/lacito/" target="_blank">ici</a>.          </p>
+          <p>Le fonds documentaire du <strong>centre de documentation AGH</strong> est consultable <a href="http://www.vjf.cnrs.fr/clt/html/doc/catalogue.htm" target="_blank">ici</a>. Il comprend la <strong>Bibliothèque du Lacito</strong> réunissant environ 12 000 documents (8 389 sans les périodiques) </p>
+          <table width="100%" border="0" cellpadding="8" cellspacing="0" class="table-avec-bordures">
+            <tr>
                 <td><ul class="liste-liens">
                   <li><a href="publications_liste.php?NomAuteur=adamou&NomPrenomAuteur=Evangelia ADAMOU">Evangelia ADAMOU</a></li>
-                  <li><a href="publications_liste.php?NomAuteur=anakesa&NomPrenomAuteur=Apollinaire ANAKESA">Apollinaire ANAKESA</a> </li>
+                  <li><a href="publications_liste.php?NomAuteur=anakesa&NomPrenomAuteur=Apollinaire ANAKESA">Apollinaire ANAKESA</a></li>
+                  <li><a href="publications_liste.php?NomAuteur=behaghel&NomPrenomAuteur=Anne BEHAGHEL-DINDORF">Anne BEHAGHEL-DINDORF</a></li>
+                  <li><a href="publications_liste.php?NomAuteur=bellahsene&NomPrenomAuteur=Linda BELLAHSENE">Linda BELLAHSENE</a> </li>
                   <li><a href="publications_liste.php?NomAuteur=bouquiaux&NomPrenomAuteur=Luc BOUQUIAUX">Luc BOUQUIAUX</a></li>
                   <li><a href="publications_liste.php?NomAuteur=bril&NomPrenomAuteur=Isabelle BRIL">Isabelle BRIL</a></li>
                   <li><a href="publications_liste.php?NomAuteur=charpentier jean-michel&NomPrenomAuteur=Jean-Michel CHARPENTIER">Jean-Michel CHARPENTIER</a> </li>
-                  <li><a href="publications_liste.php?NomAuteur=choi&NomPrenomAuteur=Injoo CHOI-JONIN">Injoo CHOI-JONIN</a></li>
+                  <li><a href="publications_liste.php?NomAuteur=injoo&NomPrenomAuteur=Injoo CHOI-JONIN">Injoo CHOI-JONIN</a></li>
                   <li><a href="publications_liste.php?NomAuteur=colombel&NomPrenomAuteur=Veronique de COLOMBEL">V&eacute;ronique de COLOMBEL</a></li>
                   <li><a href="publications_liste.php?NomAuteur=coyaud&NomPrenomAuteur=Maurice COYAUD">Maurice COYAUD</a> </li>
                   <li><a href="publications_liste.php?NomAuteur=daladier&NomPrenomAuteur=Anne DALADIER">Anne DALADIER</a></li>
@@ -103,37 +160,48 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                   <li><a href="publications_liste.php?NomAuteur=fontaine laurent&NomPrenomAuteur=Laurent FONTAINE">Laurent FONTAINE</a> </li>
                   <li><a href="publications_liste.php?NomAuteur=francois alexandre&NomPrenomAuteur=Alexandre FRANCOIS">Alexandre FRAN&Ccedil;OIS</a></li>
                   <li><a href="publications_liste.php?NomAuteur=guarisma&NomPrenomAuteur=Gladys GUARISMA">Gladys GUARISMA</a> </li>
-                  <li><a href="publications_liste.php?NomAuteur=guerin&NomPrenomAuteur=Francoise GUERIN">Françoise GUÉRIN</a></li>
                   <li><a href="publications_liste.php?NomAuteur=guentcheva&NomPrenomAuteur=Zlatka GUENTCHEVA">Zlatka GUENTCHEVA</a></li>
-                  <li><a href="publications_liste.php?NomAuteur=guezennec&NomPrenomAuteur=Nathalie GUEZENNEC">Nathalie GUEZENNEC</a></li>
-                  <li><a href="publications_liste.php?NomAuteur=tun&NomPrenomAuteur=San San HNI TUN">San San HNI TUN</a></li>
+                  <li><a href="publications_liste.php?NomAuteur=guerin&NomPrenomAuteur=Francoise GUERIN">Fran</a><a href="publications_liste.php?NomAuteur=jacquesson&NomPrenomAuteur=Francois JACQUESSON">&ccedil;</a><a href="publications_liste.php?NomAuteur=guerin&NomPrenomAuteur=Francoise GUERIN">oise GUÉRIN</a></li>
+                  <li><a href="publications_liste.php?NomAuteur=guezennec&NomPrenomAuteur=Nathalie GUÉZENNEC">Nathalie GUÉZENNEC</a></li>
+                  <li><a href="publications_liste.php?NomAuteur=henri agnes&NomPrenomAuteur=Agnès HENRI">Agnès HENRI</a></li>
+                  <li><a href="publications_liste.php?NomAuteur=tun&NomPrenomAuteur=San San HNI TUN">San San HNIN TUN</a></li>
+                  <li><a href="publications_liste.php?NomAuteur=iwasa&NomPrenomAuteur=Kazue IWASA">Kazue IWASA</a></li>
                   <li><a href="publications_liste.php?NomAuteur=jacquesson&NomPrenomAuteur=Francois JACQUESSON">Fran&ccedil;ois JACQUESSON</a></li>
                   <li><a href="publications_liste.php?NomAuteur=kabore&NomPrenomAuteur=Su-toog-nooma Kukka KABORE (alias Raphael KABORE)">S&ucirc;-t&ocirc;&ocirc;g-nooma Kukka KABORE</a></li>
                   <li><a href="publications_liste.php?NomAuteur=karangwa&NomPrenomAuteur=Jean-de-Dieu KARANGWA">Jean-de-Dieu KARANGWA</a></li>
-                  <li><a href="publications_liste.php?NomAuteur=lahaussois&NomPrenomAuteur=Aimee LAHAUSSOIS">Aim&eacute;e LAHAUSSOIS</a> </li>
+                  <li><a href="publications_liste.php?NomAuteur=kirtchuk&NomPrenomAuteur=Pablo I. KIRTCHUK-HALEVI">Pablo I. KIRTCHUK-HALEVI</a></li>
+                  <li><a href="publications_liste.php?NomAuteur=kozareva&NomPrenomAuteur=Yordanka KOZAREVA">Yordanka KOZAREVA</a></li>
+                  <li><a href="publications_liste.php?NomAuteur=lacroix&NomPrenomAuteur=René LACROIX">René LACROIX</a></li>
+                  <li><a href="publications_liste.php?NomAuteur=lahaussois&NomPrenomAuteur=Aimee LAHAUSSOIS">Aim&eacute;e LAHAUSSOIS</a></li>
                   <li><a href="publications_liste.php?NomAuteur=lebarbier&NomPrenomAuteur=Micheline LEBARBIER">Micheline LEBARBIER</a></li>
                   <li><a href="publications_liste.php?NomAuteur=leblic&NomPrenomAuteur=Isabelle LEBLIC">Isabelle LEBLIC</a></li>
                   <li><a href="publications_liste.php?NomAuteur=le guennec&NomPrenomAuteur=Francoise LE GUENNEC-COPPENS">Fran&ccedil;oise LE GUENNEC-COPPENS</a></li>
                   <li><a href="publications_liste.php?NomAuteur=lemarechal&NomPrenomAuteur=Alain LEMARECHAL">Alain LEMARECHAL</a></li>
-                  </ul>                </td>
-                <td><ul class="liste-liens">
-                  <li><a href="publications_liste.php?NomAuteur=leroy&NomPrenomAuteur=Jacqueline LEROY">Jacqueline LEROY</a></li>
+                </ul>                </td>
+                <td valign="top"><ul class="liste-liens">
+                  <li><a href="publications_liste.php?NomAuteur=leroy jacqueline&NomPrenomAuteur=Jacqueline LEROY">Jacqueline LEROY</a></li>
+                  <li><a href="publications_liste.php?NomAuteur=lux&NomPrenomAuteur=Cécile LUX">Cécile LUX</a></li>
                   <li><a href="publications_liste.php?NomAuteur=mahieu&NomPrenomAuteur=Marc-Antoine MAHIEU">Marc-Antoine MAHIEU</a></li>
                   <li><a href="publications_liste.php?NomAuteur=masquelier&NomPrenomAuteur=Bertrand MASQUELIER">Bertrand MASQUELIER</a></li>
-                    <li><a href="publications_liste.php?NomAuteur=mazaudon&NomPrenomAuteur=Martine MAZAUDON">Martine MAZAUDON</a></li>
+                  <li><a href="publications_liste.php?NomAuteur=mazaudon&NomPrenomAuteur=Martine MAZAUDON">Martine MAZAUDON</a></li>
                     <li><a href="publications_liste.php?NomAuteur=michailovsky&NomPrenomAuteur=Boyd MICHAILOVSKY">Boyd MICHAILOVSKY</a></li>
                     <li><a href="publications_liste.php?NomAuteur=michaud&NomPrenomAuteur=Alexis MICHAUD">Alexis MICHAUD</a></li>
                   <li><a href="publications_liste.php?NomAuteur=mougin&NomPrenomAuteur=Sylvie MOUGIN">Sylvie MOUGIN</a></li>
                   <li><a href="publications_liste.php?NomAuteur=moyse&NomPrenomAuteur=Claire MOYSE-FAURIE">Claire MOYSE-FAURIE</a></li>
+                  <li><a href="publications_liste.php?NomAuteur=mtavangu&NomPrenomAuteur=Norbert MTAVANGU">Norbert MTAVANGU</a></li>
                   <li><a href="publications_liste.php?NomAuteur=mukherjee&NomPrenomAuteur=Pritwindra MUKHERJEE">Prithwindra MUKHERJEE</a></li>
+                  <li><a href="publications_liste.php?NomAuteur=appasamy&NomPrenomAuteur=Appasamy MURUGAIYAN">Appasamy MURUGAIYAN</a></li>
                   <li><a href="publications_liste.php?NomAuteur=naim&NomPrenomAuteur=Samia NAIM">Samia NAIM</a></li>
                   <li><a href="publications_liste.php?NomAuteur=ogier&NomPrenomAuteur=Julia OGIER-GUINDO">Julia OGIER-GUINDO</a></li>
+                  <li><a href="publications_liste.php?NomAuteur=oisel&NomPrenomAuteur=Guillaume OISEL">Guillaume OISEL</a></li>
+                  <li><a href="publications_liste.php?NomAuteur=ergin&NomPrenomAuteur=Ergin ÖPENGIN">Ergin ÖPENGIN</a></li>
+                  <li><a href="publications_liste.php?NomAuteur=pain&NomPrenomAuteur=Frédéric PAIN">Frédéric PAIN</a></li>
                   <li><a href="publications_liste.php?NomAuteur=paulian&NomPrenomAuteur=Christiane PAULIAN">Christiane PAULIAN</a> </li>
-                  <li><a href="publications_liste.php?NomAuteur=petrovic&NomPrenomAuteur=Marijana PETROVIC-RIGNAULT">Marijana PETROVIC-RIGNAULT</a></li>
+                  <li><a href="publications_liste.php?NomAuteur=petrovic&NomPrenomAuteur=Marijana PETROVIC">Marijana PETROVIC</a></li>
                   <li><a href="publications_liste.php?NomAuteur=pilot&NomPrenomAuteur=Christiane PILOT-RAICHOOR">Christiane PILOT-RAICHOOR</a></li>
                   <li><a href="publications_liste.php?NomAuteur=popova&NomPrenomAuteur=Assia POPOVA">Assia POPOVA</a></li>
-                  <li><a href="publications_liste.php?NomAuteur=racine&NomPrenomAuteur=Odile RACINE-ISSA">Odile RACINE-ISSA</a></li>
-                  <li><a href="publications_liste.php?NomAuteur=randa&NomPrenomAuteur=Vladimir RANDA">Vladimir RANDA</a> </li>
+                  <li><a href="publications_liste.php?NomAuteur=issa&NomPrenomAuteur=Odile RACINE-ISSA">Odile RACINE-ISSA</a></li>
+                  <li><a href="publications_liste.php?NomAuteur=randa&NomPrenomAuteur=Vladimir RANDA">Vladimir RANDA</a></li>
                   <li><a href="publications_liste.php?NomAuteur=rebuschi&NomPrenomAuteur=Georges REBUSCHI">Georges REBUSCHI</a></li>
                   <li><a href="publications_liste.php?NomAuteur=rivierre jean-claude&NomPrenomAuteur=Jean-Claude RIVIERRE">Jean-Claude RIVIERRE</a></li>
                   <li><a href="publications_liste.php?NomAuteur=sauvageot&NomPrenomAuteur=Serge SAUVAGEOT">Serge SAUVAGEOT</a></li>
@@ -145,9 +213,94 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                   <li><a href="publications_liste.php?NomAuteur=vittrant&NomPrenomAuteur=Alice VITTRANT">Alice VITTRANT</a></li>
                 </ul>                </td>
               </tr>
-            </table>            </td>
+          </table>
+          <p>N.B. La base bibliographique consultée au travers de cette page a été créée grâce au centre de documentation A.-G. Haudricourt (Céline Lemasson puis Élodie Chacon). Elle ne comprenait au départ que les documents consultables au centre AGH, indiqués par une cote <span class="intertitre"> (ex. <strong>P355 LAC</strong>)</span>.<br>
+            Vérification et compléments (A. Behaghel-Dindorf) (màj 30/01/2012)</p>
+          <p>&nbsp;</p>
+          <p><strong><a name="articles"></a>Articles et chapitres d'ouvrages récents</strong> (année en cours et année précédente) <a href="#up"><img src="../images/icones/fleche-haut.gif" alt="toup" width="10" height="9" border="0"></a></p></td>
         </tr>
       </table>
+      
+      
+      
+   <b><?php echo $_GET['NomPrenomAuteur'];?></b></br>
+
+	<?php if ($totalRows_liste_pub > 0) { ?>
+              <table width="100%"  border="0" cellspacing="0" cellpadding="1">
+                <tr valign="top">
+                 
+                
+                <?php do { 
+				$row_liste_pub['Identifiant']= utf8_encode($row_liste_pub['Identifiant']);
+					$row_liste_pub['Titre']= utf8_encode($row_liste_pub['Titre']);
+					 $row_liste_pub['s']= utf8_encode($row_liste_pub['s']); 
+					 $row_liste_pub['u']= utf8_encode($row_liste_pub['u']);
+					 $row_liste_pub['t']= utf8_encode($row_liste_pub['t']); 
+					 $row_liste_pub['o']= utf8_encode($row_liste_pub['o']);
+					 $row_liste_pub['Auteurs']= utf8_encode($row_liste_pub['Auteurs']); 
+					 $row_liste_pub['Collation']= utf8_encode($row_liste_pub['Collation']); 
+					 $row_liste_pub['Annee']= utf8_encode($row_liste_pub['Annee']); 
+					 $row_liste_pub['URL']= utf8_encode($row_liste_pub['URL']); 
+					 // 07/06/11 P.Grison zone_libre
+					 $row_liste_pub['zone_libre']= utf8_encode($row_liste_pub['zone_libre']); 
+					 $row_liste_pub['cote']= utf8_encode($row_liste_pub['cote']); 
+				
+				?>
+                </tr>
+                
+                  <?php 
+					if(($row_liste_pub['Type']=="COV") or ($row_liste_pub['Type']=="ART")){ ?>
+                    <tr valign="top">
+                  <td>&nbsp;</td>
+                    <td>
+                  	<b>
+                    <?php
+					if($row_liste_pub['Annee'] != '') {echo $row_liste_pub['Annee'].'&nbsp;</b><br>';} ?>
+				  	<?php if(trim($row_liste_pub['URL'])!=""){echo "<a href=\"";echo trim($row_liste_pub['URL']);echo"\" target=\"_blank\"><img src='/icons/text.gif' border='0'/></a>";} ?>
+				  </td>
+                  <td>
+					  <?php  if($row_liste_pub['Type']=="COV"){
+						  echo $row_liste_pub['Auteurs']; echo "&nbsp;--&nbsp;" ; 					  							 
+					  echo $row_liste_pub['Titre']; echo "&nbsp;--&nbsp;In&nbsp;:&nbsp;"; echo $row_liste_pub['s']; if($row_liste_pub['u']!="") {echo "&nbsp;/&nbsp;"; echo $row_liste_pub['u'];} echo "&nbsp;--&nbsp;"; echo $row_liste_pub['t']; echo ",&nbsp;";  echo $row_liste_pub['Collation'];  
+					   // 07/06/11 P.Grison
+					   if($row_liste_pub['zone_libre'] != ''){ echo '&nbsp;--&nbsp;['.$row_liste_pub['zone_libre'].']';} 
+					   if($row_liste_pub['cote'] != ''){ echo '&nbsp;--&nbsp;Cote&nbsp;:&nbsp;<b>'.$row_liste_pub['cote'].'</b>';} 
+					  } ?>
+				  <?php  if($row_liste_pub['Type']=="ART"){
+						  echo $row_liste_pub['Auteurs']; echo "&nbsp;--&nbsp;" ; echo $row_liste_pub['Titre']; echo "&nbsp;--&nbsp;In&nbsp;:&nbsp;"; echo $row_liste_pub['s']; echo ",&nbsp;"; echo $row_liste_pub['Annee']; echo ",&nbsp;";  echo $row_liste_pub['Collation'];
+						  if($row_liste_pub['zone_libre'] != ''){ echo '&nbsp;--&nbsp;['.$row_liste_pub['zone_libre'].']';} 
+						  if($row_liste_pub['cote'] != ''){ echo '&nbsp;--&nbsp;Cote&nbsp;:&nbsp;<b>'.$row_liste_pub['cote'].'</b>';} 
+						  ?>
+                          
+						</td>
+                </tr>
+               
+                
+                
+						<?php } ?> 
+                        <tr>
+                  <td colspan="3">&nbsp;</td>
+                </tr>
+				<?php } ?>
+					 
+				  
+                
+                <?php } while ($row_liste_pub = mysql_fetch_assoc($liste_pub)); ?>
+				  
+              </table>
+              <?php } // Show if recordset not empty
+              if ($totalRows_liste_pub == 0) { // Show if recordset empty ?>
+					<p align="left" class="intertitre">&nbsp;</p>
+					<p align="left" class="intertitre"><b>r&eacute;sultats :</b> <b>
+					<?php echo $totalRows_liste_pub ?></b> </p>
+					<p align="left">&gt; aucune  publication n'a &eacute;t&eacute; trouv&eacute;e </p>
+					<div align="left">
+              <?php } // Show if recordset empty ?>
+
+
+      
+      
+      
       <!-- InstanceEndEditable --></div>
     </td>
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="500"></td>
@@ -166,6 +319,13 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
 </table>
 <p>&nbsp;</p>
  <p>&nbsp;</p>
+ 
+ 
+ 
+ 
+
+ 
+ 
  <div id="divpartenaires" >
    <table width="150"  border="0" cellspacing="0" cellpadding="0">
      <tr>
@@ -200,6 +360,9 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
  <noscript>
  <p>Your browser does not support script</p>
 </noscript>
+
+
+
  <div id="divnavgauche-spec">
    <table border="0" cellpadding="0" cellspacing="0"  width="150">
      <tr>
@@ -209,7 +372,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
        	<td width="100%"  class="Xnavgauche" >
         	<table border="0" cellpadding="10" cellspacing="0"  width="100%">
       			<tr>
-       	 			<td width="100%" class="Xnavgauche"><h2><a href="INTRANET/index.htm">Intranet <img border="0" src="../z-outils/images/boite-outils/icones/intranet.gif" width="18" height="12"
+       	 			<td width="100%" class="Xnavgauche"><h2><a href="../INTRANET/index.htm">Intranet <img border="0" src="../z-outils/images/boite-outils/icones/intranet.gif" width="18" height="12"
 							alt="aa"></a></h2></td>
       			</tr>
        		</table>
@@ -220,6 +383,9 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
      </tr>
     </table>
  </div>
+ 
+
+ 
  <div id="divnavgauche-searchLabo">
    <table cellspacing="0" cellpadding="0" hspace="11" border="0">
      <tr>
@@ -252,6 +418,28 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
 		</tr>
 
  </div>
+ 
+ 
+ 
+ 
+ 
+  <div id="divnavgauche-language">
+ <p class="intertitre" align="center"><a href="Javascript:version()"><img src="../images/logos/eng.gif" alt="English" border="0"></a></p>
+ </div>
+ 
+
+
+
+
+<map name="Map2">
+  <area shape="rect" coords="28,23,46,43" href="javascript:impression()" alt="Imprimer">
+  <area shape="rect" coords="49,22,66,42" href="javascript:writemail('vjf.cnrs.fr','behaghel','',1);" alt="Contacter le webmestre">
+  <area shape="rect" coords="68,23,85,43" href="../pratique/index.htm" alt="Plan du site">
+  <area shape="rect" coords="87,23,105,43" href="../pratique/credits.htm" alt="Crédits">
+  <area shape="rect" coords="9,24,25,43" href="../index.htm" alt="Accueil">
+</map>
+
+
 <div id="divnavhaut-nom-labo">
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
     <tr>
@@ -261,12 +449,10 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
     </tr>
   </table>
 </div>
-<map name="Map2">
-  <area shape="rect" coords="28,23,46,43" href="javascript:impression()" alt="Imprimer">
-  <area shape="rect" coords="49,22,66,42" href="javascript:writemail('vjf.cnrs.fr','behaghel','',1);" alt="Contacter le webmestre">
-  <area shape="rect" coords="68,23,85,43" href="../pratique/index.htm" alt="Plan du site">
-  <area shape="rect" coords="87,23,105,43" href="../pratique/credits.htm" alt="Crédits">
-  <area shape="rect" coords="9,24,25,43" href="../index.htm" alt="Accueil">
-</map>
+
+
+
+
+
 </body>
 <!-- InstanceEnd --></html>

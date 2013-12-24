@@ -4,7 +4,7 @@
 # HTTP="true"
 /*
 $hostname_cmd_livres = "localhost";
-$database_cmd_livres = "lacito_siteweb";
+$database_cmd_livres = "lacito_cmd_livres";
 $username_cmd_livres = "root";
 $password_cmd_livres = "";
 */

@@ -1,0 +1,29 @@
+<catalog xmlns="http://crdo.risc.cnrs.fr/schemas/" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:crdo="http://crdo.risc.cnrs.fr/schemas/"
+    xmlns:olac="http://www.language-archives.org/OLAC/1.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://crdo.risc.cnrs.fr/schemas/ http://crdo.risc.cnrs.fr/schemas/metadata.xsd">
+
+<crdo:item crdo:datestamp="2010-09-23" crdo:id="crdo-_****A_REMPLIR(titre)****_SOUND">
+<dc:title xml:lang=""></dc:title>
+<dc:subject xsi:type="olac:language" olac:code=""></dc:subject>
+<dc:language xsi:type="olac:language" olac:code=""/>
+<dcterms:spatial></dcterms:spatial>
+<dc:contributor xsi:type="olac:role" olac:code="depositor"></dc:contributor>
+<dc:publisher></dc:publisher>
+<dc:type xsi:type="olac:linguistic-type" olac:code=""/>
+<dc:format xsi:type="dcterms:IMT">audio/</dc:format>
+<dc:type xsi:type="dcterms:DCMIType">Sound</dc:type>
+<dcterms:created xsi:type="dcterms:W3CDTF">2010-09-23</dcterms:created> 
+<dcterms:extent>PT</dcterms:extent>
+<dcterms:conformsTo xsi:type="dcterms:URI"
+            >oai:crdo.vjf.cnrs.fr:crdo-dtd_archive</dcterms:conformsTo>
+<dc:identifier xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/exist/crdo/****A_REMPLIR(nom_chercheur/code_langue/nom fichier)****.xml</dc:identifier>
+<dcterms:isFormatOf xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/exist/crdo/****A_REMPLIR(nom_chercheur/code_langue/nom fichier)****.xhtml</dcterms:isFormatOf>
+<dcterms:isRequiredBy xsi:type="dcterms:URI"
+            >oai:crdo.vjf.cnrs.fr:****A_REMPLIR(identifiant)****</dcterms:isRequiredBy>
+<dcterms:accessRights>Private data</dcterms:accessRights>
+<dc:rights>Copyright (c) </dc:rights>
+<crdo:collection></crdo:collection>
+</crdo:item>
+</catalog>

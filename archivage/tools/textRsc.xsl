@@ -24,9 +24,26 @@
 			<xsl:for-each select="//oai:ListRecords/oai:record[oai:header/oai:identifier = $sound_id]/oai:metadata/olac:olac">
 				<titre><xsl:value-of select="dc:title[1]"/></titre>
 				<lg><xsl:value-of select="dc:subject[@xsi:type='olac:language'][1]"/></lg>
-				<url_sound><xsl:value-of select="dc:identifier[1]"/></url_sound>
+				 <url_sound_wav><xsl:value-of select="dc:identifier[1]"/></url_sound_wav>
+             
+             <chercheurs>
+             		<xsl:for-each select="dc:contributor[@olac:code='researcher']">
+        				<xsl:value-of select="."/>
+        				<xsl:if test="position()!=last()"><xsl:text>; </xsl:text></xsl:if>
+        			</xsl:for-each>
+             </chercheurs>
+             <locuteurs>
+             <xsl:for-each select="dc:contributor[@olac:code='speaker']|dc:contributor[@olac:code='performer']">
+        				<xsl:value-of select="."/>
+        				<xsl:if test="position()!=last()"><xsl:text>; </xsl:text></xsl:if>
+        			</xsl:for-each>
+             </locuteurs>
+             
+             <url_sound_mp3><xsl:value-of select="dcterms:isFormatOf[2]"/> </url_sound_mp3>
 				<xsl:variable name="text_id"><xsl:value-of select="dcterms:isRequiredBy[1]"/></xsl:variable>
 				<url_text><xsl:value-of select="//oai:ListRecords/oai:record[oai:header/oai:identifier = $text_id]/oai:metadata/olac:olac/dc:identifier[1]"/></url_text>
+                
+                
 			</xsl:for-each>
 		</result>
 	</xsl:template>

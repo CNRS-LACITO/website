@@ -252,7 +252,7 @@
 											href='{\$href}'
 											title ='Ecouter ce texte'
 											target='_blank'
-											onClick='window.open(this.href, \"popupLink\",\"width=640,height=400,scrollbars=yes,resizable=yes\",1);return false'
+											
 											><img class='sansBordure' src='../../images/icones/h_parleur.gif'/></a>
 										</td>
 										<td valign='top'> </td>

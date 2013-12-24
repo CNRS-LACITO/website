@@ -14,10 +14,10 @@ utf8	 | utf-8
 $charset_mysql = 'utf8';
 $charset_html = 'utf-8';
 // compte mail de l'administrateur
-$to_admin="pgrison@vjf.cnrs.fr"; 
+$to_admin="behaghel@vjf.cnrs.fr"; 
 // sujet & message du mail
-$subject="achat d'ouvrage";
-$message="une demande d'achat d'ouvrage à été effectué par :".$nom_demandeur;
+$subject="demande d'ouvrage";
+$message="une demande d'achat d'ouvrage à été effectué par : ".$nom_demandeur;
 $message.="
 titre de l'ouvrage : ".$titre;
 $message.="

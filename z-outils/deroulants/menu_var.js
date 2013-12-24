@@ -89,47 +89,62 @@ var Subbghighcolor = "#284a71";
 var Subfonthighcolor="#5e91cc"
 var Subfontcolor = "#FFFFFF"
 //Le Lacito
-Menu1=new Array("Le Lacito",BaseMenuHref+ "themes/index.htm","",5,24,150,"","","","","","",-1,-1,-1,"","");
-	Menu1_1=new Array("Colloques",BaseMenuHref+"colloque/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu1_2=new Array("Enseignement",BaseMenuHref+"enseignement/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu1_3=new Array("Expositions",BaseMenuHref+"expos/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu1_4=new Array("Conf\xE9rences & expos\xE9s",BaseMenuHref+"la_recherche/conferences.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu1_5=new Array("Ouvrages parus",BaseMenuHref+"vient-de-paraitre/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+Menu1=new Array("Le Lacito","","",7,24,150,"","","","","","",-1,-1,-1,"","");
+	Menu1_1=new Array("Pr\xE9sentation",BaseMenuHref+"themes/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu1_2=new Array("Colloques",BaseMenuHref+"colloque/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu1_3=new Array("Missions de terrain",BaseMenuHref+"missions/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu1_4=new Array("Enseignement",BaseMenuHref+"enseignement/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu1_5=new Array("Expositions",BaseMenuHref+"expos/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu1_6=new Array("Conf\xE9rences & expos\xE9s",BaseMenuHref+"la_recherche/conferences.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu1_7=new Array("Ouvrages parus",BaseMenuHref+"vient-de-paraitre/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
 	
 //La recherche
-Menu2=new Array("La recherche",BaseMenuHref+ "la_recherche/index.htm","",8,24,"","","","","","","",-1,-1,-1,"","");
-	Menu2_1=new Array("Changement linguistique",BaseMenuHref+"themes/changecologie.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu2_2=new Array("Le dit et le non-dit",BaseMenuHref+"themes/dit_nondit.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu2_3=new Array("Espaces publics",BaseMenuHref+"themes/interlocution.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu2_4=new Array("Nomination d\xE9nomination",BaseMenuHref+"themes/nomination.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu2_5=new Array("Etudes oc\xE9aniennes",BaseMenuHref+"themes/oceanie/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu2_6=new Array("Etudes balkaniques",BaseMenuHref+"themes/balkans/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu2_7=new Array("Langues dravidiennes",BaseMenuHref+"themes/dravidien/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu2_8=new Array("Langues tib\xE9to-birmanes",BaseMenuHref+"themes/tibeto-birman/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+Menu2=new Array("La recherche","","",11,24,"","","","","","","",-1,-1,-1,"","");
+	Menu2_1=new Array("Pr\xE9sentation",BaseMenuHref+"la_recherche/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu2_2=new Array("Adoption",BaseMenuHref+"themes/adoption.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu2_3=new Array("Changement linguistique",BaseMenuHref+"themes/changecologie.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu2_4=new Array("Le dit et le non-dit",BaseMenuHref+"themes/dit_nondit.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu2_5=new Array("Espaces publics",BaseMenuHref+"themes/interlocution.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu2_6=new Array("Nomination d\xE9nomination",BaseMenuHref+"themes/nomination.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu2_7=new Array("Phonologie panchronique",BaseMenuHref+"themes/phonopanchro.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu2_8=new Array("Etudes oc\xE9aniennes",BaseMenuHref+"themes/oceanie/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu2_9=new Array("Etudes balkaniques",BaseMenuHref+"themes/balkans/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu2_10=new Array("Langues dravidiennes",BaseMenuHref+"themes/dravidien/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu2_11=new Array("Langues tib\xE9to-birmanes",BaseMenuHref+"themes/tibeto-birman/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
     
 //Langues et pays
-Menu3=new Array("Langues et pays",BaseMenuHref+ "ALC/index.htm","",3,24,"","","","","","","",-1,-1,-1,"","");
+Menu3=new Array("Langues \xE9tudi\xE9es","","",3,24,"","","","","","","",-1,-1,-1,"","");
 	Menu3_1=new Array("Par pays",BaseMenuHref+"ALC/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
 	Menu3_2=new Array("Par ordre alphab\xE9tique",BaseMenuHref+"ALC/listealpha.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
 	Menu3_3=new Array("Par famille linguistique",BaseMenuHref+"ALC/listeparfamille.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
 	
 //Archives orales
-Menu4=new Array("Archives orales","","",3,24,"","","","","","","",-1,-1,-1,"","");
+Menu4=new Array("Archives orales","","",5,24,"","","","","","","",-1,-1,-1,"","");
     Menu4_1=new Array("Pr\xE9sentation",BaseMenuHref+"archivage/presentation.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu4_2=new Array("Acc\xE8s aux corpus",BaseMenuHref+"archivage/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu4_3=new Array("Rechercher",BaseMenuHref+"archivage/tools/search.php","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	 Menu4_2=new Array("D\xE9poser une ressource",BaseMenuHref+"archivage/depot.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	 Menu4_3=new Array("Outils en ligne",BaseMenuHref+"archivage/outils.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu4_4=new Array("Acc\xE8s au corpus",BaseMenuHref+"archivage/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu4_5=new Array("Rechercher",BaseMenuHref+"archivage/tools/search.php","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
 	
 //Projets associés
-Menu5=new Array("Projets associ\xE9s",BaseMenuHref+ "partenariat/index.htm","",3,24,"","","","","","","",-1,-1,-1,"","");
-	Menu5_1=new Array("EuroSlav 2010",BaseMenuHref+"partenariat/euroslav/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu5_2=new Array("Autour du Brahmapoutre","javascript:NewWin=window.open(\"http://www.vjf.cnrs.fr/brahmaputra\",\"NWin\");window[\"NewWin\"].focus()","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu5_3=new Array("Les \xE9pop\xE9es du N\xE9pal","javascript:NewWin=window.open(\"http://www.vjf.cnrs.fr/himalaya/fr/axes/histsavpat.htm#2\",\"NWin\");window[\"NewWin\"].focus()","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+Menu5=new Array("Projets associ\xE9s","","",4,24,"","","","","","","",-1,-1,-1,"","");
+	Menu5_1=new Array("Pr\xE9sentation",BaseMenuHref+"partenariat/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu5_2=new Array("EuroSlav 2010",BaseMenuHref+"partenariat/euroslav/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu5_3=new Array("Autour du Brahmapoutre","javascript:NewWin=window.open(\"http://brahmaputra.ceh.vjf.cnrs.fr\",\"NWin\");window[\"NewWin\"].focus()","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu5_4=new Array("Les \xE9pop\xE9es du N\xE9pal","javascript:NewWin=window.open(\"http://www.vjf.cnrs.fr/epopee/\",\"NWin\");window[\"NewWin\"].focus()","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
 
 //Publications
 Menu6=new Array("Publications",BaseMenuHref+ "publications/publications.php","",0,24,"","","","","","","",-1,-1,-1,"","");
 
-//Organigramme
-Menu8=new Array("Organigramme",BaseMenuHref+ "pratique/organigramme.htm","",0,24,"","","","","","","",-1,-1,-1,"","");
-
+//Biblio-thèmes
+Menu7=new Array("Biblio-themes","","",3,24,"","","","","","","",-1,-1,-1,"","");
+    Menu7_1=new Array("Atlas",BaseMenuHref+"colloque/geographie/atlas.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu7_2=new Array("A.-G. Haudricourt",BaseMenuHref+"membres/haudricourt.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu7_3=new Array("Revue Actances",BaseMenuHref+"actances/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	
 //Annuaire
-Menu7=new Array("Annuaire",BaseMenuHref+ "membres/index.htm","",0,24,"","","","","","","",-1,-1,-1,"","");
+Menu8=new Array("Annuaire","","",3,24,"","","","","","","",-1,-1,-1,"","");
+    Menu8_1=new Array("Liste alphab\xE9tique",BaseMenuHref+"membres/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu8_2=new Array("Structure administrative",BaseMenuHref+"pratique/structure_admin.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+    Menu8_3=new Array("Organigramme",BaseMenuHref+"pratique/organigramme.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+

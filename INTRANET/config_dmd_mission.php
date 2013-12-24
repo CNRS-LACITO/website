@@ -26,10 +26,8 @@ $charset_mysql = 'utf8';
 $charset_html = 'utf-8';
 // compte mail de l'administrateur
 $to_admin="behaghel@vjf.cnrs.fr"; 
-//$to_admin="pgrison@vjf.cnrs.fr"; 
 // compte mail du membre moderateur chargé de superviser la demande
 $to_moderateur="adamou@vjf.cnrs.fr,cath.tainecheikh@gmail.com,alexis.michaud@vjf.cnrs.fr,behaghel@vjf.cnrs.fr";
-//$to_moderateur="pgrison@vjf.cnrs.fr";  
 // sujet & message du mail
 $subject="demande de mission";
 $message="Demande de mission de : ".$nom_demandeur;
@@ -48,7 +46,7 @@ infos frais de transport : ".$infos_frais_t;
 $message.="
 infos frais de séjour : ".$infos_frais_s;
 $message.="
-frais de transport, sejour, (inscription): ".$frais_t."+".$frais_s."+".$frais_i." = ".$frais_tot." euros";
+frais de transport, sejour, (inscription): ".$frais_t." + ".$frais_s." + ".$frais_i." = ".$frais_tot." euros";
 // affichage du message qui confirme la validation du formulaire
 $info_validation="Votre demande de mission a bien été enregistrée.<br>Pour toutes modifications des informations fournies, veillez vous adresser à l'<a href=\"mailto:".$to_admin."?subject=modification demande mission\">administrateur</a> de la base de données.";
 //

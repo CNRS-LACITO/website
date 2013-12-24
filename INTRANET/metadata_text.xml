@@ -1,0 +1,26 @@
+<catalog xmlns="http://crdo.risc.cnrs.fr/schemas/" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:crdo="http://crdo.risc.cnrs.fr/schemas/"
+    xmlns:olac="http://www.language-archives.org/OLAC/1.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://crdo.risc.cnrs.fr/schemas/ http://crdo.risc.cnrs.fr/schemas/metadata.xsd">
+
+<crdo:item crdo:datestamp="2010-09-23" crdo:id="crdo-_****A_REMPLIR(titre)****">
+<dc:title xml:lang=""></dc:title>
+<dc:subject xsi:type="olac:language" olac:code=""></dc:subject>
+<dc:language xsi:type="olac:language" olac:code=""/>
+<dcterms:spatial></dcterms:spatial>
+<dc:contributor xsi:type="olac:role" olac:code="depositor"></dc:contributor>
+<dc:publisher></dc:publisher>
+<dc:format xsi:type="dcterms:IMT">text/</dc:format>
+<dc:type xsi:type="dcterms:DCMIType">Text</dc:type>
+<dcterms:conformsTo xsi:type="dcterms:URI"
+            >oai:crdo.vjf.cnrs.fr:crdo-dtd_archive</dcterms:conformsTo>
+<dc:identifier xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/exist/crdo/****A_REMPLIR(nom_chercheur/code_langue/nom fichier)****.xml</dc:identifier>
+<dcterms:isFormatOf xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/exist/crdo/****A_REMPLIR(nom_chercheur/code_langue/nom fichier)****.xhtml</dcterms:isFormatOf>
+<dcterms:requires xsi:type="dcterms:URI"
+            >oai:crdo.vjf.cnrs.fr:****A_REMPLIR(identifiant)****</dcterms:requires>
+<dcterms:accessRights>Private data</dcterms:accessRights>
+<dc:rights>Copyright (c) </dc:rights>
+<crdo:collection></crdo:collection>
+</crdo:item>
+</catalog>

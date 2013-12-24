@@ -8,6 +8,7 @@
 <title>Lacito - r&eacute;serve d'images</title>
 <!-- InstanceEndEditable --><link rel="stylesheet" type="text/css" href="../styles/xcharte.css">
 <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+<script src="../Scripts/Change_Version.js" type="text/javascript"></script>
 <script language="JavaScript" src="../z-outils/init.js"></script>
 <script language="JavaScript" src="../z-outils/outils.js"></script>
 <script language="JavaScript" type="text/JavaScript">
@@ -25,10 +26,32 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
 //-->
 </script>
 <!-- InstanceBeginEditable name="head" -->
+<script type="text/javascript"> 
+function PopupImage(img) {
+ 
+	titre=":: Lacito ::";
+ 
+	w=open("",'image','width=400,height=500,toolbar=no,scrollbars=no,resizable=no');	
+ 
+	w.document.write("<HTML><HEAD><TITLE>"+titre+"</TITLE></HEAD>");
+ 
+	w.document.write("<SCRIPT language=javascript>function checksize()  { if (document.images[0].complete) {  window.resizeTo(document.images[0].width+0,document.images[0].height+22); window.focus();} else { setTimeout('check()',250) } }</"+"SCRIPT>");
+ 
+	w.document.write("<BODY onload='checksize()' onblur='window.close()' onclick='window.close()' leftMargin=0 topMargin=0 marginwidth=0 marginheight=0><IMG src='"+img+"' border=0>");
+ 
+	w.document.write("");
+ 
+	w.document.write("</BODY></HTML>");
+ 
+	w.document.close();
+}
+</script>
 <style type="text/css">
 <!--
 .Style1 {color: #FF0000}
-.Style3 {color: #FF0000; font-weight: bold; }
+.Style3 {
+	color: #FF0000;
+}
 -->
 </style>
 <!-- InstanceEndEditable -->
@@ -46,7 +69,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
   <div id="divbandeau-lienAutres" class="bandeau-liens"><a href="http://www.cnrs.fr/fr/une/sites-cnrs.htm" target="_blank">Autres sites CNRS</a></div> 
 <div id="divbandeau-traitvert3"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
 
-<table width="751"  border="0" cellspacing="0" cellpadding="0">
+<table height="900" width="751"  border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td width="150"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="65" alt=""></td>
     <td colspan="2"><img src="../z-outils/images/charte/bandeau-haut-droit.gif" alt="" width="100%" border="0"></td>
@@ -60,7 +83,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
   <tr>
     <td width="150">&nbsp;</td>
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="62"></td>
-    <td width="599" height="1"><!-- InstanceBeginEditable name="Visuel" --><img src="../images/bandeaux/bandeauimagedj4.jpg" alt="bandeauidj" width="100%"><!-- InstanceEndEditable --></td>
+    <td width="599" height="1"><!-- InstanceBeginEditable name="Visuel" --><img src="../images/bandeaux/bandeauimagedj4.jpg" width="100%" alt="image">   <!-- InstanceEndEditable --></td>
     <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="62"></td>
   </tr>
   <tr>
@@ -90,28 +113,113 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
         <tr>
           <td>
               <h1><span class="titre"><br>
-              <img src="../z-outils/images/boite-outils/icones/alaune-grd.gif" alt="" width="24" height="24" hspace="2" vspace="2" border="0" align="left"><a name="up"></a></span> Lacito : R&eacute;serve d'images pour &laquo;&nbsp;l'image de la semaine&nbsp;&raquo; </h1>
-              <p>&nbsp;</p>
+              <img src="../z-outils/images/boite-outils/icones/alaune-grd.gif" alt="" width="24" height="24" hspace="2" vspace="2" border="0" align="left"><a name="up"></a></span> Lacito : R&eacute;serve d'images pour &laquo;&nbsp;l'image de la semaine&nbsp;&raquo;</h1>
               <table width="100%" border="0" align="left" cellpadding="5" cellspacing="0">
-              <tr>
-                <td><img src="../z-outils/images/boite-outils/filet-couleur.gif" alt="aa" width="100%" height="1"></td>
-              </tr>
-              <tr>
-                <td><p class="intertitre"><a name="sport_Rangoun"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16">Semaine du ?? au ?? ?? 2010 <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                    <p><img src="images/sport590.jpg" alt="sport" width="100%"></p>
-                  <p align="center"><strong>Sport à Rangoun</strong></p>
-                  <p>     Pendant la saison froide, de fin d'octobre à début mars, les Birmans aiment faire du sport collectif. À Rangoun, au pied de la pagode Shwedagone et en face du bâtiment parlementaire (<em>Pyithu Hluttaw</em>), près d'un grand boulevard, on trouve un parc (<em>Pyithu Uyin</em>) qui est fermé toute la journée, sauf quelques heures le matin. Aussi, dès l'aube, le parc se remplit de  sportifs. <br>
-                        
-                    Sur cette photo,  des jeunes  gens font de l'aérobic ; au fond, quelques-uns font du tai‐chi ou divers  exercices physiques.<br>
+                <tr>
+                  <td><img src="../z-outils/images/boite-outils/filet-couleur.gif" alt="aa" width="100%" height="1"></td>
+                </tr>
+                <tr>
+                  <td><p class="intertitre"><a></a><a name="crabe-cocotier"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> Semaines de juin 2012 <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
+                    <p><img src="images/dashilame_590.jpg" alt="doyennerai" width="100%"></p>
+                    <p align="center"><strong>Un des derniers connaisseurs de la langue na de Yongning : Mme Latami Dashilam</strong></p>
+                    <p>     Dans sa jeunesse, mon professeur de langue moso (na) de Yongning, Mme Latami Dashilame, a été l'un des acteurs d'un documentaire-fiction au sujet des gens de Yongning et de leur structure familiale inhabituelle (<em>Le mariage 'A-zhu' chez les Naxi de Yongning</em>《永宁纳西族的阿注婚》). Plus tard, l'un de ses fils est devenu ethnologue, et de nombreux collègues ont rendu visite à sa mère. Elle a vu la culture des Na de Yongning devenir un objet de curiosité, et sa promotion dans l'industrie touristique, dont elle mesure les bons et les mauvais côtés. Ces expériences ont ébranlé certaines croyances que lui avaient transmises ses aînés, par exemple la foi bouddhiste. Elle pratique chaque jour les rituels, mais n'a plus entièrement foi dans la réincarnation. <a href="http://lacito.vjf.cnrs.fr/archivage/languages/Na.htm">Les récits qu'elle a bien voulu enregistrer</a> reflètent cet entre-deux : comment elle suspend sa croyance en un univers symbolique qui demeure néanmoins le sien. </p>
+                    <p>cliché @Qin Qing (秦晴), 2012 / texte &copy;<a href="../membres/michaud.htm">Alexis Michaud</a> (CNRS-Lacito, 2012)</p>
+                    <p>Lieu : Asie, Chine, Yunnan, Yongning &ndash; Langue : <a href="../ALC/Languages/Na_popup.htm" target="_blank"onClick="window.open(this.href,'popupLink','width=400,height=400,scrollbars=yes,resizable=yes',1);return false">na</a></p></td>
+                </tr>
+                <tr>
+                  <td><img src="../z-outils/images/boite-outils/filet-couleur.gif" alt="aa" width="100%" height="1"></td>
+                </tr>
+                <tr>
+                  <td><p class="intertitre"><a></a><a name="doyenne"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> Semaine du 12  au 18 mars 2012 <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
+                    <p><img src="images/crabe-cocotier590.jpg" alt="doyennerai" width="100%"></p>
+                    <p align="center"><strong>Le crabe de cocotier, animal roi des îles Torres (Vanuatu)</strong></p>
+                    <p>     Les îles Torres, au nord du Vanuatu, sont célèbres dans tout le pays pour héberger en abondance un animal: le crabe de cocotier (Birgus latro). Ce crustacé terrestre (<em>krab kokonas</em> en bislama, <em>gutut</em> en langue hiw) se nourrit presqu'exclusivement de noix de coco ; c'est d'ailleurs avec la chair de coco qu'on les appâte pour les attraper, lors des traditionnelles séances nocturnes de chasse dans les montagnes. Ses dangereuses pinces, suffisamment puissantes pour craquer l'épaisse coque des noix de coco, ainsi que ses dimensions parfois imposantes, ont fait de lui un personnage dangereux des contes traditionnels, comme ici à Hiw. Aujourd'hui, l'animal constitue un mets de choix non seulement auprès de la population locale, mais aussi dans la capitale Port-Vila, où de nombreux restaurants touristiques proposent sa chair délicate pour des prix comparables à ceux des homards et langoustes. <br>
+                          
+                    Excepté les saisons où il est protégé pour éviter la surexploitation, les petits avions qui traversent l'archipel comptent souvent des crabes de cocotier à bord : ce commerce avec les restaurants apporte désormais aux îles Torres une part importante de leurs revenus économiques. </p>
+                    <p>&copy; <a href="../membres/francois.htm">Alexandre François</a> (CNRS-Lacito, août 2007)</p>
+                    <p>Lieu : Océanie, Vanuatu, îles Torres &ndash; Langues : <a href="../ALC/Languages/Hiw_popup.htm" target="_blank"onClick="window.open(this.href,'popupLink','width=400,height=400,scrollbars=yes,resizable=yes',1);return false">hiw</a>, <a href="../ALC/Languages/Bislama_popup.htm" target="_blank"onClick="window.open(this.href,'popupLink','width=400,height=400,scrollbars=yes,resizable=yes',1);return false">bislama</a></p></td>
+                </tr>
+                <tr>
+                  <td><img src="../z-outils/images/boite-outils/filet-couleur.gif" alt="aa" width="100%" height="1"></td>
+                </tr>
+                <tr>
+                  <td><p class="intertitre"><a></a><a name="pain-et-compagnie"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> Semaine du ?? au ??  2012 <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
+                    <p><img src="images/pain-et-compagnie590.jpg" alt="pain-et-compagnie" width="590" height="468" border="0" usemap="#Map3">
+                      <map name="Map3">
+                        <area shape="rect" coords="10,28,199,158" href="javascript:PopupImage('images/four-a-pain-cheminee590.jpg')" alt="cheminee-four-a-pain">
+                        <area shape="rect" coords="392,29,584,158" href="javascript:PopupImage('images/four-a-pain-buches590.jpg')" alt="reserve-fagot-pour-four-a-pain">
+                        <area shape="rect" coords="226,6,360,197" href="javascript:PopupImage('images/four-vu-de-dehors590.jpg')" alt="four-a-pain-vu-de-l-exterieur">
+                        <area shape="rect" coords="7,200,197,316" href="javascript:PopupImage('images/pain-et-boisson590.jpg')" alt="pain-et-vin">
+                        <area shape="rect" coords="393,199,585,317" href="javascript:PopupImage('images/pains-et-raisins590.jpg')" alt="pain-et-raisins-secs">
+                        <area shape="rect" coords="201,332,392,460" href="javascript:PopupImage('images/pains_interieur590.jpg')" alt="pains-a-l-interieur">
+                      </map>
+                      <map name="Map">
+                        <area shape="rect" coords="15,33,145,235" href="images/palmeraie590.jpg" target="_blank" alt="palmeraie">
+                        <area shape="rect" coords="10,252,149,457" href="images/palmier-tissage2-590.jpg" target="_blank" alt="tissage-de-palmes">
+                        <area shape="rect" coords="188,351,389,493" href="images/palmier-bateau590.jpg" target="_blank" alt="bateau-bois-palmier">
+                        <area shape="rect" coords="432,257,574,461" href="images/palmier-marche590.jpg" target="_blank" alt="tissage-tressage-palmes">
+                        <area shape="rect" coords="184,4,386,144" href="images/palmier-maison590.jpg" target="_blank" alt="maison-en-palmes">
+                        <area shape="rect" coords="437,28,579,232" href="images/palmier-lit590.jpg" target="_blank" alt="lit-en-palmes">
+                      </map>
                     </p>
-                  <p>© <a href="../membres/hnin_tun.htm">San San Hnin Tun</a> (CNRS-LACITO, <span class="Style1">année?</span>) <br>
-                    Lieu : Asie, Myanmar/Birmanie, Rangoun – Langue : <a href="../ALC/Languages/Birman_popup.htm" target="_blank"onClick="window.open(this.href,'popupLink','width=400,height=400,scrollbars=yes,resizable=yes',1);return false">birman</a></p></td>
-              </tr>
+                    <p align="left"><em><img src="../images/icones-CNRS/toujours-dactualite.gif" width="20" alt="clic">chaque miniature peut être agrandie en cliquant dessus ; cliquer à nouveau sur la &quot;pop-up&quot; pour la masquer.</em></p>
+                    <p align="center"><strong>Le pain et sa cuisson à Sanaa (Yemen</strong>)</p>
+                    <p>Texte?</p>
+                    <p>&copy; <a href="../membres/naim.htm">Samia Naïm</a> (CNRS-Lacito, date)</p>
+                  <p>Lieu : Moyen-Orient, Yemen, Sanaa &ndash; Langue : arabe yéménite</p></td>
+                </tr>
+                <tr>
+                  <td><img src="../z-outils/images/boite-outils/filet-couleur.gif" alt="aa" width="100%" height="1"></td>
+                </tr>
+                <tr>
+                  <td><p class="intertitre"><a></a><a name="doyenne"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> Semaine du ??  au ?? ???? 2012 <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
+                    <p><img src="images/doyenne590.jpg" alt="doyennerai" width="100%"></p>
+                    <p align="center"><strong>Femmes rai aidant la doyenne du village à se parer   (Mukli, Népal)</strong></p>
+                    <p>Texte??.</p>
+                    <p>&copy; <a href="../membres/lahaussois.htm">Aimée Lahaussois</a> (2000)</p>
+                    <p>Lieu : Asie, Népal, Mukli &ndash; Langue : <a href="../ALC/Languages/Thulung_Rai_popup.htm" target="_blank"onClick="window.open(this.href,'popupLink','width=400,height=400,scrollbars=yes,resizable=yes',1);return false">thulung rai</a></p></td>
+                </tr>
+                <tr>
+                  <td><img src="../z-outils/images/boite-outils/filet-couleur.gif" alt="aa" width="100%" height="1"></td>
+                </tr>
+                <tr>
+                  <td><p class="intertitre"><a name="marquises2"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16">Semaine du ?? au ?? ?? 2012 <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
+                    <p align="center"><img src="images/marquises2_590.jpg" alt="marquises2" width="100%"></p>
+                    <p align="center"><strong>Île Marquise - Polynésie française</strong></p>
+                    <p>    Texte?<br>
+                    </p>
+                    <p>&copy; <a href="../membres/charpentier.htm">Jean-Michel Charpentier</a>  (CNRS-LACITO, 2010) </p>
+                  <p>Lieu : Océanie, Polynésie française, Îles Marquises - Langues : marquisien</p></td>
+                </tr>
+                <tr>
+                  <td><img src="../z-outils/images/boite-outils/filet-couleur.gif" alt="aa" width="100%" height="1"></td>
+                </tr>
+                <tr>
+                  <td><p class="intertitre"><a name="annonciation"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16">Semaine du ?? au ?? ?? 2012 <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
+                    <p align="center"><img src="images/annonciation590.jpg" alt="annonciation" width="460"></p>
+                    <p align="center"><strong>L'Annonciation à la Vierge et saint Théodore Tiron, icône du XIVe s. (Novgorod, Russie)</strong></p>
+                    <p>    Une  très étrange icône russe, où saint Théodore Tiron intercède entre l'archange Gabriel et la Vierge.<br>
+                    </p>
+                    <p>&copy; <a href="../membres/popova.htm">Assia Popova</a> (CNRS-LACITO, 2010) </p>
+                    <p>Lieu : Europe, Russie, Novgorod - Langue : russe</p></td>
+                </tr>
+                <tr>
+                  <td><img src="../z-outils/images/boite-outils/filet-couleur.gif" alt="aa" width="100%" height="1"></td>
+                </tr>
+                <tr>
+                  <td><p class="intertitre"><a name="tiron-roumain"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16">Semaine du ?? au ?? ?? 2012 <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
+                    <p align="center"><img src="images/tiron-roumain590.jpg" alt="saint Théodore Tiron" width="407"></p>
+                    <p align="center"><strong>Saint Théodore Tiron (Roumanie)</strong></p>
+                    <p>    Texte ?<br>
+                    </p>
+                    <p>&copy; texte <a href="../membres/popova.htm">Assia Popova</a> et image Ileana Gaita (2010) </p>
+                  <p>Lieu : Europe, Roumanie - Langue : roumain</p></td>
+                </tr>
               <tr>
                 <td><img src="../z-outils/images/boite-outils/filet-couleur.gif" alt="aa" width="100%" height="1"></td>
               </tr>
               <tr>
-                <td><p class="intertitre"><a name="cain_abel" id="cain_abel"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16">Semaine du ?? au ?? ?? 2010</p>
+                <td><p class="intertitre"><a name="cain_abel" id="cain_abel"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16">Semaine du ?? au ?? ?? 2012 <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
                     <p><img src="images/Cain&Abel590.jpg" alt="cain&amp;abel" width="100%"></p>
                   <p align="center"><strong>Caïn et Abel (Bulgarie)</strong></p>
                   <p>     Texte ??<br>
@@ -123,19 +231,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                 <td><img src="../z-outils/images/boite-outils/filet-couleur.gif" alt="aa" width="100%" height="1"></td>
               </tr>
               <tr>
-                <td><p class="intertitre"><a></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> Semaine du ??  au ?? ???? 2010 <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                    <p><img src="images/ilot_rocheux590.jpg" alt="poule_couveuse" width="100%"></p>
-                    <p><img src="images/baieib590.jpg" alt="baieib" width="100%"></p>
-                    <p align="center"><strong>La &quot;poule couveuse&quot; dans la baie de Hiengh&egrave;ne</strong></p>
-                  <p>Texte??.</p>
-                  <p>&copy; <a href="../membres/leblic.htm">Isabelle Leblic</a> (CNRS-Lacito, 2005?) &amp; <a href="../membres/bril.htm">Isabelle Bril </a>(CNRS-LACITO, date?)</p>
-                  <p>Lieu : Oc&eacute;anie, Nouvelle-Cal&eacute;donie, Hiengh&egrave;ne &ndash; Langue : nemi</p></td>
-              </tr>
-              <tr>
-                <td><img src="../z-outils/images/boite-outils/filet-couleur.gif" alt="aa" width="100%" height="1"></td>
-              </tr>
-              <tr>
-                <td><p class="intertitre"><a name="gemu"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16">Semaine du ?? au ?? 2010 <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
+                <td><p class="intertitre"><a name="gemu"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16">Semaine du ?? au ?? 2012 <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
                     <p><img src="images/gemu590.jpg" alt="chine_mont-gemu" width="100%"></p>
                   <p align="center"><strong>Plaine de Yongning</strong></p>
                   <p>En arrière-plan, le mont Gemu (municipalité de Lijiang, comté de Yongning, préfecture de Ninglang, Yunnan, Chine).<br>
@@ -147,18 +243,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                 <td><img src="../z-outils/images/boite-outils/filet-couleur.gif" alt="aa" width="100%" height="1"></td>
               </tr>
               <tr>
-                <td><p class="intertitre"><a name="fvkho" id="fvkho"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16">Semaine du ?? au ?? 2010 <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                    <p align="center"><img src="images/muli590.jpg" alt="chine_muli" width="70%"></p>
-                    <p align="center"><strong>Titre ?</strong></p>
-                    <p>Texte ?</p>
-                    <p>&copy; <a href="../membres/michaud.htm">Alexis Michaud </a> (CNRS-LACITO, 2008) </p>
-                  <p>Lieu : Asie, Chine, Yunnan/Sichuan, Muli &ndash; Langue : ??</p></td>
-              </tr>
-              <tr>
-                <td><img src="../z-outils/images/boite-outils/filet-couleur.gif" alt="aa" width="100%" height="1"></td>
-              </tr>
-              <tr>
-                <td><p class="intertitre"><a></a><a name="riz"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> Semaine du ??  au ?? ???? 2010 <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
+                <td><p class="intertitre"><a></a><a name="riz"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> Semaine du ??  au ?? ???? 2012 <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
                     <p><img src="images/riz590.jpg" alt="tri_du_riz" width="100%"></p>
                   <p align="center"><strong>Tri du riz au village de Mukli (Népal)</strong></p>
                   <p>Texte??.</p>
@@ -169,18 +254,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                 <td><img src="../z-outils/images/boite-outils/filet-couleur.gif" alt="aa" width="100%" height="1"></td>
               </tr>
               <tr>
-                <td><p class="intertitre"><a></a><a name="doyenne"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> Semaine du ??  au ?? ???? 2010 <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                    <p><img src="images/doyenne590.jpg" alt="doyennerai" width="100%"></p>
-                  <p align="center"><strong>Femmes rai aidant la doyenne du village à se parer   (Mukli, Népal)</strong></p>
-                  <p>Texte??.</p>
-                  <p>&copy; <a href="../membres/lahaussois.htm">Aimée Lahaussois</a> (2000)</p>
-                  <p>Lieu : Asie, Népal, Mukli &ndash; Langue : thulung-rai</p></td>
-              </tr>
-              <tr>
-                <td><img src="../z-outils/images/boite-outils/filet-couleur.gif" alt="aa" width="100%" height="1"></td>
-              </tr>
-              <tr>
-                <td><p class="intertitre"><a></a><a name="enfantsrai"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> Semaine du ??  au ?? ???? 2010 <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
+                <td><p class="intertitre"><a></a><a name="enfantsrai"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> Semaine du ??  au ?? ???? 2012 <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
                     <p><img src="images/enfantsrai590.jpg" alt="enfantsrai" width="100%"></p>
                   <p align="center"><strong>Enfants rai,  au village de Mukli (Népal)</strong></p>
                   <p>Texte??.</p>
@@ -191,7 +265,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                 <td><img src="../z-outils/images/boite-outils/filet-couleur.gif" alt="aa" width="100%" height="1"></td>
               </tr>
               <tr>
-                <td><p class="intertitre"><a></a><a name="pagodepatan"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> Semaine du ??  au ?? ???? 2010 <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
+                <td><p class="intertitre"><a></a><a name="pagodepatan"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> Semaine du ??  au ?? ???? 2012 <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
                     <p align="center"><img src="images/pagodepatan590.jpg" alt="pagodepatan" width="70%"></p>
                   <p align="center"><strong>Pagode de la place royale de la ville de Patan (Népal)</strong></p>
                   <p>Texte??.</p>
@@ -202,7 +276,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                 <td><img src="../z-outils/images/boite-outils/filet-couleur.gif" alt="aa" width="100%" height="1"></td>
               </tr>
               <tr>
-                <td><p class="intertitre"><a></a><a name="templepatan"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> Semaine du ??  au ?? ???? 2010 <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
+                <td><p class="intertitre"><a></a><a name="templepatan"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> Semaine du ??  au ?? ???? 2012 <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
                     <p align="center"><img src="images/templepatan590.jpg" alt="templepatan" width="70%"></p>
                   <p align="center"><strong>Petit temple hindou dans la ville de Patan (Népal)</strong></p>
                   <p>Texte??.</p>
@@ -213,7 +287,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                 <td><img src="../z-outils/images/boite-outils/filet-couleur.gif" alt="aa" width="100%" height="1"></td>
               </tr>
               <tr>
-                <td><p class="intertitre"><a></a><a name="piments"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> Semaine du ??  au ?? ???? 2010 <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
+                <td><p class="intertitre"><a></a><a name="piments"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> Semaine du ??  au ?? ???? 2012 <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
                     <p align="center"><img src="images/piments590.jpg" alt="piments" width="70%"></p>
                   <p align="center"><strong>Piments et poteries séchant dans une rue de la ville de Bhaktapur (Népal)</strong></p>
                   <p>Texte??.</p>
@@ -224,53 +298,18 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                 <td><img src="../z-outils/images/boite-outils/filet-couleur.gif" alt="aa" width="100%" height="1"></td>
               </tr>
               <tr>
-                <td><p class="intertitre"><a></a><a name="fenetrenewar"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> Semaine du ??  au ?? ???? 2010 <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
+                <td><p class="intertitre"><a></a><a name="fenetrenewar"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> Semaine du ??  au ?? ???? 2012 <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
                     <p><img src="images/fenetrenewar590.jpg" alt="fenetrenewar" width="100%"></p>
                   <p align="center"><strong>Fenêtre de style newar dans la ville de Bhaktapur (Népal)</strong></p>
                   <p>Texte??.</p>
                   <p>&copy; <a href="../membres/lahaussois.htm">Aimée Lahaussois</a> (2000)</p>
                   <p>Lieu : Asie, Népal, Bhaktapur &ndash; Langue : thulung-rai</p></td>
               </tr>
-              
               <tr>
                 <td><img src="../z-outils/images/boite-outils/filet-couleur.gif" alt="aa" width="100%" height="1"></td>
               </tr>
               <tr>
-                <td><p class="intertitre"><a></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> Semaine du ??  au ?? ???? 2010 <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                    <p><img src="images/platier-maree-basse590.jpg" alt="platier" width="100%"></p>
-                  <p align="center"><strong>Platier &agrave; mar&eacute;e basse au sud de la Grande Terre, lieu de pr&eacute;dilection des p&ecirc;ches &agrave; pied</strong></p>
-                  <p>Texte??.</p>
-                  <p>&copy; <a href="../membres/leblic.htm">Isabelle Leblic</a> (CNRS-Lacito, 1985)</p>
-                  <p>Lieu : Oc&eacute;anie, Nouvelle-Cal&eacute;donie, Yat&eacute; &ndash; Langue : <a href="../ALC/Languages/Kwenyii_popup.htm" target="_blank"onClick="window.open(this.href,'popupLink','width=400,height=400,scrollbars=yes,resizable=yes',1);return false">kw&ecirc;nyii</a></p></td>
-              </tr>
-              <tr>
-                <td><img src="../z-outils/images/boite-outils/filet-couleur.gif" alt="aa" width="100%" height="1"></td>
-              </tr>
-              <tr>
-                <td><p class="intertitre"><a name="ouldeme"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> Semaine du ?  au ?  2010 </p>
-                    <p><img src="images/ouldeme590.jpg" alt="meoure" width="100%"></p>
-                  <p align="center"><strong>Village de M&eacute;our&eacute; (Oujd&eacute;d&eacute;?), montagne ould&eacute;m&eacute;, Nord-Cameroun</strong></p>
-                  <p>Texte????.<br>
-                    </p>
-                  <p>&copy; <a href="../membres/colombel.htm">V&eacute;ronique de Colombel</a> (CNRS-LACITO, date?) </p>
-                  <p>Lieu : Afrique, Cameroun, monts ould&eacute;m&eacute;?? - Langue : ould&eacute;m&eacute;</p></td>
-              </tr>
-              <tr>
-                <td><img src="../z-outils/images/boite-outils/filet-couleur.gif" alt="aa" width="100%" height="1"></td>
-              </tr>
-              <tr>
-                <td><p class="intertitre"><a name="vieux_palais" id="vieux_palais2"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> Semaine du ?  au ?  2010 </p>
-                    <p><img src="images/udaipur_vieuxpalais590.jpg" alt="Udaipur_old" width="100%"></p>
-                  <p align="center"><strong>Vieux palais d'Udaipur (Tripura), Inde </strong></p>
-                  <p>Texte de commentaires </p>
-                  <p>&copy; <a href="../membres/jacquesson.htm">Fran&ccedil;ois Jacquesson </a> (CNRS-LACITO, 2006) </p>
-                  <p>Lieu : Asie, Inde, Tripura - Langue : ??</p></td>
-              </tr>
-              <tr>
-                <td><img src="../z-outils/images/boite-outils/filet-couleur.gif" alt="aa" width="100%" height="1"></td>
-              </tr>
-              <tr>
-                <td><p class="intertitre"><a name="nilgiri"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> Semaine du ?  au ?  2010 </p>
+                <td><p class="intertitre"><a name="nilgiri"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> Semaine du ?  au ?  2012 <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
                     <p><img src="images/nilgiri590.jpg" alt="nilgiri" width="100%"></p>
                   <p align="center"><strong>Montagne du Nilgiri, Inde du Sud</strong></p>
                   <p>Texte de commentaires </p>
@@ -299,6 +338,13 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
 </table>
 <p>&nbsp;</p>
  <p>&nbsp;</p>
+ 
+ 
+ 
+ 
+
+ 
+ 
  <div id="divpartenaires" >
    <table width="150"  border="0" cellspacing="0" cellpadding="0">
      <tr>
@@ -333,6 +379,9 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
  <noscript>
  <p>Your browser does not support script</p>
 </noscript>
+
+
+
  <div id="divnavgauche-spec">
    <table border="0" cellpadding="0" cellspacing="0"  width="150">
      <tr>
@@ -342,7 +391,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
        	<td width="100%"  class="Xnavgauche" >
         	<table border="0" cellpadding="10" cellspacing="0"  width="100%">
       			<tr>
-       	 			<td width="100%" class="Xnavgauche"><h2><a href="INTRANET/index.htm">Intranet <img border="0" src="../z-outils/images/boite-outils/icones/intranet.gif" width="18" height="12"
+       	 			<td width="100%" class="Xnavgauche"><h2><a href="../INTRANET/index.htm">Intranet <img border="0" src="../z-outils/images/boite-outils/icones/intranet.gif" width="18" height="12"
 							alt="aa"></a></h2></td>
       			</tr>
        		</table>
@@ -353,6 +402,9 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
      </tr>
     </table>
  </div>
+ 
+
+ 
  <div id="divnavgauche-searchLabo">
    <table cellspacing="0" cellpadding="0" hspace="11" border="0">
      <tr>
@@ -385,6 +437,28 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
 		</tr>
 
  </div>
+ 
+ 
+ 
+ 
+ 
+  <div id="divnavgauche-language">
+ <p class="intertitre" align="center"><a href="Javascript:version()"><img src="../images/logos/eng.gif" alt="English" border="0"></a></p>
+ </div>
+ 
+
+
+
+
+<map name="Map2">
+  <area shape="rect" coords="28,23,46,43" href="javascript:impression()" alt="Imprimer">
+  <area shape="rect" coords="49,22,66,42" href="javascript:writemail('vjf.cnrs.fr','behaghel','',1);" alt="Contacter le webmestre">
+  <area shape="rect" coords="68,23,85,43" href="../pratique/index.htm" alt="Plan du site">
+  <area shape="rect" coords="87,23,105,43" href="../pratique/credits.htm" alt="Crédits">
+  <area shape="rect" coords="9,24,25,43" href="../index.htm" alt="Accueil">
+</map>
+
+
 <div id="divnavhaut-nom-labo">
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
     <tr>
@@ -394,12 +468,10 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
     </tr>
   </table>
 </div>
-<map name="Map2">
-  <area shape="rect" coords="28,23,46,43" href="javascript:impression()" alt="Imprimer">
-  <area shape="rect" coords="49,22,66,42" href="javascript:writemail('vjf.cnrs.fr','behaghel','',1);" alt="Contacter le webmestre">
-  <area shape="rect" coords="68,23,85,43" href="../pratique/index.htm" alt="Plan du site">
-  <area shape="rect" coords="87,23,105,43" href="../pratique/credits.htm" alt="Crédits">
-  <area shape="rect" coords="9,24,25,43" href="../index.htm" alt="Accueil">
-</map>
+
+
+
+
+
 </body>
 <!-- InstanceEnd --></html>

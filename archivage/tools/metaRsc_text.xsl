@@ -14,6 +14,7 @@
 	<xsl:output method="xml" indent="yes" omit-xml-declaration="yes"/>
 
 	<xsl:param name="id" select="'*'"/>
+    <xsl:param name="lg" select="'*'"/>
 
 	<xsl:variable name="total_id"><xsl:text>oai:crdo.vjf.cnrs.fr:</xsl:text><xsl:value-of select="$id"/></xsl:variable>
 
@@ -48,16 +49,19 @@
       Les titres alternatifs peuvent etre plusieurs dans des langues diverses -->
 <xsl:template name="title">
 	<xsl:if test="dc:title">
-		<h2>A propos de "<i><xsl:apply-templates select="dc:title[1]"/></i>"</h2>
+		<h2 align="center"><strong style="font-size:16px"><xsl:apply-templates select="dc:title[1]"/></strong></h2>
 	</xsl:if>
 </xsl:template>
 
 <xsl:template name="langue">
 	<tr>
-		<td class="descripteur">Langue </td>
+		<td class="descripteur">Langue / Language: </td>
 		<td class="valeur">
-			<xsl:for-each select="dc:subject[@xsi:type='olac:language']">
-				<xsl:apply-templates select="."/>
+			 <xsl:for-each select="dc:subject[@xsi:type='olac:language']">
+				<a href="http://lacito.vjf.cnrs.fr/ALC/Languages/{$lg}_popup.htm"
+                target="_blank"
+                onClick="window.open(this.href,'popup_lang1','width=500,height=300,scrollbars=yes,resizable=yes',1);return false"><xsl:apply-templates select="."/></a>
+				
 			</xsl:for-each>
 		</td>
 	</tr>
@@ -69,7 +73,7 @@
 <xsl:template name="date">
 	<xsl:if test="(dcterms:created)">
 		<tr>
-			<td class="descripteur">Enregistré en </td>
+			<td class="descripteur">Enregistré en / Recorded in: </td>
 			<td class="valeur">
 				<xsl:for-each select="dcterms:created">
 					<xsl:apply-templates select="."/>
@@ -96,11 +100,13 @@
 </xsl:template>
 
 <xsl:template name="contributor">
-	<xsl:if test="dc:contributor[@olac:code='researcher']|dc:contributor[@olac:code='speaker']|dc:contributor[@olac:code='depositor']|dc:contributor[@olac:code='interviewer']">
+	<!--<xsl:if test="dc:contributor[@olac:code='researcher']|dc:contributor[@olac:code='speaker']|dc:contributor[@olac:code='depositor']|dc:contributor[@olac:code='interviewer']">-->
+    <xsl:if test="dc:contributor">
 		<tr>
 			<td class="descripteur">Participant(s):</td>
 			<td class="valeur">
-				<xsl:for-each select="dc:contributor[@olac:code='researcher']|dc:contributor[@olac:code='speaker']|dc:contributor[@olac:code='depositor']|dc:contributor[@olac:code='interviewer']">
+				<!--<xsl:for-each select="dc:contributor[@olac:code='researcher']|dc:contributor[@olac:code='speaker']|dc:contributor[@olac:code='depositor']|dc:contributor[@olac:code='interviewer']">-->
+                <xsl:for-each select="dc:contributor">
 					<xsl:apply-templates select="."/>
 					<xsl:if test="position()!=last()"><br/></xsl:if>
 				</xsl:for-each>
@@ -132,7 +138,7 @@
 <xsl:template name="coverage">
 	<xsl:if test="(dc:coverage) or (dcterms:spatial[not(@xsi:type)]) or (dcterms:temporal)">
 		<tr>
-			<td class="descripteur">Lieu :</td>
+			<td class="descripteur">Lieu / Place:</td>
 			<td class="valeur">
 				<xsl:for-each select="dc:coverage|dcterms:spatial[not(@xsi:type)]|dcterms:temporal">
 					<xsl:apply-templates select="."/>
@@ -217,7 +223,7 @@
 
 <xsl:template name="identifier_Text">
 	<tr>
-		<td class="descripteur">Fichier(s) source audio: </td>
+		<td class="descripteur">Fichier(s) source audio / Recording(s): </td>
 		<td class="valeur">
 			<xsl:apply-templates select="dc:identifier"/>
 		</td>
@@ -234,11 +240,11 @@
 	<xsl:for-each select="dcterms:isRequiredBy">
     
 		<tr>
-			<td class="descripteur">Fichier(s) source texte :
+			<td class="descripteur">Fichier(s) source d'annotations / Text annotations:
             </td>
             <td><a	href="show_metadatas_text.php?id={$id}"
-					
-					onClick="window.open(this.href,'popupLink','width=640,height=400,scrollbars=yes,resizable=yes',1);return false">
+					target="_blank"
+					onClick="window.open(this.href,'popup','width=640,height=400,scrollbars=yes,resizable=yes',1);return false">
 						<img class="sansBordure" src="../../images/icones/info.gif"/>
 					</a>
             :
@@ -304,13 +310,18 @@
 				<xsl:otherwise>
 						<xsl:choose>
 							<xsl:when test="contains($content, '.wav')">
-								<a target="_blank" href="{$content}"><img class="sansBordure" src="../../images/icones/wav.gif"/></a>
+								<xsl:if test="contains($content, '.wav')">
+                                        <a target="_blank" href="{$content}"><img class="sansBordure" src="../../images/icones/wav.png"/></a>
+                                        </xsl:if>
+                                     <xsl:if test="contains($content, '.mp3')">
+                                      <a target="_blank" href="{$content}"><img class="sansBordure" src="../../images/icones/mp3.png"/></a>
+                                     </xsl:if>
 								<xsl:for-each select="ancestor::olac:olac">
 									<xsl:call-template name="extent"/>
 								</xsl:for-each>
 							</xsl:when>
 							<xsl:when test="contains($content, '.xml')">
-								<a target="_blank" href="{$content}"><img class="sansBordure" src="../../images/icones/xml.gif"/></a> 
+								<a target="_blank" href="{$content}"><img class="sansBordure" src="../../images/icones/xml.png"/></a> 
 							</xsl:when>
 							<xsl:when test="contains($content, '.pdf')">
 								<a target="_blank" href="{$content}"><img class="sansBordure" src="../../images/icones/pdf2.gif"/></a> 

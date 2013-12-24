@@ -22,7 +22,12 @@ td, p, div
            text-align: left;}
 
 p.titre 
-          {font-size : 14px; color : #556268; font-weight: bold;}
+          {
+	font-size : 14px;
+	color : #556268;
+	font-weight: bold;
+	text-transform: none;
+}
 
 span.petit, ul ul, p.petit
           {font-size : 10px; color: #282828; }         
@@ -62,3 +67,38 @@ td.separateur { background-color: #F09415; }
          
          
       
+.titre_page {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.titre_paragraphe {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+.info_user {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #CC3333;
+}
+
+.champ_text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: none;
+}
+
+.champ_text_area {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: none;
+	font-style: italic;
+}
+
+.orange {
+	color: #F09415;
+}

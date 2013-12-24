@@ -4,23 +4,28 @@
 ini_set('display_errors','off'); 
 
 	function SuppAccents($chaine){
-		$tofind = "ÀÁÂÃÄÅàáâãäåÒÓÔÕÖØòóôõöøÈÉÊËèéêëÇçÌÍÎÏìíîïÙÚÛÜùúûüÿÑñ";
-		$replac = "AAAAAAaaaaaaOOOOOOooooooEEEEeeeeCcIIIIiiiiUUUUuuuuyNn";
-		return(strtr($chaine,$tofind,$replac));
+		return(str_replace(explode(' ', 'à á â ã ä ç è é ê ë ì í î ï ñ ò ó ô õ ö ù ú û ü ý ÿ À Á Â Ã Ä Ç È É Ê Ë Ì Í Î Ï Ñ Ò Ó Ô Õ Ö Ù Ú Û Ü Ý'),
+explode(' ', 'a a a a a c e e e e i i i i n o o o o o u u u u y y A A A A A C E E E E I I I I N O O O O O U U U U Y'),
+$chaine) );
 	}
+	
+
+	
 	/*function SuppMajuscules($chaine){
 		return(strtolower  ($chaine));
 	}*/
 
 	// retourne la liste des textes
-	// la langue est spécifiée par son nom : $lg
-	function Xslt_list_texts($lg) {
+	// la langue est spécifiée par son code langue : $lg et la langue de la page précédente
+	function Xslt_list_texts($lg,$aff_lang) {
+	
 			  $xp = new XsltProcessor();
 			  $xsl = new DomDocument;
 			  //$xsl->load('http://lacito.vjf.cnrs.fr/archivage/tools/listRsc.xsl');
 			  $xsl->load('listRsc.xsl');
 			  
 			  $xp->setParameter('', 'lg', $lg);
+			  $xp->setParameter('', 'aff_lang', $aff_lang);
 
 			  // import the XSL styelsheet into the XSLT process
 			  $xp->importStylesheet($xsl);
@@ -42,13 +47,16 @@ ini_set('display_errors','off');
 
 	// retourne les metadata du fichier audio selectionné
 	// le texte interlinéaire est spécifié par son id : $id
-	function Xslt_sound_metadata($id) {
+	function Xslt_sound_metadata($id,$lg,$language) {
+				
 			  $xp = new XsltProcessor();
 			  $xsl = new DomDocument;
 			  //$xsl->load('http://lacito.vjf.cnrs.fr/archivage/tools/metaRsc.xsl');
 			  $xsl->load('metaRsc.xsl');
+			
 			 
 			  $xp->setParameter('', 'id', $id);
+			  $xp->setParameter('', 'lg', $lg);
 			  $xp->importStylesheet($xsl);
 			  $xml_doc = new DomDocument;
 			 // $xml_doc->load('http://lacito.vjf.cnrs.fr/archivage/tools/metadata_lacito.xml');
@@ -63,13 +71,15 @@ ini_set('display_errors','off');
 	 
 	 // retourne les metadata du fichier d'annotations selectionné
 	// le texte interlinéaire est spécifié par son id : $id
-	function Xslt_text_metadata($id) {
+	function Xslt_text_metadata($id,$lg,$language) {
+				
 			  $xp = new XsltProcessor();
 			  $xsl = new DomDocument;
 			  //$xsl->load('http://lacito.vjf.cnrs.fr/archivage/tools/metaRsc_text.xsl');
 			  $xsl->load('metaRsc_text.xsl');
 		
 			  $xp->setParameter('', 'id', $id);
+			  $xp->setParameter('', 'lg', $lg);
 			  $xp->importStylesheet($xsl);
 			  $xml_doc = new DomDocument;
 			 // $xml_doc->load('http://lacito.vjf.cnrs.fr/archivage/tools/metadata_lacito.xml');
@@ -81,6 +91,105 @@ ini_set('display_errors','off');
 				  trigger_error('XSL transformation failed.', E_USER_ERROR);
 			  }
 	 }
+	 
+	 
+	 function Xslt_show_url_sound($id) {
+			  $xp = new XsltProcessor();
+			  $xsl = new DomDocument;
+			 // $xsl->load('http://lacito.vjf.cnrs.fr/archivage/tools/textRsc.xsl');
+			  $xsl->load('textRsc.xsl');
+			  
+			  $xp->setParameter('', 'id', $id);
+			  $xp->importStylesheet($xsl);
+			  $xml_doc = new DomDocument;
+			 // $xml_doc->load('http://lacito.vjf.cnrs.fr/archivage/tools/metadata_lacito.xml');
+			  $xml_doc->load('metadata_lacito.xml');
+			
+			  if ($res = $xp->transformToXML($xml_doc)) {
+					$XML = new SimpleXMLElement($res);
+			
+					$url_sound_wav = $XML->url_sound_wav;
+				
+			  }
+			  
+			  return $url_sound_wav;
+	 }
+	 
+	 
+	  function Xslt_show_url_requiredby($id, $extension) {
+			  $xp = new XsltProcessor();
+			  $xsl = new DomDocument;
+			 // $xsl->load('http://lacito.vjf.cnrs.fr/archivage/tools/textRsc.xsl');
+			  $xsl->load('urlRsc.xsl');
+			  
+			  $xp->setParameter('', 'id', $id);
+			  $xp->setParameter('', 'extension', $extension);
+			  $xp->importStylesheet($xsl);
+			  
+			  $xml_doc = new DomDocument;
+			 // $xml_doc->load('http://lacito.vjf.cnrs.fr/archivage/tools/metadata_lacito.xml');
+			  $xml_doc->load('metadata_lacito.xml');
+			
+			  if ($res = $xp->transformToXML($xml_doc)) {
+					$XML = new SimpleXMLElement($res);
+			
+					$url = $XML->url;
+				
+			  }
+			  
+			  return $url;
+	 }
+	 
+	
+	
+	
+	
+	function Xslt_create_pdf($id){
+
+ 		$xp = new XsltProcessor();
+			  $xsl = new DomDocument;
+			 // $xsl->load('http://lacito.vjf.cnrs.fr/archivage/tools/textRsc.xsl');
+			  $xsl->load('textRsc.xsl');
+			  
+			  $xp->setParameter('', 'id', $id);
+			  $xp->importStylesheet($xsl);
+			  $xml_doc = new DomDocument;
+			 // $xml_doc->load('http://lacito.vjf.cnrs.fr/archivage/tools/metadata_lacito.xml');
+			  $xml_doc->load('metadata_lacito.xml');
+			
+			  if ($res = $xp->transformToXML($xml_doc)) {
+					$XML = new SimpleXMLElement($res);
+					$url_text  = $XML->url_text;
+					$url_sound_wav = $XML->url_sound_wav;
+					$titre     = $XML->titre;
+					$lg        = $XML->lg;
+					$xp->setParameter('', 'titre',     $titre);
+					$xp->setParameter('', 'lg',        $lg);
+					$xp->setParameter('', 'url_sound_wav', $url_sound_wav);
+					$xp->setParameter('', 'url_text',  $url_text);
+					
+					
+					$xsl = new DomDocument;
+					//$xsl->load('http://lacito.vjf.cnrs.fr/archivage/tools/showText.xsl');
+					$xsl->load('TransformationPdf.xsl');
+					
+					$xp->importStylesheet($xsl);
+					$xml_doc = new DomDocument;
+					$xml_doc->load($url_text);
+				  if ($html = $xp->transformToXML($xml_doc)) {
+					  echo $html;
+				  } else {
+					  trigger_error('XSL transformation failed.', E_USER_ERROR);
+				  }
+			  } else {
+				  trigger_error('XSL transformation failed.', E_USER_ERROR);
+			  }
+}
+	
+	
+	
+	
+	 
 	 
 /*function Xslt_create_rtf($id){
 
@@ -98,12 +207,12 @@ ini_set('display_errors','off');
 			  if ($res = $xp->transformToXML($xml_doc)) {
 					$XML = new SimpleXMLElement($res);
 					$url_text  = $XML->url_text;
-					$url_sound = $XML->url_sound;
+					$url_sound_wav = $XML->url_sound_wav;
 					$titre     = $XML->titre;
 					$lg        = $XML->lg;
 					$xp->setParameter('', 'titre',     $titre);
 					$xp->setParameter('', 'lg',        $lg);
-					$xp->setParameter('', 'url_sound', $url_sound);
+					$xp->setParameter('', 'url_sound_wav', $url_sound_wav);
 					$xp->setParameter('', 'url_text',  $url_text);
 					
 					
@@ -124,10 +233,10 @@ ini_set('display_errors','off');
 			  }
 }
 */
-	// retourne le texte selectionné
-	// le texte interlinéaire est spécifié par son id : $id
-	function Xslt_show_text($id) {
-			  $xp = new XsltProcessor();
+
+ function Xslt_show_other($id) {
+	// echo ("0");
+	   $xp = new XsltProcessor();
 			  $xsl = new DomDocument;
 			 // $xsl->load('http://lacito.vjf.cnrs.fr/archivage/tools/textRsc.xsl');
 			  $xsl->load('textRsc.xsl');
@@ -138,20 +247,196 @@ ini_set('display_errors','off');
 			 // $xml_doc->load('http://lacito.vjf.cnrs.fr/archivage/tools/metadata_lacito.xml');
 			  $xml_doc->load('metadata_lacito.xml');
 			
+			if ( strpos( $_SERVER['HTTP_USER_AGENT'], 'Firefox' ) !== FALSE ) { $navigator="Firefox"; }
+					/*elseif ( strpos( $_SERVER['HTTP_USER_AGENT'], 'Opera' ) !== FALSE ) { echo " Opera"; }
+					elseif ( strpos( $_SERVER['HTTP_USER_AGENT'], 'Safari' ) !== FALSE ) { echo "Safari"; }
+					elseif ( strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE' ) !== FALSE ) { echo "IE"; }*/
+					else { $navigator="Other"; }
+					
+			
 			  if ($res = $xp->transformToXML($xml_doc)) {
 					$XML = new SimpleXMLElement($res);
 					$url_text  = $XML->url_text;
-					$url_sound = $XML->url_sound;
+					$url_text2  = $XML->url_text2;
+					$url_text3  = $XML->url_text3;
+					$url_sound_wav = $XML->url_sound_wav;
+					$url_sound_mp3 = $XML->url_sound_mp3;
 					$titre     = $XML->titre;
 					$lg        = $XML->lg;
 					$xp->setParameter('', 'titre',     $titre);
+					$lg=utf8_decode($lg);
+					
+					// pour afficher correctement la fiche langue : traitement de la chaine de langue
+							
+					$lg=str_replace(explode(' ', 'à á â ã ä ç è é ê ë ì í î ï ñ ò ó ô õ ö ù ú û ü ý ÿ À Á Â Ã Ä Ç È É Ê Ë Ì Í Î Ï Ñ Ò Ó Ô Õ Ö Ù Ú Û Ü Ý'),
+					explode(' ', 'a a a a a c e e e e i i i i n o o o o o u u u u y y A A A A A C E E E E I I I I N O O O O O U U U U Y'),
+					$lg) ;
+					$lg=str_replace(' ','_',$lg) ;
+					$lg=utf8_encode($lg);
+					
+					$xp->setParameter('', 'id',        $id);
 					$xp->setParameter('', 'lg',        $lg);
-					$xp->setParameter('', 'url_sound', $url_sound);
+					$xp->setParameter('', 'url_sound_wav', $url_sound_wav);
+					$xp->setParameter('', 'url_sound_mp3', $url_sound_mp3);
 					$xp->setParameter('', 'url_text',  $url_text);
+					$xp->setParameter('', 'navigator',  $navigator);
+					
+										
+						// echo ("1");
+					
+					$xsl = new DomDocument;
+					//$xsl->load('http://lacito.vjf.cnrs.fr/archivage/tools/showText.xsl');
+					$xsl->load('showOtherText.xsl');
+					
+					$xp->importStylesheet($xsl);
+					$xml_doc = new DomDocument;
+					$xml_doc->load($url_text);
+						// echo ("2");
+				  if ($html = $xp->transformToXML($xml_doc)) {
+					
+					  echo $html;
+				  } else {
+					  trigger_error('XSL transformation failed.', E_USER_ERROR);					
+				  }
+			  } else {
+				  trigger_error('XSL transformation failed.', E_USER_ERROR);
+				  					
+			  }
+	 
+	 }
+
+
+	// retourne le texte selectionné
+	// le texte interlinéaire est spécifié par son id : $id
+	/*function Xslt_show_text_old($id,$aff_lang) {
+			  $xp = new XsltProcessor();
+			  $xsl = new DomDocument;
+			 // $xsl->load('http://lacito.vjf.cnrs.fr/archivage/tools/textRsc.xsl');
+			  $xsl->load('textRsc.xsl');
+			  
+			  $xp->setParameter('', 'id', $id);
+			  $xp->setParameter('', 'aff_lang', $aff_lang);
+			  $xp->importStylesheet($xsl);
+			  $xml_doc = new DomDocument;
+			 // $xml_doc->load('http://lacito.vjf.cnrs.fr/archivage/tools/metadata_lacito.xml');
+			  $xml_doc->load('metadata_lacito.xml');
+			
+			if ( strpos( $_SERVER['HTTP_USER_AGENT'], 'Firefox' ) !== FALSE ) { $navigator="Firefox"; }
+					/*elseif ( strpos( $_SERVER['HTTP_USER_AGENT'], 'Opera' ) !== FALSE ) { echo " Opera"; }
+					elseif ( strpos( $_SERVER['HTTP_USER_AGENT'], 'Safari' ) !== FALSE ) { echo "Safari"; }
+					elseif ( strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE' ) !== FALSE ) { echo "IE"; }*/
+					/*else { $navigator="Other"; }
+					
+			
+			  if ($res = $xp->transformToXML($xml_doc)) {
+					$XML = new SimpleXMLElement($res);
+					$url_text  = $XML->url_text;
+					$url_sound_wav = $XML->url_sound_wav;
+					$url_sound_mp3 = $XML->url_sound_mp3;
+					$titre     = $XML->titre;
+					$lg        = $XML->lg;
+					$xp->setParameter('', 'titre',     $titre);
+					$lg=utf8_decode($lg);
+					
+					// pour afficher correctement la fiche langue : traitement de la chaine de langue
+					//echo $url_sound_mp3;		
+					$lg=str_replace(explode(' ', 'à á â ã ä ç è é ê ë ì í î ï ñ ò ó ô õ ö ù ú û ü ý ÿ À Á Â Ã Ä Ç È É Ê Ë Ì Í Î Ï Ñ Ò Ó Ô Õ Ö Ù Ú Û Ü Ý'),
+					explode(' ', 'a a a a a c e e e e i i i i n o o o o o u u u u y y A A A A A C E E E E I I I I N O O O O O U U U U Y'),
+					$lg) ;
+					$lg=str_replace(' ','_',$lg) ;
+					$lg=utf8_encode($lg);
+					
+					$xp->setParameter('', 'id',        $id);
+					$xp->setParameter('', 'lg',        $lg);
+					$xp->setParameter('', 'url_sound_wav', $url_sound_wav);
+					$xp->setParameter('', 'url_sound_mp3', $url_sound_mp3);
+					$xp->setParameter('', 'url_text',  $url_text);
+					$xp->setParameter('', 'navigator',  $navigator);
+					
+										
 					
 					
 					$xsl = new DomDocument;
 					//$xsl->load('http://lacito.vjf.cnrs.fr/archivage/tools/showText.xsl');
+				
+					$xsl->load('showText.xsl');
+					
+					$xp->importStylesheet($xsl);
+					$xml_doc = new DomDocument;
+					$xml_doc->load($url_text);
+				  if ($html = $xp->transformToXML($xml_doc)) {
+					  echo $html;
+				  } else {
+					  trigger_error('XSL transformation failed.', E_USER_ERROR);
+				  }
+			  } else {
+				  trigger_error('XSL transformation failed.', E_USER_ERROR);
+			  }
+	 }*/
+	 
+	 
+	 
+	 
+	 
+	 
+	 // retourne le texte selectionné
+	// le texte interlinéaire est spécifié par son id : $id
+	function Xslt_show_text($id,$aff_lang) {
+			  $xp = new XsltProcessor();
+			  $xsl = new DomDocument;
+			 // $xsl->load('http://lacito.vjf.cnrs.fr/archivage/tools/textRsc.xsl');
+			  $xsl->load('textRsc.xsl');
+			  
+			  $xp->setParameter('', 'id', $id);
+			  $xp->setParameter('', 'aff_lang', $aff_lang);
+			  $xp->importStylesheet($xsl);
+			  $xml_doc = new DomDocument;
+			 // $xml_doc->load('http://lacito.vjf.cnrs.fr/archivage/tools/metadata_lacito.xml');
+			  $xml_doc->load('metadata_lacito.xml');
+			/*echo $_SERVER['HTTP_USER_AGENT'];*/
+			if ( strpos( $_SERVER['HTTP_USER_AGENT'], 'Firefox' ) !== FALSE ) { $navigator="Firefox"; }
+					elseif ( strpos( $_SERVER['HTTP_USER_AGENT'], 'Opera' ) !== FALSE ) { $navigator=" Opera"; }
+					elseif ( strpos( $_SERVER['HTTP_USER_AGENT'], 'Safari' ) !== FALSE ) { $navigator="Safari"; }
+					elseif ( strpos( $_SERVER['HTTP_USER_AGENT'], 'Chrome' ) !== FALSE ) {  $navigator="Chrome"; }
+					elseif ( strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE' ) !== FALSE ) {  $navigator="Explorer"; }
+					else { $navigator="Other"; }
+					
+			
+			  if ($res = $xp->transformToXML($xml_doc)) {
+					$XML = new SimpleXMLElement($res);
+					$url_text  = $XML->url_text;
+					$url_sound_wav = $XML->url_sound_wav;
+					$url_sound_mp3 = $XML->url_sound_mp3;
+					$titre     = $XML->titre;
+					$chercheurs     = $XML->chercheurs;
+					$locuteurs     = $XML->locuteurs;
+					$lg        = $XML->lg;
+					$xp->setParameter('', 'titre',     $titre);
+					$lg=utf8_decode($lg);
+					
+					// pour afficher correctement la fiche langue : traitement de la chaine de langue
+					//echo $url_sound_mp3;		
+					$lg=str_replace(explode(' ', 'à á â ã ä ç è é ê ë ì í î ï ñ ò ó ô õ ö ù ú û ü ý ÿ À Á Â Ã Ä Ç È É Ê Ë Ì Í Î Ï Ñ Ò Ó Ô Õ Ö Ù Ú Û Ü Ý'),
+					explode(' ', 'a a a a a c e e e e i i i i n o o o o o u u u u y y A A A A A C E E E E I I I I N O O O O O U U U U Y'),
+					$lg) ;
+					$lg=str_replace(' ','_',$lg) ;
+					$lg=utf8_encode($lg);
+					
+					$xp->setParameter('', 'id',        $id);
+					$xp->setParameter('', 'lg',        $lg);
+					$xp->setParameter('', 'chercheurs',        $chercheurs);
+					$xp->setParameter('', 'locuteurs',        $locuteurs);
+					$xp->setParameter('', 'url_sound_wav', $url_sound_wav);
+					$xp->setParameter('', 'url_sound_mp3', $url_sound_mp3);
+					$xp->setParameter('', 'url_text',  $url_text);
+					$xp->setParameter('', 'navigator',  $navigator);
+					
+										
+					
+					
+					$xsl = new DomDocument;
+					//$xsl->load('http://lacito.vjf.cnrs.fr/archivage/tools/showText.xsl');
+					/*$xsl->load('showText.xsl');*/
 					$xsl->load('showText.xsl');
 					
 					$xp->importStylesheet($xsl);
@@ -166,16 +451,93 @@ ini_set('display_errors','off');
 				  trigger_error('XSL transformation failed.', E_USER_ERROR);
 			  }
 	 }
+	 
+	 
+	 
+	 
+	 
+	 // retourne le texte selectionné
+	// le texte interlinéaire est spécifié par son id : $id
+	function Xslt_show($id,$aff_lang) {
+			  $xp = new XsltProcessor();
+			  $xsl = new DomDocument;
+			 // $xsl->load('http://lacito.vjf.cnrs.fr/archivage/tools/textRsc.xsl');
+			  $xsl->load('textRsc.xsl');
+			  
+			  $xp->setParameter('', 'id', $id);
+			  $xp->setParameter('', 'aff_lang', $aff_lang);
+			  $xp->importStylesheet($xsl);
+			  $xml_doc = new DomDocument;
+			 // $xml_doc->load('http://lacito.vjf.cnrs.fr/archivage/tools/metadata_lacito.xml');
+			  $xml_doc->load('metadata_lacito.xml');
+			
+			if ( strpos( $_SERVER['HTTP_USER_AGENT'], 'Firefox' ) !== FALSE ) { $navigator="Firefox"; }
+					elseif ( strpos( $_SERVER['HTTP_USER_AGENT'], 'Opera' ) !== FALSE ) { $navigator=" Opera"; }
+					elseif ( strpos( $_SERVER['HTTP_USER_AGENT'], 'Safari' ) !== FALSE ) { $navigator="Safari"; }
+					elseif ( strpos( $_SERVER['HTTP_USER_AGENT'], 'Chrome' ) !== FALSE ) {  $navigator="Chrome"; }
+					elseif ( strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE' ) !== FALSE ) {  $navigator="Explorer"; }
+					else { $navigator="Other"; }
+					
+			
+			  if ($res = $xp->transformToXML($xml_doc)) {
+					$XML = new SimpleXMLElement($res);
+					$url_text  = $XML->url_text;
+					$url_sound_wav = $XML->url_sound_wav;
+					$url_sound_mp3 = $XML->url_sound_mp3;
+					$titre     = $XML->titre;
+					$lg        = $XML->lg;
+					$xp->setParameter('', 'titre',     $titre);
+					$lg=utf8_decode($lg);
+					
+					// pour afficher correctement la fiche langue : traitement de la chaine de langue
+							
+					$lg=str_replace(explode(' ', 'à á â ã ä ç è é ê ë ì í î ï ñ ò ó ô õ ö ù ú û ü ý ÿ À Á Â Ã Ä Ç È É Ê Ë Ì Í Î Ï Ñ Ò Ó Ô Õ Ö Ù Ú Û Ü Ý'),
+					explode(' ', 'a a a a a c e e e e i i i i n o o o o o u u u u y y A A A A A C E E E E I I I I N O O O O O U U U U Y'),
+					$lg) ;
+					$lg=str_replace(' ','_',$lg) ;
+					$lg=utf8_encode($lg);
+					
+					$xp->setParameter('', 'id',        $id);
+					$xp->setParameter('', 'lg',        $lg);
+					$xp->setParameter('', 'url_sound_wav', $url_sound_wav);
+					$xp->setParameter('', 'url_sound_mp3', $url_sound_mp3);
+					$xp->setParameter('', 'url_text',  $url_text);
+					$xp->setParameter('', 'navigator',  $navigator);
+					
+										
+					
+					
+					$xsl = new DomDocument;
+					//$xsl->load('http://lacito.vjf.cnrs.fr/archivage/tools/showText.xsl');
+					$xsl->load('show.xsl');
+					
+					$xp->importStylesheet($xsl);
+					$xml_doc = new DomDocument;
+					$xml_doc->load($url_text);
+				  if ($html = $xp->transformToXML($xml_doc)) {
+					  echo $html;
+				  } else {
+					  trigger_error('XSL transformation failed.', E_USER_ERROR);
+				  }
+			  } else {
+				  trigger_error('XSL transformation failed.', E_USER_ERROR);
+			  }
+	 }
+
+	 
+	 
 
 	// retourne un moteur de recherche sur les metadonnees
-	function Xslt_moteur_de_recherche() {
-		$term       = isset($_POST["term"])    ? ($_POST["term"])    : "";
-		$field      = isset($_POST["field"])   ? ($_POST["field"])   : "All";
-		$mode       = isset($_POST["mode"])    ? ($_POST["mode"])    : "contains";
-		$participant     = isset($_POST["participant"])  ? ($_POST["participant"])  : "*";
-		$langue     = isset($_POST["langue"])  ? ($_POST["langue"])  : "*";
-		$howmany    = isset($_POST["howmany"]) ? ($_POST["howmany"]) : "15";
-		$from       = isset($_POST["from"])    ? ($_POST["from"])    : "1";
+	function Xslt_moteur_de_recherche($lang) {
+		
+		
+		$term       = isset($_GET["term"])    ? ($_GET["term"])    : "";
+		$field      = isset($_GET["field"])   ? ($_GET["field"])   : "All";
+		$mode       = isset($_GET["mode"])    ? ($_GET["mode"])    : "contains";
+		$participant     = isset($_GET["participant"])  ? ($_GET["participant"])  : "*";
+		$langue     = isset($_GET["langue"])  ? ($_GET["langue"])  : "*";
+		$howmany    = isset($_GET["howmany"]) ? ($_GET["howmany"]) : "15";
+		$from       = isset($_GET["from"])    ? ($_GET["from"])    : "1";
 
 		$xml = simplexml_load_file('metadata_lacito.xml');
 		
@@ -185,9 +547,99 @@ ini_set('display_errors','off');
 		$xml->registerXPathNamespace('dcterms', 'http://purl.org/dc/terms/');
 		$xml->registerXPathNamespace('olac',    'http://www.language-archives.org/OLAC/1.1/');
 		
+if ($lang=='fr'){
+	
+		echo '<form action="" method="GET">';
+		echo '<table class="crdo-request">';
+		echo '	<tr>';
+		echo '		<th>Mots cl&eacute;s</th>';
+		//echo '		<th>Cat&eacute;gorie</th>';
+		//echo '		<th>Op&eacute;rateur</th>';
+		echo '		<th>Chercheur(s)/Depositaire(s)</th>';
+		echo '		<th>Langue(s)</th>';
+		echo '		<th> </th>';
+		echo '	</tr>';
+		echo '  <tr>';
+		echo '     <td>';
+		//echo "         <input type='hidden' name='who' value='".$who."'/>";
+		//echo "         <input type='hidden' name='lab' value='".$lab."'/>";
+		echo "         <input type='text'   name='term' size='20' value='$term'/>";
+		echo '     </td>';
+		
+		echo'<td>';
+		echo '<select name="participant">';
+		echo '<option value="*">Tous</option>';
 
+		$result = $xml->xpath('//dc:contributor[@olac:code="researcher"]|//dc:contributor[@olac:code="depositor"]');
+		
+		$attente = array_unique($result);
+		
+		for ($i=0; $i<sizeof($attente);$i++){
+		$attente[$i]=trim($attente[$i]);
+		
+		
+		}
+		
+		$distincts = array_unique($attente);
+		
 
-		echo '<form action="" method="POST">';
+		
+	
+		natsort($distincts);
+		
+		while(list( , $node) = each($distincts)) {
+		
+		
+		
+		$test=eregi("(.*),(.*)",$node);
+		
+		if ($test==1){
+		
+			if ($node == $participant) {
+				echo '<option selected="selected">',$node, '</option>';
+			} else {
+				echo '<option>',$node,'</option>';
+			}
+			}
+			
+		}
+		echo '</select>';
+	
+		
+		echo '</select>';
+		
+		echo '</td><td>';
+		echo '<select name="langue">';
+		echo '<option value="*">Tous</option>';
+	
+		$result = $xml->xpath('//dc:subject[@xsi:type="olac:language"]');
+		
+		
+		
+		$distincts = array_unique($result);
+		natsort($distincts);
+		
+		
+		while(list( , $node) = each($distincts)) {
+			if ($node == $langue) {
+				echo '<option selected="selected">',$node, '</option>';
+			} else {
+				echo '<option>',$node,'</option>';
+			}
+		}
+		echo '</select>';
+		//echo count($attente);
+		echo '</td><td>';
+		echo '<input type="submit" value="Rechercher"/></nobr>';
+		echo '     </td>';
+		echo '	</tr>';
+		echo '</table>';
+		echo '</form>';
+	
+}
+else {
+
+		echo '<form action="" method="GET">';
 		echo '<table class="crdo-request">';
 		echo '	<tr>';
 		echo '		<th>Keyword(s)</th>';
@@ -203,40 +655,7 @@ ini_set('display_errors','off');
 		//echo "         <input type='hidden' name='lab' value='".$lab."'/>";
 		echo "         <input type='text'   name='term' size='20' value='$term'/>";
 		echo '     </td>';
-		/*echo '     <td>';
-
-	
-
-		$tab = array('All','Title','Publisher','Contributor','Description','Date','Type','Format','Identifier','Source','Language','Relation','Coverage','Rights','Creator','Subject');
-		reset($tab);
-		echo '<select name="field">';
-		while ( list($clef, $valeur) = each($tab) ) {
-			$selected = "";
-			if ($valeur == $field) {
-				$selected = " selected='selected'";
-			}
-			echo "<option".$selected.">$valeur</option>";
-		}
-		echo '</select>';
-
-		echo '</td>';*/
-		/*echo '<td>';
-		$tab = array('contains','exact');
-		$tabLabels = array('contains','exact match');
-		reset($tab);
-		echo '<select name="mode">';
-		while ( list($clef, $valeur) = each($tab) ) {
-			$selected = "";
-			if ($valeur == $mode) {
-				$selected = " selected='selected'";
-			}
-			$label = $tabLabels[$clef];
-			echo "<option value='".$valeur."'".$selected.">$label</option>";
-		}
 		
-		echo '</select>';
-
-		echo '</td>';*/
 		echo'<td>';
 		echo '<select name="participant">';
 		echo '<option value="*">All</option>';
@@ -301,16 +720,16 @@ ini_set('display_errors','off');
 		echo '</select>';
 		//echo count($attente);
 		echo '</td><td>';
-		echo '<input type="submit" value="Valider"/></nobr>';
+		echo '<input type="submit" value="Search"/></nobr>';
 		echo '     </td>';
 		echo '	</tr>';
 		echo '</table>';
 		echo '</form>';
-
+}
 		$min = "'abcdefghijklmnopqrstuvwxyz'";
 		$maj = "'ABCDEFGHIJKLMNOPQRSTUVWXYZ'";
 
-		if(isset($_POST["term"])) {
+		if(isset($_GET["term"])) {
 		
 		$search=split(' ',$term);
 		$identity=split(',',$participant);
@@ -414,12 +833,39 @@ if ($term!=""){
 			$result = $xml->xpath('//oai:record[.//olac:olac[contains(dc:format,"audio")][not (contains(dcterms:accessRights, "protected"))]'.$condLangue.$condParticipant.$expr.']');
 			
 			
-			echo '<table class="resultats" width="%" border="1" align="center">';
+			
+			$total_reponse=sizeof($result);
+			
+			if ($lang=='fr'){
+				echo '<table class="resultats" width="100%" border="0" align="left">';
 			$i = 0;
 			echo '<tr>';
 			echo'<th><div align="left"><font size="-1"></font></div></th>';
 			//echo'<th><div align="left"><font size="-1"></font></div></th>';
 	 		echo'<th><div align="left"><font size="-1"></font></div></th>';
+			echo'<th><div align="left"><font size="-1"></font></div></th>';
+	 		//echo'<th><div align="left"><font size="-1"></font></div></th>';
+			echo'<th><div align="left"><font size="-1">TITRE</font></div></th>';
+	 		//echo'<th><div align="left"><font size="-1"></font></div></th>';
+			echo'<th><div align="left"><font size="-1">LANGUE</font></div></th>';
+			//echo' <th><div align="left"><font size="-1"></font></div></th>';
+	 		echo'<th><div align="left"><font size="-1">CHERCHEUR(S)</font></div></th>';
+    		//echo' <th><div align="left"><font size="-1"></font></div></th>';
+	 		echo'<th><div align="left"><font size="-1">LOCUTEUR(S)</font></div></th>';
+			echo'</tr>';	
+				
+				echo $total_reponse." r&eacute;sultats";
+				
+			}
+			else {
+				
+				echo '<table class="resultats" width="100%" border="0" align="left">';
+			$i = 0;
+			echo '<tr>';
+			echo'<th><div align="left"><font size="-1"></font></div></th>';
+			//echo'<th><div align="left"><font size="-1"></font></div></th>';
+	 		echo'<th><div align="left"><font size="-1"></font></div></th>';
+			echo'<th><div align="left"><font size="-1"></font></div></th>';
 	 		//echo'<th><div align="left"><font size="-1"></font></div></th>';
 			echo'<th><div align="left"><font size="-1">TITLE</font></div></th>';
 	 		//echo'<th><div align="left"><font size="-1"></font></div></th>';
@@ -430,10 +876,14 @@ if ($term!=""){
 	 		echo'<th><div align="left"><font size="-1">LOCUTOR(S)</font></div></th>';
 			echo'</tr>';	
 				
+				echo $total_reponse." results";
 				
 				
+			}
+			
 				
-				
+			
+			
 			while(list( , $node) = each($result)) {
 			
 			
@@ -456,6 +906,7 @@ if ($term!=""){
 				if (strlen($tit) > 25) {
 					$tit = substr($tit, 0, 24) . '...';
 				}
+				
 				$id          = substr(@Xpath_first_value($node, '//header/identifier'), strlen('oai:crdo.risc.cnrs.fr:')-1);
 				
 				$href        = @Xpath_first_value($node, '//dc:identifier');
@@ -463,7 +914,7 @@ if ($term!=""){
 				$has_transcr = @Xpath_first_value($node, '//dcterms:isRequiredBy');
 				
 				if ($has_transcr) {
-					$href = 'show_text.php?id='.$id;
+					$href_trans = 'show_text.php?id='.$id;
 				}
 				$researchers = @Xpath_values($node, '//dc:contributor[@olac:code="researcher"]');
 				
@@ -517,20 +968,37 @@ if ($term!=""){
 				$language = @Xpath_values($node, '//dc:subject[@xsi:type="olac:language"]');
 
 
-				echo '<a href="', $href,'" title ="Ecouter ce texte" target="_blank" onClick="flvFPW1(this.href, \'popupLink\',\'width=640,height=400,scrollbars=yes,resizable=yes\',1);return document.MM_returnValue">';
-				echo '<img class="sansBordure" border=0 src="../../images/icones/h_parleur.gif"/></a>';
+				$l_temp=split(";",$language);
+				
+				
+				if( sizeof($l_temp)>1){
+									
+					if($l_temp[0] != $l_temp[1]){$language=$l_temp[0]."/".$l_temp[1];}
+					else {$language=$l_temp[0];}
+				}
+		
+		
+		
+				echo '<a href="', $href,'" title ="Ecouter ce texte" target="_blank" >';
+				//onClick="flvFPW1(this.href, \'popupLink\',\'width=640,height=400,scrollbars=yes,resizable=yes\',1);return document.MM_returnValue"
+				echo '<img class="sansBordure" border=0 src="../../images/icones/sound1_bleu.jpg"/></a>';
 				echo '</td>';
-				//echo '<td valign="top"> </td>';
-
+				echo '<td valign="top">';
+				if ($has_transcr) {
+					
+				echo '<a href="', $href_trans,'" title ="Ecouter ce texte" target="_blank" >';
+				echo '<img class="sansBordure" border=0 src="../../images/icones/Txt_Inter_parchemin.jpg"/></a>'; 
+				}
+echo '</td>';
 				echo '<td valign="top">';
 				echo '<a href="show_metadatas.php?id=',$id,'" title="A propos de ',$titre,'" target="_blank" onClick="flvFPW1(this.href, \'popupLink\',\'width=640,height=400,scrollbars=yes,resizable=yes\',1);return document.MM_returnValue">';
 				echo '<img class="sansBordure" border=0 src="../../images/icones/info.gif"/></a>';
 				echo '</td>';
-				//echo '<td valign="top"> </td>';
-
+				//echo '<td valign="top"> </td>';				
+				
 				echo "<td title='$titre'>$tit</td>";
 				//echo '<td valign="top"> </td>';
-				echo "<td title='$titre'>$language</td>";
+				echo "<td title='$language'>$language</td>";
 				//echo '<td valign="top"> </td>';
 				echo "<td title='$researchers'>$fn_researchers</td>";
 				//echo '<td valign="top"> </td>';
@@ -540,7 +1008,13 @@ if ($term!=""){
 			}
 			echo '</table></center>';
 		} else {
-			echo 'pas de requete';
+			
+			if ($lang=='fr'){
+				echo 'Pas de requ&ecirc;te';
+			}
+			else {			
+				echo 'There is no request';
+			}
 		}
 
 
@@ -577,7 +1051,7 @@ if ($term!=""){
 		while(list( , $n) = each($xx)) {
 		
 			if (($result!='')){
-					$result .= " ; $n";
+					$result .= ";$n";
 				}
 				else {
 					$result .= "$n";

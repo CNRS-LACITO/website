@@ -102,11 +102,11 @@
 </xsl:template>
 
 <xsl:template name="contributor">
-	<xsl:if test="//crdo:item/oai_dc:contributor[@olac:code='researcher']|//crdo:item/oai_dc:contributor[@olac:code='speaker']|//crdo:item/oai_dc:contributor[@olac:code='depositor']|//crdo:item/oai_dc:contributor[@olac:code='interviewer']">
+	<xsl:if test="//crdo:item/oai_dc:contributor[@olac:code='researcher']|//crdo:item/oai_dc:contributor[@olac:code='speaker']|//crdo:item/oai_dc:contributor[@olac:code='performer']|//crdo:item/oai_dc:contributor[@olac:code='depositor']|//crdo:item/oai_dc:contributor[@olac:code='interviewer']">
 		<tr>
 			<td class="descripteur">Participant(s):</td>
 			<td class="valeur">
-				<xsl:for-each select="xalan:distinct(//crdo:item/oai_dc:contributor[@olac:code='researcher']|//crdo:item/oai_dc:contributor[@olac:code='speaker']|//crdo:item/oai_dc:contributor[@olac:code='depositor']|//crdo:item/oai_dc:contributor[@olac:code='interviewer'])">
+				<xsl:for-each select="xalan:distinct(//crdo:item/oai_dc:contributor[@olac:code='researcher']|//crdo:item/oai_dc:contributor[@olac:code='speaker']|//crdo:item/oai_dc:contributor[@olac:code='performer']|//crdo:item/oai_dc:contributor[@olac:code='depositor']|//crdo:item/oai_dc:contributor[@olac:code='interviewer'])">
 					<xsl:apply-templates select="."/>
 					<xsl:if test="position()!=last()"><br/></xsl:if>
 				</xsl:for-each>

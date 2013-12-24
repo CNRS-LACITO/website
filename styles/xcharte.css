@@ -49,9 +49,13 @@ td.XnavgaucheIcones
 #divnavgauche-searchLabo {
 	       position:absolute;left:0px;top:590px;z-index:1;
 	       width:150px;visibility: visible;}
-#divnavgauche-search {
-           position:absolute;left:11px;top:609px;z-index:1;
-	       width:100px;visibility: visible;}	
+#divnavgauche-language {
+	       position:absolute;left:0px;top:690px;z-index:1;
+	       width:150px;visibility: visible;}
+<!--#divnavgauche-search {-->
+<!--           position:absolute;left:11px;top:609px;z-index:1;-->
+<!--	       width:100px;visibility: visible;}	-->
+
 		   				 
 input.BoiteRechercher {
 	font-size:10px;

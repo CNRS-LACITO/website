@@ -8,6 +8,7 @@ $Type = "Type";
 if (isset($_GET['Type'])) { $Type = $_GET['Type'];}
 if (isset($_GET['pageNum_liste_pub'])) {
   $pageNum_liste_pub = $_GET['pageNum_liste_pub'];
+
 }
 $startRow_liste_pub = $pageNum_liste_pub * $maxRows_liste_pub;
 $colname_liste_pub = "Auteurs";
@@ -15,10 +16,11 @@ if (isset($_GET['NomAuteur'])) {
   $colname_liste_pub = (get_magic_quotes_gpc()) ? $_GET['NomAuteur'] : addslashes($_GET['NomAuteur']);
 }
 mysql_select_db($database_connect_publiCNRS, $connect_publiCNRS);
-$query_liste_pub = sprintf("SELECT * FROM bdd WHERE Auteurs LIKE '%%%s%%' AND `Type` = '$Type' ORDER BY Annee DESC", $colname_liste_pub);
+$query_liste_pub = sprintf("SELECT * FROM bdd WHERE Auteurs LIKE '%%%s%%' AND `Type` = '$Type' ORDER BY Annee DESC, Auteurs ASC, Titre ASC", $colname_liste_pub);
 $query_limit_liste_pub = sprintf("%s LIMIT %d, %d", $query_liste_pub, $startRow_liste_pub, $maxRows_liste_pub);
 $liste_pub = mysql_query($query_limit_liste_pub, $connect_publiCNRS) or die(mysql_error());
 $row_liste_pub = mysql_fetch_assoc($liste_pub);
+
 if (isset($_GET['totalRows_liste_pub'])) {
   $totalRows_liste_pub = $_GET['totalRows_liste_pub'];
 } else {
@@ -52,6 +54,7 @@ $queryString_liste_pub = sprintf("&totalRows_liste_pub=%d%s", $totalRows_liste_p
 <title>Productions scientifiques du Lacito</title>
 <!-- InstanceEndEditable --><link rel="stylesheet" type="text/css" href="../styles/xcharte.css">
 <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+<script src="../Scripts/Change_Version.js" type="text/javascript"></script>
 <script language="JavaScript" src="../z-outils/init.js"></script>
 <script language="JavaScript" src="../z-outils/outils.js"></script>
 <script language="JavaScript" type="text/JavaScript">
@@ -83,7 +86,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
   <div id="divbandeau-lienAutres" class="bandeau-liens"><a href="http://www.cnrs.fr/fr/une/sites-cnrs.htm" target="_blank">Autres sites CNRS</a></div> 
 <div id="divbandeau-traitvert3"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
 
-<table width="751"  border="0" cellspacing="0" cellpadding="0">
+<table height="900" width="751"  border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td width="150"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="65"></td>
     <td colspan="3"><img src="../z-outils/images/charte/bandeau-haut-droit.gif" alt="" width="100%" border="0"></td>
@@ -147,7 +150,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
 	 if ($_GET['Type'] == "ART") {echo "Articles ".' -- ';}
 	 if ($_GET['Type'] == "COV") {echo "Chapitres d'ouvrage ".' -- ';}
 	 if ($_GET['Type'] == "COL") {echo "Communications ".' -- ';}
-	 if ($_GET['Type'] == "TRU") {echo "Th�ses ".' -- ';}
+	 if ($_GET['Type'] == "TRU") {echo "Th&egrave;ses ".' -- ';}
 	 if ($_GET['Type'] == "CRO") {echo "Comptes rendus ".' -- ';}
 	 echo $_GET['NomPrenomAuteur'];?></b></br>
 	
@@ -194,21 +197,69 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                     </table>
                   </td>
                 </tr>
-                <?php do { ?>
+                <?php do { 
+				
+					 $row_liste_pub['Titre']= utf8_encode($row_liste_pub['Titre']);
+					 $row_liste_pub['s']= utf8_encode($row_liste_pub['s']); 
+					 $row_liste_pub['u']= utf8_encode($row_liste_pub['u']);
+					 $row_liste_pub['t']= utf8_encode($row_liste_pub['t']); 
+					 $row_liste_pub['o']= utf8_encode($row_liste_pub['o']);
+					 $row_liste_pub['Auteurs']= utf8_encode($row_liste_pub['Auteurs']); 
+					 $row_liste_pub['Collation']= utf8_encode($row_liste_pub['Collation']); 
+					 $row_liste_pub['Annee']= utf8_encode($row_liste_pub['Annee']); 
+					 $row_liste_pub['URL']= utf8_encode($row_liste_pub['URL']); 
+					 // 07/06/11 P.Grison zone_libre
+					 $row_liste_pub['zone_libre']= utf8_encode($row_liste_pub['zone_libre']); 
+					 $row_liste_pub['cote']= utf8_encode($row_liste_pub['cote']); 
+				
+				?>
                 <tr valign="top">
                   <td>&nbsp;</td>
                   <td>
                   	<b><?php echo $row_liste_pub['Annee']; ?>&nbsp;</b><br>
-				  	<?php if(trim($row_liste_pub['URL'])!=""){echo "<a href=\"";echo trim($row_liste_pub['URL']);echo"\"><img src='/icons/text.gif' border='0'/></a>";} ?>
+				  	<?php if(trim($row_liste_pub['URL'])!=""){echo "<a href=\"";echo trim($row_liste_pub['URL']);echo"\" target=\"_blank\"><img src='/icons/text.gif' border='0'/></a>";} ?>
 				  </td>
                   <td>
-					  <?php  if($row_liste_pub['Type']=="COV"){echo $row_liste_pub['Auteurs']; echo "&nbsp;--&nbsp;" ; echo $row_liste_pub['Titre']; echo "&nbsp;--&nbsp;In&nbsp;:&nbsp;"; echo $row_liste_pub['s']; if($row_liste_pub['u']!="") {echo "&nbsp;/&nbsp;"; echo $row_liste_pub['u'];} echo "&nbsp;--&nbsp;"; echo $row_liste_pub['t']; echo ",&nbsp;";  echo $row_liste_pub['Collation'];} ?>
-					  <?php  if($row_liste_pub['Type']=="ART"){echo $row_liste_pub['Auteurs']; echo "&nbsp;--&nbsp;" ; echo $row_liste_pub['Titre']; echo "&nbsp;--&nbsp;In&nbsp;:&nbsp;"; echo $row_liste_pub['s']; echo ",&nbsp;"; echo $row_liste_pub['Annee']; echo ",&nbsp;";  echo $row_liste_pub['Collation'];} ?>
-					  <?php  if($row_liste_pub['Type']=="TRU"){echo $row_liste_pub['Auteurs']; echo "&nbsp;--&nbsp;" ; echo $row_liste_pub['Titre']; echo "&nbsp;--&nbsp;"; echo $row_liste_pub['u']; echo "&nbsp;--&nbsp;"; echo $row_liste_pub['s']; echo ",&nbsp;"; echo $row_liste_pub['t']; echo ".-&nbsp;";  echo $row_liste_pub['Collation'];} ?>
-					  <?php  if($row_liste_pub['Type']=="OUV"){echo $row_liste_pub['Auteurs']; echo "&nbsp;--&nbsp;" ; echo $row_liste_pub['Titre']; echo "&nbsp;--&nbsp;"; echo $row_liste_pub['t']; echo ",&nbsp;"; echo $row_liste_pub['Annee']; echo ".-&nbsp;";  echo $row_liste_pub['Collation'];} ?>
-					  <?php  if($row_liste_pub['Type']=="RAP"){echo $row_liste_pub['Auteurs']; echo "&nbsp;--&nbsp;" ; echo $row_liste_pub['Titre']; echo "&nbsp;--&nbsp;"; echo $row_liste_pub['Annee']; echo ".-&nbsp;";  echo $row_liste_pub['o'];} ?>
-					  <?php  if($row_liste_pub['Type']=="COL"){echo $row_liste_pub['Auteurs']; echo "&nbsp;--&nbsp;" ; echo $row_liste_pub['Titre']; echo "&nbsp;--&nbsp;Pour&nbsp;:&nbsp;"; echo $row_liste_pub['s']; if($row_liste_pub['u']!="") {echo "&nbsp;/&nbsp;"; echo $row_liste_pub['u'];} echo "&nbsp;--&nbsp;"; echo $row_liste_pub['t'];} ?>
-					  <?php  if($row_liste_pub['Type']=="CRO"){echo $row_liste_pub['Auteurs']; echo "&nbsp;--&nbsp;" ; echo $row_liste_pub['Titre']; echo "&nbsp;--&nbsp;In&nbsp;:&nbsp;"; echo $row_liste_pub['s']; echo ",&nbsp;"; echo $row_liste_pub['Annee']; echo ",&nbsp;";  echo $row_liste_pub['Collation'];} ?>
+					  <?php  if($row_liste_pub['Type']=="COV"){
+						  echo $row_liste_pub['Auteurs']; echo "&nbsp;--&nbsp;" ; echo $row_liste_pub['Titre']; echo "&nbsp;--&nbsp;In&nbsp;:&nbsp;"; echo $row_liste_pub['s']; if($row_liste_pub['u']!="") {echo "&nbsp;/&nbsp;"; echo $row_liste_pub['u'];} echo "&nbsp;--&nbsp;"; echo $row_liste_pub['t']; echo ",&nbsp;";  echo $row_liste_pub['Collation'];
+					   if($row_liste_pub['zone_libre'] != ''){ echo '&nbsp;--&nbsp;['.$row_liste_pub['zone_libre'].']';} 
+					   if($row_liste_pub['cote'] != ''){ echo '&nbsp;--&nbsp;Cote&nbsp;:&nbsp;<b>'.$row_liste_pub['cote'].'</b>';} 
+						  } ?>
+					  <?php  if($row_liste_pub['Type']=="ART"){
+						  echo $row_liste_pub['Auteurs']; echo "&nbsp;--&nbsp;" ; echo $row_liste_pub['Titre']; echo "&nbsp;--&nbsp;In&nbsp;:&nbsp;"; echo $row_liste_pub['s']; echo ",&nbsp;"; echo $row_liste_pub['Annee']; echo ",&nbsp;";  echo $row_liste_pub['Collation'];
+					   if($row_liste_pub['zone_libre'] != ''){ echo '&nbsp;--&nbsp;['.$row_liste_pub['zone_libre'].']';} 
+					   if($row_liste_pub['cote'] != ''){ echo '&nbsp;--&nbsp;Cote&nbsp;:&nbsp;<b>'.$row_liste_pub['cote'].'</b>';}  
+						  } ?>
+					  <?php  if($row_liste_pub['Type']=="TRU"){
+						  echo $row_liste_pub['Auteurs']; echo "&nbsp;--&nbsp;" ; echo $row_liste_pub['Titre']; echo "&nbsp;--&nbsp;"; echo $row_liste_pub['u']; echo "&nbsp;--&nbsp;"; echo $row_liste_pub['s']; echo ",&nbsp;"; echo $row_liste_pub['t']; echo ".-&nbsp;";  echo $row_liste_pub['Collation'];
+					   if($row_liste_pub['zone_libre'] != ''){ echo '&nbsp;--&nbsp;['.$row_liste_pub['zone_libre'].']';} 
+					   if($row_liste_pub['cote'] != ''){ echo '&nbsp;--&nbsp;Cote&nbsp;:&nbsp;<b>'.$row_liste_pub['cote'].'</b>';} 
+						  } ?>
+					  <?php  if($row_liste_pub['Type']=="OUV"){
+						  echo $row_liste_pub['Auteurs']; echo "&nbsp;--&nbsp;" ; echo $row_liste_pub['Titre']; echo "&nbsp;--&nbsp;"; echo $row_liste_pub['t']; echo ",&nbsp;"; echo $row_liste_pub['Annee']; echo ".-&nbsp;";  echo $row_liste_pub['Collation'];
+					   if($row_liste_pub['zone_libre'] != ''){ echo '&nbsp;--&nbsp;['.$row_liste_pub['zone_libre'].']';} 
+					   if($row_liste_pub['cote'] != ''){ echo '&nbsp;--&nbsp;Cote&nbsp;:&nbsp;<b>'.$row_liste_pub['cote'].'</b>';}  
+						  } ?>
+					  <?php  if($row_liste_pub['Type']=="RAP"){
+						  echo $row_liste_pub['Auteurs']; echo "&nbsp;--&nbsp;" ; echo $row_liste_pub['Titre']; echo "&nbsp;--&nbsp;"; echo $row_liste_pub['Annee']; echo ".-&nbsp;";  echo $row_liste_pub['o'];
+					   if($row_liste_pub['zone_libre'] != ''){ echo '&nbsp;--&nbsp;['.$row_liste_pub['zone_libre'].']';} 
+					   if($row_liste_pub['cote'] != ''){ echo '&nbsp;--&nbsp;Cote&nbsp;:&nbsp;<b>'.$row_liste_pub['cote'].'</b>';}
+						  } ?>
+					  <?php  if($row_liste_pub['Type']=="COL"){
+						  echo $row_liste_pub['Auteurs']; echo "&nbsp;--&nbsp;" ; echo $row_liste_pub['Titre']; echo "&nbsp;--&nbsp;Pour&nbsp;:&nbsp;"; echo $row_liste_pub['s']; if($row_liste_pub['u']!="") {echo "&nbsp;/&nbsp;"; echo $row_liste_pub['u'];} echo "&nbsp;--&nbsp;"; echo $row_liste_pub['t'];
+					   if($row_liste_pub['zone_libre'] != ''){ echo '&nbsp;--&nbsp;['.$row_liste_pub['zone_libre'].']';} 
+					   if($row_liste_pub['cote'] != ''){ echo '&nbsp;--&nbsp;Cote&nbsp;:&nbsp;<b>'.$row_liste_pub['cote'].'</b>';}
+						  } ?>
+					  <?php  if($row_liste_pub['Type']=="CRO"){
+						  echo $row_liste_pub['Auteurs']; echo "&nbsp;--&nbsp;" ; echo $row_liste_pub['Titre']; echo "&nbsp;--&nbsp;In&nbsp;:&nbsp;"; echo $row_liste_pub['s']; echo ",&nbsp;"; echo $row_liste_pub['Annee']; echo ",&nbsp;";  echo $row_liste_pub['Collation'];
+					   if($row_liste_pub['zone_libre'] != ''){ echo '&nbsp;--&nbsp;['.$row_liste_pub['zone_libre'].']';} 
+					   if($row_liste_pub['cote'] != ''){ echo '&nbsp;--&nbsp;Cote&nbsp;:&nbsp;<b>'.$row_liste_pub['cote'].'</b>';}
+						  } ?>
+                          <?php  if($row_liste_pub['Type']=="AUT"){
+						  echo $row_liste_pub['Auteurs']; echo "&nbsp;--&nbsp;" ; echo $row_liste_pub['Titre']; echo "&nbsp;--&nbsp;In&nbsp;:&nbsp;"; echo $row_liste_pub['s']; echo ",&nbsp;"; echo $row_liste_pub['Annee']; echo ",&nbsp;";  echo $row_liste_pub['Collation']; 
+						  if($row_liste_pub['zone_libre'] != ''){ echo '&nbsp;--&nbsp;['.$row_liste_pub['zone_libre'].']';} 
+						  if($row_liste_pub['cote'] != ''){ echo '&nbsp;--&nbsp;Cote&nbsp;:&nbsp;<b>'.$row_liste_pub['cote'].'</b>';} 
+						  } ?>
 				  </td>
                 </tr>
                 <tr>
@@ -336,7 +387,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
        	<td width="100%"  class="Xnavgauche" >
         	<table border="0" cellpadding="10" cellspacing="0"  width="100%">
       			<tr>
-       	 			<td width="100%" class="Xnavgauche"><h2><a href="INTRANET/index.htm">Intranet <img border="0" src="../z-outils/images/boite-outils/icones/intranet.gif" width="18" height="12"
+       	 			<td width="100%" class="Xnavgauche"><h2><a href="../INTRANET/index.htm">Intranet <img border="0" src="../z-outils/images/boite-outils/icones/intranet.gif" width="18" height="12"
 							alt="aa"></a></h2></td>
       			</tr>
        		</table>
@@ -379,6 +430,11 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
 		</tr>
 
  </div>
+ 
+  <div id="divnavgauche-language">
+ <p class="intertitre" align="center"><a href="Javascript:version()"><img src="../images/logos/eng.gif" alt="English" border="0"></a></p>
+ </div>
+ 
 <div id="divnavhaut-nom-labo">
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
     <tr>

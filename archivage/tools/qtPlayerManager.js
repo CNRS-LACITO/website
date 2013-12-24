@@ -70,11 +70,16 @@ function playFrom(id) {
 			document.player.SetEndTime(getMaxEnd()*timeScale);
 			fin = getMaxEnd()*1000;
 			loadStack(i);
+			
 			document.player.Play();
-			timer = setTimeout("loop()", 400);
+			dohighlight(timeScale);
+			/*timer = setTimeout("loop()", 400);*/
+			timer = setTimeout("loop()", 250);
+			
 		}
 	} else {
 		playOne(id);
+		dohighlight(timeScale)
 	}
 }
 //--------------------------------------------> managing a stack and a loop for quicktime player
@@ -145,6 +150,32 @@ function testStack(time) {
 			stackEnd = provi;
 			endplay(IDS[n]);
 			return;
+		}
+	}
+}
+
+function dohighlight(time) {
+	for (var i=0;i<STARTS.length;i++) {
+		var node = document.getElementById(IDS[i]);
+		if (STARTS[i]*1000 <= time) {
+			if (ENDS[i]*1000 >= time) {
+				startplay(IDS[i]);
+				if (i+1 <STARTS.length) i = i+1;
+			
+				node.style.backgroundColor="#D9D9F3";
+				var elt = node.getElementsByTagName('a');
+								
+				if (elt) {
+					elt[elt.length -1].focus();
+				
+				}
+			} else {
+				node.style.backgroundColor="";
+				endplay(IDS[i]);
+			}
+		} else {
+			node.style.backgroundColor="";
+			endplay(IDS[i]);
 		}
 	}
 }

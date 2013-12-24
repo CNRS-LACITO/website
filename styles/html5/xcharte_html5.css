@@ -1,0 +1,165 @@
+td.Xnavhaut, td.Xnavhaut p
+          { 
+           font-size : 12px;color :#00294b;
+           text-align: left;font-weight: bold;}
+td.Xnavhaut a:link,
+td.Xnavhaut a:visited
+          {color :#00294b; text-decoration : none;}
+td.Xnavhaut a:hover
+          {color :#00294b; text-decoration : none;}          
+div.bandeau-liens, div.bandeau-liens a:link, div.bandeau-liens a:visited, div.bandeau-liens a:hover { font-size : 12px; text-align: left; font-weight: bold; color:#FFFFFF; text-decoration:none; }
+#divbandeau-lienCNRS { position:absolute;left:488px;top:16px;z-index:1; visibility: visible}
+#divbandeau-lienAccueil { position:absolute;left:552px;top:16px;z-index:1; visibility: visible}
+#divbandeau-lienAutres { position:absolute;left:641px;top:16px;z-index:1; visibility: visible}
+#divbandeau-traitvert1 {position:absolute;left:481px;top:18px;z-index:1;visibility: visible}
+#divbandeau-traitvert2 { position:absolute;left:545px;top:18px;z-index:1; visibility: visible}
+#divbandeau-traitvert3 { position:absolute;left:633px;top:18px;z-index:1; visibility: visible}
+#divnavhaut-nom-labo {
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:1;
+	width:317px;
+	;
+}
+
+div.ZonePrint { margin:10px; }
+					
+td.Xnavgauche, td.Xnavgauche p, td.XnavgaucheIcones
+          {font-size : 11px; color: #00294b}
+td.Xnavgauche p
+          {margin-top:0px;margin-bottom:0px}    
+td.Xnavgauche h2
+          {color: #00294b; font-weight: bold; font-size : 12px;}   
+td.Xnavgauche h2 a:link, 
+td.Xnavgauche h2 a:visited 
+          {color: #00294b; font-weight: bold;  
+           text-decoration : none; }
+td.Xnavgauche h2 a:hover 
+          {color: #7695b8; font-weight: bold;  
+           text-decoration : none; }             
+td.XnavgaucheIcones
+ 		  {vertical-align:bottom; }                         
+#divpartenaires {
+	       position:absolute;width:150px;
+	       z-index:1; left: 0px;top: 66px;visibility: visible;}
+#divnavgauche-spec {
+	position:absolute;
+	left:0px;
+	top:541px;
+	z-index:1;
+	height:20px;
+	width:150px;
+	visibility: visible;
+}               
+#divnavgauche-searchLabo {
+	position:absolute;
+	left:0px;
+	top:633px;
+	z-index:1;
+	height:85px;
+	width:150px;
+	visibility: visible;
+}
+#divnavgauche-language {
+	position:absolute;
+	left:-1px;
+	top:760px;
+	z-index:1;
+	width:150px;
+	visibility: visible;
+	height: 54px;
+}
+#divnavgauche-search {
+           position:absolute;left:11px;top:609px;z-index:1;
+	       width:100px;visibility: visible;}	
+
+		   				 
+input.BoiteRechercher {
+	font-size:10px;
+	width:80px;
+	border-color: #00294b;
+	border-style:solid;
+	border-width: 1px;}   
+	
+#boiterechercher {
+	position:absolute;
+	left:230px;
+	top:8px;
+	width:150px;
+	z-index:0;
+	border-width: 1pt;
+	
+} 				
+
+#divXnavdroite{ float : right ;
+			    width : 135px;
+				padding-left:10px;
+				padding-bottom:10px;
+}
+					
+td.Xnavdroite {
+	border-bottom-color: #446c7f;
+	border-bottom-style:solid;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-right-width: 1px;
+	border-top-width: 1px;
+}
+
+td.Xnavdroite, td.Xnavdroite p
+          {font-size : 11px; color: #113d54}  
+ 
+td.Xnavdroite p
+          {margin-top : 0px; margin-bottom : 0px}       
+             
+td.Xnavdroite h1
+          {font-size : 14px; color: #2e3e47; font-weight: bold; margin-bottom: 0px}
+td.Xnavdroite h2
+          {font-size : 11px; color: #284a71; font-weight: bold; margin-bottom: 0px}
+td.Xnavdroite h2 a:link, 
+td.Xnavdroite h2 a:visited 
+          {color: #284a71; font-weight: bold;  
+           text-decoration : none; }
+td.Xnavdroite h2 a:hover 
+          {color: #82c2e0; font-weight: bold;  
+           text-decoration : none; }             
+                          		
+td.Xscde-navdroite, td.Xscde-navdroite p
+         {
+	font-size : 11px;
+	color: #113d54;
+	font-weight: bold;
+	margin:0
+	} 
+                              
+td.Xscde-navdroite 
+          {
+	background-color : #FFFFFF;
+	vertical-align : top;
+	text-align: left;
+	border-bottom-color: #446c7f;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+    border-left-color: #446c7f;
+	border-left-style: solid;
+	border-left-width: 1px;
+}
+
+td.Xscde-navdroite  a:link, td.Xscde-navdroite  a:visited  
+         {color: #23607d;text-decoration : none;}
+td.Xscde-navdroite a:hover
+          {color: #82c2e0;text-decoration : none;}          
+
+td.Xchemin
+        {color: #263033; vertical-align : middle}        
+                          
+td.Xchemin a:link, td.Xchemin a:visited
+        {color: #263033; text-decoration: none}  
+             
+td.Xchemin a:hover
+        {color: #5494a4; text-decoration: none}       
+     
+         
+         
+      
