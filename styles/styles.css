@@ -1,0 +1,68 @@
+body { margin : 0px;  background-color:#FFFFFF; } 
+
+hr   { color: #282828 }
+
+a:link  {color : #556268; text-decoration : underline; } 
+a:visited {color : #556268; text-decoration : underline; } 
+a:hover {color : #BE6E00; text-decoration : underline; } 
+
+table {
+    border-collapse: collapse;}   
+
+ul {list-style-position : outside; list-style-type:square; 
+    list-style-image: url("../z-outils/images/boite-outils/puce.gif")}
+.appartenance {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+                  
+p  {margin-top : 5px; margin-bottom : 5px; }                      
+ul {margin-top : 5px; margin-bottom : 5px; }  
+              
+
+td, p, div  
+          {font-family : Arial, Helvetica, sans-serif; font-size : 12px; 
+           color : #556268;  vertical-align : top;
+           text-align: left;}
+
+p.titre 
+          {font-size : 14px; color : #556268; font-weight: bold;}
+
+span.petit, ul ul, p.petit
+          {font-size : 10px; color: #282828; }         
+           
+p.intertitre
+          {color: #A5B8C9; font-weight: bold; font-size : 12px!;}   
+                
+p.intertitre a:link, 
+p.intertitre a:visited 
+          {color: #F09415; font-weight: bold;  font-size : 12px;
+           text-decoration : none; }
+           
+p.intertitre a:hover 
+          {color: #BE6E00; font-weight: bold;  font-size : 12px;
+           text-decoration : none; }  
+
+ul.liste-liens a:link    {color : #F09415; text-decoration : none; font-weight: bold;} 
+ul.liste-liens a:visited {color : #F09415; text-decoration : none; font-weight: bold;} 
+ul.liste-liens a:hover   {color : #BE6E00; text-decoration : underline; font-weight: bold;}            
+
+table.table-avec-bordures, table.table-avec-bordures td, 
+table.table-avec-bordures th
+{
+	border-style : solid;
+	border-color : #F09415;
+	border-width : 1px;
+	border-collapse:collapse;
+}      
+table.table-sans-bordures, table.table-sans-bordures td,
+table.table-sans-bordures th {
+	border-width : 0px !;
+}                      
+          
+td.separateur { background-color: #F09415; }
+
+     
+         
+         
+      

@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+
+#infos_COLLOQUE{
+	display: inline;
+}
+#infos_ENQUETE{
+	display: none;
+}
+#infos_COLLABORATION{
+	display: none;
+}

@@ -1,0 +1,23 @@
+* { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 11px; }
+BODY {background-color:white}
+TABLE { border: none}
+TH.title { font-weight:bold; text-align:center; padding-left:1em; padding-right:1em}
+TH.subtitle { font-weight:normal; text-align:left; padding-left:1em; padding-right:1em}
+TD { text-align:left; vertical-align:baseline; padding-left:1em; padding-right:1em}
+TD.construct { vertical-align:top; padding-left:1em; padding-right:1em}
+TH.ruler { background-color:black; color:black}
+TABLE.elementTitle { width:100%; background-color:#E0F0FF}
+TD.leftElementTitle { font-weight:bold; font-size: 13px}
+TD.rightElementTitle { text-align:right}
+TABLE.attributeTitle { width:100%; background-color:#DDDDDD}
+TD.leftAttributeTitle { font-weight:bold; font-size: 13px}
+TD.rightAttributeTitle { text-align:right}
+P { text-align:justify;}
+P.model { padding-left:3em; text-align:left; font-style:italic}
+P.DTDSource { text-align:right}
+P.emptyTagNote { font-style:italic}
+H1 { font-family:Arial; font-size:18px}
+H2 { font-size:13px}
+H1.TOCTitle { font-family:Arial; font-size:18px}
+H2.TOCTitle { font-family:Arial; font-size:13px}
+.inTextTitle { font-weight:bold}

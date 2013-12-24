@@ -1,0 +1,9 @@
+AuthUserFile /var/www/html/lacito/psw/.intranet
+AuthGroupFile /dev/null
+AuthName ByPassword
+AuthType Basic
+
+<limit GET>
+require valid-user
+</Limit>
+

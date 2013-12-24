@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+
+<HTML>
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+
+<HEAD>
+
+
+	<META content="text/html; charset=ISO-8859-1" http-equiv=Content-Type>
+
+
+	<TITLE>Fig. 2: Project Archivage DTD</TITLE>
+
+
+</HEAD>
+
+
+
+
+
+<BODY>
+
+
+<H2>Fig. 2: DTD (document type definition)</H2>
+
+
+<HR>
+
+
+<PRE WIDTH="60">&lt;!-- DTD des documents d'archive (25/05/1999)			      --&gt;
+
+
+
+
+
+&lt;!ELEMENT ARCHIVE	(TEXT)+						&gt;
+
+
+
+
+
+&lt;!ELEMENT TEXT		(HEADER,BODY)					&gt;
+
+
+
+
+
+&lt;!ELEMENT HEADER	(IMAGE?,TITLE,SOUNDFILE)			&gt;
+
+
+&lt;!ELEMENT TITLE		(#PCDATA)					&gt;
+
+
+&lt;!ELEMENT SOUNDFILE	EMPTY						&gt;
+
+
+
+
+
+&lt;!ELEMENT BODY		(S*)						&gt;
+
+
+&lt;!ELEMENT S		(AUDIO,TRANSCR,TRADUC+)				&gt;
+
+
+&lt;!ELEMENT AUDIO		EMPTY						&gt;
+
+
+&lt;!ELEMENT TRADUC	(#PCDATA)					&gt;
+
+
+&lt;!ELEMENT TRANSCR	(W|PONCT)*					&gt;
+
+
+&lt;!ELEMENT W		(FORM,GLS?)					&gt;
+
+
+&lt;!ELEMENT FORM		(#PCDATA|FOREIGN)*				&gt;
+
+
+&lt;!ELEMENT PONCT		(#PCDATA)					&gt;
+
+
+&lt;!ELEMENT GLS		(#PCDATA)					&gt;
+
+
+&lt;!ELEMENT FOREIGN	(#PCDATA)					&gt;
+
+
+
+
+
+&lt;!ELEMENT IMAGE		(#PCDATA)					&gt;
+
+
+
+
+
+&lt;!ATTLIST IMAGE		src   CDATA      #REQUIRED
+
+
+			href  CDATA      #REQUIRED    			&gt;
+
+
+&lt;!ATTLIST AUDIO		start CDATA      #REQUIRED
+
+
+			end   CDATA      #REQUIRED    			&gt;
+
+
+&lt;!ATTLIST BODY		lang  CDATA      #REQUIRED    			&gt;
+
+
+&lt;!ATTLIST FOREIGN	lang  CDATA      #REQUIRED    			&gt;
+
+
+&lt;!ATTLIST TRADUC	lang  CDATA      "Francais"   			&gt;
+
+
+&lt;!ATTLIST TRANSCR	lang  CDATA      #IMPLIED     			&gt;
+
+
+&lt;!ATTLIST S		id    ID         #REQUIRED
+
+
+			who   CDATA      #IMPLIED			&gt;
+
+
+&lt;!ATTLIST SOUNDFILE	href  CDATA      #REQUIRED			&gt;
+
+
+</PRE>
+
+
+<HR>
+
+
+<A href="../description_en.htm">return to text</A> / <a href="../description.htm">retour au texte</a><A href="../presentation.htm"></A>
+
+
+</BODY></HTML>
+
+

@@ -1,0 +1,136 @@
+/*****************************************************************************/
+/* CNRS                                                                      */
+/* Feuille de style Site labos SHS    	                               */
+/*                                                                           */
+/* W3C CSS2                                                                  */
+/*****************************************************************************/
+
+h3 a:link, 
+h3 a:visited,
+a.spip_note:link,
+a.spip_note:visited,
+ul.liste-liens a:link,
+ul.liste-liens a:visited,
+div#menu li a,
+#annuaire li a,
+#intranet li a,
+ul.liste-liens a:link,
+ul.liste-liens a:visited,
+h2
+{
+  color: #E37906; 
+}
+
+p.surtitre,
+p.soustitre,
+#texte legend,
+h3 
+{  
+  color: #F8B85B;
+}
+
+#texte,   
+span.petit, 
+ul ul, 
+p.petit,
+td,
+a:link,
+a:visited,
+p
+{
+  color: #3F4B50; 
+}
+
+a:hover
+{
+  color: #E58602;
+}
+
+h3 a:hover,
+ul.liste-liens a:hover,
+div#menu li a:hover,
+#annuaire li a:hover,
+#intranet li a:hover
+{ 
+  color: #9D773F;
+}
+
+div#menu ul.level2 a:hover, 
+div#menu ul.level3 a:hover  
+{ 
+  color: #8C571E;
+}
+
+
+#texte h2
+{ 
+  color: #FF9900;
+}
+
+#liens-top a, 
+#liens-top a:link, 
+#liens-top a:visited, 
+#liens-top a:hover,
+#nom-labo h1 a,
+#nom-labo h1
+{
+  color: #F09415;
+}
+
+#main,
+#top,
+#colgauche,
+#pageune,
+#pageseconde,
+#colgauche .partenaire,
+#chemin,
+#texte,
+div#menu ul,
+div#menu ul.level1 li,
+#annuaire,
+#intranet,
+#recherche,
+#recherche input.box,
+#lang,
+#lang select,
+table.table-avec-bordures,
+table.table-avec-bordures td,
+table.table-avec-bordures th,
+table.spip,
+table.spip td,
+table.spip th,
+.texte_droite,
+.texte_gauche,
+#texte ul.navdroite,
+#texte ul.navdroite li,
+#texte fieldset,
+div.separateur,
+#texte h2.anoter,
+div.anoter
+{
+  border-color: #F09415;
+}
+
+#colgauche,
+#colgauche p,
+#colgauche h2,
+#lang select,
+.texte_droite,
+.texte_droite p
+{ 
+  color: #955A0A;
+}
+
+#lang input,
+div#menu ul.level2, 
+div#menu ul.level3,
+div#menu ul.level2 li,
+div#menu ul.level3 li,
+div#menu ul.level2 a, 
+div#menu ul.level3 a
+{ 
+  background-color: #F09415;
+  color: #FFFFFF;
+}
+
+
