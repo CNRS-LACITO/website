@@ -9,30 +9,34 @@
 						            // Color variables take HTML predefined color names or "#rrggbb" strings
 						            //For transparency make colors and border color ""
 	var LowBgColor="#FFFFFF";			// Background color when mouse is not over
+	
 	var HighBgColor="#FFFFFF";			// Background color when mouse is over
+	//var HighBgColor="#9E3C3C";			// Background color when mouse is over
+	
 	var FontLowColor="#00294b";		// Font color when mouse is not over
 	var FontHighColor="#7695b8";		// Font color when mouse is over
 	var BorderColor="#446c7f";			// Border color
-	var BorderWidthMain=1;			// Border width main items
+	var BorderWidthMain=2;			// Border width main items
 	var BorderWidthSub=1;			// Border width sub items
  	var BorderBtwnMain=1;			// Border between elements main items 1 or 0
-	var BorderBtwnSub=0;			// Border between elements sub items 1 or 0
+	var BorderBtwnSub=1;			// Border between elements sub items 1 or 0
 	var FontFamily="arial,helvetica,sans-serif";	// Font family menu items
 	var FontSize=9;				// Font size menu items
 	var FontBold=1;				// Bold menu items 1 or 0
 	var FontItalic=0;			// Italic menu items 1 or 0
-	var MenuTextCentered="left";		// Item text position left, center or right
-	var MenuCentered="left";		// Menu horizontal position can be: left, center, right, justify,
+	var MenuTextCentered="center";		// Item text position left, center or right
+	var MenuCentered="center";		// Menu horizontal position can be: left, center, right, justify,
 						//  leftjustify, centerjustify or rightjustify. PartOfWindow determines part of window to use
 	var MenuVerticalCentered="top";		// Menu vertical position top, middle,bottom or static
 	var ChildOverlap=0;			// horizontal overlap child/ parent
 	var ChildVerticalOverlap=0;		// vertical overlap child/ parent
-	var StartLeft=-1;			// Menu offset x coordinate. If StartLeft is between 0 and 1 StartLeft is calculated as part of windowwidth
+	var StartLeft=-10;			// Menu offset x coordinate. If StartLeft is between 0 and 1 StartLeft is calculated as part of windowwidth
 	var VerCorrect=0;			// Multiple frames y correction
 	var HorCorrect=0;			// Multiple frames x correction
-	var LeftPaddng=6;			// Left padding
+	//var LeftPaddng=6;			// Left padding
+	var LeftPaddng=0;			// Left padding
 	var TopPaddng=4;			// Top padding
-	var FirstLineHorizontal=0;		// First level items layout horizontal 1 or 0
+	var FirstLineHorizontal=1;		// First level items layout horizontal 1 or 0
 	var MenuFramesVertical=1;		// Frames in cols or rows 1 or 0
 	var DissapearDelay=1000;		// delay before menu folds in
 	var UnfoldDelay=100;			// delay before sub unfolds	
@@ -85,11 +89,12 @@
 // For rollover images ItemText format is:  "rollover?"+BaseHref+"Image1.jpg?"+BaseHref+"Image2.jpg" 
    
 var Subbgcolor = "#284a71";
-var Subbghighcolor = "#284a71";
+//var Subbghighcolor = "#284a71";
+var Subbghighcolor = "#000000";
 var Subfonthighcolor="#5e91cc"
 var Subfontcolor = "#FFFFFF"
 //Le Lacito
-Menu1=new Array("Le Lacito","","",7,24,150,"","","","","","",-1,-1,-1,"","");
+Menu1=new Array("Le Lacito","","",7,24,120,"","","","","","",-1,-1,-1,"","");
 	Menu1_1=new Array("Pr\xE9sentation",BaseMenuHref+"themes/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
 	Menu1_2=new Array("Colloques",BaseMenuHref+"colloque/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
 	Menu1_3=new Array("Missions de terrain",BaseMenuHref+"missions/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
@@ -99,18 +104,17 @@ Menu1=new Array("Le Lacito","","",7,24,150,"","","","","","",-1,-1,-1,"","");
 	Menu1_7=new Array("Ouvrages parus",BaseMenuHref+"vient-de-paraitre/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
 	
 //La recherche
-Menu2=new Array("La recherche","","",11,24,"","","","","","","",-1,-1,-1,"","");
+Menu2=new Array("La recherche","","",10,24,"","","","","","","",-1,-1,-1,"","");
 	Menu2_1=new Array("Pr\xE9sentation",BaseMenuHref+"la_recherche/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
 	Menu2_2=new Array("Adoption",BaseMenuHref+"themes/adoption.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu2_3=new Array("Changement linguistique",BaseMenuHref+"themes/changecologie.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu2_4=new Array("Le dit et le non-dit",BaseMenuHref+"themes/dit_nondit.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu2_5=new Array("Espaces publics",BaseMenuHref+"themes/interlocution.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu2_6=new Array("Nomination d\xE9nomination",BaseMenuHref+"themes/nomination.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu2_7=new Array("Phonologie panchronique",BaseMenuHref+"themes/phonopanchro.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu2_8=new Array("Etudes oc\xE9aniennes",BaseMenuHref+"themes/oceanie/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu2_9=new Array("Etudes balkaniques",BaseMenuHref+"themes/balkans/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu2_10=new Array("Langues dravidiennes",BaseMenuHref+"themes/dravidien/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu2_11=new Array("Langues tib\xE9to-birmanes",BaseMenuHref+"themes/tibeto-birman/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu2_3=new Array("Description et typologie",BaseMenuHref+"themes/comparaison/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu2_4=new Array("Espaces publics",BaseMenuHref+"themes/interlocution.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu2_5=new Array("Ind\xE9fini",BaseMenuHref+"themes/indefini.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu2_6=new Array("M\xE9taphore(s)",BaseMenuHref+"themes/metaphore.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu2_7=new Array("Etudes oc\xE9aniennes",BaseMenuHref+"themes/oceanie/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu2_8=new Array("Etudes balkaniques",BaseMenuHref+"themes/balkans/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu2_9=new Array("Langues dravidiennes",BaseMenuHref+"themes/dravidien/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu2_10=new Array("Langues tib\xE9to-birmanes",BaseMenuHref+"themes/tibeto-birman/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
     
 //Langues et pays
 Menu3=new Array("Langues \xE9tudi\xE9es","","",3,24,"","","","","","","",-1,-1,-1,"","");
@@ -118,23 +122,23 @@ Menu3=new Array("Langues \xE9tudi\xE9es","","",3,24,"","","","","","","",-1,-1,-
 	Menu3_2=new Array("Par ordre alphab\xE9tique",BaseMenuHref+"ALC/listealpha.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
 	Menu3_3=new Array("Par famille linguistique",BaseMenuHref+"ALC/listeparfamille.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
 	
-//Archives orales
+//Archives orales (mis à jour en "Pangloss" le 29 mai 2013)
 Menu4=new Array("Archives orales","","",5,24,"","","","","","","",-1,-1,-1,"","");
-    Menu4_1=new Array("La collection Pangloss",BaseMenuHref+"archivage/presentation.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	 Menu4_2=new Array("D\xE9poser une ressource",BaseMenuHref+"archivage/depot.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	 Menu4_3=new Array("Outils en ligne",BaseMenuHref+"archivage/outils.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu4_4=new Array("Acc\xE8s aux corpus",BaseMenuHref+"archivage/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu4_5=new Array("Rechercher",BaseMenuHref+"archivage/tools/search.php","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+    Menu4_1=new Array("La collection Pangloss",BaseMenuHref+"pangloss/presentation.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	 Menu4_2=new Array("D\xE9poser une ressource",BaseMenuHref+"pangloss/depot.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	 Menu4_3=new Array("Outils en ligne",BaseMenuHref+"pangloss/outils.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu4_4=new Array("Acc\xE8s aux corpus",BaseMenuHref+"pangloss/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu4_5=new Array("Rechercher",BaseMenuHref+"pangloss/tools/search.php","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
 	
 //Projets associés
-Menu5=new Array("Projets associ\xE9s","","",6,24,"","","","","","","",-1,-1,-1,"","");
+Menu5=new Array("Projets associ\xE9s","","",5,24,"","","","","","","",-1,-1,-1,"","");
 	Menu5_1=new Array("Pr\xE9sentation",BaseMenuHref+"partenariat/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu5_2=new Array("Dad types in Saudi Arabia",BaseMenuHref+"partenariat/index.htm#dad-types","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu5_3=new Array("A documentation of Laz",BaseMenuHref+"partenariat/index.htm#laz","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu5_4=new Array("The Kurumba Languages",BaseMenuHref+"partenariat/index.htm#kurumba","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu5_5=new Array("EuroSlav",BaseMenuHref+"partenariat/euroslav/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu5_6=new Array("HimalCo","javascript:NewWin=window.open(\"http://himalco.hypotheses.org\",\"NWin\");window[\"NewWin\"].focus()","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	<!--Menu5_3=new Array("Autour du Brahmapoutre","javascript:NewWin=window.open(\"http://brahmaputra.ceh.vjf.cnrs.fr\",\"NWin\");window[\"NewWin\"].focus()","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");-->
+	Menu5_2=new Array("Narrativit\xE9",BaseMenuHref+"partenariat/narrativite/index.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu5_3=new Array("Dad types in Saudi Arabia",BaseMenuHref+"partenariat/index.htm#dad-types","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu5_4=new Array("A documentation of Laz",BaseMenuHref+"partenariat/index.htm#laz","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu5_5=new Array("The Kurumba Languages",BaseMenuHref+"partenariat/index.htm#kurumba","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	<!--Menu5_6=new Array("HimalCo","javascript:NewWin=window.open(\"http://himalco.hypotheses.org\",\"NWin\");window[\"NewWin\"].focus()","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");-->
+	<!--Menu5_7=new Array("Autour du Brahmapoutre","javascript:NewWin=window.open(\"http://brahmaputra.ceh.vjf.cnrs.fr\",\"NWin\");window[\"NewWin\"].focus()","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");-->
 
 //Publications
 Menu6=new Array("Publications",BaseMenuHref+ "publications/publications.php","",0,24,"","","","","","","",-1,-1,-1,"","");

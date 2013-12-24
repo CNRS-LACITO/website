@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="top_pos_var.js" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129812315650000000" remote="129812315650000000" />
-<file name="menu_var.js" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130021257500000000" remote="130021257500000000" />
-<file name="menu9_com.js" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129812315600000000" remote="129812315600000000" />
-<file name="Thumbs.db" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171177300000000" remote="129171177300000000" />
-<file name="top_pos_var.js" server="Macintosh HD/Applications/MAMP/htdocs/siteweb-lacito" local="3312170820" remote="501830493347231556" />
-<file name="menu_var.js" server="Macintosh HD/Applications/MAMP/htdocs/siteweb-lacito" local="3359961282" remote="501830493395022018" />
-<file name="menu9_com.js" server="Macintosh HD/Applications/MAMP/htdocs/siteweb-lacito" local="3312170820" remote="501830493347231556" />
-<file name="top_pos_var.js" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129812315650000000" remote="129812315650000000" />
-<file name="menu_var.js" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="130021257500000000" remote="130021257500000000" />
-<file name="menu9_com.js" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129812315600000000" remote="129812315600000000" />
-<file name="menu_var_en.js" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129992856897527637" remote="129992857270000000" />
-<file name="menu_var_en.js" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129992856897527637" remote="129992856890000000" />
-<file name="Thumbs.db" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129171141300000000" remote="129171141300000000" />
-<file name="top_pos_var_test.js" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="130039491937461573" remote="130039491930000000" />
-<file name="menu9_com_test.js" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="130035135063880971" remote="130035135060000000" />
-<file name="menu_var_test.js" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="130035143300405467" remote="130035143300000000" />
-<file name="menu9_com_test.js" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130035135063880971" remote="130035143080000000" />
-<file name="menu_var_test.js" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130035143300405467" remote="130035143080000000" />
-<file name="top_pos_var_test.js" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130039491937461573" remote="130039491940000000" />
+<file name="menu_var_en.js" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130252943470000000" remote="130320224920000000" />
+<file name="top_pos_var_une.js" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130099740170000000" remote="130099740170000000" />
+<file name="menu9_com.js" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130099776160000000" remote="130099776160000000" />
+<file name="Thumbs.db" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130099740190000000" remote="130099740190000000" />
+<file name="menu_var.js" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130250229010000000" remote="130320224180000000" />
+<file name="top_pos_var.js" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130099912550000000" remote="130099912550000000" />
+<file name="menu9_com_old.js" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130099740190000000" remote="130099740190000000" />
+<file name="top_pos_var_une.js" server="C:/Program Files (x86)/EasyPHP-12.1/www/lacito2/" local="130099740170000000" remote="130099740170000000" />
+<file name="menu_var.js" server="C:/Program Files (x86)/EasyPHP-12.1/www/lacito2/" local="130250229010000000" remote="130250229010000000" />
+<file name="menu9_com.js" server="C:/Program Files (x86)/EasyPHP-12.1/www/lacito2/" local="130099776160000000" remote="130099776160000000" />
+<file name="top_pos_var.js" server="C:/Program Files (x86)/EasyPHP-12.1/www/lacito2/" local="130099912550000000" remote="130099912550000000" />
+<file name="menu_var_en.js" server="C:/Program Files (x86)/EasyPHP-12.1/www/lacito2/" local="130252943470000000" remote="130252943470000000" />
+<file name="top_pos_var_test.js" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130078355750000000" remote="130078355750000000" />
+<file name="menu_var_test.js" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130078355750000000" remote="130078355750000000" />
+<file name="menu9_com_test.js" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130078355750000000" remote="130078355750000000" />
 </dwsync>

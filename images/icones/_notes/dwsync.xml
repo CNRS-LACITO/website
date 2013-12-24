@@ -1,91 +1,79 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="fleche-haut.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="info.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="sound1.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="pdf.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="text.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="h_parleur.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="info_33px.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="compass1.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="compass2.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="globe_zoom.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="loupe.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="xml.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="aide.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="pdf2.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="wav.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="homeLV.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="pdf3.png" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="h_parleur.gif" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129451891190000000" remote="129451891190000000" />
-<file name="info.gif" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129451891190000000" remote="129451891190000000" />
-<file name="fleche-haut.gif" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129451891190000000" remote="129451891190000000" />
-<file name="wav.gif" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129451855190000000" remote="129451855190000000" />
-<file name="xml.gif" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129451855190000000" remote="129451855190000000" />
-<file name="pdf2.gif" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129451855190000000" remote="129451855190000000" />
-<file name="aide.gif" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129451891190000000" remote="129451891190000000" />
-<file name="pdf.gif" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129451891190000000" remote="129451891190000000" />
-<file name="text.gif" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129451855190000000" remote="129451855190000000" />
-<file name="Pdf_Son2.jpg" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129455284895396003" remote="129455284890000000" />
-<file name="Txt_Inter2.jpg" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129455284193785874" remote="129455284190000000" />
-<file name="Txt_Inter_hp3.jpg" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129457856231109258" remote="129457856230000000" />
-<file name="Txt_Inter_parchemin.jpg" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129708554630000000" remote="129708554630000000" />
-<file name="Txt_Inter_pdf.jpg" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129460359588395929" remote="129460359580000000" />
-<file name="sound1_marron.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129460575800000000" remote="129460575800000000" />
-<file name="Txt_Inter_parchemin1.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129708554660000000" remote="129708554660000000" />
-<file name="Txt_Inter_pdf1.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129460573430000000" remote="129460573430000000" />
-<file name="info_rouge.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129460573520000000" remote="129460573520000000" />
-<file name="sound1.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129460580950000000" remote="129460580950000000" />
-<file name="sound1_net.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129460581310000000" remote="129460581310000000" />
-<file name="sound1_bleu.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129460611280000000" remote="129460611280000000" />
-<file name="info_rouge1.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129460596310000000" remote="129460596310000000" />
-<file name="info_marron.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129460598590000000" remote="129460598590000000" />
-<file name="sound1_bleu.jpg" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129460611280000000" remote="129460611280000000" />
-<file name="info_noir.jpg" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129460572268440532" remote="129460572260000000" />
-<file name="Txt_Inter_pdf1.jpg" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129460497379677139" remote="129460497370000000" />
-<file name="Txt_Inter_parchemin1.jpg" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129708554660000000" remote="129708554660000000" />
-<file name="info_marron.jpg" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129460598590000000" remote="129460598590000000" />
-<file name="new_sm.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="WAV-64px.png" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="reader.png" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="enconstruction.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="eng.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="reader_icon.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="search-blue.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129474568910000000" remote="129474568910000000" />
-<file name="Windows Media Player.png" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="exclamation_sm.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="Real Player.png" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="enconstruction_sm.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="fra.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="XML-01.png" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="Java.png" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="return.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="Flash Player.png" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
 <file name="QuickTime.png" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
-<file name="egg1.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129689407220000000" remote="129689407220000000" />
-<file name="egg2.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129689511910000000" remote="129689511910000000" />
-<file name="enconstruction_sm.jpg" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129451891190000000" remote="129451891190000000" />
-<file name="egg2.jpg" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129689511910000000" remote="129689511910000000" />
-<file name="parchemin.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129708554540000000" remote="129708554540000000" />
-<file name="Txt_Inter_parchemin.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129708554630000000" remote="129708554630000000" />
-<file name="google-chrome.png" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129749064890000000" remote="129749064890000000" />
-<file name="internet_explorer_logo.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129749064890000000" remote="129749064890000000" />
+<file name="globe_zoom.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
 <file name="safari.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129749064890000000" remote="129749064890000000" />
-<file name="google-chrome.png" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129749028890000000" remote="129749028890000000" />
-<file name="safari.gif" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129749028890000000" remote="129749028890000000" />
-<file name="internet_explorer_logo.jpg" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129749064890000000" remote="129749064890000000" />
-<file name="info_33px.gif" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129451891190000000" remote="129451891190000000" />
-<file name="wav.png" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129883022520147716" remote="129883022520000000" />
-<file name="mp3.png" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129882975552741334" remote="129882975550000000" />
-<file name="xml.png" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129883058947076212" remote="129883058940000000" />
-<file name="mp3.png" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129883089130000000" remote="129883089130000000" />
+<file name="pdf.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
+<file name="enconstruction.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
+<file name="exclamation_sm.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
+<file name="egg2.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129689511910000000" remote="129689511910000000" />
+<file name="h_parleur.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
+<file name="enconstruction_sm.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
+<file name="Flash Player.png" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
+<file name="search-blue.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129474568910000000" remote="129474568910000000" />
+<file name="fra.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
+<file name="pdf2.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
+<file name="parchemin.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129708554540000000" remote="129708554540000000" />
+<file name="wav.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
 <file name="wav.png" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129883089220000000" remote="129883089220000000" />
-<file name="xml.png" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129883095760000000" remote="129883095760000000" />
+<file name="sound1.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
+<file name="sound1.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129460580950000000" remote="129460580950000000" />
+<file name="sound1_bleu.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129460611280000000" remote="129460611280000000" />
+<file name="homeLV.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
+<file name="xml.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
+<file name="info_rouge1.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129460596310000000" remote="129460596310000000" />
+<file name="Java.png" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
+<file name="fleche-haut.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
+<file name="WAV-64px.png" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
+<file name="loupe.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
+<file name="info_33px.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
+<file name="return.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
+<file name="eng.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
+<file name="pdf3.png" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
+<file name="internet_explorer_logo.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129749064890000000" remote="129749064890000000" />
+<file name="mp3.png" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129883089130000000" remote="129883089130000000" />
+<file name="reader_icon.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
+<file name="sound1_net.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129460581310000000" remote="129460581310000000" />
+<file name="text.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
 <file name="xml1.png" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129883092740000000" remote="129883092740000000" />
+<file name="info.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130287424740000000" remote="130287424740000000" />
+<file name="compass2.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
+<file name="compass1.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
 <file name="firefox.png" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129883107610000000" remote="129883107610000000" />
+<file name="info_marron.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129460598590000000" remote="129460598590000000" />
+<file name="Real Player.png" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
+<file name="Txt_Inter_pdf1.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129460573430000000" remote="129460573430000000" />
+<file name="xml.png" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129883095760000000" remote="129883095760000000" />
+<file name="Txt_Inter_parchemin.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129708554630000000" remote="129708554630000000" />
+<file name="aide.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
+<file name="sound1_marron.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129460575800000000" remote="129460575800000000" />
+<file name="reader.png" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
+<file name="Windows Media Player.png" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
+<file name="new_sm.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
+<file name="XML-01.png" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129451891190000000" remote="129451891190000000" />
 <file name="opera.png" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129883107660000000" remote="129883107660000000" />
-<file name="new_sm.gif" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129451891190000000" remote="129451891190000000" />
-<file name="firefox.png" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129883107610000000" remote="129883107610000000" />
-<file name="opera.png" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129883107660000000" remote="129883107660000000" />
-<file name="sound1.gif" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129451891190000000" remote="129451891190000000" />
+<file name="egg1.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129689407220000000" remote="129689407220000000" />
+<file name="Txt_Inter_parchemin1.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129708554660000000" remote="129708554660000000" />
+<file name="info_rouge.jpg" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129460573520000000" remote="129460573520000000" />
+<file name="google-chrome.png" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129749064890000000" remote="129749064890000000" />
+<file name="h_parleur.gif" server="C:/Program Files (x86)/EasyPHP-12.1/www/lacito2/" local="129451891190000000" remote="129451891190000000" />
+<file name="fleche-haut.gif" server="C:/Program Files (x86)/EasyPHP-12.1/www/lacito2/" local="129451891190000000" remote="129451891190000000" />
+<file name="info.gif" server="C:/Program Files (x86)/EasyPHP-12.1/www/lacito2/" local="130287424740000000" remote="130287424740000000" />
+<file name="Txt_Inter_parchemin.jpg" server="C:/Program Files (x86)/EasyPHP-12.1/www/lacito2/" local="129708554630000000" remote="129708554630000000" />
+<file name="firefox.png" server="C:/Program Files (x86)/EasyPHP-12.1/www/lacito2/" local="129883107610000000" remote="129883107610000000" />
+<file name="opera.png" server="C:/Program Files (x86)/EasyPHP-12.1/www/lacito2/" local="129883107660000000" remote="129883107660000000" />
+<file name="internet_explorer_logo.jpg" server="C:/Program Files (x86)/EasyPHP-12.1/www/lacito2/" local="129749064890000000" remote="129749064890000000" />
+<file name="sound1_bleu.jpg" server="C:/Program Files (x86)/EasyPHP-12.1/www/lacito2/" local="129460611280000000" remote="129460611280000000" />
+<file name="info_marron.jpg" server="C:/Program Files (x86)/EasyPHP-12.1/www/lacito2/" local="129460598590000000" remote="129460598590000000" />
+<file name="pdf2.gif" server="C:/Program Files (x86)/EasyPHP-12.1/www/lacito2/" local="129451891190000000" remote="129451891190000000" />
+<file name="egg2.jpg" server="C:/Program Files (x86)/EasyPHP-12.1/www/lacito2/" local="129689511910000000" remote="129689511910000000" />
+<file name="Txt_Inter_parchemin1.jpg" server="C:/Program Files (x86)/EasyPHP-12.1/www/lacito2/" local="129708554660000000" remote="129708554660000000" />
+<file name="info_33px.gif" server="C:/Program Files (x86)/EasyPHP-12.1/www/lacito2/" local="129451891190000000" remote="129451891190000000" />
+<file name="wav.png" server="C:/Program Files (x86)/EasyPHP-12.1/www/lacito2/" local="129883089220000000" remote="129883089220000000" />
+<file name="mp3.png" server="C:/Program Files (x86)/EasyPHP-12.1/www/lacito2/" local="129883089130000000" remote="129883089130000000" />
+<file name="xml.png" server="C:/Program Files (x86)/EasyPHP-12.1/www/lacito2/" local="129883095760000000" remote="129883095760000000" />
+<file name="text.gif" server="C:/Program Files (x86)/EasyPHP-12.1/www/lacito2/" local="129451855190000000" remote="129451855190000000" />
+<file name="wav.gif" server="C:/Program Files (x86)/EasyPHP-12.1/www/lacito2/" local="129451891190000000" remote="129451891190000000" />
+<file name="xml.gif" server="C:/Program Files (x86)/EasyPHP-12.1/www/lacito2/" local="129451891190000000" remote="129451891190000000" />
+<file name="new_sm.gif" server="C:/Program Files (x86)/EasyPHP-12.1/www/lacito2/" local="129451855190000000" remote="129451855190000000" />
 </dwsync>

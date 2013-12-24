@@ -1,0 +1,96 @@
+<!-- ***     DTD pour le dictionnaire Limbu              *** -->
+<!-- ***     le 29 mars 2002                             *** -->
+<!-- ***     modif 23 mai 2003 ajout de link             *** -->
+<!-- ***                                                 *** -->
+
+
+<!ENTITY host 'http://lacito.archivage.vjf.cnrs.fr'>
+
+
+<!ELEMENT     DICO     (entry)+                                >
+
+
+<!-- ***
+     ***     The top level elements
+     ***     
+-->
+<!ELEMENT     entry     (form|gramGrp|sense|xr|usg|hom)*       >
+<!ATTLIST     entry     id     ID       #REQUIRED              >
+
+<!ELEMENT     hom       (form|gramGrp|sense|xr|usg)*           >
+<!ATTLIST     hom       n     CDATA     #REQUIRED              >
+
+
+<!-- ***
+     ***     The group elements
+     ***
+-->
+<!ELEMENT     form      (pron|note)*                 >
+<!ELEMENT     pron      (#PCDATA|foreign)*                              >
+<!ATTLIST     pron      type     (headword|var|pastem|prstem|pa|pask|fem|poss|root|neg|allom) #REQUIRED     
+                        valid    (doubt)                                 #IMPLIED>
+
+<!ELEMENT     gramGrp  (pos|note)*                             >
+<!ELEMENT     pos      (#PCDATA)                               >
+<!ATTLIST     pos      valid     (doubt)                     #IMPLIED
+                       class     (v|vprefix|vsuffix|preverb|misc)   #REQUIRED>
+
+<!ELEMENT     sense    (def|invertkey|sem|xptr|eg|note)*             >
+<!ELEMENT     def      (#PCDATA|family|foreign|def|ptr)*                       >
+<!ATTLIST     def      type      (binom|par)           #IMPLIED
+                        xml:lang NMTOKEN               #IMPLIED
+                        valid    (doubt)               #IMPLIED>
+<!ELEMENT     invertkey (#PCDATA)                               >
+<!ELEMENT     sem      (#PCDATA)                               >
+<!ELEMENT     eg       (q|xptr|link|trans)*                         >
+<!ATTLIST     eg       type     (hidden)                #IMPLIED>
+<!ELEMENT     q        (#PCDATA|foreign)*                      >
+<!ELEMENT     trans    (tr)                                    >
+<!ELEMENT     tr       (#PCDATA|foreign|def)*                  >
+<!ATTLIST     tr       xml:lang NMTOKEN                    "en">
+
+
+<!ELEMENT     xr      (ptr|xptr|lexx|ref|wordFamily|note)*     >
+<!ATTLIST     xr      type     (herbier)               #IMPLIED>
+
+<!ELEMENT     usg     (dial|note)*                             >
+<!ELEMENT     dial    (#PCDATA)                                >
+<!ELEMENT     lexx    (#PCDATA)                                >
+<!ELEMENT     ref     (#PCDATA|foreign)*                       >
+<!ATTLIST     ref     valid     (doubt)                #IMPLIED>
+<!ELEMENT     wordFamily        EMPTY                          >
+<!ATTLIST     wordFamily        type     CDATA         #IMPLIED     
+                                family   CDATA         #IMPLIED
+                                valid    (doubt)       #IMPLIED>
+     
+<!-- ***
+     ***     General elements
+     ***
+-->
+<!ELEMENT     ptr     (#PCDATA)                                    >
+<!ATTLIST     ptr     type     CDATA                  #REQUIRED     
+                      target   IDREF                  #REQUIRED     
+                      valid    (doubt)                 #IMPLIED>
+
+<!ELEMENT     xptr    (#PCDATA|tr)*                            >
+<!ATTLIST     xptr    target   CDATA                  #REQUIRED
+                      valid    (doubt)                 #IMPLIED>
+
+<!ELEMENT     link     (#PCDATA)                                    >
+<!ATTLIST     link     xmlns:xlink      CDATA            #FIXED   "http://www.w3.org/1999/xlink"
+                       xlink:type       CDATA            #FIXED   "simple"
+                       xlink:actuate    CDATA            #FIXED   "onRequest"  
+                       xlink:show       CDATA            #FIXED   "replace"
+                       xlink:href       CDATA         #REQUIRED>
+
+     
+
+<!ELEMENT     note    (#PCDATA|foreign|def)*                   >
+<!ATTLIST     note    type     (ph|rem|comm|gram|stem)      #IMPLIED
+                      valid    (doubt)                 #IMPLIED>
+
+<!ELEMENT     foreign (#PCDATA|foreign)*     >
+<!ATTLIST     foreign xml:lang     NMTOKEN            #REQUIRED>
+
+<!ELEMENT     family  EMPTY                                    >
+<!ATTLIST     family  name     CDATA                  #REQUIRED>

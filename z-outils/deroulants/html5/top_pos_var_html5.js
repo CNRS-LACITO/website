@@ -1,2 +1,2 @@
 
-	var StartTop=320;				// Menu offset x coordinate
+	var StartTop=290;				// Menu offset x coordinate

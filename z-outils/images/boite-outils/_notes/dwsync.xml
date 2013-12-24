@@ -1,33 +1,26 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="puce.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171177530000000" remote="129171177530000000" />
-<file name="espaceur.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171177310000000" remote="129171177310000000" />
-<file name="pointilles.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171177530000000" remote="129171177530000000" />
-<file name="carte.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171177310000000" remote="129171177310000000" />
-<file name="espaceur-couleur.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171177310000000" remote="129171177310000000" />
-<file name="filet-couleur.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171177310000000" remote="129171177310000000" />
-<file name="fleche-droite.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171177310000000" remote="129171177310000000" />
-<file name="fleche-gauche.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171177310000000" remote="129171177310000000" />
+<file name="fleche-droite-plus.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171141310000000" remote="129171141310000000" />
+<file name="fleche-droite-plusplus.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171141310000000" remote="129171141310000000" />
+<file name="lirelasuite.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171141530000000" remote="129171141530000000" />
+<file name="fleche-droite.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171141310000000" remote="129171141310000000" />
+<file name="fleche-descendante.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171141310000000" remote="129171141310000000" />
+<file name="fleche-gauche-plus.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171141310000000" remote="129171141310000000" />
+<file name="espaceur-couleur.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171141310000000" remote="129171141310000000" />
+<file name="carte.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171141310000000" remote="129171141310000000" />
 <file name="lire-la-suite.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171177530000000" remote="129171177530000000" />
-<file name="lirelasuite.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171177530000000" remote="129171177530000000" />
-<file name="fleche-descendante.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171177310000000" remote="129171177310000000" />
-<file name="fleche-droite-plus.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171177310000000" remote="129171177310000000" />
-<file name="fleche-droite-plusplus.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171177310000000" remote="129171177310000000" />
-<file name="fleche-gauche-plus.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171177310000000" remote="129171177310000000" />
-<file name="fleche-gauche-plusplus.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171177310000000" remote="129171177310000000" />
-<file name="fleche-montante.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171177320000000" remote="129171177320000000" />
-<file name="publis.png" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129656768380000000" remote="129656768380000000" />
-<file name="rv.png" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171177530000000" remote="129171177530000000" />
-<file name="puce.gif" server="Macintosh HD/Applications/MAMP/htdocs/siteweb-lacito" local="3312170834" remote="1469080389949306706" />
-<file name="espaceur.gif" server="Macintosh HD/Applications/MAMP/htdocs/siteweb-lacito" local="3312170820" remote="1480387234953410372" />
-<file name="filet-couleur.gif" server="Macintosh HD/Applications/MAMP/htdocs/siteweb-lacito" local="3312170820" remote="1478539247964895044" />
-<file name="lire-la-suite.gif" server="Macintosh HD/Applications/MAMP/htdocs/siteweb-lacito" local="3312170834" remote="1471934876753835858" />
-<file name="pointilles.gif" server="Macintosh HD/Applications/MAMP/htdocs/siteweb-lacito" local="3312170834" remote="1875645670680672082" />
-<file name="puce.gif" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129171177530000000" remote="129171177530000000" />
-<file name="espaceur.gif" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129171177310000000" remote="129171177310000000" />
-<file name="pointilles.gif" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129171177530000000" remote="129171177530000000" />
-<file name="filet-couleur.gif" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129171177310000000" remote="129171177310000000" />
-<file name="lire-la-suite.gif" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129171177530000000" remote="129171177530000000" />
-<file name="fleche-gauche.gif" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129171177310000000" remote="129171177310000000" />
-<file name="fleche-droite.gif" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129171177310000000" remote="129171177310000000" />
+<file name="filet-couleur.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171141310000000" remote="129171141310000000" />
+<file name="fleche-montante.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171141320000000" remote="129171141320000000" />
+<file name="pointilles.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171141530000000" remote="129171141530000000" />
+<file name="espaceur.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171141310000000" remote="129171141310000000" />
+<file name="fleche-gauche-plusplus.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171141310000000" remote="129171141310000000" />
+<file name="fleche-gauche.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171141310000000" remote="129171141310000000" />
+<file name="publis.png" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129656732380000000" remote="129656732380000000" />
+<file name="puce.gif" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171177530000000" remote="129171177530000000" />
+<file name="rv.png" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129171141530000000" remote="129171141530000000" />
+<file name="puce.gif" server="C:/Program Files (x86)/EasyPHP-12.1/www/lacito2/" local="129171177530000000" remote="129171177530000000" />
+<file name="filet-couleur.gif" server="C:/Program Files (x86)/EasyPHP-12.1/www/lacito2/" local="129171141310000000" remote="129171141310000000" />
+<file name="lire-la-suite.gif" server="C:/Program Files (x86)/EasyPHP-12.1/www/lacito2/" local="129171177530000000" remote="129171177530000000" />
+<file name="fleche-gauche.gif" server="C:/Program Files (x86)/EasyPHP-12.1/www/lacito2/" local="129171141310000000" remote="129171141310000000" />
+<file name="fleche-droite.gif" server="C:/Program Files (x86)/EasyPHP-12.1/www/lacito2/" local="129171141310000000" remote="129171141310000000" />
 </dwsync>

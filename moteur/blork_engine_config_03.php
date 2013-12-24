@@ -199,8 +199,8 @@ $dossier=array(
 
 
 "le site"=>"..",
-			"ALC",
-			"archivage",
+			"../ALC",
+			"../pangloss",
 			"colloque",
 			"colloque/deserts",
 			"colloque/diaporamas",
@@ -226,7 +226,7 @@ $dossier=array(
 			"images/diaporama",
 			"la_recherche",
 			"membres",
-			"partenariat",
+			"../partenariat",
 			"partenariat/couleur",
 			"partenariat/euroslav",
 			"pratique",
@@ -316,9 +316,9 @@ $exclu=array(
 "blork_engine_errors_".$config['version'].".php", 
 "blork_engine_bas.html", 
 "blork_engine_haut.html",
-"../archivage/tools",
-"../archivage/dico",
-"../archivage/dtd",
+"../pangloss/tools",
+"../pangloss/dico",
+"../pangloss/dtd",
 "../INTRANET",
 
 

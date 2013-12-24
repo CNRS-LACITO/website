@@ -1,38 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="index.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129832770480000000" remote="129832770480000000" />
-<file name=".htaccess" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="128242175060000000" remote="128242175060000000" />
-<file name="cmd_livres.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="128866972850000000" remote="128866972850000000" />
-<file name="cmd_livres.php" server="" local="-4433256537032491008" remote="-4433256537032491008" />
-<file name="trombinoscope_Migrations.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="128370235060000000" remote="128370235060000000" />
-<file name="trombinoscope_Steppes.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="128368450470000000" remote="128368450470000000" />
-<file name="Revue_classement CNRS.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="128454792920000000" remote="128454792920000000" />
-<file name="biblio_shs.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129714634460000000" remote="129714634460000000" />
-<file name="erih_linguistique.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129845088270000000" remote="129845088270000000" />
-<file name="cmd_livres.php" server="Macintosh HD/Applications/MAMP/htdocs/siteweb-lacito/" local="3291712231" remote="1886090412648794855" />
-<file name="cmd_livres.php" server="Macintosh HD/Applications/MAMP/htdocs/siteweb-lacito" local="3291712231" remote="1890069923186838247" />
-<file name="lacitoenlutte.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="128819385550000000" remote="128819385550000000" />
-<file name="manif19fevrier.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="128819382710000000" remote="128819382710000000" />
-<file name="manif19mars.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="128820355840000000" remote="128820355840000000" />
-<file name="british_academy_report.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="128822820210000000" remote="128822820210000000" />
-<file name="materiel.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129859564099870564" remote="129859564020000000" />
-<file name="manif02avril.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="128832249040000000" remote="128832249040000000" />
-<file name="cmd_livres_2009.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="128872129190000000" remote="128872129190000000" />
-<file name="config_cmd_livres.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="128974731360000000" remote="128974731360000000" />
-<file name="config_dmd_mission.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="128914261220000000" remote="128914261220000000" />
-<file name="dmd_mission_2009.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129189045490000000" remote="129189045490000000" />
-<file name="Alice.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129158040390000000" remote="129158040390000000" />
-<file name="rubriques.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129832770530000000" remote="129832770530000000" />
-<file name="metadata_sound.xml" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129297210670000000" remote="129297210670000000" />
-<file name="metadata_text.xml" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129297215660000000" remote="129297215660000000" />
-<file name="trombinoscope_Migrations.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129306737968091312" remote="129306737960000000" />
-<file name="config_dmd_mission.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="128914261220000000" remote="128914261220000000" />
-<file name="dmd_mission_2009.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129189045490000000" remote="129189045490000000" />
-<file name="transfert_mac.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129355124540000000" remote="129355124540000000" />
-<file name="boite-a-outils.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129370712140000000" remote="129370712140000000" />
-<file name="erih_linguistique_old.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129766260000000000" remote="129766260000000000" />
-<file name="config_cmd_livres.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="128974731360000000" remote="128974731360000000" />
-<file name="cmd_livres_2009.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="128872129190000000" remote="128872129190000000" />
-<file name="cmd_livres.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="128866972850000000" remote="128866972850000000" />
-<file name="materiel.htm" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129815640690000000" remote="129815640690000000" />
+<file name="manif02avril.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130144000070000000" remote="130144000070000000" />
+<file name="trombinoscope_Steppes.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130144000270000000" remote="130144000270000000" />
+<file name="Alice.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130143999730000000" remote="130143999730000000" />
+<file name="transfert_mac.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130144000260000000" remote="130144000260000000" />
+<file name="lacitoenlutte.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130144000060000000" remote="130144000060000000" />
+<file name="rubriques.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130144000080000000" remote="130144000080000000" />
+<file name="manif19mars.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130144000070000000" remote="130144000070000000" />
+<file name="british_academy_report.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130143999730000000" remote="130143999730000000" />
+<file name="manif19fevrier.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130144000070000000" remote="130144000070000000" />
+<file name="biblio_shs.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130143999730000000" remote="130143999730000000" />
+<file name="trombinoscope_Migrations.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130144000270000000" remote="130144000270000000" />
+<file name="materiel.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130144886540000000" remote="130144886540000000" />
+<file name="index.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130144000060000000" remote="130144000060000000" />
+<file name="Revue_classement CNRS.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130144000080000000" remote="130144000080000000" />
+<file name="erih_linguistique_old.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130143999990000000" remote="130143999990000000" />
+<file name="boite-a-outils.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130143999730000000" remote="130143999730000000" />
+<file name=".htaccess" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130143999590000000" remote="130143999590000000" />
+<file name="erih_linguistique.htm" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130143999990000000" remote="130143999990000000" />
+<file name=".htaccess" server="C:/Program Files (x86)/EasyPHP-12.1/www/lacito2/" local="128242175060000000" remote="128242175060000000" />
 </dwsync>

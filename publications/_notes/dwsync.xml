@@ -1,33 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="publications_liste.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130041168583023849" remote="130041168180000000" />
-<file name="publications_liste.php" server="" local="-4428085959048822784" remote="-4428122492040642560" />
-<file name="publications.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129981397656086628" remote="129981410240000000" />
-<file name="publications.php" server="" local="-4375352466552651776" remote="-4437657959387889664" />
-<file name="publications_listebis.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129981409737057620" remote="129981410240000000" />
-<file name="publications_listebis.php" server="" local="-4428085851674640384" remote="-4428111625773383680" />
-<file name="publications.php" server="Macintosh HD/Applications/MAMP/htdocs/siteweb-lacito" local="3355405251" remote="1652910350380526531" />
-<file name="publications.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129981397656086628" remote="129981397650000000" />
-<file name="menu.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129839821860000000" remote="129839821860000000" />
-<file name="publications_liste.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129981411508248926" remote="129981411500000000" />
-<file name="publications_listebis.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129981409737057620" remote="129981409730000000" />
-<file name="publications_en.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129981409461981886" remote="129981410240000000" />
-<file name="publications_listebis_en.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129981409028497093" remote="129981410240000000" />
-<file name="publications_liste_en.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129981410350302695" remote="129981410240000000" />
-<file name="menu_en.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129839821870000000" remote="129981410240000000" />
-<file name="publications_en.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129974506830000000" remote="129974506830000000" />
-<file name="menu_en.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129839821870000000" remote="129839821870000000" />
-<file name="publications_listebis_en.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129981409028497093" remote="129981409020000000" />
-<file name="publications_liste_en.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129981410350302695" remote="129981410350000000" />
-<file name="publications_annee.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129981410202754256" remote="129981410240000000" />
-<file name="publications_annee.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129839821870000000" remote="129839821870000000" />
-<file name="publications_5ans.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129839821870000000" remote="129839821870000000" />
-<file name="publications_5ans.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129981410075947003" remote="129981410240000000" />
-<file name="menu_5ans.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129839821870000000" remote="129981410240000000" />
-<file name="menu.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129839821860000000" remote="129981410240000000" />
-<file name="publications_5ans_Type.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129981409245949530" remote="129981410240000000" />
-<file name="menu_5ans.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129839821870000000" remote="129839821870000000" />
-<file name="publications_5ans_Type.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129839821870000000" remote="129839821870000000" />
-<file name="menu_1.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="129839821860000000" remote="129981410240000000" />
-<file name="menu_1.php" server="C:/Program Files/EasyPHP-5.3.2/www/lacito2/" local="129839821860000000" remote="129839821860000000" />
+<file name="menu_1.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130100825150000000" remote="130100825150000000" />
+<file name="publications_5ans_Type.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130101643540000000" remote="130101643540000000" />
+<file name="publications.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130106842600000000" remote="130106842600000000" />
+<file name="publications_en.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130106842700000000" remote="130106842700000000" />
+<file name="publications_listebis_en.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130101643860000000" remote="130101643860000000" />
+<file name="menu.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130100825150000000" remote="130100825150000000" />
+<file name="menu_5ans.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130100825150000000" remote="130100825150000000" />
+<file name="publications_liste_en.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130101643760000000" remote="130101643760000000" />
+<file name="publications_liste.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130101643710000000" remote="130101643710000000" />
+<file name="publications_annee.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130101643590000000" remote="130101643590000000" />
+<file name="menu_en.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130100825150000000" remote="130100825150000000" />
+<file name="publications_5ans.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130101643460000000" remote="130101643460000000" />
+<file name="publications_listebis.php" server="newhttpd.vjf.cnrs.fr//var/www/html/lacito/" local="130101643810000000" remote="130101643810000000" />
 </dwsync>

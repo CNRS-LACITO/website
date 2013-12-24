@@ -9,30 +9,34 @@
 						            // Color variables take HTML predefined color names or "#rrggbb" strings
 						            //For transparency make colors and border color ""
 	var LowBgColor="#FFFFFF";			// Background color when mouse is not over
+	
 	var HighBgColor="#FFFFFF";			// Background color when mouse is over
+	//var HighBgColor="#9E3C3C";			// Background color when mouse is over
+	
 	var FontLowColor="#00294b";		// Font color when mouse is not over
 	var FontHighColor="#7695b8";		// Font color when mouse is over
 	var BorderColor="#446c7f";			// Border color
-	var BorderWidthMain=1;			// Border width main items
+	var BorderWidthMain=2;			// Border width main items
 	var BorderWidthSub=1;			// Border width sub items
  	var BorderBtwnMain=1;			// Border between elements main items 1 or 0
-	var BorderBtwnSub=0;			// Border between elements sub items 1 or 0
+	var BorderBtwnSub=1;			// Border between elements sub items 1 or 0
 	var FontFamily="arial,helvetica,sans-serif";	// Font family menu items
 	var FontSize=9;				// Font size menu items
 	var FontBold=1;				// Bold menu items 1 or 0
 	var FontItalic=0;			// Italic menu items 1 or 0
-	var MenuTextCentered="left";		// Item text position left, center or right
-	var MenuCentered="left";		// Menu horizontal position can be: left, center, right, justify,
+	var MenuTextCentered="center";		// Item text position left, center or right
+	var MenuCentered="center";		// Menu horizontal position can be: left, center, right, justify,
 						//  leftjustify, centerjustify or rightjustify. PartOfWindow determines part of window to use
 	var MenuVerticalCentered="top";		// Menu vertical position top, middle,bottom or static
 	var ChildOverlap=0;			// horizontal overlap child/ parent
 	var ChildVerticalOverlap=0;		// vertical overlap child/ parent
-	var StartLeft=-1;			// Menu offset x coordinate. If StartLeft is between 0 and 1 StartLeft is calculated as part of windowwidth
+	var StartLeft=-10;			// Menu offset x coordinate. If StartLeft is between 0 and 1 StartLeft is calculated as part of windowwidth
 	var VerCorrect=0;			// Multiple frames y correction
 	var HorCorrect=0;			// Multiple frames x correction
-	var LeftPaddng=6;			// Left padding
+	//var LeftPaddng=6;			// Left padding
+	var LeftPaddng=0;			// Left padding
 	var TopPaddng=4;			// Top padding
-	var FirstLineHorizontal=0;		// First level items layout horizontal 1 or 0
+	var FirstLineHorizontal=1;		// First level items layout horizontal 1 or 0
 	var MenuFramesVertical=1;		// Frames in cols or rows 1 or 0
 	var DissapearDelay=1000;		// delay before menu folds in
 	var UnfoldDelay=100;			// delay before sub unfolds	
@@ -85,11 +89,12 @@
 // For rollover images ItemText format is:  "rollover?"+BaseHref+"Image1.jpg?"+BaseHref+"Image2.jpg" 
    
 var Subbgcolor = "#284a71";
-var Subbghighcolor = "#284a71";
+//var Subbghighcolor = "#284a71";
+var Subbghighcolor = "#000000";
 var Subfonthighcolor="#5e91cc"
 var Subfontcolor = "#FFFFFF"
 //Le Lacito = The Lacito Lab
-Menu1=new Array("The Lacito Lab","","",7,24,150,"","","","","","",-1,-1,-1,"","");
+Menu1=new Array("The Lacito Lab","","",7,24,120,"","","","","","",-1,-1,-1,"","");
 	Menu1_1=new Array("Presentation",BaseMenuHref+"themes/index_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
 	Menu1_2=new Array("Conferences",BaseMenuHref+"colloque/index_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
 	Menu1_3=new Array("Field trips",BaseMenuHref+"missions/index_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
@@ -99,18 +104,17 @@ Menu1=new Array("The Lacito Lab","","",7,24,150,"","","","","","",-1,-1,-1,"",""
 	Menu1_7=new Array("Publications",BaseMenuHref+"vient-de-paraitre/index_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
 	
 //La recherche = Research
-Menu2=new Array("Research","","",11,24,"","","","","","","",-1,-1,-1,"","");
+Menu2=new Array("Research","","",10,24,"","","","","","","",-1,-1,-1,"","");
 	Menu2_1=new Array("Presentation",BaseMenuHref+"la_recherche/index_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
 	Menu2_2=new Array("Adoption",BaseMenuHref+"themes/adoption_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu2_3=new Array("Language Evolution",BaseMenuHref+"themes/changecologie_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu2_4=new Array("Naming, Terming",BaseMenuHref+"themes/nomination_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu2_5=new Array("Panchronic Phonology",BaseMenuHref+"themes/phonopanchro_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu2_3=new Array("Description and typology",BaseMenuHref+"themes/comparaison/index_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu2_4=new Array("Indefinites",BaseMenuHref+"themes/indefini_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu2_5=new Array("Metaphor(s)",BaseMenuHref+"themes/metaphore_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
 	Menu2_6=new Array("Public Places",BaseMenuHref+"themes/interlocution_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu2_7=new Array("Said, left unsaid",BaseMenuHref+"themes/dit_nondit_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu2_8=new Array("Balkan Studies",BaseMenuHref+"themes/balkans/index_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu2_9=new Array("Dravidian Languages",BaseMenuHref+"themes/dravidien/index_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu2_10=new Array("Oceanic Studies",BaseMenuHref+"themes/oceanie/index_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu2_11=new Array("Tibeto-Burman Languages",BaseMenuHref+"themes/tibeto-birman/index_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu2_7=new Array("Balkan Studies",BaseMenuHref+"themes/balkans/index_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu2_8=new Array("Dravidian Languages",BaseMenuHref+"themes/dravidien/index_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu2_9=new Array("Oceanic Studies",BaseMenuHref+"themes/oceanie/index_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu2_10=new Array("Tibeto-Burman Languages",BaseMenuHref+"themes/tibeto-birman/index_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
     
 //Langues et pays = Languages & countries
 Menu3=new Array("Studied Languages","","",3,24,"","","","","","","",-1,-1,-1,"","");
@@ -120,15 +124,15 @@ Menu3=new Array("Studied Languages","","",3,24,"","","","","","","",-1,-1,-1,"",
 	
 //Archives orales = The Oral Archives
 Menu4=new Array("The Oral Archives","","",5,24,"","","","","","","",-1,-1,-1,"","");
-    Menu4_1=new Array("The Pangloss collection",BaseMenuHref+"archivage/presentation_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	 Menu4_2=new Array("Submit resources",BaseMenuHref+"archivage/depot_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	 Menu4_3=new Array("Tools",BaseMenuHref+"archivage/outils_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu4_4=new Array("Archive Access",BaseMenuHref+"archivage/index_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
-	Menu4_5=new Array("Search",BaseMenuHref+"archivage/tools/search_en.php","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+    Menu4_1=new Array("The Pangloss collection",BaseMenuHref+"pangloss/presentation_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	 Menu4_2=new Array("Submit resources",BaseMenuHref+"pangloss/depot_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	 Menu4_3=new Array("Tools",BaseMenuHref+"pangloss/outils_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu4_4=new Array("Archive Access",BaseMenuHref+"pangloss/index_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+	Menu4_5=new Array("Search",BaseMenuHref+"pangloss/tools/search_en.php","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
 	
 	
 //Projets associés = Projects (ou Collaborative Research?)
-Menu5=new Array("Collaborative Research","","",6,24,"","","","","","","",-1,-1,-1,"","");
+Menu5=new Array("Collab. Research","","",6,24,"","","","","","","",-1,-1,-1,"","");
 	Menu5_1=new Array("Presentation",BaseMenuHref+"partenariat/index_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
 	Menu5_2=new Array("Dad types in Saudi Arabia",BaseMenuHref+"partenariat/index.htm#dad-types","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
 	Menu5_3=new Array("A documentation of Laz",BaseMenuHref+"partenariat/index.htm#laz","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
@@ -152,4 +156,5 @@ Menu8=new Array("Directory","","",3,24,"","","","","","","",-1,-1,-1,"","");
     Menu8_1=new Array("Alphabetical list",BaseMenuHref+"membres/index_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
 	Menu8_2=new Array("Administrative Structure",BaseMenuHref+"pratique/structure_admin_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
     Menu8_3=new Array("Organizational Chart",BaseMenuHref+"pratique/organigramme_en.htm","",0,20,150,Subbgcolor,Subbghighcolor,Subfontcolor,Subfonthighcolor,"","",8,0,-1,"","");
+
 

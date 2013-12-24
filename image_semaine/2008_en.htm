@@ -19,6 +19,10 @@ function MM_reloadPage(init) {  //reloads the window if Nav4 resized
   else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
 }
 MM_reloadPage(true);
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
 //-->
 </script>
 <!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
@@ -29,63 +33,112 @@ MM_reloadPage(true);
 </style>
 </head>
 <body marginwidth="0" marginheight="0" >
-<div class="bandeau-liens" id="divbandeau-lienCNRS"> <a href="http://www.cnrs.fr/index.php" target="_blank">CNRS</a></div>
-<div id="divbandeau-traitvert1"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
-<div id="divbandeau-lienAccueil" class="bandeau-liens"> <a href="http://www.cnrs.fr/shs/" target="_blank">INSHS home</a></div>
-<div id="divbandeau-traitvert2"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
-<div id="divbandeau-lienAutres" class="bandeau-liens"><a href="http://www2.cnrs.fr/band/5.htm" target="_blank">Other web sites</a></div>
-<div id="divbandeau-traitvert3"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
 
-<table height="900" width="751"  border="0" cellspacing="0" cellpadding="0">
+  <!--<div class="bandeau-liens" id="divbandeau-lienCNRS"> <a href="http://www.cnrs.fr/fr/organisme/presentation.htm" target="_blank">Le CNRS</a> </div>
+<div id="divbandeau-traitvert1"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
+  <div id="divbandeau-lienAccueil" class="bandeau-liens"> <a href="http://www.cnrs.fr/shs/" target="_blank">Accueil SHS</a> </div>
+<div id="divbandeau-traitvert2"><img src="../z-outils/images/charte/trait-vertical.gif"></div>
+  <div id="divbandeau-lienAutres" class="bandeau-liens"><a href="http://www.cnrs.fr/fr/une/sites-cnrs.htm" target="_blank">Autres sites CNRS</a></div> 
+<div id="divbandeau-traitvert3"><img src="../z-outils/images/charte/trait-vertical.gif"></div>-->
+
+<table height="100%" width="100%"  bgcolor="#CCCCCC">
+<tr>
+<td >
+
+
+<table height="100%" width="1000"  border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF">
   <tr>
-    <td width="150"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="65" alt=""></td>
-    <td colspan="2"><img src="../z-outils/images/charte/bandeau-haut-droit.gif" alt="" width="100%" border="0"></td>
-    <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
+   
+    <td background="../z-outils/images/charte/bandeau-haut-droit_ok.gif" align="left" ><table width="1000"><tr><td width="454" valign="top" class="Xnavhaut"><p> <a href="../index_en.htm"><img src="../images/logos/Logo_Lacito.png" alt="aa" width="141" height="59" hspace="10" border="0" align="left"></a></p> <span class="Style1">Langues et civilisations<br>
+        à tradition orale <br>
+        (UMR7107)</span></p></td><td width="534" class="bandeau-liens">&nbsp;&nbsp;&nbsp;&nbsp;  
+<img src="../z-outils/images/charte/trait-vertical.gif">&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.cnrs.fr/fr/organisme/presentation.htm" target="_blank">CNRS</a>
+&nbsp;&nbsp;&nbsp;&nbsp;  
+<img src="../z-outils/images/charte/trait-vertical.gif">
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.cnrs.fr/shs/" target="_blank">INSHS home</a>&nbsp;&nbsp;&nbsp;&nbsp;  
+<img src="../z-outils/images/charte/trait-vertical.gif">
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.cnrs.fr/fr/une/sites-cnrs.htm" target="_blank">Other web sites</a>
+&nbsp;&nbsp;&nbsp;&nbsp;  
+<img src="../z-outils/images/charte/trait-vertical.gif">
+&nbsp;&nbsp;&nbsp;&nbsp;
+</td></tr></table>
+        
+     </td>
+    <!--<img src="../z-outils/images/charte/bandeau-haut-droit.gif" alt="" width="100%" height="66" border="0"/></td>-->
+    
+  </tr>
+  
+  <tr>
+   
+    
+    <td width="1000"  align="center" height="125" ><!-- InstanceBeginEditable name="Visuel" --><img src="../images/bandeaux/bandeauimagedj4.jpg" alt="bandeauidj" width="999" height="142" border="1"><!-- InstanceEndEditable --></td>
+   
   </tr>
   <tr>
-    <td width="150" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
-    <td colspan="2" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
-    <td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
+  <td>
+  
+  <table border="0" cellpadding="3" cellspacing="0"  width="100%">
+      			<tr>
+                <td colspan="7" align="center">
+                <!--<table width="100%"><tr>
+                <td height="55" align="left"><a href="http://www.cnrs.fr" target="_blank"><img src="../images/logos/logo-cnrs.jpg" alt="cnrs" width="88" height="36" border="0"/></a></td>
+                <td align="center"><a href="http://www.univ-paris3.fr/1207750810633/0/fiche___defaultstructureksup/&RH=1235649944785" target="_blank"><img src="../images/logos/logo-paris-3.gif" alt="paris3" width="150" height="53" border="0"/></a></td>
+                <td align="center"><a href="http://www.paris-sorbonne.fr/fr/spip.php?rubrique1096" target="_blank"><img src="../images/logos/logo-paris-4.gif" alt="paris4" width="150" height="53" border="0"/></a></td>
+                 <td align="right"><a href="http://www.typologie.cnrs.fr/" target="_blank"><img src="../images/logos/logo-typo.gif" alt="tul" width="150" height="53" border="0"/></a></td>
+                 </tr></table>-->
+                </td>
+                </tr>
+                <tr>
+       	 			<td width="11%" height="50" align="left" class="Xnavgauche"> <a href="http://www.cnrs.fr" target="_blank"><img src="../images/logos/cnrs.jpg" alt="cnrs" width="65" height="64"  border="0"/></a></td>
+                    <td width="10%" height="50" align="left" class="Xnavgauche"> <a href="http://www.univ-paris3.fr/1207750810633/0/fiche___defaultstructureksup/&RH=1235649944785" target="_blank"><img src="../images/logos/paris3.jpg" alt="paris3" width="63" height="45"  border="0"/></a></td>
+                    <td width="9%" height="50" align="left" class="Xnavgauche"><a href="http://www.paris-sorbonne.fr/fr/spip.php?rubrique1096" target="_blank"><img src="../images/logos/paris4.jpg" alt="paris4" width="57" height="48"  border="0"/></a></td>
+                     <td width="9%" class="Xnavgauche" align="left"><a href="http://www.inalco.fr" target="_blank"><img src="../images/logos/inalco.jpg" alt="inalco" width="87" height="52" border="0"/></a></td>
+                    <td width="41%" height="50" align="right" class="Xnavgauche"> <br/>
+                    <form name="rechercher-spm"
+action="http://lacito.vjf.cnrs.fr/moteur/engine.php" method="GET">
+				<b>Rechercher </b><input type="hidden" name="action"  value="go">
+	<input name ="blork" maxLength="50" size="10" class="text"/><input
+name="submit2" type="image" src="../z-outils/images/charte/ok.gif"
+align="texttop"
+                            border="0" width="20" height="20"/></form></td>
+                    <td width="10%" height="50" align="right" class="Xnavgauche"><a href="../INTRANET/index.htm"><b style="text-decoration : none">Intranet</b> <img border="0" src="../z-outils/images/boite-outils/icones/intranet.gif" width="18" height="12" alt="Lacito"/></a></td>
+                    <td width="10%" class="Xnavgauche" align="right"><a href="Javascript:version()"><img src="../images/logos/fra.gif" alt="Français" width="47" height="47"  border="0"></a></td>
+      			</tr>
+       		</table>
+  
+  </td>
   </tr>
+ 
   <tr>
-    <td width="150">&nbsp;</td>
-    <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="62"></td>
-    <td width="599" height="1"><!-- InstanceBeginEditable name="Visuel" --><img src="../images/bandeaux/bandeauimagedj4.jpg" alt="bandeauidj" width="100%" border="0"><!-- InstanceEndEditable --></td>
-    <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="62"></td>
+ 
+    
+    <td class="Xchemin" height="60"> 
+    <br/><br/><br/><br/>
+    &nbsp;<!-- InstanceBeginEditable name="Chemin" --><a href="../index_en.htm">&nbsp;Home</a> &gt; The Picture of the week in 2008<!-- InstanceEndEditable --></td>
+   
   </tr>
+  
   <tr>
-    <td width="150"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="1"></td>
-    <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
-    <td width="599" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
-    <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
-    <td class="Xchemin"> &nbsp;<!-- InstanceBeginEditable name="Chemin" --><a href="../index_en.htm">&nbsp;Home</a> &gt; The Picture of the week<!-- InstanceEndEditable --></td>
-    <td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="30"></td>
-  </tr>
-  <tr>
-    <td height="1"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="1"></td>
-    <td height="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
-    <td height="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="599" height="1"></td>
-    <td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
-  </tr>
-  <tr>
-    <td width="150">&nbsp;</td>
-    <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
-    <td width="599" rowspan="2" class="Xtextcourant" valign="top"><div id="ZonePrint">
+  
+    
+    <td width="1056" class="Xtextcourant" valign="top" ><div id="ZonePrint">
       <!-- InstanceBeginEditable name="Contenu" -->
       <table width="100%"  border="0" cellspacing="0" cellpadding="5">
         <tr>
-          <td><p class="intertitre">Precedent or following years: <a href="2007_en.htm">2007</a> - 2008 - <a href="2009_en.htm">2009</a> - <a href="2010_en.htm"> 2010</a> - <a href="2011_en.htm">2011</a> - <a href="2012_en.htm">2012</a></p>
+          <td><p class="intertitre">Last or next years: <a href="2007_en.htm">2007</a> - 2008 - <a href="2009_en.htm">2009</a> - <a href="2010_en.htm"> 2010</a> - <a href="2011_en.htm">2011</a> - <a href="2012_en.htm">2012</a> - <a href="2013_en.htm">2013</a></p>
             <p>&nbsp;</p>
             <h1><span class="titre"><img src="../z-outils/images/boite-outils/icones/alaune-grd.gif" alt="" width="24" height="24" hspace="2" vspace="2" border="0" align="left"></span> <a name="up"></a>Lacito - The Picture of the week in 2008 (<span class="intertitre"><span style="color:#F00">details in French</span></span>)</h1>
             <p>&nbsp;</p>
             <table width="100%" border="0" align="left" cellpadding="5" cellspacing="0">
               <tr>
+                <td><img src="../z-outils/images/boite-outils/filet-couleur.gif" alt="aa" width="100%" height="1"></td>
+              </tr>
+              <tr>
                 <td><p class="intertitre"><a></a><a name="sanmarco"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16">The weeks  of  December 22 &amp; 29, 2008 <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/saintmarc590.jpg" alt="sanmarco" width="100%"></p>
+                  <p align="center"><img src="images/saintmarc590.jpg" alt="sanmarco" width="80%"></p>
                   <p align="center"><strong>Pavage de la basilique Saint-Marc (Venise, Italie) </strong></p>
                   <p>La basilique San Marco, &agrave; Venise, illustre ce que Patrick Geary a si bien d&eacute;crit dans <em>Le Vol des reliques au Moyen &Acirc;ge</em> (Aubier 1993). Deux marchands v&eacute;nitiens vont &agrave; Alexandrie voler le corps de saint Marc, en 828 dit-on. Saint Marc remplace alors le patron local saint Th&eacute;odore : leurs deux colonnes dominent encore la <em>Piazzetta</em>. L'actuelle basilique fut construite entre 1063 et 1094. Les mosa&iuml;ques du sol, qui datent des 12e et 13e si&egrave;cles, sont fragiles et constamment refaites : comme notre peau, le dessin et les couleurs survivent au travers de la destruction de chaque jour, gr&acirc;ce aux artisans qui chaque jour refont &agrave; l'identique - ou presque. A peine plus modestes que les ors des vo&ucirc;tes, les pavages de Saint Marc sont le plus extraordinaire t&eacute;moignage d'une alliance entre dessin et couleur ; entre l'air d&eacute;gag&eacute; et superbe, un peu snob , de la g&eacute;om&eacute;trie des courbes, et la puissance des coloris qui saisit toujours Venise. <br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cette image illustre l'un des aspects du <a href="../partenariat/couleur/index.htm">Projet</a> &laquo; Histoire et G&eacute;ographie des Couleurs, faits de langue et syst&egrave;mes de communication &raquo; soutenu par l'ISCC et pilot&eacute; par F. Jacquesson, Pascale Dollfus et Michel Pastoureau.</p>
@@ -96,11 +149,8 @@ MM_reloadPage(true);
                 <td><img src="../z-outils/images/boite-outils/filet-couleur.gif" alt="aa" width="100%" height="1"></td>
               </tr>
               <tr>
-                <td><img src="../z-outils/images/boite-outils/filet-couleur.gif" alt="aa" width="100%" height="1"></td>
-              </tr>
-              <tr>
                 <td><p class="intertitre"><a name="femmeinuit"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  December 15, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p align="center"><img src="images/femmeinuit490.jpg" alt="femmeinuit" width="60%"></p>
+                  <p align="center"><img src="images/femmeinuit490.jpg" alt="femmeinuit" width="50%"></p>
                   <p align="center"><strong>Femme inuit et son b&eacute;b&eacute; (Nunavut, Canada, premi&egrave;re moiti&eacute; du XXe si&egrave;cle)</strong></p>
                   <p>Photo et textes sont extraits de l'exposition &laquo;&nbsp;<strong><a href="../expos/index.htm#corpsexpression">Le corps et l'expression linguistique</a></strong>&nbsp;&raquo;, organis&eacute;e par le Lacito en 1990 : panneau <a href="../expos/corps/inuit.htm" target="_blank">Corps et espace chez les Inuit</a>.<br>
                        &quot;<em>Inuit</em> est un ethnonyme aujourd'hui largement utilis&eacute; et qui tend &agrave; faire tomber en d&eacute;su&eacute;tude l'appellation Esquimaux/Eskimo. <em>Inuit</em> signifie &laquo;&nbsp;&ecirc;tres humains&nbsp;&raquo;. Les Inuit, qui habitent les r&eacute;gions arctiques de la Sib&eacute;rie, de l'Alaska, du Canada et au Groenland, sont actuellement un peu plus de 100.000.&quot;</p>
@@ -112,7 +162,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="panneaux" id="panneaux"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  December 08, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p align="center"><img src="images/panneaux590.jpg" alt="panneaux" width="70%"></p>
+                  <p align="center"><img src="images/panneaux590.jpg" alt="panneaux" width="50%"></p>
                   <p align="center"><strong>Panneaux de signalisation (Paris, France) </strong></p>
                   <p>L'actuelle rue Charlemagne, &agrave; Paris, s'appelait avant 1844 &quot;rue des Prestres Saint-Paul&quot;, et plus anciennement &quot;rue des Poulies Saint-Paul&quot; ; elle existe depuis le XIVe si&egrave;cle. La rue du Pr&eacute;v&ocirc;t est plus ancienne et a chang&eacute; de nom aussi : c'&eacute;tait la &quot;rue Perc&eacute;e&quot;. Les indications grav&eacute;es et encadr&eacute;es, ou appos&eacute;es sur des plaques de couleur bleu fonc&eacute; lis&eacute;r&eacute;es de vert (lui-m&ecirc;me rehauss&eacute; de blanc pour figurer le relief), ont parfois disparu et parfois s'accumulent. S'y ajoutent les indications plus modernes pour la circulation des v&eacute;hicules ou des pi&eacute;tons. Cette image illustre l'importance des syst&egrave;mes de couleur qui r&eacute;gissent de fa&ccedil;on tentaculaire notre conduite publique, et souvent priv&eacute;e. C'est un aspect d'un <a href="../partenariat/couleur/index.htm">Projet</a> du LACITO, soutenu par l'ISCC : &quot;Histoire et G&eacute;ographie de la Couleur : faits de langue et syst&egrave;mes de communication&quot;, que dirigent P. Dollfus, F. Jacquesson et M. Pastoureau.<br>
                   </p>
@@ -124,7 +174,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="guedelon3"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  December 01, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/motte590.jpg" alt="motte" width="100%"></p>
+                  <p align="center"><img src="images/motte590.jpg" alt="motte" width="80%"></p>
                   <p align="center"><strong>La motte, symbole du pouvoir militaire de l'an Mil (Gu&eacute;delon, Bourgogne, France) </strong></p>
                   <p>A l'entr&eacute;e du <a href="http://www.guedelon.fr/index.php" target="_blank">chantier m&eacute;di&eacute;val</a> de Gu&eacute;delon, on peut admirer la maquette au 1:10e d'une motte f&eacute;odale. Ce type de construction en bois servait autant pour le guet et la d&eacute;fense, gr&acirc;ce aux fortifications qui l'entouraient, que de r&eacute;sidence, dans la partie donjonn&eacute;e.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les mottes, de construction facile et rapide, essaim&egrave;rent le long des routes commerciales aux XIe et XIIe si&egrave;cles. Elles pr&eacute;c&egrave;daient les ch&acirc;teaux-forts.<br>
@@ -142,7 +192,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="palmierahuile" id="palmierahuile"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  November 24, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/palmierahuile590.jpg" alt="palmierahuile" width="100%"></p>
+                  <p align="center"><img src="images/palmierahuile590.jpg" alt="palmierahuile" width="80%"></p>
                   <p align="center"><strong>Le palmier &agrave; huile, plante essentielle pour les Ngbaka (Centrafrique, 1987)</strong></p>
                   <p>&quot;Le palmier &agrave; huile, <em>p&eacute;</em> (<em>Elaeis guineensis</em> JACQ), fait partie de la vie quotidienne des Ngbaka. Toutes les parties en sont exploit&eacute;es pour une vari&eacute;t&eacute; d&rsquo;usages techniques (amadou, emballage ou r&eacute;cipient, outillage, r&eacute;paration, cueillette, grimpage, pi&eacute;geage, p&ecirc;che, vannerie, conservation, habitat, mobilier, articles m&eacute;nagers, v&ecirc;tement, toilette, instruments de musique, jouets, ustensiles m&eacute;dicaux, excipients et pr&eacute;parations m&eacute;dicamenteuses&hellip;); l&rsquo; huile, le vin, les &laquo;tuiles&raquo;, les rachis, les noix et les palmistes font l&rsquo;objet d&rsquo;une petite commercialisation. Il tient une part non n&eacute;gligeable dans l&rsquo;alimentation avec l&rsquo;huile, de consommation quotidienne abondante, et le sel de cendres de l&rsquo;inflorescence m&acirc;le, ainsi que les noix dont le jus sert principalement pour la soupe.&quot;</p>
                   <p>Cette photo est extraite de l'exposition &laquo;&nbsp;<strong><a href="../expos/index.htm#milieunaturel">Nommer son milieu naturel</a></strong>&nbsp;&raquo;, organis&eacute;e par le Lacito en 1987&nbsp;: panneau <a href="../expos/milieunaturel/ngbaka1.htm" target="_blank">Les Ngbaka (1)</a>.<br>
@@ -155,7 +205,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="lamin"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  November 17, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p align="center"><img src="images/cremation_lamin590.jpg" alt="lamin" width="70%"></p>
+                  <p align="center"><img src="images/cremation_lamin590.jpg" alt="lamin" width="50%"></p>
                   <p align="center"><strong>Cr&eacute;mation &agrave; Lamin</strong></p>
                   <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lamin est un village war du Nongtalang situ&eacute; sur la colline &agrave; l'oppos&eacute; de  Nongbareh (voir <a href="#paysage">photo 1</a>) dont les principaux clans fondateurs sont venus de Nongbareh pour cultiver les palmiers d'Arec (voir photo 2) et les lianes &agrave; feuille de Pan. La branche dialectale de Lamin, Amkoi et Nongbareh  appartient au sous-groupe dialectal du Nongtalang mais pr&eacute;sente des traits phonologiques et grammaticaux particuliers par rapport aux autres dialectes parl&eacute;s dans les villages proches du Nongtalang. Les villages de cette branche ont &eacute;galement un trait particulier dans leurs rituels fun&eacute;raires. Au cours de la cr&eacute;mation, les os du d&eacute;funt ne sont pas retir&eacute;s des cendres du site de cr&eacute;mation pour &ecirc;tre transport&eacute;s et isol&eacute;s dans un cairn individuel &agrave; l'or&eacute;e du village. Ils demeurent sur place et sont simplement recouverts de terre. A Amkoi ils sont d&eacute;plac&eacute;s et enterr&eacute;s directement entre les racines d'un arbre du bosquet sacr&eacute; (voir <a href="#pierreetos">photo 3</a>). A Lamin, une palissade de bambous prot&egrave;ge les os contre les animaux de la for&ecirc;t et permet aussi de les localiser pour la c&eacute;r&eacute;monie secondaire du <em>lum sh'iang</em>, comme &agrave; Lamet, autre village m&ocirc;n-khmer au nord du Laos. <br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comme on le voit ici, le b&ucirc;cher est tout proche des grands arbres du bosquet sacr&eacute;&nbsp;: derri&egrave;re le b&ucirc;cher, on voit un banian o&ugrave; s'adossent les gens. Ces grands arbres nourrissent les &ecirc;tres que la cr&eacute;mation a lib&eacute;r&eacute; de leur corps terrestre dans le monde du sous-sol (voir <a href="#pierreetos">photo 3</a>) et les mettent en communication avec les autres &ecirc;tres du sous-sol, notamment leur rivi&egrave;re et leurs anc&ecirc;tres. Les hommes terrestres nourissent la base <em>tra</em> des arbres avec le sang et l'alcool du sacrifice. <em>Tra</em> d&eacute;signe &eacute;galement l'origine, le fondement d'une lign&eacute;e terrestre ou c&eacute;leste. Les &ecirc;tres du sous-sol pourvoient en descendance et en r&eacute;coltes.  Le s&eacute;jour dans le monde du sous-sol doit permettre &agrave; l'&ecirc;tre du sous-sol, r&eacute;duit sur terre &agrave; ses os, de se purifier et de devenir enceint des semences des g&eacute;n&eacute;rations &agrave; venir du clan, avant de se lib&eacute;rer du statut d'anc&ecirc;tre limit&eacute; &agrave; sa maisonn&eacute;e pour se fondre dans l'anc&ecirc;tre du clan. Cette deuxi&egrave;me &eacute;l&eacute;vation dans l'ordre des &ecirc;tres anim&eacute;s a lieu au cours de la c&eacute;r&eacute;monie de <em>lum sh'iang</em> (voir les commentaires <a href="#mat">photo 4</a> et <a href="#tombe">photo 5</a>). <br>
@@ -169,7 +219,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="citadelle"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  November 10, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/murailles-KK590.jpg" alt="murailles" width="100%"></p>
+                  <p align="center"><img src="images/murailles-KK590.jpg" alt="murailles" width="80%"></p>
                   <p align="center"><strong>Citadelle du Khorezm ou Khwarezm </strong>(Asie centrale)</p>
                   <p>Une des r&eacute;gions les plus int&eacute;ressantes d'Asie centrale est le Khorezm ou Khwarezm, que l'Antiquit&eacute; appelait d&eacute;j&agrave; Khorasmia (il ne faut pas confondre avec le Khorassan). C'est le cours inf&eacute;rieur du fleuve Amou-Daria, avant qu'il ne se r&eacute;pande en delta dans la mer d'Aral. La r&eacute;gion est relativement prosp&egrave;re, &agrave; cause de l'agriculture li&eacute;e au fleuve, et &agrave; cause du commerce. Servant de terre de refuge ou de relai entre les r&eacute;gions plus d&eacute;sertiques du Turkm&eacute;nistan et du Kazakhstan, le Khorezm a d&eacute;velopp&eacute; autrefois de puissants micro-royaumes organis&eacute;s autour de citadelles. C'est les ruines de l'une d'entre elles que montre la photographie. Ces citadelles ont &eacute;t&eacute; &eacute;rig&eacute;es au d&eacute;but de l'&egrave;re chr&eacute;tienne, avant la conqu&ecirc;te musulmane. La photo a &eacute;t&eacute; prise en 2001, lors d'une exp&eacute;dition du Projet &quot;East meets West&quot; (ESF-CNRS) au Karakalpakstan. </p>
                   <p>&copy; <a href="../membres/jacquesson.htm">Fran&ccedil;ois Jacquesson </a> (CNRS-LACITO, 2001)</p>
@@ -180,7 +230,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="toitsculpture"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  November 03, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/sale_toi590.jpg" alt="toit_sculpture" width="100%"></p>
+                  <p align="center"><img src="images/sale_toi590.jpg" alt="toit_sculpture" width="80%"></p>
                   <p align="center"><strong>Toit en bois sculpt&eacute;, Sal&eacute;, Birmanie centrale</strong></p>
                   <p>Le monast&egrave;re de Yoak Son&eacute; &agrave; Sal&eacute;, pr&egrave;s de Pagan, a &eacute;t&eacute; converti en mus&eacute;e. C'est un b&acirc;timent sur pilotis tout en teck, avec un magnifique toit sculpt&eacute;. </p>
                   <p>&copy; <a href="../membres/vittrant.htm">Alice Vittrant </a> (CNRS-LACITO, 2001)</p>
@@ -191,7 +241,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="balai"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  October 27, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/7balai590.jpg" alt="balai" width="100%"></p>
+                  <p align="center"><img src="images/7balai590.jpg" alt="balai" width="80%"></p>
                   <p align="center"><strong>War-7 : Enfants war rapportant leur r&eacute;colte de bambou &agrave; balai (Meghalaya, Inde) </strong></p>
                   <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les extr&eacute;mit&eacute;s en fleur d&rsquo;une vari&eacute;t&eacute; de bambou sem&eacute;e chaque ann&eacute;e, sont r&eacute;colt&eacute;es pour produire des balais. Cette r&eacute;colte devient un compl&eacute;ment important &agrave; la r&eacute;colte des noix d&rsquo;arec chez les War qui ne peuvent plus accro&icirc;tre leurs terres. Cette culture est en bonne partie responsable de la d&eacute;forestation sur le plateau.<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sur la photo, les enfants s&rsquo;appr&ecirc;tent &agrave; abandonner leur r&eacute;colte et &agrave; prendre leurs jambes &agrave; leur cou, effray&eacute;s par l&rsquo;&eacute;trang&egrave;re blanche et son appareil photo. Cet instant a &eacute;t&eacute; saisi pendant que je photographiais les m&eacute;galithes, juste &agrave; leur gauche (<a href="#megalithes">photo 6</a>). Leur village, Nongbareh, se trouve plus loin, &agrave; l&rsquo;&eacute;cart.<br>
@@ -204,7 +254,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="rhodope" id="rhodope"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  October 20, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/niki590.jpg" alt="rhodope" width="100%"></p>
+                  <p align="center"><img src="images/niki590.jpg" alt="rhodope" width="80%"></p>
                   <p align="center"><strong> La montagne rhodop&eacute;enne (Gr&egrave;ce)</strong></p>
                   <p>Les Pomaques sont des slavophones musulmans habitant dans les Rhodopes. Autrefois, ils se d&eacute;pla&ccedil;aient  en famille avec leur b&eacute;tail pour l'estivage, ce qui pouvait durer plusieurs mois. Le reste de l'ann&eacute;e, ils vivaient dans leur village. Encore aujourd&rsquo;hui ils restent tr&egrave;s attach&eacute;s &agrave; leur <em>dam</em>, une cabane dans la montagne, o&ugrave; ils aiment s'&eacute;chapper, pendant l'&eacute;t&eacute;, lorsqu'il fait trop chaud au village. Cette photo a &eacute;t&eacute; prise lors d&rsquo;une telle excursion, qui peut se faire d&eacute;sormais en voiture dans la journ&eacute;e.<br>
                   </p>
@@ -216,7 +266,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="megalithes"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  October 13, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/6megalithes590.jpg" alt="megalithes" width="100%"></p>
+                  <p align="center"><img src="images/6megalithes590.jpg" alt="megalithes" width="80%"></p>
                   <p align="center"><strong>War-6 : M&eacute;galithes war d&rsquo;un site de c&eacute;r&eacute;monies pour obtenir ou pour arr&ecirc;ter la pluie (Meghalaya, Inde) </strong></p>
                   <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ces m&eacute;galithes n&rsquo;ont rien de pr&eacute;historique puisqu&rsquo;ils ont  &eacute;t&eacute; install&eacute;s sur la dalle volcanique apr&egrave;s le grand tremblement de terre de 1897, qui a secou&eacute; tout le plateau volcanique du Meghalaya. Ils n&rsquo;en sont pas moins int&eacute;ressants parce qu&rsquo;ils sont encore en fonction et permettent de comprendre le r&ocirc;le d&rsquo;autres groupes de m&eacute;galithes. Ce sous-groupe appartient &agrave; l&rsquo;un des plus vastes ensembles war. Le site expos&eacute; &agrave; l&rsquo;est s&rsquo;&eacute;tend nord-sud sur environ 200 m&egrave;tres, au-dessus d&rsquo;une rivi&egrave;re au fond de l&rsquo;&agrave;-pic qu&rsquo;on devine derri&egrave;re les monuments, &agrave; la confluence de deux villages importants : Konglah et Nongbareh. Les habitants d&rsquo;un certain &acirc;ge de la r&eacute;gion du Nongtalang (voir <a href="#paysage">photo 1</a>)  pratiquent encore la religion ancienne (voir <a href="#palmeraie">photo 2</a>, <a href="#pierreetos">photo 3</a>, <a href="#mat">photo 4</a> et <a href="#tombe">photo 5</a>). <br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ce sous-groupe m&eacute;galithique est de dimension moyenne. Les plus importantes pierres verticales atteignent pr&egrave;s de 6 m&egrave;tres et les reposoirs horizontaux pr&egrave;s de 7 m&egrave;tres. Les douze pierres verticales repr&eacute;sentent les clans et sous-clans, selon leur importance, d&rsquo;un groupe humain qui d&eacute;pend de la rivi&egrave;re en contrebas. Les vingt pierres horizontales, dont on ne voit que la premi&egrave;re rang&eacute;e, sont les reposoirs o&ugrave; se tiennent et dorment les membres des maisonn&eacute;es correspondantes pendant les c&eacute;r&eacute;monies. Ce site ne comporte aucune tombe.<br>
@@ -229,7 +279,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="inauguration"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  October 06, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/inauguration590.jpg" alt="inauguration" width="100%"></p>
+                  <p align="center"><img src="images/inauguration590.jpg" alt="inauguration" width="80%"></p>
                   <p align="center"><strong>Inauguration d'une pirogue b&eacute;&eacute;r&euml;w&egrave; (&Icirc;le des Pins, Nouvelle-Cal&eacute;donie)</strong></p>
                   <p>L'&icirc;le des Pins est l'un des seuls lieux en Nouvelle-Cal&eacute;donie o&ugrave; les Kanak continuent d'utiliser et de fabriquer des pirogues, tant pour la navigation que pour la p&ecirc;che. Rappelons qu'il en existe trois types, la pirogue double ou <em>v&euml;k&ecirc;kar&eacute;</em>, la petite pirogue non pont&eacute;e &agrave; balancier ou <em>nyey&ugrave;re</em> et la pirogue pont&eacute;e &agrave; balancier <em>b&eacute;&eacute;r&euml;w&egrave;</em>. En d&eacute;cembre 1983, apr&egrave;s six mois de construction que j'ai &eacute;tudi&eacute;e en d&eacute;tail, les p&ecirc;cheurs ont mis &agrave; la mer pour la premi&egrave;re fois cette grande pirogue qu'ils venaient de terminer. Elle a la particularit&eacute; d'avoir un petit pont sur coffrage sur son balancier, innovation introduite ici pour donner une meilleure stabilit&eacute; &agrave; cette pirogue exceptionnellement grande.<br>
                   </p>
@@ -241,7 +291,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="tombe"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  September 29, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/5tombe590.jpg" alt="tombe" width="100%"></p>
+                  <p align="center"><img src="images/5tombe590.jpg" alt="tombe" width="80%"></p>
                   <p align="center"><strong>War-5 : Tombe clanique referm&eacute;e &agrave; la fin de la c&eacute;r&eacute;monie fun&eacute;raire secondaire de<em> lum sh&rsquo;iang</em> &quot;collecte des os&quot; en territoire war dans le sud-est du Meghalaya, Inde. </strong></p>
                   <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contrairement aux tombes clanique, isol&eacute;es du sol et herm&eacute;tiquement ferm&eacute;es des Khasi et des Pnar, et d&rsquo;autres War vivant sur d&rsquo;anciennes terres pnar, les tombes que l'on voit ici comportent une ouverture convexe figurant le d&ocirc;me c&eacute;leste et leur fond repose &agrave; m&ecirc;me la roche du sol. Ces cailloux d&rsquo;apparence modeste renferment ce que les hommes ont ici de plus pr&eacute;cieux. Les pierres amoncel&eacute;es au premier plan recouvrent un empilement de tressages imperm&eacute;ables de bambous prot&eacute;geant des tissus pr&eacute;cieux. Ces tissus honorent, en le rev&ecirc;tant comme un corps cosmique, le grand lien de tissu blanc dans lequel viennent d&rsquo;&ecirc;tre renou&eacute;s les os r&eacute;duits de chaque membre de plusieurs g&eacute;n&eacute;rations matrilin&eacute;aires du clan Lamin, du village d&rsquo;<em>&rsquo;am Koi</em>. Auparavant, les os du nouveau venu avaient &eacute;t&eacute; rituellement d&eacute;terr&eacute;s de leur s&eacute;jour individuel au pied d&rsquo;un ar&eacute;quier, &agrave; une centaine de m&egrave;tres de l&agrave; (voir <a href="#pierreetos">photo 3</a>). Au pied de l&rsquo;arbre, on a d&eacute;nou&eacute; chacun des membres selon son ordre g&eacute;n&eacute;alogique puis, apr&egrave;s avoir appel&eacute; et convi&eacute; chacun par son nom en pr&eacute;sence de ses plus proches descendants (venus souvent de loin pour l&rsquo;occasion), on a renou&eacute; chacun, dans le m&ecirc;me ordre g&eacute;n&eacute;alogique, en finissant par les os de l&rsquo;homme pour qui cette c&eacute;r&eacute;monie a lieu. Le lien d&rsquo;os de l&rsquo;Anc&ecirc;tre de cette branche clanique a &eacute;t&eacute; port&eacute;, du pied de l&rsquo;arbre jusqu&rsquo;&agrave; la tombe, par le repr&eacute;sentant sacerdotal des clans fondateurs du village. Il a &eacute;t&eacute; d&eacute;pos&eacute; dans la tombe, sur la roche affleurant du sous-sol. On l&rsquo;a recouvert des tissus blancs (couleur du ciel), rouges (couleur de la terre) et bleus (couleur du sous-sol) superpos&eacute;s. Les officiants ont nourri et pri&eacute; les anc&ecirc;tres selon leur hi&eacute;rarchie territoriale et c&eacute;leste, avant de recouvrir &laquo; leur &raquo; anc&ecirc;tre de pierres non scell&eacute;es. La gourde v&eacute;g&eacute;tale qui d&eacute;passe des pierres a contenu une part de l&rsquo;alcool du sacrifice. Il a &eacute;t&eacute; offert aux anc&ecirc;tres avec les offrandes de g&acirc;teaux envelopp&eacute;s de feuilles messag&egrave;res et de bananes, qui remplacent d&eacute;sormais les buffles sacrifi&eacute;s.<br>
                   </p>
@@ -253,8 +303,8 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="harpon"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  September 22, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/harpon590.jpg" alt="harpon" width="100%"></p>
-                  <p align="center"><strong>P&ecirc;che au trident dans le lagon de Hiw  (&icirc;les Torres, Vanuatu)</strong></p>
+                  <p align="center"><img src="images/harpon590.jpg" alt="harpon" width="80%"></p>
+                  <p align="center"><strong>P&ecirc;che au trident dans le lagon de Hiw  (&icirc;les Torrès, Vanuatu)</strong></p>
                   <p> Les M&eacute;lan&eacute;siens qui vivent au nord du Vanuatu vivent le plus souvent sur le littoral, et de pr&eacute;f&eacute;rence autour des lagons. Ces endroits prot&eacute;g&eacute;s des vents et des courants, permettent de se baigner sans risques. Il en va ainsi de la petite &icirc;le de Hiw, et de ses 150 habitants. Les enfants y passent une grande partie de la journ&eacute;e &agrave; jouer dans la baie, tant&ocirc;t s'adonnant &agrave; la p&ecirc;che au trident &ndash; tant&ocirc;t, allong&eacute;s sur une planche de bois, se laissant emporter par la cime des vagues&hellip; </p>
                   <p>&copy; <a href="../membres/francois.htm">Alexandre Fran&ccedil;ois</a> (CNRS-LACITO, 26 janvier 2006)</p>
                   <p>Place: Oceania, Vanuatu,  Torres Islands, Hiw - Language: <a href="../ALC/Languages/Hiw_popup.htm" target="_blank"onClick="window.open(this.href,'popupLink','width=400,height=400,scrollbars=yes,resizable=yes',1);return false">Hiw</a></p></td>
@@ -264,7 +314,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="tetrade3"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  September 15, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p align="center"><img src="images/SteTetrade590.jpg" alt="tetrade3" width="70%"></p>
+                  <p align="center"><img src="images/SteTetrade590.jpg" alt="tetrade3" width="50%"></p>
                   <p align="center"><strong>La Trinit&eacute;, ic&ocirc;ne de la ville d'Eline-Pelin, d&eacute;but  20e si&egrave;cle </strong></p>
                   <p>En r&eacute;alit&eacute;, cette trinit&eacute; n&eacute;otestamentaire   parfaitement h&eacute;t&eacute;rodoxe   est une 't&eacute;trade&quot; qui pr&eacute;side &agrave;  la c&eacute;l&eacute;bration du sacrifice sanglant de la Pentec&ocirc;te.</p>
                   <p>[n&eacute;otestamentaire &quot;qui concerne le Nouveau Testament&quot;, h&eacute;t&eacute;rodoxe &quot;qui s'&eacute;carte de la doctrine re&ccedil;ue&quot;, t&eacute;trade &quot;groupe de quatre &eacute;l&eacute;ments&quot;]<br>
@@ -277,7 +327,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="mat"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  September 08, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p align="center"><img src="images/4mat590.jpg" alt="mat" width="50%"> <img src="images/4mat_detail590.jpg" alt="matdetail" width="40%"></p>
+                  <p align="center"><img src="images/4mat590.jpg" alt="mat" width="40%"> <img src="images/4mat_detail590.jpg" alt="matdetail" width="30%"></p>
                   <p align="center"><strong>War-4 : M&acirc;t de bambou surmont&eacute; d&rsquo;un coq blanc et de fleurs de papier, dress&eacute; &agrave; l&rsquo;occasion de la c&eacute;r&eacute;monie fun&eacute;raire secondaire du <em>lum sh&rsquo;iang</em> &quot;collecte des os&quot; dans un village war du Meghalaya, Inde</strong></p>
                   <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cette c&eacute;r&eacute;monie est le principal &eacute;v&egrave;nement religieux et social qui, &agrave; la fin de l&rsquo;hiver, rythme la vie des derniers descendants m&ocirc;n-khmers qui pratiquent encore la religion ancienne, en particulier les War du Nongtalang. La c&eacute;r&eacute;monie fut pratiqu&eacute;e en mars 2008 pour l&rsquo;un des descendants du clan des fondateurs Lamin du village de <em>&rsquo;am Koi</em>. Le village est en contrebas de Nongbareh (seconde colline de la <a href="#paysage">photo 1</a>). La c&eacute;r&eacute;monie est organis&eacute;e rituellement par la s&oelig;ur du d&eacute;funt et a &eacute;t&eacute; pr&eacute;c&eacute;d&eacute;e de joutes oratoires entre clans alli&eacute;s, la nuit pr&eacute;c&eacute;dente. La joute oratoire est une des phases principales de la c&eacute;r&eacute;monie. Les &eacute;quipes d&rsquo;anciens de chaque clan participant sont inspir&eacute;es par leurs anc&ecirc;tres. La joute s&rsquo;organise selon des canevas traditionnels dans un r&eacute;cit de rem&eacute;moration religieuse. Il est choisi et annonc&eacute; &agrave; l&rsquo;avance aux clans participant &agrave; la c&eacute;r&eacute;monie par la s&oelig;ur du d&eacute;funt (ou le fr&egrave;re a&icirc;n&eacute; pour la c&eacute;r&eacute;monie d&rsquo;une femme).<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les d&eacute;corations en papier sont un syncr&eacute;tisme des d&eacute;corations de No&euml;l des chr&eacute;tiens, qui repr&eacute;sentent environ 80% des habitants du Meghalaya. Le coq blanc symbolise le coq sacrifi&eacute; qui annonce &agrave; l&rsquo;Anc&ecirc;tre l&rsquo;arriv&eacute;e du nouveau membre. Celui-ci fait cro&icirc;tre l&rsquo;Anc&ecirc;tre dans la g&eacute;n&eacute;ration des anc&ecirc;tres c&eacute;lestes, comme une naissance accro&icirc;t le niveau g&eacute;n&eacute;alogique d&rsquo;un a&iuml;eul.<br>
@@ -291,7 +341,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="ramepied"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  September 01, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/rame-pied590.jpg" alt="ramepied" width="100%"></p>
+                  <p align="center"><img src="images/rame-pied590.jpg" alt="ramepied" width="80%"></p>
                   <p align="center"><strong>Les In-tha </strong></p>
                   <p>Les p&ecirc;cheurs du lac Inl&eacute; (pays shan en Myanmar) ont la particularit&eacute; de mouvoir leur barque avec le pied qu'ils appuient sur la rame. Ils appartiennent &agrave; l'ethnie In-tha &quot;fils du lac&quot;.</p>
                   <p>&copy; <a href="../membres/coyaud.htm">Maurice Coyaud </a> (CNRS-LACITO, 1992)</p>
@@ -302,7 +352,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="jumelles"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The weeks  of  August 18 &amp; 25, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/jumelles590.jpg" alt="jumelles" width="100%"></p>
+                  <p align="center"><img src="images/jumelles590.jpg" alt="jumelles" width="80%"></p>
                   <p align="center"><strong>Observation &agrave; l'aide d'une paire de jumelles (Nunavut, Arctique canadien)</strong></p>
                   <p>Un chasseur originaire d'Igloolik (nord de la baie d'Hudson) en train de &quot;jumeler&quot; &agrave; la recherche de c&eacute;tac&eacute;s (b&eacute;luga et narval). La phase rep&eacute;rage de gibiers est primordiale. Les premiers instruments optiques (longue-vue, jumelles et, plus tard, lunette de tir) ont fait leur apparition dans l'Arctique oriental canadien au tournant du XIXe et du XXe si&egrave;cles, par le biais des baleiniers.<br>
                   </p>
@@ -314,7 +364,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="pierreetos"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The weeks  of  August 04 &amp; 11, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p align="center"><img src="images/3pierreetos590.jpg" alt="pierreetos" width="60%"></p>
+                  <p align="center"><img src="images/3pierreetos590.jpg" alt="pierreetos" width="50%"></p>
                   <p align="center"><strong>War-3 : La pierre et l&rsquo;os (War, Meghalaya, Inde) </strong></p>
                   <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cette grosse pierre polie, qu&rsquo;enserrent les racines d&rsquo;un ar&eacute;quier, est consid&eacute;r&eacute;e comme une manifestation de la puissance de l&rsquo;anc&ecirc;tre qui l&rsquo;a fait remonter du sous-sol. &Agrave; l&rsquo;issue de la c&eacute;r&eacute;monie de cr&eacute;mation, les os d&rsquo;un d&eacute;funt de ce village sont provisoirement enterr&eacute;s au pied d&rsquo;un des ar&eacute;quiers de cette petite plantation (voir <a href="#palmeraie">photo 2</a>) avant la c&eacute;r&eacute;monie fun&eacute;raire secondaire du <em>lum sh&rsquo;iang</em> &quot;collecte des os&quot;, o&ugrave; ces os individuels sont incorpor&eacute;s &agrave; ceux de l&rsquo;anc&ecirc;tre de la branche clanique. Le panier vide qu&rsquo;on aper&ccedil;oit contre l&rsquo;arbre voisin a contenu les tissus utilis&eacute;s pour recueillir et prot&eacute;ger les os qu&rsquo;on avait d&eacute;terr&eacute;s pour les transporter dans leur tombe au cours d&rsquo;une de ces c&eacute;r&eacute;monies (voir <a href="#mat">photo 4</a> et <a href="#tombe">photo 5</a>). L&rsquo;&acirc;me du d&eacute;funt, lib&eacute;r&eacute;e de son corps par la cr&eacute;mation, s&eacute;journe dans le monde du sous-sol jusqu&rsquo;&agrave; ce que la famille ait les moyens de lui offrir la c&eacute;r&eacute;monie de<em> lum sh&rsquo;iang</em>, qui se pratique au d&eacute;but du printemps. Au cours de ce s&eacute;jour dans le sous-sol, l&rsquo;&acirc;me acquiert le statut de protecteur de la maisonn&eacute;e et doit se purifier avant de rejoindre l&rsquo;anc&ecirc;tre clanique c&eacute;leste. Ce dernier est consult&eacute; par le sacrifice d'un &oelig;uf, avant que les os ne puissent &ecirc;tre r&eacute;unis &agrave; ceux du clan. L&rsquo;&oelig;uf est cass&eacute; sur une planchette de bois et donne &agrave; lire son message &agrave; partir des d&eacute;bris de coquilles concaves ou convexes, organis&eacute;s sur la planchette selon les quatre directions. Le sous-sol des arbres nourrit l&rsquo;anc&ecirc;tre au cours de son s&eacute;jour dans le monde du sous-sol. Chez les Santalis du groupe Munda, autre branche de la famille Austroasiatique, les anc&ecirc;tres sont repr&eacute;sent&eacute;s par des pierres  install&eacute;es au pied des arbres du bosquet sacr&eacute;.<br>
                   </p>
@@ -326,7 +376,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="guedelon" id="guedelon2"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The weeks  of  July 14, 21 &amp; 28, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p align="center"><img src="images/guedelon_porte590.jpg" alt="guedelon2" width="60%"></p>
+                  <p align="center"><img src="images/guedelon_porte590.jpg" alt="guedelon2" width="50%"></p>
                   <p align="center"><strong>Porte m&eacute;di&eacute;vale menant &agrave; une autre &eacute;poque ? (Gu&eacute;delon en Bourgogne, France) </strong></p>
                   <p>La construction du ch&acirc;teau-fort de Gu&eacute;delon a commenc&eacute; en 1997. Il faudra environ 25 ans pour le terminer. Les responsables en parlent comme &quot;d'un chantier scientifique, historique, p&eacute;dagogique, touristique et humain&quot; (see more on the <a href="http://www.guedelon.fr/en/" target="_blank">website</a> of Guedelon)</p>
                   <p>&copy; <a href="../membres/behaghel.htm">Anne Behaghel-Dindorf</a> (CNRS-LACITO, August 2007)</p>
@@ -337,7 +387,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="palmeraie"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  July 06, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p align="center"><img src="images/2palmeraie590.jpg" alt="palmeraie" width="60%"></p>
+                  <p align="center"><img src="images/2palmeraie590.jpg" alt="palmeraie" width="50%"></p>
                   <p align="center"><strong>War-2 : Palmeraie d&rsquo;ar&eacute;quiers chez les War dans le Meghalaya, Inde. </strong></p>
                   <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cette plantation est situ&eacute;e de l&rsquo;autre c&ocirc;t&eacute; de la premi&egrave;re colline qu&rsquo;on aper&ccedil;oit en contrebas <a href="#paysage">photo 1</a>. Cette palmeraie a un r&ocirc;le sacr&eacute; particulier pour le village qui poss&egrave;de les terres de cette colline. Elle se situe en bordure du bosquet sacr&eacute; et de la rivi&egrave;re des clans fondateurs. Les racines de ses palmiers abritent les os des d&eacute;funts apr&egrave;s les c&eacute;r&eacute;monies de cr&eacute;mation. En contrebas, adoss&eacute;es aux rochers qui surplombent la vall&eacute;e principale, expos&eacute;es &agrave; l&rsquo;est, se trouvent les tombes claniques. Au cours des c&eacute;r&eacute;monies fun&eacute;raires secondaires, les os des individus, ayant accompli leur cycle de purification dans le monde du dessous et devenus &laquo; enceints &raquo; des semences du clan, sont d&eacute;terr&eacute;s et regroup&eacute;s avec ceux du clan, dans les tombes de pierres o&ugrave; ils s&rsquo;incorporent &agrave; l&rsquo;Anc&ecirc;tre clanique. Voir <a href="#pierreetos">photo 3</a>, <a href="#mat">photo 4</a> et <a href="#tombe">photo 5</a>.<br>
                   </p>
@@ -349,7 +399,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="qetegaveg" id="qetegaveg2"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  June 30, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/qetegaveg-fougere590.jpg" alt="qetegaveg" width="100%"></p>
+                  <p align="center"><img src="images/qetegaveg-fougere590.jpg" alt="qetegaveg" width="80%"></p>
                   <p align="center"><strong>Foug&egrave;res sculpt&eacute;es (Gaua, Vanuatu) </strong></p>
                   <p>L'&icirc;le de Gaua, dans les &icirc;les Banks au nord du Vanuatu, a pr&eacute;serv&eacute; l'art de la sculpture sur foug&egrave;re arborescente. Ce type d'arbre (genre <em>Cyathea</em>) pr&eacute;sente un tronc fibreux, de couleur sombre, facile &agrave; modeler &agrave; l'aide d'une lame aiguis&eacute;e. Les sculptures ainsi taill&eacute;es, hautes de 1 &agrave; 2 m&egrave;tres, &eacute;taient autrefois dress&eacute;es &agrave; l'entr&eacute;e des maisons sacr&eacute;es &ndash; dites &ldquo;nakamal&rdquo; &ndash; r&eacute;serv&eacute;es aux hommes initi&eacute;s et aux dignitaires de haut rang. Elles sont aujourd'hui tr&egrave;s recherch&eacute;es par les antiquaires et marchands d'art du Pacifique, et cet artisanat encore vivant contribue &agrave; l'&eacute;conomie locale. <br>
                     Ces statues anthropomorphes repr&eacute;sentent les Esprits surnaturels, ombres des Anc&ecirc;tres d&eacute;c&eacute;d&eacute;s, qui r&egrave;gnent sur la for&ecirc;t dense de ces &icirc;les volcaniques. Dans certaines langues des &icirc;les voisines, ces statues seront d&eacute;sign&eacute;es du m&ecirc;me mot que les Esprits eux-m&ecirc;mes (ex. en mwotlap <em>natmat</em> &ldquo;mort; anc&ecirc;tre; Esprit; Ogre; coiffe ou statue repr&eacute;sentant un Esprit&hellip;&rdquo;). Mais dans l'&icirc;le de Gaua m&ecirc;me, l&agrave; o&ugrave; la tradition statuaire est la plus forte, on pr&eacute;f&egrave;re employer des termes moins &eacute;vocateurs pour ces m&ecirc;mes sculptures: en lakon (langue de la c&ocirc;te ouest), on parle de <em>nawo jaajun</em> &ldquo;visages d'hommes&rdquo;; et en dorig (langue du sud-est de l'&icirc;le) on les appellera simplement <em>dro</em> &ldquo;foug&egrave;re&rdquo;.  Il s'agit probablement l&agrave; d'un ph&eacute;nom&egrave;ne de tabou linguistique, par lequel on &eacute;vite soigneusement de prononcer les mots qui font peur.</p>
@@ -361,7 +411,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="paysage"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  June 23, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/1paysage590.jpg" alt="paysage" width="100%"></p>
+                  <p align="center"><img src="images/1paysage590.jpg" alt="paysage" width="80%"></p>
                   <p align="center"><strong>War-1 : Paysage typique de l&rsquo;&eacute;cosyst&egrave;me humide des War avec ses collines escarp&eacute;es et ses petites vall&eacute;es encaiss&eacute;es plant&eacute;es de bambous et d&rsquo;ar&eacute;quiers</strong> (sur une s&eacute;rie d'au moins sept photos)</p>
                   <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les plantations de Nongbareh au sud des collines Jaintia du Meghalaya surplombent les plaines du Bengladesh qu&rsquo;on devine au fond dans la brume. On aper&ccedil;oit <em>&lsquo;am ktshar</em> &quot;le cours d&rsquo;eau de la Loi&quot;, un des noms d&rsquo;attribut de l&rsquo;Anc&ecirc;tre de tous les anc&ecirc;tres, qui d&eacute;limite les terres d&rsquo;un petit groupe de clans matrilin&eacute;aires alli&eacute;s, du village voisin de Kudeng et baigne leur bosquet sacr&eacute;. Elle alimente aussi les conduites en bambous qui irriguent ing&eacute;nieusement les palmiers d&rsquo;arec (<em>cf</em>. <a href="#palmeraie">photo 2</a>) et les lianes, dont les feuilles sont consomm&eacute;es avec les noix d&rsquo;arec. Les arbres aux feuilles plus claires au premier plan produisent des pousses comestibles, <em>tjea khin</em> &quot;l&eacute;gume khin&quot;, tr&egrave;s appr&eacute;ci&eacute;es en hiver. <br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Le war est une langue m&ocirc;n-khm&egrave;re diff&eacute;rente du khasi, du pnar et du lyngngam, parl&eacute;es sur le plateau du Meghalaya. Ses locuteurs, que j&rsquo;estime &agrave; environ 70 000-80 000, vivent principalement au sud-est du Meghalaya sur d&rsquo;anciennes terres pnar mais aussi en Assam et au Bengladesh de l&rsquo;autre c&ocirc;t&eacute; de la fronti&egrave;re, &agrave; l&rsquo;est et &agrave; l&rsquo;ouest, et aussi au sud-est. La langue war est constitu&eacute;e principalement de quatre sous-groupes dialectaux : nongtalang, amwi, sundai et tarangblang et de plusieurs parlers mixtes war-khasi et war-pnar. Nongbareh est l&rsquo;un des six sous-dialectes du nongtalang.<br>
@@ -374,7 +424,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="tetrade"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  June 16, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/tetrade590.jpg" alt="tetrade" width="100%"></p>
+                  <p align="center"><img src="images/tetrade590.jpg" alt="tetrade" width="80%"></p>
                   <p align="center"><strong>&quot;La Sainte Trinit&eacute;&quot;, fresque de l'&eacute;glise Saint-Michel d'Eline-Pelin (r&eacute;gion de Sofia, Bulgarie)</strong></p>
                   <p><br>
                   </p>
@@ -386,7 +436,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="traineau" id="traineau"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The weeks  of  June 02 &amp; 09, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/traineau590.jpg" alt="traineau" width="100%"></p>
+                  <p align="center"><img src="images/traineau590.jpg" alt="traineau" width="80%"></p>
                   <p align="center"><strong>Durant une chasse &agrave; l'ours polaire sur la banquise du golfe de Boothia<br>
                     (Nunavut, archipel arctique canadien)</strong></p>
                   <p>V&ecirc;tu d'un costume traditionnel en peau de caribou (parka, pantalon) et en peau de phoque (bottes), le chasseur ach&egrave;ve de fixer le chargement sur son tra&icirc;neau, &agrave; l'aide d'une corde en peau de phoque barbu*, avant de se lancer &agrave; nouveau sur les traces d'un ours vagabond.<br>
@@ -400,7 +450,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="pirogue"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  May 26, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/pirogue590.jpg" alt="pirogue" width="100%"></p>
+                  <p align="center"><img src="images/pirogue590.jpg" alt="pirogue" width="80%"></p>
                   <p align="center"><strong>Une pirogue <em>b&eacute;&eacute;r&euml;w&egrave;</em> &agrave; l&rsquo;&icirc;le des Pins (Nouvelle-Cal&eacute;donie)</strong></p>
                   <p>En Nouvelle-Cal&eacute;donie, les embarcations traditionnelles sont des pirogues fabriqu&eacute;es par les p&ecirc;cheurs qui seuls en connaissent la construction, car il n&rsquo;y a que les clans p&ecirc;cheurs &agrave; avoir le droit non seulement de les construire, mais aussi de les poss&eacute;der, except&eacute; la petite pirogue. Il existait plusieurs types de pirogues, dont les noms en n&acirc;&acirc; kw&ecirc;nyii sont : <br>
                     &ndash; <em>v&euml;k&ecirc;kar&eacute;</em> ou pirogue double, &eacute;galement nomm&eacute;e <em>d&egrave;-nye</em> ou &laquo; vrai pirogue &raquo; : elle n&rsquo;existe plus depuis environ un si&egrave;cle et c&rsquo;&eacute;tait celle qui permettait les grandes navigations et migrations, parfois jusqu&rsquo;&agrave; Tonga, comme en t&eacute;moigne la tradition orale ; <br>
@@ -417,7 +467,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="ouvea"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  May 19, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/ouvea_maison590.jpg" alt="ouvea" width="100%"></p>
+                  <p align="center"><img src="images/ouvea_maison590.jpg" alt="ouvea" width="80%"></p>
                   <p align="center"><strong>Maison traditionnelle d'Ouv&eacute;a (&icirc;les Loyaut&eacute;), Nouvelle-Cal&eacute;donie</strong></p>
                   <p>Cette maison traditionnelle est typique de la r&eacute;gion nord de l'&icirc;le d'Ouv&eacute;a, o&ugrave; r&eacute;sident les locuteurs fagauvea, langue polyn&eacute;sienne. De forme rectangulaire, recouverte de feuilles de <em>pandanus</em> s&eacute;ch&eacute;es, elle comporte peu d'ouvertures, et sert essentiellement de lieu de rangement et de repos<br>
                   </p>
@@ -429,7 +479,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="tanzanie2"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  May 12, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p align="center"><img src="images/tanzanie2_590.jpg" alt="tanzanie2" width="60%"></p>
+                  <p align="center"><img src="images/tanzanie2_590.jpg" alt="tanzanie2" width="50%"></p>
                   <p align="center"><strong>Rock painting site (3000 B.C.), Kondoa region, Tanzania </strong>                  </p>
                   <p><em>In the Kondoa region, in central Tanzania, the UNESCO estimates that there are between 150 and 450 rock painting sites. They are all situated quite high up in the hills and were probably used as shelters in times of war or raids, as well as for ceremonial retreats, e.g. for initiation rites. Most of the sites face east and catch the rising sun. <br>
                     The red rock paintings were probably carried out by hunter-gatherer populations, and belong to a type found throughout southern Africa. Archeological excavations have unearthed items belonging to the Middle Stone Age, to the Late Stone Age and to the Iron Age, for example red ochre &lsquo;pencils&rsquo;. <br>
@@ -442,7 +492,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="mithun"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  May 05, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/Mithun590.jpg" alt="mithun" width="100%"></p>
+                  <p align="center"><img src="images/Mithun590.jpg" alt="mithun" width="80%"></p>
                   <p align="center"><strong>Un mithun (<em>Bos frontalis</em>) est emmen&eacute; encord&eacute; par plusieurs hommes solides</strong></p>
                   <p>Le mithun (aussi &quot;mithan&quot;) est un bovin semi-sauvage endog&egrave;ne &agrave; l'Himalaya et aux montagnes de la fronti&egrave;re indo-birmane. Selon les biologistes, c'est un proche parent du gaur (<em>Bos gaurus</em>), bovin sauvage plus grand des for&ecirc;ts indiennes. On remarque la puissance de son front et de ses cornes qui lui ont valu son nom scientifique.<br>
                     Le mithun a une grande importance rituelle et commerciale dans l'Himalaya du nord-est indien et au Bhoutan. Au Bhoutan on le croise avec le bovin domestique pour obtenir des hybrides dont le caract&egrave;re et les capacit&eacute;s de travail, de reproduction, et de production de lait sont bien d&eacute;termin&eacute;s suivant le croisement. Le dzongkha, langue nationale du Bhoutan poss&egrave;de des noms pour les croisements sur plusieurs g&eacute;n&eacute;rations. <br>
@@ -455,7 +505,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="caribou"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The weeks  of  April 21 &amp; 28, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/caribou590.jpg" alt="caribou" width="100%"></p>
+                  <p align="center"><img src="images/caribou590.jpg" alt="caribou" width="80%"></p>
                   <p align="center"><strong>Chasse au caribou chez les Inuit (Kangiq&amp;ukutaaq-Gifford Fiord, Terre de Baffin, Nunavut)</strong></p>
                   <p>Dans l'Arctique oriental canadien, le caribou <em>tuktu</em> (<em>Rangifer tarandus</em>) reste le gibier terrestre le plus appr&eacute;ci&eacute; des Inuits, tant pour sa chair et sa graisse d&eacute;licieuses que pour sa peau, indispensable &agrave; la confection de chauds v&ecirc;tements d'hiver.<br>
                     Autrefois essentiellement collective sur les lieux de passage traditionnels des caribous (lacs, cours d'eau) au cours de leurs migrations saisonni&egrave;res, la chasse au caribou est aujourd'hui individuelle, gr&acirc;ce &agrave; l'utilisation de moyens de locomotion (canots &eacute;quip&eacute;s de moteurs hors-bord puissants, motoneiges) et d'&eacute;quipements de chasse (carabines &agrave; lunette) tr&egrave;s performants.<br>
@@ -469,7 +519,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="termitiere"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  April 14, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p align="center"><img src="images/termitiere590.jpg" alt="termitiere" width="60%"></p>
+                  <p align="center"><img src="images/termitiere590.jpg" alt="termitiere" width="50%"></p>
                   <p align="center"><strong>Termiti&egrave;re g&eacute;ante au bord de la route pr&egrave;s de Sarh, au sud du Tchad, <br>
                     &agrave; la fronti&egrave;re avec la R&eacute;publique Centrafricaine</strong></p>
                   <p>Les termites sont les seuls  insectes de l'ordre des Isopt&egrave;res qui compte &agrave; lui seul environ 281 genres et 2600 esp&egrave;ces. Parfois appel&eacute;s <em>fourmis blanches</em>, ils se rencontrent surtout dans les pays chauds, o&ugrave; certaines  esp&egrave;ces construisent de grands nids en terre m&acirc;ch&eacute;e, perc&eacute;es de galeries ventil&eacute;es &ndash; les termiti&egrave;res &ndash;  caract&eacute;ristiques des paysages tropicaux. Les termites sont des insectes sociaux qui vivent en colonies  hi&eacute;rarchis&eacute;es (une reine, des ouvri&egrave;res, des soldats et un m&acirc;le ail&eacute;) et rongent le bois par l'int&eacute;rieur. (plus d'informations <a href="http://fr.wikipedia.org/wiki/Termites" target="_blank">ici</a>)<br>
@@ -482,7 +532,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="filetsFJ" id="filetsFJ"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  April 07, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/bateauFJ590.jpg" alt="bateau" width="100%"></p>
+                  <p align="center"><img src="images/bateauFJ590.jpg" alt="bateau" width="80%"></p>
                   <p align="center"><strong>Filets de p&ecirc;che sur le Brahmapoutre</strong></p>
                   <p>Ces filets fixes sont install&eacute;s dans les bas-fonds du fleuve Brahmapoutre, pr&egrave;s de Guwahati, la capitale de l'&eacute;tat d'Assam (Inde). Ici, la hampe horizontale est d'environ 5 m&egrave;tres ; on en trouve de plus grands. Un seul homme suffit &agrave; manipuler cet engin : il monte sur la partie &agrave; droite o&ugrave; les perches se rejoignent, et fait contrepoids, soit pour plonger le grand filet dans l'eau, soit pour l'en sortir. Une corde permet de soulever la poche principale, et de verset les poissons captur&eacute;s dans la petite poche bleue, plus transportable. Ici, l'engin est au repos : on ne l'actionne qu'aux heures o&ugrave; le poisson passe dans le courant du fleuve. Les p&ecirc;cheurs sont en principe membres de castes assez ferm&eacute;es, qui trouvent &agrave; s'employer en suivant le cours du grand fleuve : leur parent&egrave;le est parfois &eacute;tal&eacute;e au long du cours d'eau. Dans cette r&eacute;gion, les principales agglom&eacute;rations de p&ecirc;cheurs sont sur la rive droite, en aval de Guwahati, pas tr&egrave;s loin du pont de Saraighat.</p>
                   <p>&copy; <a href="../membres/jacquesson.htm">Fran&ccedil;ois Jacquesson </a> (CNRS-LACITO)</p>
@@ -493,7 +543,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="htilomino"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  March 31, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/htilomino590.jpg" alt="htilomino" width="100%"></p>
+                  <p align="center"><img src="images/htilomino590.jpg" alt="htilomino" width="80%"></p>
                   <p align="center"><strong>Pagode de Htilomino (site de Pagan, Birmanie centrale) </strong></p>
                   <p>&nbsp;</p>
                   <p>&copy; <a href="../membres/vittrant.htm">Alice Vittrant</a> (CNRS-LACITO, 10 January 2008)</p>
@@ -504,7 +554,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="mangrove"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  March 24, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/mangrove590.jpg" alt="mangrove" width="100%"></p>
+                  <p align="center"><img src="images/mangrove590.jpg" alt="mangrove" width="80%"></p>
                   <p align="center"><strong>Mangrove, Canala, Nouvelle-Cal&eacute;donie</strong></p>
                   <p>La mangrove de Canala  est un &eacute;cosyst&egrave;me tr&egrave;s riche, situ&eacute; tout le long de l'estuaire. La v&eacute;g&eacute;tation consiste essentiellement en des pal&eacute;tuviers, reconnaissables &agrave; leurs racines &eacute;chasses, bien au-dessus du niveau de l'eau sal&eacute;e ou saum&acirc;tre. Les fruits du pal&eacute;tuvier &eacute;taient autrefois consomm&eacute;s mais actuellement, les mangroves sont surtout des lieux de p&ecirc;che, o&ugrave; les femmes attrapent les fameux crabes de pal&eacute;tuviers, tr&egrave;s appr&eacute;ci&eacute;s.<br>
                   </p>
@@ -516,7 +566,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="myinkaba"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  March 17, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/myinkaba590.jpg" alt="myinkaba" width="100%"></p>
+                  <p align="center"><img src="images/myinkaba590.jpg" alt="myinkaba" width="80%"></p>
                   <p align="center"><strong>Pagode dans le village de Myinkaba (site de Pagan, Birmanie centrale) </strong></p>
                   <p>&nbsp;</p>
                   <p>&copy; <a href="../membres/vittrant.htm">Alice Vittrant</a> (CNRS-LACITO, 12 janvier 2008)</p>
@@ -527,7 +577,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="citerne"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  March 10, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/citerne590.jpg" alt="citerne" width="100%"></p>
+                  <p align="center"><img src="images/citerne590.jpg" alt="citerne" width="80%"></p>
                   <p align="center"><strong>Citerne d'eau potable (Ouv&eacute;a) </strong></p>
                   <p>En Nouvelle-Cal&eacute;donie, aux &icirc;les Loyaut&eacute; comme dans d'autres lieux recul&eacute;s, l'eau est souvent un probl&egrave;me auquel les Kanak ont &eacute;t&eacute; confront&eacute;s. De tout temps ils ont trouv&eacute; des solutions pour pallier le manque de rivi&egrave;re, de source et d'eau douce. <br>
                     Ici, &agrave; Ouv&eacute;a, les habitants ont construit des citernes qui r&eacute;cup&egrave;rent les eaux de pluie. Tous les villages de l'&icirc;le sont donc marqu&eacute;s par ces constructions, sortes de maisons sans fen&ecirc;tre faites pour stocker l'eau. <br>
@@ -540,7 +590,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="ardoise"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The weeks  of  February 25 &amp; March 03, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/acham_ardoise590.jpg" alt="ardoise" width="100%"></p>
+                  <p align="center"><img src="images/acham_ardoise590.jpg" alt="ardoise" width="80%"></p>
                   <p align="center"><strong>Maison traditionnelle rurale, Kamala Bazaar, district d'Acham, N&eacute;pal</strong></p>
                   <p>Sur le toit en ardoises, du soja est mis &agrave; s&eacute;cher, sur les perches, du ma&iuml;s. Nous somme &agrave; 2000 m&egrave;tres d'altitude.<br>
                   </p>
@@ -552,7 +602,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="potagers"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  February 18, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/sanaa590.jpg" alt="potagers_sanaa" width="100%"></p>
+                  <p align="center"><img src="images/sanaa590.jpg" alt="potagers_sanaa" width="80%"></p>
                   <p align="center"><strong>Jardins urbains, Sanaa, Yemen</strong></p>
                   <p>Dans la ville <em>intra-muros</em>, subsistent des &icirc;lots de verdure qui jadis occupaient une place tr&egrave;s importante dans la structure urbaine de Sanaa : au XIXe s. par exemple, ils repr&eacute;sentaient le trois quarts de la superficie de la vieille ville. Ces espaces verts ou jardins urbains sont r&eacute;partis en &laquo;jardins mara&icirc;chers&raquo;, <em>migshama</em>, et &laquo;jardins vergers&raquo;, <em>bustan</em>. Les premiers, biens inali&eacute;nables, ou propri&eacute;t&eacute;s de mainmorte, <em>waqf</em>, d&eacute;pendent de la mosqu&eacute;e qui les jouxte, et qui en jouit par usufruit pour l'entretien des mosqu&eacute;es ; ces jardins sont irrigu&eacute;s par les eaux us&eacute;es des bassins d'ablutions des mosqu&eacute;es. Les &quot;jardins vergers&quot; sont en revanche des propri&eacute;t&eacute;s individuelles. Habituellement, ces jardins sont entour&eacute;s d'un mur de pierres et de terre, mais il arrive que des maisons y soient intercal&eacute;es, et constituent une partie du mur de cl&ocirc;ture.<br>
                     La culture dominante des &quot;jardins mara&icirc;chers&quot; est celle d'une vari&eacute;t&eacute; d'allium, apparent&eacute;e &agrave; la ciboule, <em>bay&lsquo;a</em>&nbsp;; viennent ensuite : radis blanc (<em>gushmi</em>), oignon (<em>basali</em>), luzerne (<em>gadhab</em>), tomates, haricots, piments, menthe, persil&hellip; Les jardiniers, dont le nom <em>gashsham</em> est form&eacute; sur la m&ecirc;me racine qui sert &agrave; d&eacute;signer le &quot;jardin mara&icirc;cher&quot; (<em>migshama</em>) et le radis blanc (<em>gushmi</em>), sont assimil&eacute;s au groupe de statut social inf&eacute;rieur, <em>banu l-khums</em> (litt&eacute;ralement &quot;fils du cinqui&egrave;me&quot;) qui compte les m&eacute;tiers dits &quot;vils&quot; : cordonniers, bouchers, barbiers-circonciseurs&hellip; <br>
@@ -566,7 +616,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="moroni"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  February 11, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/moroni590.jpg" alt="moroni" width="100%"></p>
+                  <p align="center"><img src="images/moroni590.jpg" alt="moroni" width="80%"></p>
                   <p align="center"><strong>La grande mosqu&eacute;e de Moroni, Comores</strong></p>
                   <p>Appel&eacute;e aussi &quot; Mosqu&eacute;e du vendredi&quot;, elle est situ&eacute;e &agrave; Moroni, capitale des Comores.<br>
                   </p>
@@ -578,7 +628,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="pilotis"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  February 04, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/bagora590.jpg" alt="pilotis" width="100%"></p>
+                  <p align="center"><img src="images/bagora590.jpg" alt="pilotis" width="80%"></p>
                   <p align="center"><strong>Maison sur pilotis (Bangora, haut Assam, Inde)</strong></p>
                   <p>Quelques ethnies du haut Assam (Inde du Nord-Est), dans la vall&eacute;e du Brahmapoutre, vivent dans de telles maisons sur pilotis. Ici, nous sommes dans le village de Bangora, un village de l&rsquo;ethnie deori (ou deuri), dans le district de Lakhimpur. L&rsquo;unit&eacute; d&rsquo;habitation est compos&eacute;e de la maison elle-m&ecirc;me (<em>y&acirc;</em> en langue deori), du grenier &agrave; riz (<em>bib&ocirc;</em>, qui ressemble &agrave; une maison plus petite, en face de la plus grande), et des plantations proches, comme les bananiers &agrave; droite (<em>tiri pop&ocirc;</em>) et les ar&eacute;quiers plus &eacute;lanc&eacute;s &agrave; gauche (<em>g&ucirc;&icirc;pop&ocirc;</em>). La maison est toute en longueur. On entre par un bout (ici invisible) et il y a en g&eacute;n&eacute;ral une sorte de couloir lat&eacute;ral qui dessert plusieurs pi&egrave;ces s&eacute;par&eacute;es par des cloisons. Dans l&rsquo;entr&eacute;e, &agrave; laquelle on acc&egrave;de par une b&ucirc;che crant&eacute;e ou une &eacute;chelle (<em>ecugu</em>), on trouve sous l&rsquo;auvent une sorte de plate-forme o&ugrave; l&rsquo;on re&ccedil;oit. Tout au fond de la maison, au contraire, se trouve la cuisine. Pr&egrave;s de l&rsquo;entr&eacute;e, la pi&egrave;ce du couple le plus jeune&nbsp;; pr&egrave;s de la cuisine, la pi&egrave;ce des vieux parents. Ici, on voit sur le c&ocirc;t&eacute; une plate-forme annexe avec une ouverture qui donne sur la cuisine, et qu&rsquo;on ouvre par beau temps.<br>
                     N.B. Les circonflexes dans les mots deori indiquent une voyelle nasale.<br>
@@ -591,7 +641,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="teck"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  January 28, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/teck590.jpg" alt="teck" width="100%"></p>
+                  <p align="center"><img src="images/teck590.jpg" alt="teck" width="80%"></p>
                   <p align="center"><strong>Amarapura (pr&egrave;s de Mandalay) en Birmanie</strong></p>
                   <p>Le pont U Bein en teck franchit le lac TaungTha Man, qui est &agrave; sec pendant la saison s&egrave;che.<br>
                   </p>
@@ -603,7 +653,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="tanzanie"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  January 21, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/tanzanie590.jpg" alt="tanzanie" width="100%"></p>
+                  <p align="center"><img src="images/tanzanie590.jpg" alt="tanzanie" width="80%"></p>
                   <p align="center"><strong>Rencontre matinale entre pasteurs sukuma et r&eacute;colteurs de sel nyilamba, Tanzanie</strong></p>
                   <p>Pendant la saison s&egrave;che, les fonds des lacs sal&eacute;s de la Vall&eacute;e du rift tanzanien servent &agrave; la fois de p&acirc;turage aux vaches des &eacute;leveurs semi-nomades (ici des Sukuma dont la partie s&eacute;dentaire habite dans les r&eacute;gions au sud du lac Victoria) et  d'approvisionnement en sel (ici des Nyilamba qui r&eacute;coltent le sel – voir <a href="http://www.margaret-dunham.com/?page=photos" target="_blank">photos</a> expliquant la technique de r&eacute;colte –  pour ensuite le vendre au march&eacute;, situ&eacute; &agrave; trois jours de marche).<br>
                   </p>
@@ -615,7 +665,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="banian"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  January 14, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p align="center"><img src="images/banian590.jpg" alt="banian" width="50%">&nbsp;&nbsp;<img src="images/banian_detail.jpg" alt="detail_sm" width="38%"></p>
+                  <p align="center"><img src="images/banian590.jpg" alt="banian" width="40%">&nbsp;&nbsp;<img src="images/banian_detail.jpg" alt="detail_sm" width="28%"></p>
                   <p align="center"><strong>Tronc grav&eacute; et banyan (Centre culturel de Hiengh&egrave;ne, Nouvelle-Cal&eacute;donie)</strong></p>
                   <p>&copy; <a href="../membres/bril.htm">Isabelle Bril</a> (CNRS-LACITO,  2007)</p>
                   <p>Place: Oceania, New-Caledonia, East coast, Hienghene &ndash; Language: <a href="../ALC/Languages/Nemi_popup.htm" target="_blank"onClick="window.open(this.href,'popupLink','width=400,height=400,scrollbars=yes,resizable=yes',1);return false">Nemi</a></p></td>
@@ -625,7 +675,7 @@ MM_reloadPage(true);
               </tr>
               <tr>
                 <td><p class="intertitre"><a name="paepae"></a><img src="../z-outils/images/boite-outils/icones/phototheque.gif" alt="photo" width="17" height="16"> The week  of  January 07, 2008  <strong><a href="#up"><img src="../images/icones/fleche-haut.gif" alt="to up" width="10" height="9" border="0"></a></strong></p>
-                  <p><img src="images/paepae590.jpg" alt="paepae" width="100%"></p>
+                  <p align="center"><img src="images/paepae590.jpg" alt="paepae" width="80%"></p>
                   <p align="center"><strong>&laquo;&nbsp;Paepae&nbsp;&raquo;, aire sacr&eacute;e traditionnelle (&icirc;le de Hiva Oa,  Marquises, Polyn&eacute;sie)</strong></p>
                   <p>Ce <em>paepae</em>, plateforme de roches s&egrave;ches, est l'un des plus spectaculaires des &icirc;les Marquises. Si, de son haut, Nobles et Pr&ecirc;tres n'y officient plus, il a gard&eacute; son caract&egrave;re sacr&eacute; et nul ne saurait s'y aventurer autrement que pieds nus. </p>
                   <p>&copy; <a href="../membres/charpentier.htm">Jean-Michel Charpentier </a> (CNRS-LACITO, August 2005) </p>
@@ -635,134 +685,106 @@ MM_reloadPage(true);
                 <td><img src="../z-outils/images/boite-outils/filet-couleur.gif" alt="aa" width="100%" height="1"></td>
               </tr>
               <tr>
-                <td><p class="intertitre">Last or next years: <a href="2007_en.htm">2007</a> - 2008 - <a href="2009_en.htm">2009</a> - <a href="2010_enhtm"> 2010</a> - <a href="2011_en.htm">2011</a> - <a href="2012_en.htm">2012</a></p></td>
+                <td><p class="intertitre">Last or next years: <a href="2007_en.htm">2007</a> - 2008 - <a href="2009_en.htm">2009</a> - <a href="2010_enhtm"> 2010</a> - <a href="2011_en.htm">2011</a> - <a href="2012_en.htm">2012</a> - <a href="2013_en.htm">2013</a></p></td>
               </tr>
             </table></td>
         </tr>
       </table>
       <!-- InstanceEndEditable --></div>
     </td>
-    <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="500"></td>
+ </tr>
+ <tr>
+        <td>
+        <table border="0">
+        <tr>
+    <td width="1000" class="XnavgaucheIcones" align="center"><img src="../z-outils/images/charte/icones-01.gif" alt="" width="150" height="55" border="0" usemap="#Map2"></td>
+   
   </tr>
-  <tr>
-    <td width="150" class="XnavgaucheIcones"><img src="../z-outils/images/charte/icones-01.gif" alt="" width="150" height="55" border="0" usemap="#Map2"></td>
-    <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
-    <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
-  </tr>
-  <tr>
-    <td width="150" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="1"></td>
-    <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
-    <td width="599" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"><img src="../z-outils/images/boite-outils/espaceur.gif" width="150" height="1"></td>
-    <td width="1" class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" width="1" height="1"></td>
-  </tr>
+  </table>
+  </td>
+  </tr> 
 </table>
-<p>&nbsp;</p>
- <p>&nbsp;</p>
- <div id="divpartenaires" >
-   <table width="150"  border="0" cellspacing="0" cellpadding="0">
-     <tr>
-       <td><a href="http://www.cnrs.fr/index.php" target="_blank"><img src="../images/logos/logo-cnrs.jpg" alt="cnrs" width="150" height="62" border="0"></a></td>
-     </tr>
-     <tr>
-       <td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" alt="aa" width="150" height="1"></td>
-     </tr>
-     <tr>
-       <td><a href="http://www.univ-paris3.fr/1207750810633/0/fiche___defaultstructureksup/&RH=1235649944785" target="_blank"><img src="../images/logos/logo-paris-3.gif" alt="paris3" width="150" height="53" border="0"></a></td>
-     </tr>
-     <tr>
-       <td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" alt="aa" width="150" height="1"></td>
-     </tr>
-     <tr>
-       <td><a href="http://www.paris-sorbonne.fr/fr/spip.php?rubrique1096" target="_blank"><img src="../images/logos/logo-paris-4.gif" alt="paris4" width="150" height="53" border="0"></a></td>
-     </tr>
-     <tr>
-       <td class="separateur"><img src="../z-outils/images/boite-outils/espaceur.gif" alt="aa" width="150" height="1"></td>
-     </tr>
-     <tr>
-       <td><a href="http://www.typologie.cnrs.fr/" target="_blank"><img src="../images/logos/logo-typo.gif" alt="tul" width="150" height="53" border="0"></a></td>
-     </tr>
-   </table>
- </div>
+
 <p>
-     <script type='text/javascript'>function Go(){return}</script>
-     <script type='text/javascript' src='../z-outils/deroulants/top_pos_var.js'></script>
-     <script type='text/javascript' src='../z-outils/deroulants/menu_var_en.js'></script>
-     <script type='text/javascript' src='../z-outils/deroulants/menu9_com.js'></script>
+  <script type='text/javascript'>function Go(){return}</script>
+  <script type='text/javascript' src='../z-outils/deroulants/top_pos_var.js'></script>
+  <script type='text/javascript' src='../z-outils/deroulants/menu_var_en.js'></script>
+  <script type='text/javascript' src='../z-outils/deroulants/menu9_com.js'></script>
 </p>
- <noscript>
+<noscript>
  <p>Your browser does not support script</p>
 </noscript>
- <div id="divnavgauche-spec">
+
+
+
+<!--<div id="divnavgauche-spec">
    <table border="0" cellpadding="0" cellspacing="0"  width="150">
      <tr>
-       <td height="2"><img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
+       <td height="2"></td>
      </tr>
      <tr>
        	<td width="100%"  class="Xnavgauche" >
         	<table border="0" cellpadding="10" cellspacing="0"  width="100%">
       			<tr>
-       	 			<td width="100%" class="Xnavgauche"><h2><a href="../INTRANET/index.htm">Intranet <img border="0" src="../z-outils/images/boite-outils/icones/intranet.gif" width="18" height="12"
-							alt="aa"></a></h2></td>
+       	 			<td width="100%" class="Xnavgauche"> <a href="../INTRANET/index.htm"><b style="color:#A80924;text-decoration : none">Intranet</b> <img border="0" src="../z-outils/images/boite-outils/icones/intranet.gif" width="18" height="12" alt="Lacito"/></a></td>
       			</tr>
        		</table>
        </td>
      </tr>
-     <tr>
-       <td height="2"><img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
-     </tr>
-    </table>
- </div>
- <div id="divnavgauche-searchLabo">
-   <table cellspacing="0" cellpadding="0" hspace="11" border="0">
-     <tr>
-     	<td width="100%" class="Xnavgauche"><h2 >Search</h2>
-                 <p>On this website</p>
-               <br>
-      	 </td>
-         </tr>
-         <tr>
-     	 <td>       
-				<form name="rechercher-spm" action="http://lacito.vjf.cnrs.fr/moteur/engine_en.php" method="GET">
-				<input type="hidden" name="action"  value="go">
-				<table cellspacing="0" cellpadding="0" border="0">
-					<tr>
-						<td><input name ="blork" maxLength="50" size="10" class="text"></td>
-						<td><img border="0" src="../z-outils/images/boite-outils/espaceur.gif" width="10" height="8"
-							alt="aa"></td>
-						<td><input name="submit2" type="image" src="../z-outils/images/charte/ok.gif" 
-                             border="0" width="20" height="20">
-						</td>
-					</tr>
-				</table>
-  				</form>
-          </td>
-        </tr>
-       </table>
-        <tr>
-       <td height="2"><img border="0" src="../z-outils/images/boite-outils/pointilles.gif" alt="" width="150" height="3"></td>
-		</tr>
+   
+  </table>
+  
+  
+</div>-->
+ 
 
- </div>
  
- <div id="divnavgauche-language">
- <p class="intertitre" align="center"><a href="Javascript:version()"><img src="../images/logos/fra.gif" alt="Fran&ccedil;ais" border="0"></a></p>
- </div>
+<!--<div id="divnavgauche-searchLabo">
+  <b style="color:#A80924">Rechercher </b>
+  <input type="hidden" name="action"  value="go"/>
+	<input name ="blork" maxLength="50" size="10" class="text"/><input name="submit2" type="image" src="../z-outils/images/charte/ok.gif" align="texttop" 
+                             border="0" width="20" height="20"/>
+   
+</div>-->
  
-<div id="divnavhaut-nom-labo">
+ 
+ 
+ 
+ 
+ <!-- <div id="divnavgauche-language">
+ <p class="intertitre" align="center"><a href="Javascript:version()"><img src="../images/logos/eng.gif" alt="English" width="37" height="33" border="0"></a></p>
+</div>-->
+ 
+
+
+
+
+<map name="Map2">
+  <area shape="rect" coords="28,23,46,43" href="javascript:impression()" alt="Imprimer">
+  <area shape="rect" coords="49,22,66,42" href="javascript:writemail('vjf.cnrs.fr','behaghel','',1);" alt="Contacter le webmestre">
+  <area shape="rect" coords="68,23,85,43" href="../pratique/index.htm" alt="Plan du site">
+  <area shape="rect" coords="87,23,105,43" href="../pratique/credits.htm" alt="Crédits">
+  <area shape="rect" coords="9,24,25,43" href="../index.htm" alt="Accueil">
+</map>
+
+
+<!--<div id="divnavhaut-nom-labo">
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
     <tr>
-      <td valign="top" class="Xnavhaut"><p> <a href="../index_en.htm"><img src="../images/logos/Logo_Lacito.jpg" alt="aa" width="141" height="59" hspace="10" border="0" align="left"></a> <span class="Style1">Langues et civilisations<br>
+      <td valign="top" class="Xnavhaut"><p> <a href="../index.htm"><img src="../images/logos/Logo_Lacito.jpg" alt="aa" width="141" height="59" hspace="10" border="0" align="left"></a></p> <span class="Style1">Langues et civilisations<br>
         à tradition orale <br>
         (UMR7107)</span></p></td>
     </tr>
   </table>
-</div>
-<map name="Map2">
-  <area shape="rect" coords="28,23,46,43" href="javascript:impression()" alt="Print">
-  <area shape="rect" coords="49,22,66,42" href="javascript:writemail('vjf.cnrs.fr','behaghel','',1);" alt="Contact us">
-  <area shape="rect" coords="68,23,85,43" href="../pratique/index_en.htm" alt="Site Map">
-  <area shape="rect" coords="87,23,105,43" href="../pratique/credits_en.htm" alt="Credits">
-  <area shape="rect" coords="9,24,25,43" href="../index_en.htm" alt="Home">
-</map>
+  </div>-->
+  </td>
+  </tr>
+</table>
+
+
+
+
+
+
 </body>
 <!-- InstanceEnd --></html>

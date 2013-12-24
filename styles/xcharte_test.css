@@ -9,12 +9,8 @@ td.Xnavhaut a:hover
           {color :#00294b; text-decoration : none;}          
 div.bandeau-liens, div.bandeau-liens a:link, div.bandeau-liens a:visited, div.bandeau-liens a:hover { font-size : 12px; text-align: left; font-weight: bold; color:#FFFFFF; text-decoration:none; }
 
-td.bandeau_superp {
-    background-image:  url(../z-outils/images/charte/bandeau-haut-droit.gif);
-    background-repeat: no-repeat;
-    height: 1000px;
-    width: 380px;
-}
+
+td.bandeau-liens, td.bandeau-liens a:link, td.bandeau-liens a:visited, td.bandeau-liens a:hover { font-size : 12px; text-align: center; font-weight: bold; color:#FFFFFF; text-decoration:none;  }
 
 #divbandeau-lienCNRS {
 	position:absolute;
@@ -202,20 +198,22 @@ td.Xscde-navdroite a:hover
 
 td.Xchemin
 	{
-		font-weight:bold;
-		color:#A80924; vertical-align : middle;
+		
+		/*color:#A80924; vertical-align : middle;*/
+		color: #263033; vertical-align : middle;
 	
 	}
-        /*{color: #263033; vertical-align : middle}        */
+       
                           
 td.Xchemin a:link, td.Xchemin a:visited
 {
 		font-weight:bold;
-		color:#A80924; vertical-align : middle;
+		/*color:#A80924; vertical-align : middle;*/
+		color: #263033; vertical-align : middle;
 		text-decoration: none
 	
 	}
-      /* {color: #263033; text-decoration: none}  */
+     
              
 td.Xchemin a:hover
         {color: #5494a4; text-decoration: none}       

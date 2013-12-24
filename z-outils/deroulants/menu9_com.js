@@ -159,7 +159,8 @@ function ClcLft(){
 	if(MenuCentered.indexOf("left")==-1){
 		var Sz=FWinW-(!Nav4?parseInt(FrstCntnr.style.width):FrstCntnr.clip.width);
 		StartLeft+=MenuCentered.indexOf("right")!=-1?Sz:Sz/2;
-		if(StartLeft<0)StartLeft=0}}
+		if(StartLeft<0)StartLeft=0}
+		}
 
 function ClcTp(){
 	if(MenuVerticalCentered!="top"&&MenuVerticalCentered!="static"){

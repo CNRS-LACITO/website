@@ -1,0 +1,291 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+
+<HTML>
+
+
+<HEAD>
+
+
+	<META content="text/html; charset=ISO-8859-1" http-equiv=Content-Type>
+
+
+	<TITLE>Fig. 4: XSL stylesheet</TITLE>
+
+
+</HEAD>
+
+
+
+
+
+<BODY>
+
+
+<H2>Fig. 4: XSL stylesheet</H2>
+
+
+<HR>
+
+
+<PRE>&lt;?xml version="1.0"?&gt;
+
+
+&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/TR/WD-xsl"&gt;
+
+
+
+
+
+&lt;xsl:template match="TEXT"&gt;
+
+
+	&lt;HTML&gt;
+
+
+		&lt;HEAD&gt;
+
+
+			&lt;META http-equiv="Content-Type" content="text/html; charset=UTF-8"/&gt;
+
+
+			&lt;SCRIPT LANGUAGE="JAVASCRIPT" SRC="http://127.0.0.1/Pangloss/scripts.js"&gt;.&lt;/SCRIPT&gt;
+
+
+			&lt;LINK REL="stylesheet" HREF="http://127.0.0.1/Pangloss/Styles.css" TYPE="text/css"/&gt;
+
+
+		&lt;/HEAD&gt;
+
+
+		&lt;BODY&gt;&lt;xsl:apply-templates/&gt;&lt;/BODY&gt;
+
+
+	&lt;/HTML&gt;
+
+
+&lt;/xsl:template&gt;
+
+
+
+
+
+&lt;xsl:template match="TITLE"&gt;
+
+
+	&lt;SPAN class="titre"&gt;&lt;xsl:apply-templates/&gt;&lt;/SPAN&gt;
+
+
+&lt;/xsl:template&gt;
+
+
+
+
+
+&lt;xsl:template match="IMAGE"&gt;
+
+
+&lt;/xsl:template&gt;
+
+
+
+
+
+&lt;xsl:template match="BODY"&gt;
+
+
+	&lt;OL class="phonetic"&gt;&lt;xsl:apply-templates/&gt;&lt;/OL&gt;
+
+
+&lt;/xsl:template&gt;
+
+
+
+
+
+&lt;xsl:template match="S"&gt;
+
+
+	&lt;LI font-size="14pt"&gt;
+
+
+		&lt;xsl:attribute name="ID"&gt;&lt;xsl:value-of select="@id"/&gt;&lt;/xsl:attribute&gt;
+
+
+		&lt;xsl:attribute name="onclick"&gt;playFrom('&lt;xsl:value-of select="@id"/&gt;')&lt;/xsl:attribute&gt;
+
+
+		&lt;xsl:apply-templates select= "TRANSCR/W/FORM|TRANSCR/PONCT"/&gt;
+
+
+	&lt;/LI&gt;
+
+
+&lt;/xsl:template&gt;
+
+
+
+
+
+&lt;xsl:template match="FORM"&gt;
+
+
+	&lt;xsl:text&gt; &lt;/xsl:text&gt;
+
+
+	&lt;xsl:apply-templates/&gt;
+
+
+&lt;/xsl:template&gt;
+
+
+
+
+
+&lt;xsl:template match="FOREIGN"&gt;
+
+
+	&lt;I&gt;&lt;xsl:apply-templates/&gt;&lt;/I&gt;
+
+
+&lt;/xsl:template&gt;
+
+
+
+
+
+&lt;xsl:template match="PONCT"&gt;
+
+
+	&lt;xsl:if test=".[not(text()='.') and not(text()=',')]"&gt;
+
+
+		&lt;!-- &lt;xsl:text&gt; &lt;/xsl:text&gt; --&gt;
+
+
+	&lt;/xsl:if&gt;
+
+
+	&lt;xsl:apply-templates/&gt;
+
+
+&lt;/xsl:template&gt;
+
+
+
+
+
+&lt;xsl:template match="SOUNDFILE"&gt;
+
+
+	&lt;APPLET&gt;
+
+
+		&lt;xsl:attribute name="CODE"&gt;SoundApp.class&lt;/xsl:attribute&gt;
+
+
+		&lt;xsl:attribute name="CODEBASE"&gt;http://127.0.0.1/Pangloss/&lt;/xsl:attribute&gt;
+
+
+		&lt;xsl:attribute name="WIDTH"&gt;0&lt;/xsl:attribute&gt;
+
+
+		&lt;xsl:attribute name="HEIGHT"&gt;0&lt;/xsl:attribute&gt;
+
+
+		&lt;xsl:attribute name="NAME"&gt;player&lt;/xsl:attribute&gt;
+
+
+		&lt;PARAM&gt;
+
+
+			&lt;xsl:attribute name="NAME"&gt;Sound&lt;/xsl:attribute&gt;
+
+
+			&lt;xsl:attribute name="VALUE"&gt;&lt;xsl:value-of select="@href"/&gt;&lt;/xsl:attribute&gt;
+
+
+		&lt;/PARAM&gt;
+
+
+		&lt;PARAM&gt;
+
+
+			&lt;xsl:attribute name="NAME"&gt;IDS&lt;/xsl:attribute&gt;
+
+
+			&lt;xsl:attribute name="VALUE"&gt;
+
+
+		 		&lt;xsl:for-each select="//S"&gt;&lt;xsl:value-of select="@id"/&gt;,&lt;/xsl:for-each&gt;
+
+
+			&lt;/xsl:attribute&gt;
+
+
+		&lt;/PARAM&gt;
+
+
+		&lt;PARAM&gt;
+
+
+			&lt;xsl:attribute name="NAME"&gt;STARTS&lt;/xsl:attribute&gt;
+
+
+			&lt;xsl:attribute name="VALUE"&gt;
+
+
+		 		&lt;xsl:for-each select="//S/AUDIO"&gt;&lt;xsl:value-of select="@start"/&gt;,&lt;/xsl:for-each&gt;
+
+
+			&lt;/xsl:attribute&gt;
+
+
+		&lt;/PARAM&gt;
+
+
+		&lt;PARAM&gt;
+
+
+			&lt;xsl:attribute name="NAME"&gt;ENDS&lt;/xsl:attribute&gt;
+
+
+			&lt;xsl:attribute name="VALUE"&gt;
+
+
+		 		&lt;xsl:for-each select="//S/AUDIO"&gt;&lt;xsl:value-of select="@end"/&gt;,&lt;/xsl:for-each&gt;
+
+
+			&lt;/xsl:attribute&gt;
+
+
+		&lt;/PARAM&gt;
+
+
+	&lt;/APPLET&gt;
+
+
+&lt;/xsl:template&gt;
+
+
+
+
+
+&lt;/xsl:stylesheet&gt;
+
+
+</PRE>
+
+
+<HR>
+
+
+<A href="../description_en.htm">return to text</A> / <a href="../description.htm">retour au texte</a><A href="../presentation.htm"></A>
+
+
+</BODY>
+
+
+</HTML>
+
+

@@ -8,16 +8,56 @@ td.Xnavhaut a:visited
 td.Xnavhaut a:hover
           {color :#00294b; text-decoration : none;}          
 div.bandeau-liens, div.bandeau-liens a:link, div.bandeau-liens a:visited, div.bandeau-liens a:hover { font-size : 12px; text-align: left; font-weight: bold; color:#FFFFFF; text-decoration:none; }
-#divbandeau-lienCNRS { position:absolute;left:488px;top:16px;z-index:1; visibility: visible}
-#divbandeau-lienAccueil { position:absolute;left:552px;top:16px;z-index:1; visibility: visible}
-#divbandeau-lienAutres { position:absolute;left:641px;top:16px;z-index:1; visibility: visible}
-#divbandeau-traitvert1 {position:absolute;left:481px;top:18px;z-index:1;visibility: visible}
-#divbandeau-traitvert2 { position:absolute;left:545px;top:18px;z-index:1; visibility: visible}
-#divbandeau-traitvert3 { position:absolute;left:633px;top:18px;z-index:1; visibility: visible}
+
+
+td.bandeau-liens, td.bandeau-liens a:link, td.bandeau-liens a:visited, td.bandeau-liens a:hover { font-size : 12px; text-align: center; font-weight: bold; color:#FFFFFF; text-decoration:none;  }
+
+#divbandeau-lienCNRS {
+	position:absolute;
+	left:922px;
+	top:17px;
+	z-index:1;
+	visibility: visible
+}
+#divbandeau-lienAccueil {
+	position:absolute;
+	left:1060px;
+	top:17px;
+	z-index:1;
+	visibility: visible
+}
+#divbandeau-lienAutres {
+	position:absolute;
+	left:1210px;
+	top:17px;
+	z-index:1;
+	visibility: visible
+}
+#divbandeau-traitvert1 {
+	position:absolute;
+	left:900px;
+	top:16px;
+	z-index:1;
+	visibility: visible
+}
+#divbandeau-traitvert2 {
+	position:absolute;
+	left:1050px;
+	top:16px;
+	z-index:1;
+	visibility: visible
+}
+#divbandeau-traitvert3 {
+	position:absolute;
+	left:1200px;
+	top:16px;
+	z-index:1;
+	visibility: visible
+}
 #divnavhaut-nom-labo {
 	position:absolute;
-	left:0px;
-	top:0px;
+	left:377px;
+	top:3px;
 	z-index:1;
 	width:317px;
 	;
@@ -41,20 +81,43 @@ td.Xnavgauche h2 a:hover
 td.XnavgaucheIcones
  		  {vertical-align:bottom; }                         
 #divpartenaires {
-	       position:absolute;width:150px;
-	       z-index:1; left: 0px;top: 66px;visibility: visible;}
+	position:absolute;
+	width:150px;
+	z-index:1;
+	left: 376px;
+	top: 101px;
+	visibility: visible;
+	height: 181px;
+}
 #divnavgauche-spec {
-	       position:absolute;left:0px;top:530px;z-index:1;
-	       width:150px;visibility: visible;}               
+	position:absolute;
+	left:946px;
+	top:163px;
+	z-index:1;
+	width:150px;
+	visibility: visible;
+}               
 #divnavgauche-searchLabo {
-	       position:absolute;left:0px;top:590px;z-index:1;
-	       width:150px;visibility: visible;}
+	position:absolute;
+	left:534px;
+	top:171px;
+	z-index:1;
+	width:197px;
+	visibility: visible;
+	height: 36px;
+}
 #divnavgauche-language {
-	       position:absolute;left:0px;top:690px;z-index:1;
-	       width:150px;visibility: visible;}
-<!--#divnavgauche-search {-->
-<!--           position:absolute;left:11px;top:609px;z-index:1;-->
-<!--	       width:100px;visibility: visible;}	-->
+	position:absolute;
+	left:1242px;
+	top:161px;
+	z-index:1;
+	width:53px;
+	visibility: visible;
+	height: 40px;
+}
+#divnavgauche-search {
+           position:absolute;left:11px;top:609px;z-index:1;
+	       width:100px;visibility: visible;}	
 
 		   				 
 input.BoiteRechercher {
@@ -134,10 +197,23 @@ td.Xscde-navdroite a:hover
           {color: #82c2e0;text-decoration : none;}          
 
 td.Xchemin
-        {color: #263033; vertical-align : middle}        
+	{
+		
+		/*color:#A80924; vertical-align : middle;*/
+		color: #263033; vertical-align : middle;
+	
+	}
+       
                           
 td.Xchemin a:link, td.Xchemin a:visited
-        {color: #263033; text-decoration: none}  
+{
+		font-weight:bold;
+		/*color:#A80924; vertical-align : middle;*/
+		color: #263033; vertical-align : middle;
+		text-decoration: none
+	
+	}
+     
              
 td.Xchemin a:hover
         {color: #5494a4; text-decoration: none}       
